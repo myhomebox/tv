@@ -18,6 +18,7 @@
 民視第一台,mitv://135.148.104.228:19806/b82e864a876e4a99adf62a0f7a797714
 民視第一台,P2p://135.148.104.228:19806/b82e864a876e4a99adf62a0f7a797714
 民視旅遊台,http://sc2022.stream-link.org/list.php?id=t022
+民視新聞台,http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
 民視新聞台,mitv://generationnexxxt.com:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,mitv://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,P2p://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
@@ -137,6 +138,8 @@ TVBS亞洲,mitv://135.148.104.228:19806/7389e1ced8184a84aa22aeec29be6f85
 TVBS亞洲,mitv://generationnexxxt.com:19806/7389e1ced8184a84aa22aeec29be6f85
 TVBS亞洲,P2p://135.148.104.228:19806/7389e1ced8184a84aa22aeec29be6f85
 TVBS新聞,rtmp://219.80.97.77/sat/tv551
+TVBS新聞,http://38.64.72.148/hls/modn/list/4006/chunklist0.m3u8
+TVBS新聞,http://38.64.72.148:80/hls/modn/list/4006/chunklist1.m3u8
 TVBS新聞,rtmp://119.81.124.89/sat/tv551
 TVBS新聞,mitv://generationnexxxt.com:19806/beaa6cbcf1034703a97d3295f8c0ae60
 TVBS新聞,mitv://135.148.104.228:19806/beaa6cbcf1034703a97d3295f8c0ae60
@@ -669,6 +672,8 @@ JKN 18,P2p://135.148.104.228:19806/0df418fddf7446a5869f69f1418415d6
 now新聞台,mitv://135.148.104.228:19806/d7d8ced83c694ee09eda089b554d9dc5
 now新聞台,mitv://generationnexxxt.com:19806/d7d8ced83c694ee09eda089b554d9dc5
 now新聞台,P2p://135.148.104.228:19806/d7d8ced83c694ee09eda089b554d9dc5
+TVBS新聞,http://38.64.72.148/hls/modn/list/4006/chunklist0.m3u8
+TVBS新聞,http://38.64.72.148:80/hls/modn/list/4006/chunklist1.m3u8
 TVBS新聞,rtmp://219.80.97.77/sat/tv551
 TVBS新聞,rtmp://119.81.124.89/sat/tv551
 TVBS新聞,mitv://generationnexxxt.com:19806/beaa6cbcf1034703a97d3295f8c0ae60
@@ -695,6 +700,7 @@ TVBS新聞,P2p://135.148.104.228:19806/beaa6cbcf1034703a97d3295f8c0ae60
 台視新聞台,mitv://135.148.104.228:19806/6458c34b000df71b5c8fbf0c55f221b5
 台視新聞台,mitv://generationnexxxt.com:19806/6458c34b000df71b5c8fbf0c55f221b5
 台視新聞台,P2p://135.148.104.228:19806/6458c34b000df71b5c8fbf0c55f221b5
+民視新聞台,http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
 民視新聞台,mitv://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,mitv://generationnexxxt.com:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,P2p://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
