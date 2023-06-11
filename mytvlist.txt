@@ -61,6 +61,7 @@
 中視菁采台,mitv://generationnexxxt.com:19806/dc2d664758354920a5935d334a40e7e8
 中視菁采台,mitv://135.148.104.228:19806/dc2d664758354920a5935d334a40e7e8
 中視菁采台,P2p://135.148.104.228:19806/dc2d664758354920a5935d334a40e7e8
+中視新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
 中視新聞台,mitv://generationnexxxt.com:19806/8817421e14dd462f8deede53ce057af1
 中視新聞台,mitv://135.148.104.228:19806/8817421e14dd462f8deede53ce057af1
 中視新聞台,P2p://135.148.104.228:19806/8817421e14dd462f8deede53ce057af1
@@ -691,6 +692,7 @@ TVBS新聞,P2p://135.148.104.228:19806/beaa6cbcf1034703a97d3295f8c0ae60
 中天新聞台,mitv://135.148.104.228:19806/645a505500087efb629eacb405a54a42
 中天新聞台,mitv://generationnexxxt.com:19806/645a505500087efb629eacb405a54a42
 中天新聞台,P2p://135.148.104.228:19806/645a505500087efb629eacb405a54a42
+中視新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
 中視新聞台,mitv://135.148.104.228:19806/8817421e14dd462f8deede53ce057af1
 中視新聞台,mitv://generationnexxxt.com:19806/8817421e14dd462f8deede53ce057af1
 中視新聞台,P2p://135.148.104.228:19806/8817421e14dd462f8deede53ce057af1
