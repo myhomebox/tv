@@ -13,12 +13,14 @@
 民視台灣台,mitv://135.148.104.228:19806/742c1ff14b4b47d49007cd12204c8483
 民視台灣台,P2p://135.148.104.228:19806/742c1ff14b4b47d49007cd12204c8483
 民視綜藝台,http://sc2022.stream-link.org/list.php?id=t020
+
 民視第一台,http://sc2022.stream-link.org/list.php?id=t018
 民視第一台,mitv://generationnexxxt.com:19806/b82e864a876e4a99adf62a0f7a797714
 民視第一台,mitv://135.148.104.228:19806/b82e864a876e4a99adf62a0f7a797714
 民視第一台,P2p://135.148.104.228:19806/b82e864a876e4a99adf62a0f7a797714
 民視旅遊台,http://sc2022.stream-link.org/list.php?id=t022
 民視新聞台,http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
+民視新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV17.m3u8
 民視新聞台,mitv://generationnexxxt.com:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,mitv://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,P2p://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
@@ -160,15 +162,22 @@ Z頻道,P2p://135.148.104.228:19806/2a5836bb5cae422b95e2a523e488bb24
 八大娛樂台,mitv://135.148.104.228:19806/58f45dfdc5c8449d94b4341a63fe9031
 八大娛樂台,mitv://generationnexxxt.com:19806/58f45dfdc5c8449d94b4341a63fe9031
 八大娛樂台,P2p://135.148.104.228:19806/58f45dfdc5c8449d94b4341a63fe9031
+八大第一台,http://50.7.238.114:8278/badafirst/playlist.m3u8?tid=mb8efded78b4e12042621&ct=17874&tsum=028ad819cd9a0f949a043d652fa3e164
+八大第一台,http://198.16.100.90:8278/badafirst/playlist.m3u8?tid=mb8efded78b4e12042621&ct=17874&tsum=028ad819cd9a0f949a043d652fa3e164
 八大第一台,mitv://135.148.104.228:19806/1217464bff6c46d180ff30cb4cff310f
 八大第一台,mitv://generationnexxxt.com:19806/1217464bff6c46d180ff30cb4cff310f
 八大第一台,P2p://135.148.104.228:19806/1217464bff6c46d180ff30cb4cff310f
+八大綜合台,http://50.7.238.114:8278/badazhonghe/playlist.m3u8?ct=19225&tid=MC7C4692263546922635&tsum=ffdc7a6397b511103e0df0b92e678790
+八大綜合台,http://198.16.100.90:8278/badazhonghe/playlist.m3u8?tid=mfb8d64b6276514171054&ct=17874&tsum=a87466c997089ea7dce98cd17301667d
 八大綜合台,mitv://135.148.104.228:19806/7f8ed6b6d4234d93ac0b4b6b506ee360
 八大綜合台,mitv://generationnexxxt.com:19806/7f8ed6b6d4234d93ac0b4b6b506ee360
 八大綜合台,P2p://135.148.104.228:19806/7f8ed6b6d4234d93ac0b4b6b506ee360
 八大優頻道,mitv://135.148.104.228:19806/c856f18bc2c341c1a62efaecf715cb95
 八大優頻道,mitv://generationnexxxt.com:19806/c856f18bc2c341c1a62efaecf715cb95
 八大優頻道,P2p://135.148.104.228:19806/c856f18bc2c341c1a62efaecf715cb95
+八大戲劇台,http://50.7.238.114:8278/badadrama/playlist.m3u8?ct=19225&tid=ME4E4734124647341246&tsum=c4e596572a79ad99675ee2137d1cc43d
+八大戲劇台,http://198.16.100.90:8278/badadrama/playlist.m3u8?tid=m4970c4e1b988&ct=18335&tsum=20cb1d15d4e116ab9e44edb542cf51a5
+八大戲劇台,http://198.16.100.90:8278/badadrama/playlist.m3u8?tid=m4a65d3abd9ee13871929&ct=17924&tsum=8e5ef501e42d00cdc6a761ca3dc693d8
 八大戲劇台,mitv://135.148.104.228:19806/844bfa9150ac49c09bbae657b7545df9
 八大戲劇台,mitv://generationnexxxt.com:19806/844bfa9150ac49c09bbae657b7545df9
 八大戲劇台,P2p://135.148.104.228:19806/844bfa9150ac49c09bbae657b7545df9
@@ -223,9 +232,7 @@ Z頻道,P2p://135.148.104.228:19806/2a5836bb5cae422b95e2a523e488bb24
 東森幼幼台,mitv://135.148.104.228:19806/23305327c764422e9747ab09a6edee43
 東森幼幼台,mitv://generationnexxxt.com:19806/23305327c764422e9747ab09a6edee43
 東森幼幼台,P2p://135.148.104.228:19806/23305327c764422e9747ab09a6edee43
-東森洋片台,mitv://135.148.104.228:19806/cbe8fad92b7e4497bce416a75eae4708
-東森洋片台,mitv://generationnexxxt.com:19806/cbe8fad92b7e4497bce416a75eae4708
-東森洋片台,P2p://135.148.104.228:19806/cbe8fad92b7e4497bce416a75eae4708
+
 東森新聞台,http://sc2022.stream-link.org/list.php?id=t001
 東森新聞台,mitv://135.148.104.228:19806/64677d68000bfdc49616bfd746a567a3
 東森新聞台,mitv://generationnexxxt.com:19806/64677d68000bfdc49616bfd746a567a3
@@ -239,12 +246,21 @@ Z頻道,P2p://135.148.104.228:19806/2a5836bb5cae422b95e2a523e488bb24
 東森財經新聞台,mitv://135.148.104.228:19806/644bc6970002cc0e29d4923028d9436e
 東森財經新聞台,mitv://generationnexxxt.com:19806/644bc6970002cc0e29d4923028d9436e
 東森財經新聞台,P2p://135.148.104.228:19806/644bc6970002cc0e29d4923028d9436e
+東森綜合台,http://50.7.238.114:8278/ettvzhonghe/playlist.m3u8?tid=MC4C1214674912146749&ct=19254&tsum=9b96a50ba99dca1a02a27b05a6fb4b0d
+東森綜合台,http://198.16.100.90:8278/ettvzhonghe/playlist.m3u8?tid=m65c4e525f24617101171&ct=17874&tsum=663db593cfeefc92ce4b5d7461988f3f
 東森綜合台,mitv://135.148.104.228:19806/88fe82e39e1b409294c51f5b346de0e1
 東森綜合台,mitv://generationnexxxt.com:19806/88fe82e39e1b409294c51f5b346de0e1
 東森綜合台,P2p://135.148.104.228:19806/88fe82e39e1b409294c51f5b346de0e1
+東森戲劇台,http://50.7.238.114:8278/ettvdrama/playlist.m3u8?tid=m921dcb630ebe17354109&ct=17874&tsum=695370160923af940d1a90d44c262acc
+
+東森戲劇台,http://198.16.100.90:8278/ettvdrama/playlist.m3u8?tid=MA2A9945921599459215&ct=19249&tsum=c9097ecdf4a17c0922196dbf04b0c6e7
+
 東森戲劇台,mitv://135.148.104.228:19806/d447dc4d5ddf4417941b271bf5da4263
+
 東森戲劇台,mitv://generationnexxxt.com:19806/d447dc4d5ddf4417941b271bf5da4263
+
 東森戲劇台,P2p://135.148.104.228:19806/d447dc4d5ddf4417941b271bf5da4263
+
 非凡商業台,mitv://135.148.104.228:19806/5fd11cbd11bc4481b7e3b16808b70a5d
 非凡商業台,mitv://generationnexxxt.com:19806/5fd11cbd11bc4481b7e3b16808b70a5d
 非凡商業台,P2p://135.148.104.228:19806/5fd11cbd11bc4481b7e3b16808b70a5d
@@ -275,6 +291,7 @@ Z頻道,P2p://135.148.104.228:19806/2a5836bb5cae422b95e2a523e488bb24
 壹電視綜合,mitv://135.148.104.228:19806/2b36e682b58e4ad391e9b92657353ece
 壹電視綜合,mitv://generationnexxxt.com:19806/2b36e682b58e4ad391e9b92657353ece
 壹電視綜合,P2p://135.148.104.228:19806/2b36e682b58e4ad391e9b92657353ece
+東森超視,http://198.16.100.90:8278/ettvsuper/playlist.m3u8?tid=MA4A3005409230054092&ct=19225&tsum=c5d89f66fa1a8bcd26f482d4a370def5
 東森超視,rtmp://9wv7.mine.nu/sat/tv331
 東森超視,rtmp://219.80.97.77/sat/tv331
 東森超視,rtmp://119.81.124.89/sat/tv331
@@ -699,10 +716,12 @@ TVBS新聞,P2p://135.148.104.228:19806/beaa6cbcf1034703a97d3295f8c0ae60
 台視財經台,mitv://135.148.104.228:19806/6458c34c00065a835c8fc1003c896dab
 台視財經台,mitv://generationnexxxt.com:19806/6458c34c00065a835c8fc1003c896dab
 台視財經台,P2p://135.148.104.228:19806/6458c34c00065a835c8fc1003c896dab
+台視新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV25.m3u8
 台視新聞台,mitv://135.148.104.228:19806/6458c34b000df71b5c8fbf0c55f221b5
 台視新聞台,mitv://generationnexxxt.com:19806/6458c34b000df71b5c8fbf0c55f221b5
 台視新聞台,P2p://135.148.104.228:19806/6458c34b000df71b5c8fbf0c55f221b5
 民視新聞台,http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
+民視新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV17.m3u8
 民視新聞台,mitv://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,mitv://generationnexxxt.com:19806/64577cff0001eb7c5795230f6bb8749b
 民視新聞台,P2p://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
@@ -836,10 +855,14 @@ ELEVEN 2,rtmp://119.81.124.89/sat/tv741
 ELEVEN 2,mitv://135.148.104.228:19806/e3aeaea58e574957a3ce60d7e2d1081d
 ELEVEN 2,mitv://generationnexxxt.com:19806/e3aeaea58e574957a3ce60d7e2d1081d
 ELEVEN 2,P2p://135.148.104.228:19806/e3aeaea58e574957a3ce60d7e2d1081d
+愛爾達體育1台http://198.16.100.90:8278/eltasport_twn/playlist.m3u8?tid=MF1F8884668388846683&ct=19249&tsum=b676f636b8ef285596dc6512fc4659d4
+愛爾達體育1台,http://198.16.100.90:8278/eltasport_twn/playlist.m3u8?tid=MB5B8133126081331260&ct=19225&tsum=5cb9d121709b107014d31cf856f3572e
 愛爾達體育1台,mitv://135.148.104.228:19806/7ee39f66b9f448979335e4067812760f
 愛爾達體育1台,mitv://generationnexxxt.com:19806/7ee39f66b9f448979335e4067812760f
 愛爾達體育1台,mitv://135.148.104.228:19806/694aae01164f482eae2be66c1255171c
 愛爾達體育1台,mitv://generationnexxxt.com:19806/694aae01164f482eae2be66c1255171c
+愛爾達體育2台,http://198.16.100.90:8278/eltasport2_twn/playlist.m3u8?tid=MB2B3966739039667390&ct=19249&tsum=20bdbd3a22909e8d89aabe7a923c8c5b
+愛爾達體育2台,http://50.7.238.114:8278/eltasport2_twn/playlist.m3u8?tid=ME3E4844502848445028&ct=19317&tsum=035fc643389fcb4a6bf124bca1248aab
 愛爾達體育2台,mitv://135.148.104.228:19806/64604ca4000ec4a27a0042e203a811eb
 愛爾達體育2台,mitv://generationnexxxt.com:19806/64604ca4000ec4a27a0042e203a811eb
 愛爾達體育3台,mitv://135.148.104.228:19806/bed0a4b629d149bc90aee0522c633b43
@@ -1052,6 +1075,8 @@ Boomerang,mitv://generationnexxxt.com:19806/317cf636b2d448d0867cc1f976064d8a
 Boomerang,mitv://generationnexxxt.com:19806/9bca576c3c2e4b5cb3fbb69a462588e1
 Cartoon Network,mitv://135.148.104.228:19806/41375bcbd5094f538f132d3ebb9b2ea6
 Cartoon Network,mitv://generationnexxxt.com:19806/41375bcbd5094f538f132d3ebb9b2ea6
+CN卡通頻道,http://50.7.238.114:8278/momo1_twn/playlist.m3u8?ct=19225&tid=MA0A4898983648989836&tsum=bd109117d126916f203880b1f2063d5e
+CN卡通頻道,P2p://135.148.104.228:19806/644d1cd900092e062f0d85a601dc3f82
 CN卡通頻道,mitv://135.148.104.228:19806/644d1cd900092e062f0d85a601dc3f82
 CN卡通頻道,mitv://generationnexxxt.com:19806/644d1cd900092e062f0d85a601dc3f82
 Hands Up,mitv://135.148.104.228:19806/6f319c6a8c154eeeb7aeb9a2c0767b8a
@@ -1079,6 +1104,7 @@ CCTV14,mitv://generationnexxxt.com:19806/bf1a9f45f37f49568953fe97efe2ccb9
 AMC最愛電影,mitv://135.148.104.228:19806/42dc2f449f2c49859e103b0236c34ab1
 AMC最愛電影,mitv://generationnexxxt.com:19806/42dc2f449f2c49859e103b0236c34ab1
 AMC最愛電影,P2p://135.148.104.228:19806/42dc2f449f2c49859e103b0236c34ab1
+AXN,http://50.7.238.114:8278/axn_twn/playlist.m3u8?tid=m1776995e9b3e16458394&ct=17874&tsum=b8a111d0b13c7761ce8b4e8f047adddb
 AXN,http://198.16.100.90:8278/axn_twn/playlist.m3u8?tid=m1776995e9b3e16458394&ct=17874&tsum=b8a111d0b13c7761ce8b4e8f047adddb
 AXN,http://198.16.100.90:8278/axn_twn/playlist.m3u8?tid=MA1A8358225083582250&ct=19193&tsum=105511aaad1c3ff86d7489e83e18b209
 AXN,http://50.7.238.114:8278/axn_twn/playlist.m3u8?tid=MA1A8358225083582250&ct=19193&tsum=105511aaad1c3ff86d7489e83e18b209
@@ -1118,12 +1144,19 @@ HBO,mitv://135.148.104.228:19806/dc01bf43a9fd4c0594f0a73ee31ab4a5
 HBO,mitv://generationnexxxt.com:19806/dc01bf43a9fd4c0594f0a73ee31ab4a5
 HBO,P2p://135.148.104.228:19806/dc01bf43a9fd4c0594f0a73ee31ab4a5
 HBO,http://61.221.81.93:8078/hls/23/80/hbo.m3u8
+HBO Family,http://50.7.238.114:8278/fyi_twn/playlist.m3u8?tid=18186902&ct=17988&&tsum=7a21abab0a5912afb0ebc01db111e59f
+HBO Family,http://198.16.100.90:8278/fyi_twn/playlist.m3u8?tid=m99b80124e3b4&ct=18337&tsum=73f6f540497de9a5615b9bd55bec8853
+HBO Family,http://198.16.100.90:8278/fyi_twn/playlist.m3u8?tid=MFCF7312728573127285&ct=18393&tsum=bc4d3db9ca83c3765cc75512a1bbbbe3
 HBO Family,mitv://135.148.104.228:19806/ac77e78ed9ea4ff384eaa0de73b75df0
 HBO Family,mitv://generationnexxxt.com:19806/ac77e78ed9ea4ff384eaa0de73b75df0
 HBO Family,P2p://135.148.104.228:19806/ac77e78ed9ea4ff384eaa0de73b75df0
+HBO原創巨献,http://50.7.238.114:8278/hbosignature_twn/playlist.m3u8?tid=MC5C5754321157543211&ct=19225&tsum=2b86077147813534b4cae6dd85bb3c4a
+HBO原創巨献,http://198.16.100.90:8278/hbosignature_twn/playlist.m3u8?tid=m48ee99a5dacb15948906&ct=17874&tsum=3d127801d49fa098b4118400117b4fbb
+HBO原創巨献,http://198.16.100.90:8278/hbosignature_twn/playlist.m3u8?tid=MD6D5767423357674233&ct=18392&tsum=995709f1100cf1b07964790160bfb4ee
 HBO原創巨献,mitv://135.148.104.228:19806/8987f1bb3c9740e980bce7d787cfba0d
 HBO原創巨献,mitv://generationnexxxt.com:19806/8987f1bb3c9740e980bce7d787cfba0d
 HBO原創巨献,P2p://135.148.104.228:19806/8987f1bb3c9740e980bce7d787cfba0d
+HBO强檔巨献,http://50.7.238.114:8278/hbohead_twn/playlist.m3u8?tid=MCDC6663932966639329&ct=19193&tsum=6999a99699b097f3af2ef550e5c81f93
 HBO强檔巨献,mitv://135.148.104.228:19806/f33628c42a3645dba83d317e70abf28c
 HBO强檔巨献,mitv://generationnexxxt.com:19806/f33628c42a3645dba83d317e70abf28c
 HBO强檔巨献,P2p://135.148.104.228:19806/f33628c42a3645dba83d317e70abf28c
@@ -1171,10 +1204,13 @@ tvN Movies HD,P2p://135.148.104.228:19806/0c39816f6b864d57a8a7c9c956e31952
 亞洲劇台,mitv://135.148.104.228:19806/9d60d2f9f6fa4a368fbe457f8efad108
 亞洲劇台,mitv://generationnexxxt.com:19806/9d60d2f9f6fa4a368fbe457f8efad108
 亞洲劇台,P2p://135.148.104.228:19806/9d60d2f9f6fa4a368fbe457f8efad108
+東森洋片台,http://50.7.238.114:8278/ettvwestern/playlist.m3u8?tid=MB7B8303252483032524&ct=19249&tsum=14f89967cdf6c504230be29a87cc54f0
+東森洋片台,http://198.16.100.90:8278/ettvwestern/playlist.m3u8?tid=mfdfc048e6c2416337202&ct=17874&tsum=cad39b26202d525ea820bee1d69e545f
 東森洋片台,http://120.84.96.87:808/hls/33/index.m3u8
 東森洋片台,mitv://135.148.104.228:19806/cbe8fad92b7e4497bce416a75eae4708
 東森洋片台,mitv://generationnexxxt.com:19806/cbe8fad92b7e4497bce416a75eae4708
 東森洋片台,P2p://135.148.104.228:19806/cbe8fad92b7e4497bce416a75eae4708
+東森電影台,http://198.16.100.90:8278/ettvmovie/playlist.m3u8?tid=MDED1943740419437404&ct=19225&tsum=120834a4218c4b5c3bb19efb8116f859
 東森電影台,http://120.84.96.87:808/hls/32/index.m3u8
 東森電影台,mitv://135.148.104.228:19806/c4890d819ae5497db49b4f13a019e128
 東森電影台,mitv://generationnexxxt.com:19806/c4890d819ae5497db49b4f13a019e128
@@ -1194,6 +1230,8 @@ tvN Movies HD,P2p://135.148.104.228:19806/0c39816f6b864d57a8a7c9c956e31952
 壹電視電影台,mitv://135.148.104.228:19806/c4d7d3c0d08941afa5b11dfa41a74576
 壹電視電影台,mitv://generationnexxxt.com:19806/c4d7d3c0d08941afa5b11dfa41a74576
 壹電視電影台,P2p://135.148.104.228:19806/c4d7d3c0d08941afa5b11dfa41a74576
+愛爾達影劇台,http://50.7.238.114:8278/eltadrama_twn/playlist.m3u8?tid=mea60e416943110603068&ct=17874&tsum=ede38d2a218a34b5397af9d19e0c39a3
+愛爾達影劇台,http://198.16.100.90:8278/eltadrama_twn/playlist.m3u8?tid=mea60e416943110603068&ct=17874&tsum=ede38d2a218a34b5397af9d19e0c39a3
 愛爾達影劇台,mitv://135.148.104.228:19806/6458c4bf000bb65f5c956b8f6ab30530
 愛爾達影劇台,mitv://generationnexxxt.com:19806/6458c4bf000bb65f5c956b8f6ab30530
 愛爾達影劇台,P2p://135.148.104.228:19806/6458c4bf000bb65f5c956b8f6ab30530
@@ -1229,6 +1267,13 @@ EYE TV戲劇台,P2p://135.148.104.228:19806/75e45b2ae9bd4a5fa05906c00742d7a1
 Hub娛家,mitv://135.148.104.228:19806/645c74d80002def46afd4af57b744ca1
 Hub娛家,mitv://generationnexxxt.com:19806/645c74d80002def46afd4af57b744ca1
 Hub娛家,P2p://135.148.104.228:19806/645c74d80002def46afd4af57b744ca1
+八大戲劇台,http://50.7.238.114:8278/badadrama/playlist.m3u8?ct=19225&tid=ME4E4734124647341246&tsum=c4e596572a79ad99675ee2137d1cc43d
+
+八大戲劇台,http://198.16.100.90:8278/badadrama/playlist.m3u8?tid=m4970c4e1b988&ct=18335&tsum=20cb1d15d4e116ab9e44edb542cf51a5
+
+八大戲劇台,http://198.16.100.90:8278/badadrama/playlist.m3u8?tid=m4a65d3abd9ee13871929&ct=17924&tsum=8e5ef501e42d00cdc6a761ca3dc693d8
+
+
 八大戲劇台,mitv://135.148.104.228:19806/844bfa9150ac49c09bbae657b7545df9
 八大戲劇台,mitv://generationnexxxt.com:19806/844bfa9150ac49c09bbae657b7545df9
 八大戲劇台,P2p://135.148.104.228:19806/844bfa9150ac49c09bbae657b7545df9
@@ -1238,6 +1283,8 @@ Hub娛家,P2p://135.148.104.228:19806/645c74d80002def46afd4af57b744ca1
 亞洲劇台,mitv://135.148.104.228:19806/9d60d2f9f6fa4a368fbe457f8efad108
 亞洲劇台,mitv://generationnexxxt.com:19806/9d60d2f9f6fa4a368fbe457f8efad108
 亞洲劇台,P2p://135.148.104.228:19806/9d60d2f9f6fa4a368fbe457f8efad108
+東森戲劇台,http://50.7.238.114:8278/ettvdrama/playlist.m3u8?tid=m921dcb630ebe17354109&ct=17874&tsum=695370160923af940d1a90d44c262acc
+東森戲劇台,http://198.16.100.90:8278/ettvdrama/playlist.m3u8?tid=MA2A9945921599459215&ct=19249&tsum=c9097ecdf4a17c0922196dbf04b0c6e7
 東森戲劇台,mitv://135.148.104.228:19806/d447dc4d5ddf4417941b271bf5da4263
 東森戲劇台,mitv://generationnexxxt.com:19806/d447dc4d5ddf4417941b271bf5da4263
 東森戲劇台,P2p://135.148.104.228:19806/d447dc4d5ddf4417941b271bf5da4263
