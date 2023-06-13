@@ -1,0 +1,55 @@
+{
+  "urls": [
+   {
+      "url": "https://agit.ai/66666/mao/raw/branch/master/00/000.m3u8",
+      "name": "🐹分享者線路🐹"
+    },
+   {
+      "url": "https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json",
+      "name": "🐹南風線路🐹"
+    },
+  {
+      "url": "http://miaotvs.cn/meow",
+      "name": "🐹貓影視線路🐹"
+    },
+   {
+      "url": "http://miaotvs.cn/meow",
+      "name": "🐹吾愛線路🐹"
+    },
+   {
+      "url": "http://饭太硬.top/tv",
+      "name": "🚀飯太硬線路🚀"
+    },
+  {
+      "url": "https://gh.t4tv.hz.cz/newtang.bmp",
+      "name": "🚀唐三線路🚀"
+    },
+   {
+      "url": "https://raw.liucn.cc/box/m.json",
+      "name": "🚀老劉備線路🚀"
+    },
+  {
+      "url": "https://raw.iqiq.io/FongMi/CatVodSpider/main/json/config.json",
+      "name": "🚀蜜蜂線路🚀"
+    },
+   {
+      "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
+      "name": "🚀小蘋果線路🚀"
+    },
+   {
+      "url": "https://weixine.net/ysc.json",
+      "name": "🚀運輸車線路🚀"
+    },
+    {
+      "url": "https://jihulab.com/ygbh1/box/-/raw/main/%E6%9C%88%E5%85%89%E5%AE%9D%E7%9B%92",
+      "name": "🚀月光寶盒🚀"
+    }
+             ],
+  "vip": [
+    {
+      "url": "",
+      "name": "😝預設😝",
+      "time": ""
+    }
+  ]
+}
