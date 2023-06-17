@@ -8,7 +8,7 @@
 🌹民視,rtmp://119.81.124.89/sat/tv051
 🌹民視,http://50.7.238.114:8278/ftvhd_taiwan/playlist.m3u8?tid=MF8F2804739628047396&ct=19193&tsum=73a49379fed74f8fc39359fcf589a9d8
 🌹民視,http://50.7.238.114:8278/ftvhd_taiwan/playlist.m3u8?tid=MC8C5908644059086440&ct=19249&tsum=c96d2cd48b11d40ca9e97fb3addb1384mitv://generationnexxxt.com:19806/645d085e0005113d6d3d8ef25af73081
-🌹民視,http://sc2022.stream-link.org/list.php?id=t017
+🌹民視,http://sc2022.stream-link.org/tv2306.php?id=t017
 🎗️民視,mitv://135.148.104.228:19806/645d085e0005113d6d3d8ef25af73081
 🎗️民視,P2p://135.148.104.228:19806/645d085e0005113d6d3d8ef25af73081
 🎗️民視,mitv://generationnexxxt.com:19806/07b465de830f4fb7a7e9b3f826401578
@@ -20,18 +20,18 @@
 🌹民視台灣台,http://50.7.238.114:8278/ftvtaiwan_twn/playlist.m3u8?tid=MDFD8196635981966359&ct=19226&tsum=b82639ac8b4590b4206effe348e2f9c2
 🌹民視台灣台,http://50.7.238.114:8278/ftvtaiwan_twn/playlist.m3u8?tid=MDFD6045594360455943&ct=19193&tsum=0de4f998b15ba8f2ecdaa107d866212a
 🌹民視台灣台,http://50.7.238.114:8278/ftvtaiwan_twn/playlist.m3u8?tid=MEFE5254515252545152&ct=19249&tsum=c17f872b1772df8f76032030cc40bdbd
-🌹民視台灣台,http://sc2022.stream-link.org/list.php?id=t019
+🌹民視台灣台,http://sc2022.stream-link.org/tv2306.php?id=t019
 🎗️民視台灣台,mitv://generationnexxxt.com:19806/742c1ff14b4b47d49007cd12204c8483
 🎗️民視台灣台,mitv://135.148.104.228:19806/742c1ff14b4b47d49007cd12204c8483
 🎗️民視台灣台,P2p://135.148.104.228:19806/742c1ff14b4b47d49007cd12204c8483
-🌹民視綜藝台,http://sc2022.stream-link.org/list.php?id=t020
+🌹民視綜藝台,http://sc2022.stream-link.org/tv2306.php?id=t020
 🌹民視第一台,http://50.7.238.114:8278/lunghuajingdian_twn/playlist.m3u8?tid=MC2C7597780175977801&ct=19249&tsum=b7602981567d8f0171e8de29154f5014
-🌹民視第一台,http://sc2022.stream-link.org/list.php?id=t018
+🌹民視第一台,http://sc2022.stream-link.org/tv2306.php?id=t018
 🎗️民視第一台,mitv://generationnexxxt.com:19806/b82e864a876e4a99adf62a0f7a797714
 🎗️民視第一台,mitv://135.148.104.228:19806/b82e864a876e4a99adf62a0f7a797714
 🎗️民視第一台,P2p://135.148.104.228:19806/b82e864a876e4a99adf62a0f7a797714
-🌹民視影劇台,http://sc2022.stream-link.org/list.php?id=t021
-🌹民視旅遊台,http://sc2022.stream-link.org/list.php?id=t022
+🌹民視影劇台,http://sc2022.stream-link.org/tv2306.php?id=t021
+🌹民視旅遊台,http://sc2022.stream-link.org/tv2306.php?id=t022
 🌹民視旅遊台,http://seb.sason.top/ptv/ftv.php?id=ly
 🌹人間衛視,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
 🎗️人間衛視,mitv://135.148.104.228:19806/bd9d0263e82a49d0b8312481c45df967
@@ -165,14 +165,14 @@
 🎗️TVBS,mitv://generationnexxxt.com:19806/644d1a13000e2f842f02b17e6e9f6cae
 🎗️TVBS,mitv://135.148.104.228:19806/644d1a13000e2f842f02b17e6e9f6cae
 🎗️TVBS,P2p://135.148.104.228:19806/644d1a13000e2f842f02b17e6e9f6cae
-🌹TVBS財經,http://sc2022.stream-link.org/list.php?id=t014
+🌹TVBS財經,http://sc2022.stream-link.org/tv2306.php?id=t014
 🌹TVBS亞洲,http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8
 🌹TVBS亞洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8
 🌹TVBS亞洲,http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 🌹TVBS亞洲,http://38.64.72.148:80/hls/modn/list/4005/chunklist0.m3u8
 🌹TVBS亞洲,http://38.64.72.148:80/hls/modn/list/4005/chunklist1.m3u8
 🌹TVBS亞洲,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
-🌹TVBS亞洲,http://sc2022.stream-link.org/list.php?id=t016
+🌹TVBS亞洲,http://sc2022.stream-link.org/tv2306.php?id=t016
 🎗️TVBS亞洲,mitv://135.148.104.228:19806/7389e1ced8184a84aa22aeec29be6f85
 🎗️TVBS亞洲,mitv://generationnexxxt.com:19806/7389e1ced8184a84aa22aeec29be6f85
 🎗️TVBS亞洲,P2p://135.148.104.228:19806/7389e1ced8184a84aa22aeec29be6f85
@@ -216,7 +216,7 @@
 🌹三立台灣台,https://sanlihalive1-a.akamaihd.net/5ffd3a166f7241d9b489b7d7241db96f/ap-northeast-1/4338955585001/profile_0/chunklist.m3u8?hdnea=st=1664678506~exp=9007200919419497~acl=/5ffd3a166f7241d9b489b7d7241db96f/*/profile_0/chunklist.m3u8*~hmac=cfd432e7da8eece68fe4a4da3a3bc08ab1bbc50b147a84c95ae3d4a569e932b1
 🌹三立台灣台,http://50.7.238.114:8278/sanlitaiwan/playlist.m3u8?tid=m92ccadc4dc3718157816&ct=17874&tsum=3570a8198ca0fb7ebb803807e38b33fb
 🌹三立台灣台,http://198.16.100.90:8278/sanlitaiwan/playlist.m3u8?tid=m92ccadc4dc3718157816&ct=17874&tsum=3570a8198ca0fb7ebb803807e38b33fb
-🌹三立台灣台,http://sc2022.stream-link.org/list.php?id=t023
+🌹三立台灣台,http://sc2022.stream-link.org/tv2306.php?id=t023
 🎗️三立台灣台,mitv://135.148.104.228:19806/644a3b5f0005cbe923ccc03b21bd7a36
 🎗️三立台灣台,mitv://135.148.104.228:19806/f2040a67eec34cb4a65705be966c7f01
 🎗️三立台灣台,mitv://generationnexxxt.com:19806/644a3b5f0005cbe923ccc03b21bd7a36
@@ -225,7 +225,7 @@
 🎗️三立台灣台,P2p://135.148.104.228:19806/f2040a67eec34cb4a65705be966c7f01
 🌹三立都會台,https://sanlihalive1-a.akamaihd.net/4c3bb0ccad574d0e9b507c2dcd2dfabc/ap-northeast-1/4338955585001/profile_0/chunklist.m3u8?hdnea=st=1664678487~exp=9007200919419478~acl=/4c3bb0ccad574d0e9b507c2dcd2dfabc/*/profile_0/chunklist.m3u8*~hmac=1a3986bd8fb660eacbcc9954c67fb674fa810779ddc2fab5fa77188868ca3686
 🌹三立都會台,http://50.7.238.114:8278/sanlidouhui_twn/playlist.m3u8?tid=md028b33ea0f7&ct=19361&tsum=1930e4b2cfbbd2f9f821af1c41e8d18d
-🌹三立都會台,http://sc2022.stream-link.org/list.php?id=t024
+🌹三立都會台,http://sc2022.stream-link.org/tv2306.php?id=t024
 🎗️三立都會台,mitv://135.148.104.228:19806/f9f1b6bc8bd943f09b7a17bc481294da
 🎗️三立都會台,mitv://generationnexxxt.com:19806/f9f1b6bc8bd943f09b7a17bc481294da
 🎗️三立都會台,P2p://135.148.104.228:19806/f9f1b6bc8bd943f09b7a17bc481294da
@@ -239,7 +239,7 @@
 🎗️三立綜合台,P2p://135.148.104.228:19806/88111b4d4a2b458cacbff40f21b31d7e
 🌹中天亞洲台,http://198.16.100.90:8278/ctiasia_twn/playlist.m3u8?tid=mfc2c5bc6c101&ct=18335&tsum=d074a602fcd98718afeb8fc9a18fa964
 🌹中天亞洲台,https://dispatch.ulivetv.net/v/live/cg0im4r5dh34.m3u8?stream_id=cg0im4r5dh34&timestamp=1686638322&rand=sbaKtRgStP&uuid=9b647b3816b2a66a&from=web&sign=4cb4d8e2dc09780b9cfe8c921e3ce9c5
-🌹中天亞洲台,http://sc2022.stream-link.org/list.php?id=t015
+🌹中天亞洲台,http://sc2022.stream-link.org/tv2306.php?id=t015
 🌹中天娛樂,http://50.7.238.114:8278/ctient/playlist.m3u8?tid=MDED1780059017800590&ct=19226&tsum=4d05ea700aa8fd436b51ce703680e674
 🌹中天娛樂,http://162.19.247.76:22222/live/ztyl/index.m3u8
 🌹中天娛樂,http://198.16.100.90:8278/ctient/playlist.m3u8?tid=MDED1780059017800590&ct=19226&tsum=4d05ea700aa8fd436b51ce703680e674
@@ -251,7 +251,7 @@
 🌹中天綜合,http://198.16.100.90:8278/ctizhonghe/playlist.m3u8?tid=m85005aeec85b14021104&ct=17874&tsum=69f19f4b12ab79d2ee683b28cdb1c8ca
 🌹中天綜合,https://dispatch.ulivetv.net/v/live/cg0ifkvu1hhc.m3u8?stream_id=cg0ifkvu1hhc&timestamp=1686637427&rand=uwPO6Q61lx&uuid=9b647b3816b2a66a&from=web&sign=07a84f6d4b7764c0434c82037a60a76e
 🌹中天綜合,http://pull-l3-cny.douyincdn.com/third/stream-5f26752efeee9e0c53cf6b530640ce60.m3u8
-🌹中天綜合,http://sc2022.stream-link.org/list.php?id=t015
+🌹中天綜合,http://sc2022.stream-link.org/tv2306.php?id=t015
 🎗️中天綜合,mitv://135.148.104.228:19806/6458c64d00033f105c9b7c1c35097dec
 🎗️中天綜合,mitv://generationnexxxt.com:19806/6458c64d00033f105c9b7c1c35097dec
 🎗️中天綜合,P2p://135.148.104.228:19806/6458c64d00033f105c9b7c1c35097dec
@@ -266,7 +266,7 @@
 🎗️佛衛慈悲台,mitv://135.148.104.228:19806/b1f5e04866ea476786f2d26f1d2f84f7
 🎗️佛衛慈悲台,mitv://generationnexxxt.com:19806/b1f5e04866ea476786f2d26f1d2f84f7
 🎗️佛衛慈悲台,P2p://135.148.104.228:19806/b1f5e04866ea476786f2d26f1d2f84f7
-🌹東森幼幼台,http://sc2022.stream-link.org/list.php?id=t026
+🌹東森幼幼台,http://sc2022.stream-link.org/tv2306.php?id=t026
 🎗️東森幼幼台,mitv://135.148.104.228:19806/23305327c764422e9747ab09a6edee43
 🎗️東森幼幼台,mitv://generationnexxxt.com:19806/23305327c764422e9747ab09a6edee43
 🎗️東森幼幼台,P2p://135.148.104.228:19806/23305327c764422e9747ab09a6edee43
@@ -391,48 +391,55 @@
 🌹番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8
 
  🏎️台灣備用頻道,#genre#
-🌹東森新聞,http://sc2022.stream-link.org/list.php?id=t001
-🌹東森財經新聞,http://sc2022.stream-link.org/list.php?id=t002
-🌹中天新聞,http://sc2022.stream-link.org/list.php?id=t003
-🌹華視新聞,http://sc2022.stream-link.org/list.php?id=t004
-🌹中視新聞,http://sc2022.stream-link.org/list.php?id=t005
-🌹民視新聞,http://sc2022.stream-link.org/list.php?id=t006
-🌹寰宇國際新聞,http://sc2022.stream-link.org/list.php?id=t007
-🌹寰宇台灣新聞,http://sc2022.stream-link.org/list.php?id=t008
-🌹三立財經新聞,http://sc2022.stream-link.org/list.php?id=t009
-🌹三立新聞,http://sc2022.stream-link.org/list.php?id=t010
-🌹三立新聞+,http://sc2022.stream-link.org/list.php?id=t011
-🌹台視新聞,http://sc2022.stream-link.org/list.php?id=t012
-🌹TVBS新聞,http://sc2022.stream-link.org/list.php?id=t013
-🌹TVBS財經,http://sc2022.stream-link.org/list.php?id=t014
-🌹中天亞洲台,http://sc2022.stream-link.org/list.php?id=t015
-🌹TVBS亞洲台,http://sc2022.stream-link.org/list.php?id=t016
-🌹民視HD,http://sc2022.stream-link.org/list.php?id=t017
-🌹民視第一台,http://sc2022.stream-link.org/list.php?id=t018
-🌹民視台灣台,http://sc2022.stream-link.org/list.php?id=t019
-🌹民視綜藝台,http://sc2022.stream-link.org/list.php?id=t020
-🌹民視影劇台,http://sc2022.stream-link.org/list.php?id=t021
-🌹民視旅遊台,http://sc2022.stream-link.org/list.php?id=t022
-🌹三立台灣,http://sc2022.stream-link.org/list.php?id=t023
-🌹三立都會,http://sc2022.stream-link.org/list.php?id=t024
-🌹天才衝衝衝,http://sc2022.stream-link.org/list.php?id=t025
-🌹東森yoyo,http://sc2022.stream-link.org/list.php?id=t026
+🌹東森新聞,http://sc2022.stream-link.org/tv2306.php?id=t001
+🌹東森財經新聞,http://sc2022.stream-link.org/tv2306.php?id=t002
+🌹中天新聞,http://sc2022.stream-link.org/tv2306.php?id=t003
+🌹華視新聞,http://sc2022.stream-link.org/tv2306.php?id=t004
+🌹中視新聞,http://sc2022.stream-link.org/tv2306.php?id=t005
+🌹民視新聞,http://sc2022.stream-link.org/tv2306.php?id=t006
+🌹寰宇國際新聞,http://sc2022.stream-link.org/tv2306.php?id=t007
+🌹寰宇台灣新聞,http://sc2022.stream-link.org/tv2306.php?id=t008
+🌹三立財經新聞,http://sc2022.stream-link.org/tv2306.php?id=t009
+🌹三立新聞,http://sc2022.stream-link.org/tv2306.php?id=t010
+🌹三立新聞+,http://sc2022.stream-link.org/tv2306.php?id=t011
+🌹台視新聞,http://sc2022.stream-link.org/tv2306.php?id=t012
+🌹TVBS新聞,http://sc2022.stream-link.org/tv2306.php?id=t013
+🌹TVBS財經,http://sc2022.stream-link.org/tv2306.php?id=t014
+🌹中天亞洲台,http://sc2022.stream-link.org/tv2306.php?id=t015
+🌹TVBS亞洲台,http://sc2022.stream-link.org/tv2306.php?id=t016
+🌹民視HD,http://sc2022.stream-link.org/tv2306.php?id=t017
+🌹民視第一台,http://sc2022.stream-link.org/tv2306.php?id=t018
+🌹民視台灣台,http://sc2022.stream-link.org/tv2306.php?id=t019
+🌹民視綜藝台,http://sc2022.stream-link.org/tv2306.php?id=t020
+🌹民視影劇台,http://sc2022.stream-link.org/tv2306.php?id=t021
+🌹民視旅遊台,http://sc2022.stream-link.org/tv2306.php?id=t022
+🌹三立台灣,http://sc2022.stream-link.org/tv2306.php?id=t023
+🌹三立都會,http://sc2022.stream-link.org/tv2306.php?id=t024
+🌹天才衝衝衝,http://sc2022.stream-link.org/tv2306.php?id=t025
+🌹東森yoyo,http://sc2022.stream-link.org/tv2306.php?id=t026
 
  🛵香港備用頻道,#genre#
-🌹翡翠台,http://sc2022.stream-link.org/list.php?id=h002
-🌹無綫新聞台,http://sc2022.stream-link.org/list.php?id=h004
-🌹無綫財經·體育·資訊台,http://sc2022.stream-link.org/list.php?id=h005
-🌹RTHK31,http://sc2022.stream-link.org/list.php?id=h006
-🌹RTHK32,http://sc2022.stream-link.org/list.php?id=h007
-🌹無綫新聞台,http://sc2022.stream-link.org/list.php?id=h008
-🌹無綫財經·體育·資訊台,http://sc2022.stream-link.org/list.php?id=h009
-🌹HOY TV,http://sc2022.stream-link.org/list.php?id=h010
-🌹香港國際財經台,http://sc2022.stream-link.org/list.php?id=h011
-🌹香港開電視資訊台,http://sc2022.stream-link.org/list.php?id=h012
-🌹鳳凰衛視資訊台,http://sc2022.stream-link.org/list.php?id=h013
-🌹鳳凰衛視中文台,http://sc2022.stream-link.org/list.php?id=h014
-🌹鳳凰衛視香港台,http://sc2022.stream-link.org/list.php?id=h015
-🌹澳門蓮花衛視,http://sc2022.stream-link.org/list.php?id=h016
+🌹myTV SUPER,http://sc2022.stream-link.org/tv2306.php?id=c01
+🌹TVB 星河,http://sc2022.stream-link.org/tv2306.php?id=c02
+🌹天映頻道,http://sc2022.stream-link.org/tv2306.php?id=c03
+🌹翡翠台,http://sc2022.stream-link.org/tv2306.php?id=h001
+🌹翡翠台,http://sc2022.stream-link.org/tv2306.php?id=h002
+🌹TVB J2,http://sc2022.stream-link.org/tv2306.php?id=h003
+🌹無綫新聞台,http://sc2022.stream-link.org/tv2306.php?id=h004
+🌹無綫新聞台,http://sc2022.stream-link.org/tv2306.php?id=h006
+🌹無綫財經·體育·資訊台,http://sc2022.stream-link.org/tv2306.php?id=h005
+🌹無綫財經·體育·資訊台,http://sc2022.stream-link.org/tv2306.php?id=h007
+🌹RTHK31,http://sc2022.stream-link.org/tv2306.php?id=h008
+🌹RTHK32,http://sc2022.stream-link.org/tv2306.php?id=h009
+🌹CCTV-1,http://sc2022.stream-link.org/tv2306.php?id=h10
+🌹CCTV-13,http://sc2022.stream-link.org/tv2306.php?id=h11
+🌹香港國際財經台,http://sc2022.stream-link.org/tv2306.php?id=h012
+🌹香港開電視,http://sc2022.stream-link.org/tv2306.php?id=h013
+🌹香港開電視資訊台,http://sc2022.stream-link.org/tv2306.php?id=h014
+🌹鳳凰衛視資訊台,http://sc2022.stream-link.org/tv2306.php?id=h015
+🌹鳳凰衛視中文台,http://sc2022.stream-link.org/tv2306.php?id=h016
+🌹鳳凰衛視香港台,http://sc2022.stream-link.org/tv2306.php?id=h017
+🌹澳門蓮花衛視,http://sc2022.stream-link.org/tv2306.php?id=h018
 
  ♠️新聞頻道,#genre#
 🌹民視新聞,http://123.51.230.108:18663/.m3u8
@@ -452,7 +459,7 @@
 🌹民視新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV17.m3u8
 🌹民視新聞,https://ytm2.yuanhsing.cf/FTVCP.m3u8
 🌹民視新聞,http://123.51.230.108:18663/.m3u8
-🌹民視新聞,http://sc2022.stream-link.org/list.php?id=t006
+🌹民視新聞,http://sc2022.stream-link.org/tv2306.php?id=t006
 🎗️民視新聞,mitv://135.148.104.228:19806/64577cff0001eb7c5795230f6bb8749b
 🎗️民視新聞,mitv://generationnexxxt.com:19806/64577cff0001eb7c5795230f6bb8749b
 🎗️民視新聞,mitv://generationnexxxt.com:19806/d476f3c5b56647bf872237ce4c9fff5d
@@ -465,7 +472,7 @@
 🌹台視新聞,http://38.64.72.148:80/hls/modn/list/4013/chunklist1.m3u8
 🌹台視新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV25.m3u8
 🌹台視新聞,https://ytm2.yuanhsing.cf/ttvnewsview.m3u8
-🌹台視新聞,http://sc2022.stream-link.org/list.php?id=t012
+🌹台視新聞,http://sc2022.stream-link.org/tv2306.php?id=t012
 🎗️台視新聞,mitv://generationnexxxt.com:19806/6458c34b000df71b5c8fbf0c55f221b5
 🎗️台視新聞,mitv://135.148.104.228:19806/6458c34b000df71b5c8fbf0c55f221b5
 🎗️台視新聞,P2p://135.148.104.228:19806/6458c34b000df71b5c8fbf0c55f221b5
@@ -474,12 +481,12 @@
 🌹中視新聞,http://198.16.100.90:8278/zhongshinews_twn/playlist.m3u8?tid=MAAA4459856044598560&ct=19193&tsum=1b7bdea69c00cd48e31f13442c75c376
 🌹中視新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
 🌹中視新聞,https://ytm2.yuanhsing.cf/twctvnews.m3u8
-🌹中視新聞,http://sc2022.stream-link.org/list.php?id=t005
+🌹中視新聞,http://sc2022.stream-link.org/tv2306.php?id=t005
 🎗️中視新聞,mitv://generationnexxxt.com:19806/8817421e14dd462f8deede53ce057af1
 🎗️中視新聞,mitv://135.148.104.228:19806/8817421e14dd462f8deede53ce057af1
 🎗️中視新聞,P2p://135.148.104.228:19806/8817421e14dd462f8deede53ce057af1
 🌹華視新聞資訊,http://awei.beimua.com/iptv.php?id=51
-🌹華視新聞資訊,http://sc2022.stream-link.org/list.php?id=t004
+🌹華視新聞資訊,http://sc2022.stream-link.org/tv2306.php?id=t004
 🎗️華視新聞資訊,mitv://generationnexxxt.com:19806/ab85a40ff8754fe58c6aec3a9768925d
 🎗️華視新聞資訊,mitv://135.148.104.228:19806/ab85a40ff8754fe58c6aec3a9768925d
 🎗️華視新聞資訊,P2p://135.148.104.228:19806/ab85a40ff8754fe58c6aec3a9768925d
@@ -490,7 +497,7 @@
 🌹TVBS新聞,http://38.64.72.148/hls/modn/list/4006/chunklist1.m3u8
 🌹TVBS新聞,http://38.64.72.148:80/hls/modn/list/4006/chunklist0.m3u8
 🌹TVBS新聞,http://38.64.72.148:80/hls/modn/list/4006/chunklist1.m3u8
-🌹TVBS新聞,http://sc2022.stream-link.org/list.php?id=t013
+🌹TVBS新聞,http://sc2022.stream-link.org/tv2306.php?id=t013
 🌹TVBS新聞HD,rtmp://219.80.97.77/sat/tv551
 🌹TVBS新聞HD,rtmp://119.81.124.89/sat/tv551
 🎗️TVBS新聞HD,mitv://generationnexxxt.com:19806/beaa6cbcf1034703a97d3295f8c0ae60
@@ -503,7 +510,7 @@
 🌹東森新聞,http://50.7.238.114:8278/ettvnews/playlist.m3u8?tid=m208c21bf386611408694&ct=17874&tsum=d1b4de373c886cd8015974fa8c5d6d12
 🌹東森新聞,https://ytm2.yuanhsing.cf/newsebc.m3u8
 🌹東森新聞,http://61.221.81.93:8078/hls/33/80/ebcnews.m3u8
-🌹東森新聞,http://sc2022.stream-link.org/list.php?id=t001
+🌹東森新聞,http://sc2022.stream-link.org/tv2306.php?id=t001
 🎗️東森新聞,mitv://135.148.104.228:19806/64677d68000bfdc49616bfd746a567a3
 🎗️東森新聞,mitv://generationnexxxt.com:19806/64677d68000bfdc49616bfd746a567a3
 🎗️東森新聞,P2p://135.148.104.228:19806/64677d68000bfdc49616bfd746a567a3
@@ -523,25 +530,25 @@
 🌹東森財經新聞,rtmp://9wv7.mine.nu/sat/tv571
 🌹東森財經新聞,rtmp://219.80.97.77/sat/tv571
 🌹東森財經新聞,rtmp://119.81.124.89/sat/tv571
-🌹東森財經新聞,http://sc2022.stream-link.org/list.php?id=t002
+🌹東森財經新聞,http://sc2022.stream-link.org/tv2306.php?id=t002
 🎗️東森財經新聞,mitv://135.148.104.228:19806/644bc6970002cc0e29d4923028d9436e
 🎗️東森財經新聞,mitv://generationnexxxt.com:19806/644bc6970002cc0e29d4923028d9436e
 🎗️東森財經新聞,P2p://135.148.104.228:19806/644bc6970002cc0e29d4923028d9436e
 🌹三立新聞,https://ytm2.yuanhsing.cf/SETLIVE.m3u8
-🌹三立新聞,http://sc2022.stream-link.org/list.php?id=t010
+🌹三立新聞,http://sc2022.stream-link.org/tv2306.php?id=t010
 🎗️三立新聞,mitv://135.148.104.228:19806/645500960008581e4ddf1fbf03fc57a9
 🎗️三立新聞,mitv://generationnexxxt.com:19806/645500960008581e4ddf1fbf03fc57a9
 🎗️三立新聞,P2p://135.148.104.228:19806/645500960008581e4ddf1fbf03fc57a9
 🌹三立iNEWS,https://ytm2.yuanhsing.cf/setmoney159.m3u8
-🌹三立iNEWS,http://sc2022.stream-link.org/list.php?id=t011
+🌹三立iNEWS,http://sc2022.stream-link.org/tv2306.php?id=t011
 🎗️三立iNEWS,mitv://135.148.104.228:19806/485326d984014d0fb87e9ac6ae03e137
 🎗️三立iNEWS,mitv://generationnexxxt.com:19806/485326d984014d0fb87e9ac6ae03e137
 🎗️三立iNEWS,P2p://135.148.104.228:19806/485326d984014d0fb87e9ac6ae03e137
-🌹三立財經新聞,http://sc2022.stream-link.org/list.php?id=t009
+🌹三立財經新聞,http://sc2022.stream-link.org/tv2306.php?id=t009
 🌹中天新聞,http://50.7.238.114:8278/ctinews/playlist.m3u8?tid=MC3C3915550439155504&ct=19193&tsum=a8168b7967dda9bfebdd5b1403dc19b0
 🌹中天新聞,https://dispatch.ulivetv.net/v/live/cg1049vjg14w.m3u8?stream_id=cg1049vjg14w&timestamp=1686638311&rand=TizYIGXXmU&uuid=9b647b3816b2a66a&from=web&sign=ffab0ceb9c5144c3681a235f3c64d7af
 🌹中天新聞,https://ytm2.yuanhsing.cf/ttvnewsview.m3u8
-🌹中天新聞,http://sc2022.stream-link.org/list.php?id=t003
+🌹中天新聞,http://sc2022.stream-link.org/tv2306.php?id=t003
 🎗️中天新聞,mitv://135.148.104.228:19806/645a505500087efb629eacb405a54a42
 🎗️中天新聞,mitv://generationnexxxt.com:19806/645a505500087efb629eacb405a54a42
 🎗️中天新聞,P2p://135.148.104.228:19806/645a505500087efb629eacb405a54a42
@@ -566,11 +573,11 @@
 🎗️鏡新聞,mitv://generationnexxxt.com:19806/e3e4efe5fc44494eac3a307a9ce46027
 🎗️鏡新聞,P2p://135.148.104.228:19806/e3e4efe5fc44494eac3a307a9ce46027
 🌹寰宇國際新聞,https://ytm2.yuanhsing.cf/GlobalNewsTV.m3u8
-🌹寰宇國際新聞,http://sc2022.stream-link.org/list.php?id=t007
+🌹寰宇國際新聞,http://sc2022.stream-link.org/tv2306.php?id=t007
 🎗️寰宇國際新聞,mitv://135.148.104.228:19806/644caa69000a86d02d4e808470d2023f
 🎗️寰宇國際新聞,mitv://generationnexxxt.com:19806/644caa69000a86d02d4e808470d2023f
 🎗️寰宇國際新聞,P2p://135.148.104.228:19806/644caa69000a86d02d4e808470d2023f
-🌹寰宇台灣新聞,http://sc2022.stream-link.org/list.php?id=t008
+🌹寰宇台灣新聞,http://sc2022.stream-link.org/tv2306.php?id=t008
 🎗️寰宇台灣新聞,mitv://135.148.104.228:19806/6458c4bf000411595c95699b34765f35
 🎗️寰宇台灣新聞,mitv://generationnexxxt.com:19806/6458c4bf000411595c95699b34765f35
 🎗️寰宇台灣新聞,P2p://135.148.104.228:19806/6458c4bf000411595c95699b34765f35
@@ -835,6 +842,7 @@
 🌹澳門蓮花,http://pull-l3-cny.douyincdn.com/third/stream-f3caad21816e3bfe2210a692387ab040.m3u8
 🌹澳門蓮花,https://dispatch.ulivetv.net/v/live/cl7c8hsq3f0g.m3u8?stream_id=cl7c8hsq3f0g&timestamp=1686276695&rand=hhTD3R8sUy&uuid=9b647b3816b2a66a&from=web&sign=1e0e9f5adb516bf4b7ce08da1b25510c
 🌹澳門蓮花,http://pull-l3-cny.douyincdn.com/third/stream-f3caad21816e3bfe2210a692387ab040.m3u8
+🌹澳門蓮花,http://107.151.203.111:2209/135/hk.php?id=amlh
 🎗️澳門蓮花,mitv://135.148.104.228:19806/bba45ad672ed40a9b433330c4839cfe2
 🎗️澳門蓮花,mitv://generationnexxxt.com:19806/bba45ad672ed40a9b433330c4839cfe2
 🎗️澳門蓮花,P2p://135.148.104.228:19806/bba45ad672ed40a9b433330c4839cfe2
