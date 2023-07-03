@@ -1,5 +1,5 @@
 var rule={
-    title:'	',
+    title:'楓林網',
     host:'https://imaple.app',
     url:'/show/fyfilter.html',
     class_name:'電影&電視劇&綜藝&動漫',
