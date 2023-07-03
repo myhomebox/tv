@@ -1,6 +1,6 @@
 {
 
-"spider":"https://cdn.staticaly.com/gh/myhomebox/tv/main/JAR/custom_spider.jar",
+"spider":"https://cdn.staticaly.com/gh/myhomebox/tv/main/JAR/Nbys.jar",
 
 "lives":[   {"name":"live","url":"https://cdn.staticaly.com/gh/myhomebox/tv/main/tv.txt","type":0,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png","ua":"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36"},{"group":"redirect","channels":[   {"name":"redirect","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9mYXN0bHkuanNkZWxpdnIubmV0L2doL215aG9tZWJveC90dkBtYWluL3R2LnR4dA=="]}]}],
 "sites":
@@ -25,7 +25,7 @@
      {"key": "drpy_js_cokemv","name":"Cokemv","type":3,"api":"https://cdn.staticaly.com/gh/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://cdn.staticaly.com/gh/myhomebox/tv/main/js/cokemv.js"},
      {"key": "drpy_js_nike","name":"Nike影視","type":3,"api":"https://cdn.staticaly.com/gh/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://cdn.staticaly.com/gh/myhomebox/tv/main/js/nike.js"},
      {"key": "drpy_js_lezhutv'","name":"樂猪影視[JS]","type":3,"api":"https://cdn.staticaly.com/gh/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://cdn.staticaly.com/gh/myhomebox/tv/main/js/lezhutv.js"},
-     {"key":"csp_Nbys","name":"泥巴影視","type":3,"api":"csp_NiNi","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://cdn.staticaly.com/gh/myhomebox/tv/main/JAR/Nbys.jar"},
+     {"key":"csp_Nbys","name":"泥巴影視","type":3,"api":"csp_NiNi","searchable":1,"quickSearch":1,"filterable":1},
      {"key":"量子","name":"量子採集","type":1,"api":"https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8","searchable":1,"quickSearch":1,"categories":["国产剧","韩国剧","香港剧","台湾剧","日本剧","欧美剧","泰国剧","动作片","科幻片","战争片","奇幻片","喜剧片","爱情片","恐怖片","犯罪片","悬疑片","惊悚片","剧情片","冒险片","记录片","综艺","动漫"]},
      {"key":"非凡","name":"非凡採集","type":1,"api":"http://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8","searchable":1,"quickSearch":1,"categories":["国产剧","韩国剧","香港剧","台湾剧","日本剧","欧美剧","泰国剧","动作片","科幻片","战争片","奇幻片","喜剧片","爱情片","恐怖片","犯罪片","悬疑片","惊悚片","剧情片","冒险片","记录片","综艺","动漫"]},
      {"key":"蓝光官采","name": "猫咪採集","type":1,"api": "http://zycj.jiexi.plus/api.php/provide/vod/?ac=list","searchable":1,"quickSearch":1,"playUrl":"https://jx.jsonplayer.com/player/?url=","filterable":0,"categories":["国产剧","韩国剧","香港剧","台湾剧","日本剧","欧美剧","泰国剧","综艺","动漫","香港剧","动作片","科幻片","战争片","奇幻片","喜剧片","爱情片","恐怖片","犯罪片","悬疑片","惊悚片","剧情片","冒险片","记录片"]},
