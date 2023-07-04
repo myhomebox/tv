@@ -4,7 +4,7 @@
 var rule = {
     title:'555影视[飞]',
     //模板:'mxpro',
-    host:'https://www.555dy.app',
+    host:'https://www.555dy5.vip',
     hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,".panel-box&&.row:eq(1)&&a&&href");print(src);HOST=src',
     url:'/vodshow/fyfilter.html',
     searchable: 2,//是否启用全局搜索,
