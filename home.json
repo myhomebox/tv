@@ -1,6 +1,6 @@
 {
 
-"spider":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/JAR/Nbys.jar",
+"spider":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/JAR/spider.jar",
 
 "lives":[{"name":"live","url":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/tv.txt","type":0,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png","ua":"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36"},{"group":"redirect","channels":[   {"name":"redirect","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9mYXN0bHkuanNkZWxpdnIubmV0L2doL215aG9tZWJveC90dkBtYWluL3R2LnR4dA=="]}]}],
 "sites":
