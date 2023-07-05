@@ -43,8 +43,8 @@ var rule = {
 	headers:{//网站的请求头,完整支持所有的,常带ua和cookies
 		'User-Agent':'Dart/2.14 (dart:io)'
 	},
-      class_name:'電影&電視劇&綜藝&動漫&即將上映', 
-      class_url:'1&2&3&4&27',
+      //class_name:'電影&電視劇&綜藝&動漫&即將上映', 
+      //class_url:'1&2&3&4&27',
       class_parse:'.stui-header__menu li:gt(0):lt(7);a&&Text;a&&href;/(\\d+).html',
 	// class_parse:'.stui-header__menu li;a&&Text;a&&href;/.*_(\\d+).html',
 	tab_exclude:'夸克网盘|百度云盘',
