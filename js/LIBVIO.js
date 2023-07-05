@@ -1,8 +1,13 @@
+// 永久网址：https://libvio.app
+muban.首图2.二级.title = 'h1&&Text;.data:eq(0)&&Text'
+muban.首图2.二级.desc = '.data.hidden-xs&&Text;;;.data:eq(1)&&Text;.data:eq(4)&&Text'
+muban.首图2.二级.content = '.detail-content&&Text'
 var rule = {
 	title:'LIBVIO',
+	模板:'首图2',
         host:'https://libvio.app',
 	//host:'https://libvio.fun',
-       hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(0)&&a:eq(0)&&href");print(src);HOST=src',
+       hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":"Dart/2.14 (dart:io)"}});let src=jsp.pdfh(html,"li:eq(0)&&a:eq(0)&&href");print(src);HOST=src',
 	// url:'/type/fyclass-fypage.html',
 	url:'/show/fyclassfyfilter.html',
 	// url:'/show_fyclassfyfilter.html',
@@ -36,31 +41,18 @@ var rule = {
 	},
                 
 	headers:{//网站的请求头,完整支持所有的,常带ua和cookies
-		'User-Agent':'MOBILE_UA'
+		'User-Agent':'Dart/2.14 (dart:io)'
 	},
       class_name:'電影&電視劇&綜藝&動漫&即將上映', 
       class_url:'1&2&3&4&27',
-      play_parse: true,
-      lazy:'js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;var from=html.from;var next=html.link_next;var id=html.id;var nid=html.nid;if(/LINE405/.test(from)){var purl="https://p2.cfnode1.xyz/lb.php?url="+url+"&next="+next+"&id="+id+"&nid="+nid;input={jx:0,url:request(purl).match(/var urls = \'(.*?)\'/)[1]+"#.mp4",parse:1}}else if(/aliyunline2/.test(from)){var purl="https://p2.cfnode1.xyz/ty2.php?url="+url+"&next="+next+"&id="+id+"&nid="+nid;input={jx:0,url:request(purl).match(/var urls = \'(.*?)\'/)[1],parse:1}}else{input}',
-       limit: 6,
-       推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
-         double: true, // 推荐内容是否双层定位
-            一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
-            二级: {
-                "title": "h1&&Text;.data:eq(0)&&Text",
-                "img": ".stui-content__thumb .lazyload&&data-original",
-                "desc": ".data.hidden-xs&&Text;;;.data:eq(1)&&Text;.data:eq(4)&&Text",
-                "content": ".detail-content&&Text",
-                "tabs": ".stui-vodlist__head h3",
-                "lists": ".stui-content__playlist:eq(#id) li"
-            },
-            搜索: 'json:list;name;pic;;id',
-            搜索1: 'ul.stui-vodlist&&li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
-            搜索2: 'ul.stui-vodlist__media&&li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
-        tab_exclude:'夸克网盘|百度云盘',
+      class_parse:'.stui-header__menu li:gt(0):lt(7);a&&Text;a&&href;/(\\d+).html',
+	// class_parse:'.stui-header__menu li;a&&Text;a&&href;/.*_(\\d+).html',
+	tab_exclude:'夸克网盘|百度云盘',
 	pagecount:{"27":1},
+	lazy:'js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;var from=html.from;var next=html.link_next;var id=html.id;var nid=html.nid;if(/LINE405/.test(from)){var purl="https://p2.cfnode1.xyz/lb.php?url="+url+"&next="+next+"&id="+id+"&nid="+nid;input={jx:0,url:request(purl).match(/var urls = \'(.*?)\'/)[1]+"#.mp4",parse:1}}else if(/aliyunline2/.test(from)){var purl="https://p2.cfnode1.xyz/ty2.php?url="+url+"&next="+next+"&id="+id+"&nid="+nid;input={jx:0,url:request(purl).match(/var urls = \'(.*?)\'/)[1],parse:1}}else{input}',
 	searchUrl:'/index.php/ajax/suggest?mid=1&wd=**',
 	detailUrl:'/detail/fyid.html', //非必填,二级详情拼接链接
 	// detailUrl:'/detail_fyid.html', //非必填,二级详情拼接链接
 	// searchUrl:'/search/**----------fypage---.html',
+	搜索:'json:list;name;pic;;id',
 }
