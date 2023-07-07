@@ -81,7 +81,7 @@
      {"key":"xgapp","name":"可可影視","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://4k.953365.cn:8090/xgapp.php/v3/"},
      {"key":"lili","name":"麗麗影視","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://124.222.175.111:89/api.php/app/"},
      {"key":"tvkuys","name":"酷影影視","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"categories": ["电影","电视剧","综艺","动漫"],"ext": "https://www.tvkuys.xyz/api.php/app/"},
-     {"key":"miniku","name":"辣辣影視","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://www.miniku.cc/xgapp.php/v2/"},
+     {"key":"miniku","name":"迷你庫","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://www.miniku.cc/xgapp.php/v2/"},
      {"key":"adys","name":"艾迪影視","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "https://api123.adys.app/xgapp.php/v3/"},
 
      {"key":"csp_SP33","name":"360┃解析","type":3,"api":"csp_SP33","searchable":1,"quickSearch":1,"filterable":1,"changeable":0},
