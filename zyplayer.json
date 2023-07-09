@@ -1,5 +1,5 @@
 {
- "sites":{"default":1,"data":
+ "sites":{"default":11,"data":
 [
   {"key":"量子资源","name":"量子資源","api":"http://cj.lziapi.com/api.php/provide/vod/","download": "","jiexiUrl":"https://lziplayer.com/?url=","group":"默认","status":true,"isActive":true,"type":1,"id":1,"search":1},
   {"key":"非凡资源","name":"非凡資源","api":"http://www.ffzy.tv/api.php/provide/vod/","download": "","jiexiUrl":"https://ffzyplayer.com/?url=","group":"默认","status":true,"isActive":true,"type":1,"id":2,"search":1},
