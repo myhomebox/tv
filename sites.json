@@ -34,7 +34,7 @@
   {"key":"Youku","name":"Youku","api":"https://api.ukuapi.com/api.php/provide/vod/","group":"默认","status":true,"isActive":true,"type":1,"id":31,"search":1},
   {"key":"七喜","name":"七喜","api":"https://7xi.tv/api.php//provide/vod/","group":"默认","status":true,"isActive":true,"type":1,"id":32,"search":1},
   {"key":"土豪","name":"土豪","api":"https://www.tuhao.tv/api.php/provide/vod/","group":"默认","status":true,"isActive":true,"type":1,"id":33,"search":1},
-  {"key":"樂活","name":"樂活","api":"https://lehootv.com/api.php/provide/vod/","group":"默认","status":true,"isActive":true,"type":1,"id":34,"search":1},
+  {"key":"樂活","name":"樂活","api":"https://lehootv.com/api.php/provide/vod/","group":"默认","status":true,"isActive":true,"type":1,"id":34,"search":1}
 ]
 },
 "iptv": {
