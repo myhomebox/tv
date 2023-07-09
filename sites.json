@@ -1,4 +1,7 @@
-[
+{
+ "sites": {
+   "default":1,
+   "data":[
   {
     "key": "量子资源",
     "name": "量子資源",
@@ -430,3 +433,61 @@
     "id": 42
   }
 ]
+  
+
+]},
+"iptv":  {
+  "default":1,
+   "data":[
+
+
+   {
+    "name": "俊于直播",
+    "url": "https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/tv.txt",
+    "epg": "http://epg.112114.xyz",
+    "isActive": true,
+    "id": 43
+  }  
+]},
+  "analyzes":  {"default":1,
+   "data":
+[
+  {
+    "name": "777",
+    "url": "https://jx.777jiexi.com/player/?url=",
+    "isActive": true,
+    "id": 1
+  },
+  {
+    "name": "蝦米",
+    "url": "https://jx.xmflv.com/?url=",
+    "isActive": true,
+    "id": 2
+  },
+  {
+    "name": "json",
+    "url": "https://jx.bozrc.com:4433/player/?url=",
+    "isActive": true,
+    "id": 3
+  },
+  {
+    "name": "諾訊",
+    "url": "https://www.nxflv.com/?url=",
+    "isActive": true,
+    "id": 4
+  },
+  {
+    "name": "夜幕",
+    "url": "https://www.yemu.xyz/?url=",
+    "isActive": true,
+    "id": 5
+  },
+  {
+    "name": "戰狼",
+    "url": "https://jx.zhanlangbu.com/?url=",
+    "isActive": true,
+    "id": 6
+  }
+]
+}
+}
