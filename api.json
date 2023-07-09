@@ -59,6 +59,7 @@
      {"key": "drpy_js_188","name":"188看┃JS","type":3,"api":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/188.js"},
      {"key": "drpy_js_kangii","name":"看韓劇┃JS","type":3,"api":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/kangii.js"},
      {"key": "drpy_js_dmxq","name":"大米星球┃JS","type":3,"api":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/dmxq.js"},
+     {"key": "drpy_js_ikanbot2","name":"愛看機器人┃JS","type":3,"api":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/ikanbot2.js"},
 
 
      {"key":"drpy_js_aiqiyi","name":"愛奇藝┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/aiqiyi.js"},
