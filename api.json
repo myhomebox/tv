@@ -61,12 +61,12 @@
      {"key": "drpy_js_dmxq","name":"大米星球┃JS","type":3,"api":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/dmxq.js"},
 
 
-     {"key": "drpy_js_aiqiyi","name": "愛奇藝┃JS","type": 3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/aiqiyi.js"},
-     {"key": "drpy_js_tengxun","name": "騰訊┃JS","type": 3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/tengxun.js"},
-     {"key": "drpy_js_mangguo","name": "芒果┃JS","type": 3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/mangguo.js"},
-     {"key": "drpy_js_youku","name": "優酷┃JS","type": 3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/youku.js"},
-     {"key": "drpy_js_caigou","name": "搜狗┃JS","type": 3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/caigou.js"},
-     {"key": "drpy_js_360","name": "360影視┃JS","type": 3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/360.js"},
+     {"key":"drpy_js_aiqiyi","name":"愛奇藝┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/aiqiyi.js"},
+     {"key":"drpy_js_tengxun","name":"騰訊┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/tengxun.js"},
+     {"key":"drpy_js_mangguo","name":"芒果┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/mangguo.js"},
+     {"key":"drpy_js_youku","name":"優酷┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/youku.js"},
+     {"key":"drpy_js_caigou","name":"搜狗┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/caigou.js"},
+     {"key":"drpy_js_360","name":"360影視┃JS","type":3,"api": "https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.net/https://raw.githubusercontent.com/myhomebox/tv/main/js/360.js"},
 
      {"key":"csp_Nbys","name":"泥巴影視","type":3,"api":"csp_NiNi","searchable":1,"quickSearch":1,"filterable":1},
      {"key":"csp_trj","name":"唐人街影視","type":3,"api":"csp_Tangrenjie","searchable":1,"quickSearch":1,"filterable":1},
