@@ -104,7 +104,7 @@
      {"key":"shaozeyy","name":"少澤影客","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "https://yk.shaozeyy.com/api.php/app/"},
      {"key":"wxtv","name":"無限影視網","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "https://www.wxtv.net/api.php/app/"},
      {"key":"tvkuys","name":"TV酷","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "https://www.tvkuys.xyz/api.php/app/"},
-     {"key":"maoyingshi","name":"如意影視","type":3,"playerType":2,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://cms.maoyingshi.cc/api.php/app/"},
+     {"key":"maoyingshi","name":"如意影視","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://cms.maoyingshi.cc/api.php/app/"},
      {"key":"uutv","name":"盈聯影視","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://tt.uutv.cc/api.php/app/"},
      {"key":"yszj","name":"影視之家","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "http://yszj.cm/xgapp.php/v2/"},
      {"key":"hgyx","name":"HG影視","type":3,"api": "csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext": "https://hong.hgyx.vip/api.php/v1.vod"},
