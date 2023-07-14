@@ -11,7 +11,7 @@ var rule = {
         'User-Agent':'MOBILE_UA',
         // "Cookie": "searchneed=ok"
     },
-    class_name:'电影&电视剧&综艺&动漫&纪录片&国产&香港&台湾&韩国&日本&欧美&海外',
+    class_name:'電影&電視劇&綜藝&動漫&紀錄片&國產劇&香港劇&臺灣劇&韓國劇&日本劇&歐美劇&海外劇',
     class_url:'mov&tv&fun&cartoon&jilupian&guocanju&xianggangju&taiwanju&hanguoju&ribenju&oumeiju&haiwaiju',
     play_parse:true,
     lazy:'',
