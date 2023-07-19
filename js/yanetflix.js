@@ -3,7 +3,8 @@
 var rule = {
     title:'鸭奈飞',
     //模板:'mxpro',
-    host:'https://yanetflix.me',
+    host:'https://yanaifei.tv/',
+    //host:'https://yanetflix.me',
     //homeUrl:'/api.php/app/index_video',
     // url:'/vod/show/fyclass--------fypage---.html',
     //url: '/api.php/app/video?tid=fyclassfyfilter&limit=20&pg=fypage',
