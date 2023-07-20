@@ -12,7 +12,7 @@ var rule = {
 		3:{cateId:'3',by:'/by/time'},
 		4:{cateId:'4',by:'/by/time'}
 	},
-	searchUrl:'/vodsearch/**----------fypage---.html',
+	searchUrl:'search.html?wd=**',
 	searchable:2,
 	quickSearch:0,
 	headers: {
