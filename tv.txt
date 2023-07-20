@@ -391,6 +391,57 @@
 🌹番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
 🌹番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8
 
+ 🏎️台灣備用頻道,#genre#
+🌹東森新聞,http://sc2022.stream-link.org/tv2306.php?id=t001
+🌹東森財經新聞,http://sc2022.stream-link.org/tv2306.php?id=t002
+🌹中天新聞,http://sc2022.stream-link.org/tv2306.php?id=t003
+🌹華視新聞,http://sc2022.stream-link.org/tv2306.php?id=t004
+🌹中視新聞,http://sc2022.stream-link.org/tv2306.php?id=t005
+🌹民視新聞,http://sc2022.stream-link.org/tv2306.php?id=t006
+🌹寰宇國際新聞,http://sc2022.stream-link.org/tv2306.php?id=t007
+🌹寰宇台灣新聞,http://sc2022.stream-link.org/tv2306.php?id=t008
+🌹三立財經新聞,http://sc2022.stream-link.org/tv2306.php?id=t009
+🌹三立新聞,http://sc2022.stream-link.org/tv2306.php?id=t010
+🌹三立新聞+,http://sc2022.stream-link.org/tv2306.php?id=t011
+🌹台視新聞,http://sc2022.stream-link.org/tv2306.php?id=t012
+🌹TVBS新聞,http://sc2022.stream-link.org/tv2306.php?id=t013
+🌹TVBS財經,http://sc2022.stream-link.org/tv2306.php?id=t014
+🌹中天亞洲台,http://sc2022.stream-link.org/tv2306.php?id=t015
+🌹TVBS亞洲台,http://sc2022.stream-link.org/tv2306.php?id=t016
+🌹民視HD,http://sc2022.stream-link.org/tv2306.php?id=t017
+🌹民視第一台,http://sc2022.stream-link.org/tv2306.php?id=t018
+🌹民視台灣台,http://sc2022.stream-link.org/tv2306.php?id=t019
+🌹民視綜藝台,http://sc2022.stream-link.org/tv2306.php?id=t020
+🌹民視影劇台,http://sc2022.stream-link.org/tv2306.php?id=t021
+🌹民視旅遊台,http://sc2022.stream-link.org/tv2306.php?id=t022
+🌹三立台灣,http://sc2022.stream-link.org/tv2306.php?id=t023
+🌹三立都會,http://sc2022.stream-link.org/tv2306.php?id=t024
+🌹天才衝衝衝,http://sc2022.stream-link.org/tv2306.php?id=t025
+🌹東森yoyo,http://sc2022.stream-link.org/tv2306.php?id=t026
+
+ 🛵香港備用頻道,#genre#
+🌹myTV SUPER,http://sc2022.stream-link.org/tv2306.php?id=c01
+🌹TVB 星河,http://sc2022.stream-link.org/tv2306.php?id=c02
+🌹天映頻道,http://sc2022.stream-link.org/tv2306.php?id=c03
+🌹翡翠台,http://sc2022.stream-link.org/tv2306.php?id=h001
+🌹翡翠台,http://sc2022.stream-link.org/tv2306.php?id=h002
+🌹TVB J2,http://sc2022.stream-link.org/tv2306.php?id=h003
+🌹無綫新聞台,http://sc2022.stream-link.org/tv2306.php?id=h004
+🌹無綫新聞台,http://sc2022.stream-link.org/tv2306.php?id=h006
+🌹無綫財經·體育·資訊台,http://sc2022.stream-link.org/tv2306.php?id=h005
+🌹無綫財經·體育·資訊台,http://sc2022.stream-link.org/tv2306.php?id=h007
+🌹RTHK31,http://sc2022.stream-link.org/tv2306.php?id=h008
+🌹RTHK32,http://sc2022.stream-link.org/tv2306.php?id=h009
+🌹CCTV-1,http://sc2022.stream-link.org/tv2306.php?id=h10
+🌹CCTV-13,http://sc2022.stream-link.org/tv2306.php?id=h11
+🌹香港國際財經台,http://sc2022.stream-link.org/tv2306.php?id=h012
+🌹香港開電視,http://sc2022.stream-link.org/tv2306.php?id=h013
+🌹香港開電視資訊台,http://sc2022.stream-link.org/tv2306.php?id=h014
+🌹鳳凰衛視資訊台,http://sc2022.stream-link.org/tv2306.php?id=h015
+🌹鳳凰衛視中文台,http://sc2022.stream-link.org/tv2306.php?id=h016
+🌹鳳凰衛視香港台,http://sc2022.stream-link.org/tv2306.php?id=h017
+🌹澳門蓮花衛視,http://sc2022.stream-link.org/tv2306.php?id=h018
+
  ♠️新聞頻道,#genre#
 🌹民視新聞,http://123.51.230.108:18663/.m3u8
 🌹民視新聞,http://198.16.100.90:8278/ftvnew_taiwan/playlist.m3u8?tid=md953ce86cdad16241449&ct=17874&tsum=949d4aace793a001dd41392b210ba406
