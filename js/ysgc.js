@@ -36,7 +36,7 @@ var rule = {
         class_name:'電影&電視劇&綜藝&動漫', 
 	class_url:'1&2&3&4',
         play_parse: true,
-        azy: '',
+        lazy: '',
         limit: 6,
         推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
         double: true, // 推荐内容是否双层定位
