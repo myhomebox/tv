@@ -2,7 +2,7 @@
 "sites":
  [
      {"key":"drpy_js_douban","name":"豆瓣┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/douban.js"},
-     {"key":"drpy_js_ddrpy","name":"薦片","type":3,"playerType":1,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.mim.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/drpy.js"},
+     {"key":"drpy_js_drpy","name":"薦片","type":3,"playerType":1,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/drpy.js"},
      {"key":"drpy_js_777tv","name":"小鴨影音┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/777tv.js"},
      {"key":"drpy_js_Naifei","name":"奈飛中文┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/naifei.js"},
      {"key":"drpy_js_yanetflix","name":"鴨奈飛┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/yanetflix.js"},
