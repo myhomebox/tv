@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from './lib/cat.js';
+import { Crypto, load, _ } from 'https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/cat.js';
 
 let key = 'czzy';
 let url = 'https://cz4k.com';
