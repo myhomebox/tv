@@ -1,13 +1,13 @@
 {
 "sites":
  [
-      {"key":"drpy_js_czzy_open","name":"廠長┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/czzy_open.js"},
-      {"key":"drpy_js_duboku_open","name":"獨播庫┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/duboku_open.js"},
-      {"key":"drpy_js_ikanbot_open","name":"愛看┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/ikanbot_open.js"},
-      {"key":"drpy_js_kkys_open","name":"快看┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/kkys_open.js"},
-      {"key":"drpy_js_kunyu77_open","name":"酷雲┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/kunyu77_open.js"},
-      {"key":"drpy_js_nivod_open","name":"泥巴┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/nivod_open.js"},
-      {"key":"drpy_js_wogg_open","name":"玩偶┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/wogg_open.js"},
+      {"key":"czzy_open","name":"廠長┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/czzy_open.js"},
+      {"key":"duboku_open","name":"獨播庫┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/duboku_open.js"},
+      {"key":"ikanbot_open","name":"愛看┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/ikanbot_open.js"},
+      {"key":"kkys_open","name":"快看┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/kkys_open.js"},
+      {"key":"kunyu77_open","name":"酷雲┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/kunyu77_open.js"},
+      {"key":"nivod_open","name":"泥巴┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/nivod_open.js"},
+      {"key":"wogg_open","name":"玩偶┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/wogg_open.js"},
 
      {"key":"drpy_js_douban","name":"豆瓣┃JS","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/douban.js"},
      {"key":"drpy_js_ddrpy","name":"薦片","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/js/drpy2.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/js/drpy.js"},
@@ -285,7 +285,7 @@
           {"group":"硬解碼","options":[{"category":4,"name":"opensles","value":"0"},{"category":4,"name":"overlay-format","value":"842225234"},{"category":4,"name":"framedrop","value":"1"},{"category":4,"name":"soundtouch","value":"1"},{"category":4,"name":"start-on-prepared","value":"1"},{"category":1,"name":"http-detect-range-support","value":"0"},{"category":1,"name":"fflags","value":"fastseek"},{"category":2,"name":"skip_loop_filter","value":"48"},{"category":4,"name":"reconnect","value":"1"},{"category":4,"name":"enable-accurate-seek","value":"0"},{"category":4,"name":"mediacodec","value":"1"},{"category":4,"name":"mediacodec-auto-rotate","value":"1"},{"category":4,"name":"mediacodec-handle-resolution-change","value":"1"},{"category":4,"name":"mediacodec-hevc","value":"1"},{"category":1,"name":"dns_cache_timeout","value":"600000000"}]}
         ],
 
-"spider":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/JAR/0706.jar",
+"spider":"https://fongmi.cachefly.net/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;88787c99a94e6a4e674060d71e59c46f",
 "wallpaper":"https://tool.weetai.cn/api",
 "lives":[   {"name":"live","url":"https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/tv.txt","type":0,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png","ua":"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36"},{"group":"redirect","channels":[   {"name":"redirect","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9mYXN0bHkuanNkZWxpdnIubmV0L2doL215aG9tZWJveC90dkBtYWluL3R2LnR4dA=="]}]}],
 
