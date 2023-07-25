@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from './lib/js/cat.js';
+import { Crypto, load, _ } from './lib/cat.js';
 
 let key = 'czzy';
 let url = 'https://cz4k.com';
