@@ -27,7 +27,7 @@ function getClass($) {
     const nav = $('ul.nav-pills:eq(1) > li > a');
     let tags = {
         key: 'tag',
-        name: '标签',
+        name: '標籤',
         value: _.map(nav, (n) => {
             return { n: n.children[0].data, v: n.attribs.href };
         }),
