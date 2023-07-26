@@ -1,6 +1,6 @@
 var rule = {
     title:'映迷影院',
-    host:'https://www.inmi.app/index.php',
+    host:'https://www.inmi.app',
     // url:'/index.php/vod/show/id/fyclass/page/fypage.html',
     url:'/index.php/vod/show/id/fyclassfyfilter.html',
     filterable:1,//是否启用分类筛选,
