@@ -5,8 +5,8 @@ var rule = {
 	url: '/vodshow/fyclassfyfilter.html',
 	headers: {'User-Agent': 'MOBILE_UA'},
         searchUrl:'/vodsearch/wd=**-------------.html',
-        searchable: 1,//是否启用全局搜索,
-        quickSearch: 1,//是否启用快速搜索,
+        searchable:2,//是否启用全局搜索,
+        quickSearch:1,//是否启用快速搜索,
 	filterable:1,//是否启用分类筛选,
 	filter_url:'-{{fl.area}}-{{fl.by}}-{{fl.class}}-----fypage---{{fl.year}}',
         filter: {
@@ -35,13 +35,13 @@ var rule = {
 	                },
         class_name:'電影&電視劇&綜藝&動漫', 
 	class_url:'1&2&3&4',
-        play_parse: true,
-        lazy: '',
-        limit: 6,
+        play_parse:true,
+        lazy:'',
+        limit:6,
         推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
         double: true, // 推荐内容是否双层定位
-        一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
-        二级: {
+        一级:'.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+        二级:{
                 "title": ".myui-content__detail .title&&Text;.myui-content__detail p:eq(-2)&&Text",
                 "img": ".myui-content__thumb .lazyload&&data-original",
                 "desc": ";;;.myui-content__detail p:eq(4)&&Text;.myui-content__detail p:eq(2)&&Text",
@@ -49,5 +49,5 @@ var rule = {
                 "tabs": ".nav-tabs:eq(0) li",
                 "lists": ".myui-content__list:eq(#id) li"
                 },
-      搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+      搜索:'#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
 }
