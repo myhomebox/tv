@@ -1,6 +1,6 @@
 // 地址发布页 https://www.ppydy.com
 // 一级筛选 数字验证
-muban.短视2.二级.img = '.img&&data-src';
+//muban.短视2.二级.img = '.img&&data-src';
 muban.短视2.二级.tab_text = '.swiper-slide--i&&Text';
 var rule = {
 	title:'皮皮鸭',
