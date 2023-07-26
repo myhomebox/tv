@@ -27,9 +27,63 @@ var rule={
         class_name:'電影&電視劇&綜藝&動漫&紀錄片', // 分类筛选 /api.php/app/nav
         class_url:'1&2&4&3&51',
 	//class_parse:'.conch-nav&&li:gt(1):lt(9);a&&Text;a&&href;.*/(.*?).html',
-	cate_exclude:'直播',
+	cate_exclude:'午夜影院|电视直播|VIP蓝光影院',
 	play_parse:true,
-	lazy:'js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=="1"){url=unescape(url)}else if(html.encrypt=="2"){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}',
+	lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == "1") {
+			url = unescape(url)
+		} else if (html.encrypt == "2") {
+			url = unescape(base64Decode(url))
+		}
+		if (/m3u8|mp4/.test(url)) {
+			input = url
+		} else {
+			input
+		}
+	`,
+	limit: 6,
+	预处理:`
+		let html = request(HOST);
+		if (html.includes('_guard/auto.js')) {
+			var _0x486ax7 = {
+				"x": 616,
+				"y": 288,
+				"a": 904
+			};
+			let ghtml = request(HOST, {
+				withHeaders: true
+			});
+			let json = JSON.parse(ghtml);
+			let setCk = Object.keys(json).find(it => it.toLowerCase() === "set-cookie");
+			let cookie = setCk ? json[setCk].split(";")[0] : "";
+			var cook = "";
+			function setRet(_0x486axd, _0x486ax7) {
+				let jsf = request(HOST + "/_guard/encrypt.js");
+				eval(jsf);
+				var _0x486axe = _0x486axd["substr"](0, 8);
+				var _0x486axf = cdn.MD5(_0x486axe);
+				var _0x486ax10 = cdn["centos"]["encrypt"](JSON["stringify"](_0x486ax7), _0x486axf, {
+					iv: _0x486axf
+				});
+				cook = "guardret=" + _0x486ax10.toString();
+			}
+			function t(_0x486ax7) {
+				var co = cookie.split("guard=");
+				var _0x486axd = co.pop().split(";").shift();
+				if (!_0x486axd) {
+					log("重载");
+				} else {
+					setRet(_0x486axd, _0x486ax7)
+				}
+			}
+			t(_0x486ax7);
+			rule_fetch_params.headers.Cookie = 'searchneed=ok; ' + cookie + '; ' + cook;
+			setItem(RULE_CK, 'searchneed=ok; ' + cookie + '; ' + cook)
+		};
+	`,
+	//lazy:'js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=="1"){url=unescape(url)}else if(html.encrypt=="2"){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}',
 	limit:6,
 	double:true, // 推荐内容是否双层定位
 	推荐:'body&&.hl-list-wrap;ul&&li;*;*;*;*',
