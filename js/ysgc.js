@@ -3,7 +3,7 @@ var rule = {
 	host:'https://www.ysgc.fun',
 	//host:'https://www.3443.tv',
 	url: '/vodshow/fyclassfyfilter.html',
-	headers: {'User-Agent': 'MOBILE_UA'},
+	headers: {'User-Agent': 'Dart/2.14 (dart:io)'},
         searchUrl:'/vodsearch/wd=**-------------.html',
         searchable:2,//是否启用全局搜索,
         quickSearch:1,//是否启用快速搜索,
