@@ -20,7 +20,20 @@ var rule = {
 	//class_parse:'.navbar-items li:gt(1):lt(6);a&&Text;a&&href;/(\\d+).html',
 	searchUrl:'/phsch/page/fypage/wd/**.html',
 	searchable: 1,
-	lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=='1'){url=unescape(url)}else if(html.encrypt=='2'){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}",
+	lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		if (/m3u8|mp4/.test(url)) {
+			input = url
+		} else {
+			input
+		}
+	`,
             limit: 6,
             推荐: '.tab-list.active;a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
