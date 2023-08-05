@@ -39,18 +39,18 @@ var rule = {
                  //class_parse: '.nav-menu-items&&li;a&&Text;a&&href;.*/(.*?).html',
                  play_parse: true,
                  lazy:`js:
-                 var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-                 var url = html.url;
-                 if (html.encrypt == "1") {
-                 url = unescape(url)
-             } else if (html.encrypt == "2") {
-                 url = unescape(base64Decode(url))
-             }
-             if (/m3u8|mp4/.test(url)) {
-                 input = url
-             } else {
-                 input
-             }
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == "1") {
+            url = unescape(url)
+        } else if (html.encrypt == "2") {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
     `,
                  limit: 6,
                  推荐: '.module-list;.module-items&&.module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
@@ -65,7 +65,7 @@ var rule = {
                           "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
                  },
                 // searchUrl:'/vodsearch/**----------fypage---.html',
-                searchUrl:'/index.php/ajax/suggest?mid=fypage&wd=**',
+               searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
                detailUrl:'/voddetail/fyid.html', //非必填,二级详情拼接链接
                搜索:'json:list;name;pic;;id',
              }
