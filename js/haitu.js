@@ -51,7 +51,7 @@ var rule = {
                 "tabs": ".module-tab-item",
                 "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
             },
-            searchUrl:'/index.php/ajax/suggest?mid=1&wd=**',
+           searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
             detailUrl:'/vod/detail/id/fyid.html', //非必填,二级详情拼接链接
             搜索:'json:list;name;pic;;id',
         }
