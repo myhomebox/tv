@@ -37,7 +37,7 @@ var rule = {
             input
         }
     `,
-   limit:6,
+    limit:6,
     推荐:'.foucebox&&.showDiv;h3&&Text;*;p&&Text;*',
     一级:'.content-list&&li;a&&title;img&&src;.bottom2&&Text;a&&href',
     二级:{
@@ -48,7 +48,7 @@ var rule = {
         "tabs":".py-tabs&&li",
         "lists":".player:eq(#id)&&li"
     },
-    searchUrl:'/index.php/ajax/suggest?mid=fypage&wd=**',
+    searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
     detailUrl:'/v/fyid.html', //非必填,二级详情拼接链接
     搜索:'json:list;name;pic;;id',
 }
