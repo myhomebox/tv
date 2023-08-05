@@ -20,20 +20,20 @@ var rule = {
             tab_exclude:'夸克网盘|百度云盘',
             pagecount:{"27":1},
             play_parse: true,
-               lazy:`js: var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-               var url = html.url;
-               var from = html.from;
-               var next = html.link_next;
-               var id = html.id;
-               var nid = html.nid;
-               var paurl = request("https://libvio.cc/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
-               if (/https/.test(paurl)) {
-	var purl = paurl + url + "&next=" + next + "&id=" + id + "&nid=" + nid;
-	input = {
-		jx: 0,
-		url: request(purl).match(/var .* = '(.*?)'/)[1],
-		parse: 0
-	}
+            lazy:`js: var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+                    var url = html.url;
+                    var from = html.from;
+                    var next = html.link_next;
+                    var id = html.id;
+                    var nid = html.nid;
+                    var paurl = request("https://libvio.cc/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+                         if (/https/.test(paurl)) {
+	            var purl = paurl + url + "&next=" + next + "&id=" + id + "&nid=" + nid;
+	              input = {
+		             jx: 0,
+		            url: request(purl).match(/var .* = '(.*?)'/)[1],
+		            parse: 0
+	                            }
              }`,
             limit: 6,
             推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
@@ -47,7 +47,7 @@ var rule = {
                 "tabs": ".stui-vodlist__head h3",
                 "lists": ".stui-content__playlist:eq(#id) li"
             },
-            searchUrl:'/index.php/ajax/suggest?mid=1&wd=**',
+            searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
             detailUrl:'/detail/fyid.html', //非必填,二级详情拼接链接
             搜索:'json:list;name;pic;;id',
             //搜索: 'ul.stui-vodlist__media:eq(0) li,ul.stui-vodlist:eq(0) li,#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
