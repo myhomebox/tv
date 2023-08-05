@@ -3,7 +3,6 @@ var rule={
            host:'https://www.voflix.me',
             homeUrl:'/label/new.html',
             url:'/show/fyfilter.html',
-            searchUrl:'/index.php/ajax/suggest?mid=fypage&wd=**',
             searchable: 2,//是否启用全局搜索,
             quickSearch: 0,//是否启用快速搜索,
             filterable:1,//是否启用分类筛选,
@@ -24,19 +23,19 @@ var rule={
             //class_parse: '.navbar-items&&li;a&&Text;a&&href;/(\\d+).html',
             play_parse: true,
             lazy:`js:
-                  var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-                  var url = html.url;
-                  if (html.encrypt == '1') {
-                  url = unescape(url)
-                  } else if (html.encrypt == '2') {
-                  url = unescape(base64Decode(url))
-                  }
-                 if (/m3u8|mp4/.test(url)) {
-                 input = url
-                 } else {
-                 input
-                 }
-            `,
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
             limit: 6,
             推荐: '.tab-list.active;a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
@@ -49,6 +48,8 @@ var rule={
                 "tabs": ".module-tab-item",
                 "lists": ".module-play-list:eq(#id) a"
             },
-            searchUrl:'/index.php/ajax/suggest?mid=fypage&wd=**',
-            搜索:'json:list;name;pic;;id',
+      // searchUrl:'/search/**----------fypage---.html',
+    searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
+    detailUrl:'/detail/fyid.html', //非必填,二级详情拼接链接
+    搜索:'json:list;name;pic;;id',
         }
