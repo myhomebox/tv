@@ -7,5 +7,5 @@
 以/开头，存储卡的根目录
 
 #16萬MV
-https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main//MTV.txt
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV.txt
 
