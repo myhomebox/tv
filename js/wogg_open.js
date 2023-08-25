@@ -1,6 +1,6 @@
 import {load, _, Uri} from 'assets://js/lib/cat.js';
-import {log} from 'https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/utils.js';
-import {initAli, detailContent, playContent}  from 'https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/lib/ali.js';
+import {log} from '../lib/utils.js';
+import {initAli, detailContent, playContent}  from '../lib/ali.js';
 
 let siteKey = 'wogg';
 let siteType = 0;
