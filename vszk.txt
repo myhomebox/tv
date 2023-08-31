@@ -1072,11 +1072,3 @@ NickJr.,mitv://135.148.104.228:19806/0c5a3d3568e84a6ba24c50fdf29e8b4f
 靖天卡通台,mitv://135.148.104.228:19806/a09eb68e862e4012840ad543e0bce174
 靖洋卡通NiceBingo,P2p://generationnexxxt.com:19806/ece893d56b6a46e391c9fa222c29bbef
 靖洋卡通NiceBingo,mitv://135.148.104.228:19806/ece893d56b6a46e391c9fa222c29bbef
-
-控制台_543,#genre#
-47,http://220.135.124.158:8088/live/94_h265.ts
-48,http://220.135.124.158:8088/live/95_h265.ts
-49,http://220.135.124.158:8088/live/96_h265.ts
-50,http://220.135.124.158:8088/live/97_h265.ts
-51,http://220.135.124.158:8088/live/98_h265.ts
-52,http://220.135.124.158:8088/live/99_h265.ts
