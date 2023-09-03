@@ -110,8 +110,8 @@ var rule = {
     host:'https://www.ikanbot.com',
     url:'/hot/index-fyclass-fyfilter-p-fypage.html[/hot/index-fyclass-fyfilter.html]',
     //https://www.ikanbot.com/search?q=%E6%96%97%E7%BD%97%E5%A4%A7&p=2
-    searchUrl:'/search?q=**&p=fypage',
-    //searchUrl:'/search?q=**',
+    // searchUrl:'/search?q=**&p=fypage',
+    searchUrl:'/search?q=**',
     searchable:2,
     quickSearch:0,
     filterable:1,
@@ -123,6 +123,10 @@ var rule = {
         ,"tv":[{"key":"tag","name":"標籤","value":[{"n":"熱門","v":"热门"},{"n":"美劇","v":"美剧"},{"n":"英劇","v":"英剧"},{"n":"韓劇","v":"韩剧"},{"n":"日劇","v":"日剧"},{"n":"國產劇","v":"国产剧"},{"n":"港劇","v":"港剧"},{"n":"日本動畫","v":"日本动画"},{"n":"綜藝","v":"综艺"},{"n":"紀錄片","v":"纪录片"}]}]
     },
     filter_def:{
+		movie:{tag:'热门'},
+		tv:{tag:'国产剧'},
+	},
+   filter_def:{
 		movie:{tag:'热门'},
 		tv:{tag:'国产剧'},
 	},
