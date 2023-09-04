@@ -1,6 +1,7 @@
 var rule={
     title:'楓林網',
-    host:'https://imaple.app',
+    //host:'https://imaple.app',
+    host:'https://imaple.co',
     url:'/show/fyfilter.html',
     class_name:'電影&電視劇&綜藝&動漫',
     class_url:'1&2&3&4',
