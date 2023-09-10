@@ -1,6 +1,6 @@
 var rule = {
             title:'劇迷ai',
-            host:'https://gimy.ai/',
+            host:'https://gimy.ai',
             url:'/genre/fyfilter.html',
             searchUrl:'/search/**----------fypage---.html',
             filterable: 1,//是否启用分类筛选,
