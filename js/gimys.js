@@ -1,10 +1,10 @@
 var rule = {
             title:'劇迷',
             host:'https://gimys.app/',
-            url:'/show/vod/fyfilter',
+            url:'/show/vod/fyfilter--------fypage---.html',
             searchUrl:'/search/vod/-------------/?wd=**&submit=',
             filterable: 1,//是否启用分类筛选,
-            filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by}}---------{{fl.year}}',
+            filter_url:'{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.year}}',
             filter: {
             "1":[
             	{"key":"cateId","name":"類型","value":[{"n":"全部","v":"1"},{"n":"劇情片","v":"juqingpian"},{"n":"動作片","v":"dongzuopian"},{"n":"科幻片","v":"kehuanpian"},{"n":"喜劇片","v":"xijupian"},{"n":"愛情片","v":"aiqingpian"},{"n":"戰爭片","v":"zhanzhengpian"},{"n":"恐怖片","v":"kongbupian"}]},
