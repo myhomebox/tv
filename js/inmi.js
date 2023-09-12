@@ -3,6 +3,7 @@ var rule = {
     host:'https://www.inmi.app',
     // url:'/index.php/vod/show/id/fyclass/page/fypage.html',
     url:'/index.php/vod/show/id/fyclassfyfilter.html',
+    searchUrl:'/index.php/vod/search/page/fypage/?wd=**',
     filterable:1,//是否启用分类筛选,
     filter_url:'{{fl.area}}{{fl.by}}{{fl.class}}{{fl.lang}}{{fl.letter}}/page/fypage{{fl.year}}',
     filter: {
@@ -32,6 +33,5 @@ var rule = {
                 "tabs": ".module-tab-items-box .module-tab-item",
                 "lists": ".module-play-list:eq(#id) a"
             },
-	    searchUrl:'/index.php/vod/search/wd/**.html',
             搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',
         }
