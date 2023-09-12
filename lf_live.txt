@@ -6,5 +6,23 @@
 以./开头，相对位置是本订阅文件
 以/开头，存储卡的根目录
 
-#16萬MV
-https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV.txt
+#MV_1
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_1.txt
+#MV_2
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_2.txt
+#MV_3
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_3.txt
+#MV_4
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_4.txt
+#MV_5
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_5.txt
+#MV_6
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_6.txt
+#MV_7
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_7.txt
+#MV_8
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_8.txt
+#MV_9
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_9.txt
+#MV_10
+https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_10.txt
