@@ -1,10 +1,11 @@
        var rule={
-            title: '奈飛中文',
+            title: '奈飞中文',
             host: 'https://www.naifei.io',
+            //host: 'https://www.wjys.cc',
             url: '/vodshow/id/fyfilter',
             //searchUrl: '/vodsearch/**----------fypage---.html',
             //searchUrl:'https://www.naifei.io/index.php/ajax/suggest?mid=1&wd={wd}&limit=10',
-            searchUrl:'/vodsearch/-------------.html?wd=**&submit=',
+            searchUrl:'/vodsearch/page/fypage/?wd=**&submit=',
 	    headers:{'User-Agent':'Dart/2.14 (dart:io)'},
             searchable: 2,//是否启用全局搜索,
             quickSearch: 0,//是否启用快速搜索,
