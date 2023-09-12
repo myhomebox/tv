@@ -2,7 +2,7 @@ var rule = {
             title:'小鴨影音',
             host:'https://777tv.app',
             url: '/vod/show/id/fyfilter',
-            searchUrl: '/vod/search.html?wd=**&submit=',
+            searchUrl: '/vod/search/page/fypage/?wd=**',
             searchable: 2,//是否启用全局搜索,
             quickSearch: 0,//是否启用快速搜索,
             filterable: 1,//是否启用分类筛选,

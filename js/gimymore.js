@@ -2,7 +2,7 @@ var rule = {
             title:'劇迷more',
             host:'https://www.gimy.moe',
             url:'/show/id/fyfilter',
-            searchUrl:'/search.html?wd=**&submit=',
+            searchUrl:'/search/page/fypage/?wd=**',
             filterable: 1,//是否启用分类筛选,
             filter_url:'{{fl.cateId}}{{fl.area}}{{fl.by}}/page/fypage{{fl.year}}',
             filter: {

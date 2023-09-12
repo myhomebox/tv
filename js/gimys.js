@@ -2,7 +2,7 @@ var rule = {
             title:'劇迷',
             host:'https://gimys.app/',
             url:'/show/vod/fyfilter--------fypage---.html',
-            searchUrl:'/search/vod/-------------/?wd=**&submit=',
+            searchUrl:'/search/vod/**----------fypage---',
             filterable: 1,//是否启用分类筛选,
             filter_url:'{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.year}}',
             filter: {
