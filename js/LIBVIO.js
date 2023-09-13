@@ -1,8 +1,8 @@
 // 永久网址：https://libvio.app
 var rule = {
             title:'LIBVIO',
-            host:'https://libvio.app',
-            hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(0)&&a:eq(0)&&href");print(src);HOST=src',
+            host:'https://www.libvio.me',
+            //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(0)&&a:eq(0)&&href");print(src);HOST=src',
             url:'/show/fyclassfyfilter.html',
             filterable:1,//是否启用分类筛选,
             filter_url:'-{{fl.area}}-{{fl.by}}-{{fl.class}}-{{fl.lang}}----fypage---{{fl.year}}',
@@ -13,7 +13,10 @@ var rule = {
                     "3":[{"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"},{"n":"2010","v":"2010"},{"n":"2009","v":"2009"},{"n":"2008","v":"2008"},{"n":"2007","v":"2007"},{"n":"2006","v":"2006"},{"n":"2005","v":"2005"},{"n":"2004","v":"2004"}]},{"key":"by","name":"排序","value":[{"n":"時間","v":"time"},{"n":"人氣","v":"hits"},{"n":"評分","v":"score"}]}],
                     "4":[{"key":"area","name":"地區","value":[{"n":"全部","v":""},{"n":"中國","v":"中国"},{"n":"日本","v":"日本"},{"n":"欧美","v":"欧美"},{"n":"其他","v":"其他"}]},{"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"},{"n":"2010","v":"2010"},{"n":"2009","v":"2009"},{"n":"2008","v":"2008"},{"n":"2007","v":"2007"},{"n":"2006","v":"2006"},{"n":"2005","v":"2005"},{"n":"2004","v":"2004"}]},{"key":"lang","name":"語言","value":[{"n":"全部","v":""},{"n":"國語","v":"国语"},{"n":"英語","v":"英语"},{"n":"粵語","v":"粤语"},{"n":"閩南語","v":"闽南语"},{"n":"韓語","v":"韩语"},{"n":"日語","v":"日语"},{"n":"其它","v":"其它"}]},{"key":"by","name":"排序","value":[{"n":"時間","v":"time"},{"n":"人氣","v":"hits"},{"n":"評分","v":"score"}]}]
                    },
-            headers:{'User-Agent':'MOBILE_UA'},
+            headers:{//网站的请求头,完整支持所有的,常带ua和cookies
+		// 'User-Agent':'MOBILE_UA'
+		'User-Agent':'Mozilla/5.0 (Linux; Android 9; ASUS_Z01QD Build/PQ3B.190801.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Safari/537.36'
+	},
             //class_parse:'.stui-header__menu li:gt(0):lt(7);a&&Text;a&&href;/(\\d+).html',
             class_name:'電影&電視劇&綜藝&動漫&即將上映', 
             class_url:'1&2&3&4&27',
@@ -21,20 +24,21 @@ var rule = {
             pagecount:{"27":1},
             play_parse: true,
             lazy:`js: var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-                    var url = html.url;
-                    var from = html.from;
-                    var next = html.link_next;
-                    var id = html.id;
-                    var nid = html.nid;
-                    var paurl = request("https://libvio.cc/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+                          var url = html.url;
+                          var from = html.from;
+                          var next = html.link_next;
+                          var id = html.id;
+                          var nid = html.nid;
+                         // var paurl = request("https://libvio.cc/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+                         var paurl = request(HOST + "/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
                          if (/https/.test(paurl)) {
-	            var purl = paurl + url + "&next=" + next + "&id=" + id + "&nid=" + nid;
-	              input = {
-		             jx: 0,
-		            url: request(purl).match(/var .* = '(.*?)'/)[1],
-		            parse: 0
-	                            }
-             }`,
+	                 var purl = paurl + url + "&next=" + next + "&id=" + id + "&nid=" + nid;
+	                 input = {
+		                          jx: 0,
+		                         url: request(purl).match(/var .* = '(.*?)'/)[1],
+		                         parse: 0
+	                               }
+                                                               }`,
             limit: 6,
             推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
@@ -42,7 +46,7 @@ var rule = {
             二级: {
                 "title":  'h1&&Text;.data:eq(0)&&Text',
                 "img": ".stui-content__thumb .lazyload&&data-original",
-                "desc":  '.data.hidden-xs&&Text;;;.data:eq(1)&&Text;.data:eq(4)&&Text',
+                "desc":  '..data.hidden-xs&&Text;;;.data:eq(1)&&Text;.data:eq(4)&&Text',
                 "content": '.detail-content&&Text',
                 "tabs": ".stui-vodlist__head h3",
                 "lists": ".stui-content__playlist:eq(#id) li"
