@@ -19,13 +19,14 @@ VOD.vod_name = pdfh(html1, "h2&&Text");
 	VOD.vod_content = "";
 	log(VOD);
 	var v_tks = '';
-	let script = pdfa(html1,'script').find(it=>it.includes('v_tks+=')).replace(/<script>|<\\/script>/g,'');
-    eval(script);
+	// let script = pdfa(html1,'script').find(it=>it.includes('v_tks+=')).replace(/<script>|<\\/script>/g,'');
+    // eval(script);
 	input = "https://www.ikanbot.com/api/getResN?videoId=" + input.split("/").pop() + "&mtype=2"+"&token="+v_tks;
 	// input = "https://www.ikanbot.com/api/getResN?videoId=" + input.split("/").pop() + "&mtype=2";
 	let html = request(input, {
         headers: {
-			'User-Agent':'PC_UA',
+			// 'User-Agent':'PC_UA',
+            'User-Agent':'MOBILE_UA',
             'Referer': input,
         }
     });
@@ -67,8 +68,8 @@ var rule = {
     host:'https://www.ikanbot.com',
     url:'/hot/index-fyclass-fyfilter-p-fypage.html[/hot/index-fyclass-fyfilter.html]',
     //https://www.ikanbot.com/search?q=%E6%96%97%E7%BD%97%E5%A4%A7&p=2
-    searchUrl:'/search?q=**&p=fypage',
-    //searchUrl:'/search?q=**',
+    // searchUrl:'/search?q=**&p=fypage',
+	searchUrl:'/search?q=**',
     searchable:2,
     quickSearch:0,
     filterable:1,
@@ -76,8 +77,8 @@ var rule = {
     // 图片来源:'@Referer=https://api.douban.com/@User-Agent=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/113.0.0.0%20Safari/537.36',
 	图片来源:'@Referer=https://www.ikanbot.com/@User-Agent=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/113.0.0.0%20Safari/537.36',
     filter:{
-        "movie":[{"key":"tag","name":"類型","value":[{"n":"熱門","v":"热门"},{"n":"最新","v":"最新"},{"n":"經典","v":"经典"},{"n":"豆瓣高分","v":"豆瓣高分"},{"n":"冷門佳片","v":"冷门佳片"},{"n":"華語","v":"华语"},{"n":"歐美","v":"欧美"},{"n":"韓國","v":"韩国"},{"n":"日本","v":"日本"},{"n":"動作","v":"动作"},{"n":"喜劇","v":"喜剧"},{"n":"愛情","v":"爱情"},{"n":"科幻","v":"科幻"},{"n":"懸疑","v":"悬疑"},{"n":"恐怖","v":"恐怖"},{"n":"治癒","v":"治愈"},{"n":"成長","v":"成长"},{"n":"豆瓣top250","v":"豆瓣top250"}]}]
-        ,"tv":[{"key":"tag","name":"類型","value":[{"n":"熱門","v":"热门"},{"n":"美劇","v":"美剧"},{"n":"英劇","v":"英剧"},{"n":"韓劇","v":"韩剧"},{"n":"日劇","v":"日剧"},{"n":"國產劇","v":"国产剧"},{"n":"港劇","v":"港剧"},{"n":"日本動畫","v":"日本动画"},{"n":"綜藝","v":"综艺"},{"n":"紀錄片","v":"纪录片"}]}]
+        "movie":[{"key":"tag","name":"類型","value":[{"n":"熱門","v":"热门"},{"n":"最新","v":"最新"},{"n":"經典","v":"经典"},{"n":"豆瓣高分","v":"豆瓣高分"},{"n":"冷門片","v":"冷门佳片"},{"n":"華語","v":"华语"},{"n":"歐美","v":"欧美"},{"n":"韓國","v":"韩国"},{"n":"日本","v":"日本"},{"n":"動作作","v":"动作"},{"n":"喜劇","v":"喜剧"},{"n":"愛情","v":"爱情"},{"n":"科幻","v":"科幻"},{"n":"懸疑","v":"悬疑"},{"n":"恐怖","v":"恐怖"},{"n":"治癒","v":"治愈"},{"n":"成長","v":"成长"},{"n":"豆瓣top250","v":"豆瓣top250"}]}]
+        ,"tv":[{"key":"tag","name":"類型","value":[{"n":"熱門","v":"热门"},{"n":"美劇","v":"美剧"},{"n":"英劇","v":"英剧"},{"n":"韓剧","v":"韩剧"},{"n":"日劇","v":"日剧"},{"n":"國產劇","v":"国产剧"},{"n":"港劇","v":"港剧"},{"n":"日本動畫","v":"日本动画"},{"n":"綜藝","v":"综艺"},{"n":"紀錄片","v":"纪录片"}]}]
     },
     filter_def:{
 		movie:{tag:'热门'},
