@@ -47,7 +47,7 @@ try {
 
 var rule = {
 	title: '影探[V2]', // csp_AppYsV2
-	host: 'http://ytcms.lfytyl.com',
+	host: 'http://ytcms.lyyytv.cn',
 	// host: 'http://www.lyyytv.cn/yt/yt.json',
     // hostJs:'print(HOST);let html=JSON.parse(request(HOST,{headers:{"User-Agent":PC_UA}}));let src = html.sites[0].ext.replace("/api.php/app/","");print(src);HOST=src',//网页域名根动态抓取js代码。通过HOST=赋值
 	homeUrl:'/api.php/app/index_video',
