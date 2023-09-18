@@ -162,6 +162,33 @@ TVBS歡樂台,rtmp://119.81.124.89:1935/sat/tv421
 龍祥電影,http://198.16.100.90:8278/lungxiangtime_twn/playlist.m3u8?tid=MADA6805114368051143&ct=18392&tsum=d6a1f02ca9abd5368d2a365e40247ae8
 龍華洋片,http://198.16.100.90:8278/lunghuawestern_twn/playlist.m3u8?tid=MF2F4784718547847185&ct=19249&tsum=55fdf18d765f2692c0553d316b671326
 
+三立iNEWS,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
+三立NEWS+,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV32.m3u8
+寰宇新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
+民視新聞台HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV17.m3u8
+東森財經新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
+台視新聞HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV25.m3u8
+中視新聞HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
+中視HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV34.m3u8
+中視,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV42.m3u8
+中視,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV71.m3u8
+中天新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV28.m3u8
+中天新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV49.m3u8
+鏡新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV70.m3u8
+TVBS NESW,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV31.m3u8
+TAIWAN PLUS,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV78.m3u8
+大愛1台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV30.m3u8
+大愛2台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV47.m3u8
+原住民族電視台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV35.m3u8
+幸福空間居家台HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV41.m3u8
+天才衝衝衝,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV26.m3u8
+豬哥會社,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV72.m3u8
+新玫瑰瞳鈴眼,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV76.m3u8
+東森購物,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV18.m3u8
+東森購物,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV19.m3u8
+MOMO1台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV04.m3u8
+MOMO2台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV05.m3u8
+
 台灣(晴天源),#genre#
 民視,mitv://generationnexxxt.com:19806/2923338a99ed4f3a8a926f991db63f91
 台視,mitv://generationnexxxt.com:19806/cfe8fbcc016c43f0a13a14e99590b830
