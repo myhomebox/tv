@@ -1,6 +1,6 @@
 var rule = {
 	title:'影視工廠',
-	host:'https://www.ysgc.vip',
+	host:'https://www.ysgc.fun',
 	//host:'https://www.3443.tv',
 	url: '/vodshow/fyclassfyfilter.html',
 	headers: {'User-Agent': 'Dart/2.14(dart:io)'},
