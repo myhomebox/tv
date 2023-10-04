@@ -3,7 +3,7 @@ var rule = {
 	//模板:'mxone5',
 	host:'https://91free.vip',
 	// url:'/index.php/vod/show/id/fyclass/page/fypage.html',
-	url:'/index.php/vod/show/id/fyfilter.html',
+	url:'/vodshow/id/fyfilter.html',
 	filterable:1,//是否启用分类筛选,
 	filter_url:'{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.lang}}/page/fypage{{fl.year}}',
 	filter: {
@@ -35,7 +35,7 @@ var rule = {
 	},
 	class_name:'電影&電視劇&綜藝&動漫&體育',
         class_url:'20&21&22&23&52',
-	searchUrl:'/index.php/vod/search/page/fypage/wd/**.html',
+	searchUrl:'/vodsearch/page/fypage/wd/**.html',
 	//class_parse: '.navbar-items&&li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
 	play_parse: true,
         lazy: '',
