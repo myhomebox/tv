@@ -69,8 +69,8 @@ var rule = {
     host:'https://www.ikanbot.com',
     url:'/hot/index-fyclass-fyfilter-p-fypage.html[/hot/index-fyclass-fyfilter.html]',
     //https://www.ikanbot.com/search?q=%E6%96%97%E7%BD%97%E5%A4%A7&p=2
-    searchUrl:'/search?q=**&p=fypage',
-	//searchUrl:'/search?q=**',
+    // searchUrl:'/search?q=**&p=fypage',
+	searchUrl:'/search?q=**&p=fypage[/search?q=**]',
     searchable:2,
     quickSearch:0,
     filterable:1,
@@ -78,7 +78,8 @@ var rule = {
     // 图片来源:'@Referer=https://api.douban.com/@User-Agent=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/113.0.0.0%20Safari/537.36',
 	图片来源:'@Referer=https://www.ikanbot.com/@User-Agent=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/113.0.0.0%20Safari/537.36',
     filter:{
-        "movie":[{"key":"tag","name":"分類","value":[{"n":"熱門","v":"热门"},{"n":"最新","v":"最新"},{"n":"經典","v":"经典"},{"n":"豆瓣高分","v":"豆瓣高分"},{"n":"冷門佳片","v":"冷门佳片"},{"n":"華語","v":"华语"},{"n":"歐美","v":"欧美"},{"n":"韓國","v":"韩国"},{"n":"日本","v":"日本"},{"n":"動作","v":"动作"},{"n":"喜劇","v":"喜剧"},{"n":"愛情","v":"爱情"},{"n":"科幻","v":"科幻"},{"n":"懸疑","v":"悬疑"},{"n":"恐怖","v":"恐怖"},{"n":"治癒","v":"治愈"},{"n":"成長","v":"成长"},{"n":"豆瓣top250","v":"豆瓣top250"}]}],"tv":[{"key":"tag","name":"分類","value":[{"n":"熱門","v":"热门"},{"n":"美劇","v":"美剧"},{"n":"英劇","v":"英剧"},{"n":"韓劇","v":"韩剧"},{"n":"日劇","v":"日剧"},{"n":"國產劇","v":"国产剧"},{"n":"港劇","v":"港剧"},{"n":"日本動畫","v":"日本动画"},{"n":"綜藝","v":"综艺"},{"n":"紀錄片","v":"纪录片"}]}]
+        "movie":[{"key":"tag","name":"分類","value":[{"n":"熱門","v":"热门"},{"n":"最新","v":"最新"},{"n":"經典","v":"经典"},{"n":"豆瓣高分","v":"豆瓣高分"},{"n":"冷門佳片","v":"冷门佳片"},{"n":"華語","v":"华语"},{"n":"歐美","v":"欧美"},{"n":"韓國","v":"韩国"},{"n":"日本","v":"日本"},{"n":"動作","v":"动作"},{"n":"喜劇","v":"喜剧"},{"n":"愛情","v":"爱情"},{"n":"科幻","v":"科幻"},{"n":"懸疑","v":"悬疑"},{"n":"恐怖","v":"恐怖"},{"n":"治癒","v":"治愈"},{"n":"成長","v":"成长"},{"n":"豆瓣top250","v":"豆瓣top250"}]}],
+        "tv":[{"key":"tag","name":"分類","value":[{"n":"熱門","v":"热门"},{"n":"美劇","v":"美剧"},{"n":"英劇","v":"英剧"},{"n":"韓劇","v":"韩剧"},{"n":"日劇","v":"日剧"},{"n":"國產劇","v":"国产剧"},{"n":"港劇","v":"港剧"},{"n":"日本動畫","v":"日本动画"},{"n":"綜藝","v":"综艺"},{"n":"紀錄片","v":"纪录片"}]}]
     },
     filter_def:{
 		movie:{tag:'热门'},
@@ -106,6 +107,10 @@ var rule = {
     class_url:'movie&tv',
 	play_parse:true,
 	double:true,
+	tab_remove:['sdm3u8','M3U8','jinyingm3u8','fsm3u8','ukm3u8'],//移除某个线路及相关的选集
+	tab_order:['lzm3u8','ffm3u8','bfzym3u8','snm3u8','kuaikan','ikm3u8','gsm3u8','zuidam3u8','bjm3u8','snm3u8','wolong','xlm3u8','yhm3u8'],//线路顺序,按里面的顺序优先，没写的依次排后面
+	tab_rename:{'lzm3u8':'量子','1080zyk':'1080看','zuidam3u8':'最大资源','kuaikan':'快看','ikm3u8':'愛看','wjm3u8':'無盡雲',
+        'bfzym3u8':'暴风','ffm3u8':'非凡','snm3u8':'索尼','tpm3u8':'淘片','tkm3u8':'天空','wolong':'卧龙'},//线路名替换如:lzm3u8替换为量子资源
     推荐:'.v-list;div.item;*;*;*;*', //这里可以为空，这样点播不会有内容
     // 一级:'.v-list&&div.item;p&&Text;img&&src;;a&&href', //一级的内容是推荐或者点播时候的一级匹配
 	一级:'.v-list&&div.item;p&&Text;img&&data-src;;a&&href', //一级的内容是推荐或者点播时候的一级匹配
