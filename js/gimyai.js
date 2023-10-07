@@ -48,5 +48,5 @@ var rule = {
                 "tabs": "a.gico",
                 "lists": "ul.fade:eq(#id)&&li"
             },
-            搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+            搜索: '#content&&div.details-info-min;*;*;.hidden-lg&&Text;*',
         }
