@@ -1,10 +1,10 @@
 var rule = {
             title:'劇迷ai',
             host:'https://gimy.ai',
-            url:'/cat/fyfilte',
+            url:'/cat/fyfilter',
             searchUrl:'/search/**----------fypage---.html',
             filterable: 1,//是否启用分类筛选,
-            filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by}}------fypage---{{fl.year}}',
+            filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by}}------fypage---{{fl.year}}.html',
             filter: {
             	 "1":[{"key":"cateId","name":"類型","value":[{"n":"全部","v":"1"},{"n":"動作片","v":"6"},{"n":"喜劇片","v":"7"},{"n":"愛情片","v":"8"},{"n":"科幻片","v":"9"},{"n":"恐怖片","v":"10"},{"n":"劇情片","v":"11"},{"n":"戰爭片","v":"12"},{"n":"動畫電影","v":"24"}]},
             		           {"key":"area","name":"地區","value":[{"n":"全部","v":""},{"n":"美國","v":"美國"},{"n":"歐美","v":"歐美"},{"n":"大陸","v":"大陸"},{"n":"中國大陸","v":"中國大陸"},{"n":"內地","v":"內地"},{"n":"臺灣","v":"臺灣"},{"n":"香港","v":"香港"},{"n":"韓國","v":"韓國"},{"n":"日本","v":"日本"},{"n":"新加坡","v":"新加坡"},{"n":"泰國","v":"泰國"},{"n":"英國","v":"英國"},{"n":"德國","v":"德國"},{"n":"俄羅斯","v":"俄羅斯"},{"n":"印度","v":"印度"},{"n":"加拿大","v":"加拿大"},{"n":"義大利","v":"意大利"},{"n":"法國","v":"法國"},{"n":"其他","v":"其他"}]},
@@ -33,13 +33,13 @@ var rule = {
             },
             class_name:'電影&電視劇&綜藝&動漫', 
             class_url:'1&2&29&30',
-            //class_parse: 'ul.myui-header__menu li:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
+            //class_parse: '.navbar-left&&li;a&&Text;a&&href;/(\\d+).html',
             play_parse: true,
-            lazy: '',
+	    lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=='1'){url=unescape(url)}else if(html.encrypt=='2'){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}",
             limit: 6,
-            推荐: 'li.col-md-2;li;a&&title;a&&data-original;.text-bg-r&&Text;a&&href',
+            推荐: 'li.col-xs-4;li;a&&title;a&&data-original;.text-bg-r&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
-            一级:'li.col-md-2 li;a&&title;a&&data-original;.text-bg-r&&Text;a&&href',
+            一级:'#content&&li;a&&title;a&&data-original;.text-bg-r&&Text;a&&href',
             二级: {
                 "title": "h1&&Text;li.col-xs-12--span:eq(1)&&Text",
                 "img": "a.video-pic&&data-original",
