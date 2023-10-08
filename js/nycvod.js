@@ -21,4 +21,5 @@ var rule = {
     class_name:'電影&電視劇&綜藝&動漫',
     class_url:'1&2&3&4&5',
     detailUrl:'/voddetail/fyid.html',
+    推荐:'.public-list-exp;a&&title;.lazy&&data-src;.public-prt&&Text;a&&href',
 }
