@@ -26,7 +26,7 @@ var rule = {
                        "img":".lazyload&&data-original",
                        "desc":";;;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text",
                        "content":".module-info-introduction&&Text",
-                       "tabs":".module-tab-item",
+                       "tabs":"#y-playList&&.module-tab-item",
                        "lists":".module-play-list:eq(#id) a"
                     },
              searchUrl:'/vodsearch/**----------fypage---.html',
