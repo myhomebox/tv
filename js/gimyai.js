@@ -37,12 +37,12 @@ var rule = {
             play_parse: true,
 	    lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=='1'){url=unescape(url)}else if(html.encrypt=='2'){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}",
             limit: 6,
-            推荐: 'li.col-xs-4;li;a&&title;a&&data-original;.text-bg-r&&Text;a&&href',
+            推荐: 'li.col-xs-4;li;a&&title;a.video-pic&&data-original;.text-bg-r&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
-            一级:'#content&&li;a&&title;a&&data-original;.text-bg-r&&Text;a&&href',
+            一级:'#content&&li;a&&title;a.video-pic&&data-original;.text-bg-r&&Text;a&&href',
             二级: {
                 "title": "h1&&Text;li.col-xs-12--span:eq(1)&&Text",
-                "img": "a.video-pic&&data-original",
+                "img": "meta.img&&content",
                 "desc": "li.col-xs-12:eq(0)&&Text;;;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
                 "content": ".details-content-all&&Text",
                 "tabs": "a.gico",
