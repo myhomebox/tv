@@ -1,15 +1,8 @@
-//muban.mxpro.二级.desc = '.module-info-item:eq(4)&&Text;;;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text'
-//muban.mxpro.二级.tabs = '#y-playList&&.module-tab-item'
 var rule = {
     title:'鸭奈飞',
-    //模板:'mxpro',
-    host:'https://yanaifei.tv/',
-    //host:'https://yanetflix.me',
-    //homeUrl:'/api.php/app/index_video',
-    // url:'/vod/show/fyclass--------fypage---.html',
-    //url: '/api.php/app/video?tid=fyclassfyfilter&limit=20&pg=fypage',
+    host:'https://yanaifei.tv',
     url:'/vod/show/fyfilter',
-    headers:{'User-Agent':'Dart/2.14 (dart:io)'},
+    headers: {'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'},
     filterable:1,//是否启用分类筛选,
     filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}.html',
     filter: {
@@ -60,8 +53,6 @@ var rule = {
     searchUrl: '/index.php/ajax/suggest?mid=fypage&wd=**',
     class_name:'電影&電視劇&綜藝&動漫&紀錄片', 
     class_url:'1&2&3&4&23',
-    //class_parse: '.navbar-items li:gt(2):lt(8);a&&Text;a&&href;/(\\d+).html',
-    //class_parse:'.navbar-items li:gt(1):lt(7);a&&title;a&&href;/(\\d+).html',
     lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=='1'){url=unescape(url)}else if(html.encrypt=='2'){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}",
     limit: 6,
             推荐: '.tab-list.active;a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href',
