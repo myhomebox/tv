@@ -1,6 +1,6 @@
        var rule={
             title: '奈飞中文',
-            host: 'https://www.naifei.io',
+            host: 'https://www.naifei.live',
             //host: 'https://www.wjys.cc',
             url: '/vodshow/id/fyfilter',
             //searchUrl: '/vodsearch/**----------fypage---.html',
