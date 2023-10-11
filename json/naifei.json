@@ -1,7 +1,7 @@
 {
     "规则名": "naifei",
     "规则作者": "",
-    "请求头参数": "User-Agent$PC_UA#Referer$WebView",
+    "请求头参数": "MOBILE_UA",
     "网页编码格式": "UTF-8",
     "图片是否需要代理": "0",
     "是否开启获取首页数据": "1",
@@ -41,7 +41,7 @@
     "分类片单副标题": ".module-item-text&&Text",
     "分类片单链接加前缀": "",
     "分类片单链接加后缀": "",
-    "搜索请求头参数": "User-Agent$PC_UA",
+    "搜索请求头参数": "User-Agent$MOBILE_UA",
      "搜索链接": "https://www.naifei.live/index.php/ajax/suggest?mid=1&wd={wd}&limit=10",
     //"搜索链接": "https://www.naifei.live/index.php/vodsearch.html?wd={wd}",
     "POST请求数据": "",
