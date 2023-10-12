@@ -21,20 +21,33 @@ var rule = {
             class_url:'1&2&3&4&21',
             //class_parse: '.nav-menu-items&&li;a&&Text;a&&href;.*/(.*?).html',
             play_parse: true,
-            lazy: '',
+            lazy:`js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
             limit: 6,
             推荐: 'ul.hl-author-qq-3626-95-000.clearfix;li;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
             一级: 'ul.hl-vod-list.clearfix li;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
             二级: {
-                "title": "h2.hl-data-menu&&Text;li.hl-col-xs-12:eq(6)&&Text",
+                "title": "h2&&Text;.hl-col-xs-12.hl-col-sm-4--em:eq(2)&&Text",
                 "img": ".hl-lazy&&data-original",
-                "desc": "li.hl-col-xs-12:eq(1)&&Text;li.hl-col-xs-12:eq(4)&&Text;li.hl-col-xs-12:eq(5)&&Text;li.hl-col-xs-12:eq(2)&&Text;li.hl-col-xs-12:eq(3)&&Text",
-                "content": "li.hl-col-xs-12.blurb&&Text",
+                "desc": ".hl-col-xs-12--em:eq(2)&&Text;.hl-col-xs-12.hl-col-sm-4--em:eq(0)&&Text;.hl-col-xs-12.hl-col-sm-4--em:eq(1)&&Text;.hl-col-xs-12--em:eq(3)&&Text;.hl-col-xs-12--em:eq(4)&&Text",
+                "content": "li.hl-col-xs-12.blurb--em&&Text",
                 "tabs": "a.hl-tabs-btn",
                 "lists": "#hl-plays-list:eq(#id) li"
             },
              detailUrl:'/voddetail/fyid.html', //非必填,二级详情拼接链接
             //搜索: '#row&&a.hl-item-thumb.hl-lazy;*;*;.hl-pic-text&&Text;*',
-            搜索: 'json:list;name;pic;remarks;id',
+            搜索: 'json:list;name;pic;;id',
         }
