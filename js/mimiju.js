@@ -45,14 +45,14 @@ var rule = {
             limit: 6,
             推荐: 'li.hl-col-xs-4;li;*;*;*;*',
             double: true, // 推荐内容是否双层定位
-            一级: 'body li.hl-col-xs-4;a&&title;.hl-lazy&&data-original;.remarks&&Text;a&&href',
+            一级: 'li.hl-col-xs-4;a&&title;.hl-lazy&&data-original;.remarks&&Text;a&&href',
             二级: {
-                "title": "h2&&Text;.hl-col-xs-12.hl-col-sm-4--em:eq(2)&&Text",
+                "title": "h2&&Text;.hl-col-xs-12--em:eq(2)&&Text",
                 "img": ".hl-lazy&&data-original",
                 "desc": ".hl-col-xs-12--em:eq(2)&&Text;.hl-col-xs-12.hl-col-sm-4--em:eq(0)&&Text;.hl-col-xs-12.hl-col-sm-4--em:eq(1)&&Text;.hl-col-xs-12--em:eq(3)&&Text;.hl-col-xs-12--em:eq(4)&&Text",
                 "content": "li.hl-col-xs-12.blurb--em&&Text",
                 "tabs": "a.hl-tabs-btn",
                 "lists": "#hl-plays-list:eq(#id) li"
             },
-            搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',
+            搜索: 'li.hl-list-item.hl-col-xs-12;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
 }
