@@ -33,7 +33,7 @@ var rule={
 	play_parse: true,
 	lazy:'',
 	limit:6,
-	推荐:'.globalPicList .resize_list;*;img&&data-src;*;*',
+	推荐:'.globalPicList:eq(0) .resize_list;*;img&&data-src;.sBottom--em&&Text;*',
 	一级:'.globalPicList li;.sTit&&Text;img&&src;.sBottom--em&&Text;a&&href',
 	二级:{
 		"title":".title&&Text;.type-title&&Text",
