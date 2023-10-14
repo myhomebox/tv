@@ -14,7 +14,7 @@ var rule = {
     filter_def:{1:{cateId:'1'},2:{cateId:'2'},3:{cateId:'3'},4:{cateId:'4'}},
     class_name: '電影&電視劇&動漫&綜藝',
     class_url: '1&2&3&4',
-    //class_parse: '.navbar-left&&li;a&&Text;a&&href;/(\\d+).html',
+    //class_parse: '.navbar-items li:gt(1):lt(6);a&&Text;a&&href;.*/(\\d+).html',
     play_parse: true,
     lazy: `js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
