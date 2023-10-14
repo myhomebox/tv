@@ -44,7 +44,7 @@ var rule = {
     double: true, // 推荐内容是否双层定位
     一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
     二级: {
-        "title": "h1&&Text;.video-info-aux&&a.tag-link,0&&Text",
+        "title": ".video-info-header&&a&&Text;.video-info-aux&&a.tag-link,0&&Text",
         "img": ".module-item-pic&&img&&data-src",
         "desc": ".video-info-main&&.video-info-items:eq(8)&&Text;.video-info-aux&&a.tag-link:eq(1)&&Text;.video-info-aux&&a.tag-link:eq(2)&&Text;.video-info-main&&.video-info-actor:eq(1)&&Text;.video-info-main&&.video-info-actor:eq(0)&&Text",
         "content": ".video-info-main&&.video-info-content&&Text",
