@@ -18,6 +18,12 @@ var rule={
     推荐:'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-tag.text-right&&Text;a&&href',
     double:true, // 推荐内容是否双层定位
     一级:'.myui-vodlist li;a&&title;a&&data-original;.text-right&&Text;a&&href',
-    二级:{"title":".myui-content__detail .title&&Text;.text-muted:eq(-1)&&Text","img":".myui-content__thumb .lazyload&&data-original","desc":".text-muted:eq(-1)&&Text;.text-muted:eq(-1)&&Text;.myui-content__detail p:eq(1)&&Text;.myui-content__detail p:eq(3)&&Text;.myui-content__detail p:eq(4)&&Text","content":".content&&Text","tabs":".nav-tabs:eq(0) li","lists":".myui-content__list:eq(#id) li"},
+    二级:{
+    	"title":".myui-content__detail .title&&Text;.myui-content__detail p.data:eq(0) a&&Text",
+    	"img":".myui-content__thumb .lazyload&&data-original",
+    	"desc":".myui-content__detail p.data:eq(1) a&&Text;;;.myui-content__detail p.data:eq(2)--span&&Text;.myui-content__detail p.data:eq(3)--span&&Text",
+    	"content":".myui-panel_bd .content span&&Text",
+    	"tabs":".nav-tabs:eq(0) li",
+    	"lists":".myui-content__list:eq(#id) li"},
     搜索:'#searchList li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href;.text-muted:eq(-1)&&Text',
 }
