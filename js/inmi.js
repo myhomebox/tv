@@ -39,9 +39,9 @@ var rule = {
     double: true, // 推荐内容是否双层定位
     一级: 'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     二级: {
-        "title": "h1&&Text;.module-info-tag&&Text",
+        "title": "h1&&Text;.module-info-main&&.module-info-tag-link:eq(2)&&Text",
         "img": ".lazyload&&data-original",
-        "desc": ".module-info-item:eq(4)&&Text;;;.module-info-item--span:eq(2)&&Text;.module-info-item--span:eq(1)&&Text",
+        "desc": ".module-info-item:eq(4)&&Text;.module-info-main&&.module-info-tag-link:eq(0)&&Text;.module-info-main&&.module-info-tag-link:eq(1)&&Text;.module-info-item--span:eq(2)&&Text;.module-info-item--span:eq(1)&&Text",
         "content": ".module-info-introduction&&Text",
         "tabs": ".module-tab-items-box .module-tab-item",
         "lists": ".module-play-list:eq(#id) a"
