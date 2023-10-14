@@ -4,7 +4,7 @@ var rule = {
     //host:'https://www.3443.tv',
     url: '/vodshow/fyclassfyfilter.html',
     headers: {
-        'User-Agent': 'okhttp/4.1.0'
+        'User-Agent': 'MOBILE_UA',
     },
     searchUrl: '/vodsearch/wd=**-------------.html',
     searchable: 1, //是否启用全局搜索,
@@ -46,7 +46,7 @@ var rule = {
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
         }
-        if (/m3u8|mp4/.test(url)) {
+        if (/m3u8|mp4|getm3u8?url=http|video/tos/.test(url)) {
             input = url
         } else {
             input
@@ -59,7 +59,7 @@ var rule = {
     二级: {
         "title": ".myui-content__detail .title&&Text;.myui-content__detail&&p.data:eq(3)--span&&Text",
         "img": ".myui-content__thumb .lazyload&&data-original",
-        "desc": ".myui-content__detail&&p.otherbox&&Text;body&&span.year&&Text;.myui-content__detail&&p.data:eq(4)--span&&Text!;.myui-content__detail&&p.data:eq(2)--span&&Text;.myui-content__detail&&p.data:eq(0)--span&&Text",
+        "desc": ".myui-content__detail&&p.otherbox&&Text;body&&span.year&&Text;.myui-content__detail&&p.data:eq(4)--span&&Text;.myui-content__detail&&p.data:eq(2)--span&&Text;.myui-content__detail&&p.data:eq(0)--span&&Text",
         "content": "span.data&&Text",
         "tabs": ".nav-tabs:eq(0) li",
         "lists": ".myui-content__list:eq(#id) li"
