@@ -1,12 +1,12 @@
 // 搜索只能用"繁体字"
 var rule = {
-	title:'劇迷su',
-	host:'https://gimy.su',
-	// url:'/vodshow/fyclass--------fypage---.html',
-	url:'/vodtype/fyfilter',
-	filterable:1,//是否启用分类筛选,
-	filter_url:'{{fl.cateId}}-fypage.html',
-	filter:{
+    title: '劇迷su',
+    host: 'https://gimy.su',
+    // url:'/vodshow/fyclass--------fypage---.html',
+    url: '/vodtype/fyfilter',
+    filterable: 1, //是否启用分类筛选,
+    filter_url: '{{fl.cateId}}-fypage.html',
+    filter: {
 		"1":[{"key":"cateId","name":"類型","value":[{"n":"全部","v":"1"},{"n":"動作片","v":"6"},{"n":"喜劇片","v":"7"},{"n":"愛情片","v":"8"},{"n":"科幻片","v":"9"},{"n":"恐怖片","v":"10"},{"n":"劇情片","v":"11"},{"n":"戰争片","v":"12"},{"n":"動畫電影","v":"24"}]}],
 			/*{"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"},{"n":"2010","v":"2010"}]},
 			{"key":"by","name":"排序","value":[{"n":"時間","v":"time"},{"n":"人氣","v":"hits"},{"n":"評分","v":"score"}]}],*/
@@ -22,29 +22,42 @@ var rule = {
 		3:{cateId:'3'},
 		4:{cateId:'4'}
 	},
-	searchUrl:'/vodsearch/**----------fypage---.html',
-	searchable:2,
-	quickSearch:0,
-	headers: {
-		'User-Agent': 'MOBILE_UA',
-	},
-	timeout:5000,
-	class_name:'電影&電視劇&綜藝&動漫',
-	class_url:'1&2&3&4',
-	//class_parse: '.navbar-left&&li;a&&Text;a&&href;/(\\d+).html',
-	play_parse: true,
-	lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);var url=html.url;if(html.encrypt=='1'){url=unescape(url)}else if(html.encrypt=='2'){url=unescape(base64Decode(url))}if(/m3u8|mp4/.test(url)){input=url}else{input}",
-	limit: 6,
-	推荐: 'ul.col-md-8;li;*;*;*;*',
-	double: true,
-	一级:'li.col-md-2;a&&title;.video-pic&&data-original;.text-bg-r&&Text;a&&href',
-	二级: {
-		"title": "h1&&Text;li.col-xs-12--span:eq(1)&&Text",
-		"img": ".video-pic:eq(0)&&style",
-		"desc": "li.col-xs-12:eq(0)&&Text;;;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
-		"content": ".details-content-all&&Text",
-		"tabs": "a.gico",
-		"lists": "ul.fade:eq(#id)&&li"
-	},
-	搜索: '#content&&div.details-info-min;*;*;.hidden-lg&&Text;*',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_name: '電影&電視劇&綜藝&動漫',
+    class_url: '1&2&3&4',
+    //class_parse: '.navbar-left&&li;a&&Text;a&&href;/(\\d+).html',
+    play_parse: true,
+    lazy: `js:
+            var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+            var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
+    limit: 6,
+    推荐: 'ul.col-md-8;li;*;*;*;*',
+    double: true,
+    一级: 'li.col-md-2;a&&title;.video-pic&&data-original;.text-bg-r&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;li.col-xs-12--span:eq(1)&&Text",
+        "img": ".video-pic:eq(0)&&style",
+        "desc": "li.col-xs-12:eq(0)&&Text;;;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
+        "content": ".details-content-all&&Text",
+        "tabs": "a.gico",
+        "lists": "ul.fade:eq(#id)&&li"
+    },
+    搜索: '#content&&div.details-info-min;*;*;.hidden-lg&&Text;*',
 }
