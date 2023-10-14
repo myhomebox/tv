@@ -46,7 +46,7 @@ var rule = {
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
         }
-        if (/m3u8|mp4|getm3u8?url=http|video/tos/.test(url)) {
+        if (/m3u8|mp4|getm3u8?url=http/.test(url)) {
             input = url
         } else {
             input
@@ -65,4 +65,17 @@ var rule = {
         "lists": ".myui-content__list:eq(#id) li"
     },
     搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+    	//是否启用辅助嗅探: 1,0
+	sniffer:1,
+	// 辅助嗅探规则js写法
+	isVideo:`js:
+		log(input);
+		if(/video\\/tos/.test(input)){
+			input = true
+		}else if(/\\.m3u8/.test(input)){
+			input = true
+		}else{
+			input = false
+		}
+	`,
 }
