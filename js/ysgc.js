@@ -1,15 +1,17 @@
 var rule = {
-	title:'影視工廠',
-	host:'https://www.ysgc.fun',
-	//host:'https://www.3443.tv',
-	url: '/vodshow/fyclassfyfilter.html',
-	headers: {'User-Agent': 'Dart/2.14(dart:io)'},
-        searchUrl:'/vodsearch/wd=**-------------.html',
-        searchable:2,//是否启用全局搜索,
-        quickSearch:1,//是否启用快速搜索,
-	filterable:1,//是否启用分类筛选,
-	filter_url:'-{{fl.area}}-{{fl.by}}-{{fl.class}}-----fypage---{{fl.year}}',
-        filter: {
+    title: '影視工廠',
+    host: 'https://www.ysgc.fun',
+    //host:'https://www.3443.tv',
+    url: '/vodshow/fyclassfyfilter.html',
+    headers: {
+        'User-Agent': 'okhttp/4.1.0'
+    },
+    searchUrl: '/vodsearch/wd=**-------------.html',
+    searchable: 1, //是否启用全局搜索,
+    quickSearch: 1, //是否启用快速搜索,
+    filterable: 1, //是否启用分类筛选,
+    filter_url: '-{{fl.area}}-{{fl.by}}-{{fl.class}}-----fypage---{{fl.year}}',
+    filter: {
            "1":[{"key":"class","name":"類型","value":[{"n":"全部","v":""},{"n":"動作","v":"动作"},{"n":"喜劇","v":"喜剧"},{"n":"愛情","v":"爱情"},{"n":"科幻","v":"科幻"},{"n":"恐怖","v":"恐怖"},{"n":"懸疑","v":"悬疑"},{"n":"驚悚","v":"惊悚"},{"n":"犯罪","v":"犯罪"},{"n":"劇情","v":"剧情"},{"n":"戰爭","v":"战争"},{"n":"動畫","v":"动画"},{"n":"奇幻","v":"奇幻"},{"n":"武俠","v":"武侠"},{"n":"古裝","v":"古装"},{"n":"冒險","v":"冒险"},{"n":"歷史","v":"历史"},{"n":"歌舞","v":"歌舞"},{"n":"家庭","v":"家庭"},{"n":"網路","v":"网络"}]},
            	   {"key":"area","name":"地區","value":[{"n":"全部","v":""},{"n":"内地","v":"内地"},{"n":"香港","v":"香港"},{"n":"台灣","v":"台湾"},{"n":"日本","v":"日本"},{"n":"韓國","v":"韩国"},{"n":"泰國","v":"泰国"},{"n":"美國","v":"美国"},{"n":"印度","v":"印度"},{"n":"法國","v":"法国"},{"n":"英國","v":"英国"},{"n":"俄羅斯","v":"俄罗斯"},{"n":"德國","v":"德国"},{"n":"西班牙","v":"西班牙"},{"n":"義大利","v":"意大利"},{"n":"澳大利亞","v":"澳大利亚"},{"n":"荷蘭","v":"荷兰"}]},
            	   {"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2024","v":"2024"},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"},{"n":"2010","v":"2010"},{"n":"2009","v":"2009"},{"n":"2008","v":"2008"},{"n":"2007","v":"2007"},{"n":"2006","v":"2006"},{"n":"2005","v":"2005"},{"n":"2004","v":"2004"},{"n":"2003","v":"2003"},{"n":"2002","v":"2002"},{"n":"2001","v":"2001"},{"n":"2000","v":"2000"}]},
@@ -33,21 +35,34 @@ var rule = {
 		          3:{cateId:'3'},
 	                 4:{cateId:'4'}
 	                },
-        class_name:'電影&電視劇&綜藝&動漫', 
-	class_url:'1&2&3&4',
-        play_parse:true,
-        lazy:'',
-        limit:6,
-        推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
-        double: true, // 推荐内容是否双层定位
-        一级:'.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
-        二级:{
-                "title": ".myui-content__detail .title&&Text;.myui-content__detail p:eq(-2)&&Text",
-                "img": ".myui-content__thumb .lazyload&&data-original",
-                "desc": ";;;.myui-content__detail p:eq(4)&&Text;.myui-content__detail p:eq(2)&&Text",
-                "content": ".text-collapse p&&Text",
-                "tabs": ".nav-tabs:eq(0) li",
-                "lists": ".myui-content__list:eq(#id) li"
-                },
-      搜索:'#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+    class_name: '電影&電視劇&綜藝&動漫',
+    class_url: '1&2&3&4',
+    play_parse: true,
+    lazy: `js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
+    limit: 6,
+    推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+    double: true, // 推荐内容是否双层定位
+    一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+    二级: {
+        "title": ".myui-content__detail .title&&Text;.myui-content__detail&&p.data:eq(3)--span&&Text",
+        "img": ".myui-content__thumb .lazyload&&data-original",
+        "desc": ".myui-content__detail&&p.otherbox&&Text;body&&span.year&&Text;.myui-content__detail&&p.data:eq(4)--span&&Text!;.myui-content__detail&&p.data:eq(2)--span&&Text;.myui-content__detail&&p.data:eq(0)--span&&Text",
+        "content": "span.data&&Text",
+        "tabs": ".nav-tabs:eq(0) li",
+        "lists": ".myui-content__list:eq(#id) li"
+    },
+    搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
 }
