@@ -1,8 +1,8 @@
 var rule={
     title:'厂长资源',
-    // host:'https://czspp.com', 
-    host:'https://www.czzy.site',
-    hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});HOST = jsp.pdfh(html,"h3&&a&&href")',
+    host:'https://cz01.pw', 
+    //host:'https://www.czzy.site',
+    //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});HOST = jsp.pdfh(html,"h3&&a&&href")',
     url:'/fyclassfyfilter',
     filterable:1,//是否启用分类筛选,
     filter_url:'{{fl.cateId}}{{fl.class}}{{fl.area}}/page/fypage',
@@ -84,6 +84,7 @@ var rule={
     class_url:'movie_bt&dbtop250&gaofenyingshi&zuixindianying&dongmanjuchangban&reyingzhong&/movie_bt_series/zhanchangtuijian',
     // class_parse: '.navlist li:gt(0);a&&Text;a&&href;.*/(.*)',
     play_parse:true,
+   // lazy代码:源于海阔香雅情大佬 / 小程序：香情影视 https://pastebin.com/L4tHdvFn
     lazy:`js:
         pdfh = jsp.pdfh;
         var html = request(input);
@@ -129,4 +130,4 @@ var rule={
     },
     搜索:'.search_list&&ul&&li;*;*;*;*',
     // 预处理:'rule_fetch_params.headers.Cookie="68148872828e9f4d64e7a296f6c6b6d7=5429da9a54375db451f7f9e4f16ce0ea;esc_search_captcha=1";let new_host="https://czspp.com";let new_html=request(new_host);if(/正在进行人机识别/.test(new_html)){let new_src=pd(new_html,"script&&src",new_host);log(new_src);let hhtml=request(new_src,{withHeaders:true});let json=JSON.parse(hhtml);let html=json.body;let key=html.match(new RegExp(\'var key="(.*?)"\'))[1];let avalue=html.match(new RegExp(\'value="(.*?)"\'))[1];let c="";for(let i=0;i<avalue.length;i++){let a=avalue[i];let b=a.charCodeAt();c+=b}let value=md5(c);log(value);let yz_url="https://czspp.com/a20be899_96a6_40b2_88ba_32f1f75f1552_yanzheng_ip.php?type=96c4e20a0e951f471d32dae103e83881&key="+key+"&value="+value;log(yz_url);hhtml=request(yz_url,{withHeaders:true});json=JSON.parse(hhtml);let setCk=Object.keys(json).find(it=>it.toLowerCase()==="set-cookie");let cookie=setCk?json[setCk].split(";")[0]:"";log("cookie:"+cookie);rule_fetch_params.headers.Cookie=cookie;setItem(RULE_CK,cookie)}',
-}
+	}
