@@ -1,3 +1,0 @@
-.apk filter=lfs diff=lfs merge=lfs -text
-*.apk filter=lfs diff=lfs merge=lfs -text
-leanback-python-armeabi_v7a.apk  filter=lfs diff=lfs merge=lfs -text
