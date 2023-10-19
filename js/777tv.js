@@ -23,17 +23,17 @@ var rule = {
             play_parse: true,
             lazy: '',
             limit: 6,
-            推荐: 'li.col-lg-7;li;*;*;*;*',
+            推荐: 'li.stui-vodlist__item;li;*;*;*;*',
             double: true, // 推荐内容是否双层定位
-            一级:'.myui-vodlist&&.myui-vodlist__box;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
+            一级:'li.stui-vodlist__item .stui-vodlist__thumb;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
             二级: {
-                "title": "h1&&Text;p.data--span:eq(0)&&a&&Text",
-                "img": ".lazyload&&data-original",
-                "desc": "p.data:eq(3)--span&&Text;;;p.data:eq(1)--span&&Text;p.data:eq(2)--span&&Text",
-                "content": ".content&&Text",
-                "tabs": ".myui-panel__head.bottom-line h3",
-                "lists": ".myui-content__list:eq(#id)&&li"
+                "title":"h1&&Text;p.data--span:eq(0)&&a&&Text",
+                "img":".lazyload&&data-original",
+                "desc":"p.data:eq(3)--span&&Text;;;p.data:eq(1)--span&&Text;",
+                "content":".stui-content__desc&&Text",
+                "tabs":"body&&.stui-pannel.clearfix .stui-pannel__head.clearfix:not(:contains(劇情介紹))",
+                "lists":".stui-content__playlist:eq(#id)&&li"
             },
             detailUrl:'/vod/detail/id/fyid.html', 
-            搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
+            搜索: 'ul.stui-vodlist.clearfix li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
 }
