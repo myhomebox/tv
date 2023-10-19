@@ -1,5 +1,5 @@
 [
-  {
+  /*{
     "name": "推薦",
     "list": [
       {
@@ -7,7 +7,7 @@
         "icon": "https://raw.githubusercontent.com/myhomebox/Release/main/icon.png"
       }
     ]
-  },
+  },*/
   {
     "name": "內測版",
     "list": [
