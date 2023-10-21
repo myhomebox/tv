@@ -43,16 +43,16 @@ var rule = {
         }
     `,
     limit: 6,
-    推荐: '.public-list-div.public-list-bj;a.public-list-exp;a&&title;.lazy1&&data-src;.public-list-prb&&Text;a&&href',
+    推荐: 'ul.hl-vod-list;li.hl-list-item;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
     double: true, // 推荐内容是否双层定位
-    一级: '.public-list-div.public-list-bj;a&&title;.lazy1&&data-src;.public-list-prb&&Text;a&&href',
+    一级: 'ul.hl-vod-list li.hl-list-item;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
     二级: {
-        "title":"h3&&Text;.detail-info .slide-info.hide:eq(3)&&Text",
-        "img":".lazy1&&data-src",
-        "desc":".slide-info&&.slide-info-remarks:eq(0)&&Text;.slide-info&&.slide-info-remarks:eq(1)&&Text;.slide-info&&.slide-info-remarks:eq(2)&&Text;.detail-info .slide-info.hide:eq(2)&&Text;.detail-info .slide-info.hide:eq(1)&&Text",
-        "content":".switch-box&&.selected&&Text",
-        "tabs":".anthology-tab&&.swiper-slide a",
-        "lists":".anthology-list-play:eq(#id) li"
+        "title":"h2&&Text;li.hl-col-xs-12:eq(6)--em&&Text",
+        "img":".hl-lazy&&data-original",
+        "desc":"li.hl-col-xs-12:eq(1)--em&&Text;li.hl-col-xs-12:eq(4)--em&&Text;li.hl-col-xs-12:eq(5)--em&&Text;li.hl-col-xs-12:eq(2)--em&&Text;li.hl-col-xs-12:eq(3)--em&&Text",
+        "content":"li.hl-col-xs-12:eq(11)--em&&Text",
+        "tabs":".hl-from-list li",
+        "lists":"#hl-plays-list:eq(#id) li"
     },
-    搜索: 'body .public-list-box;.thumb-txt.cor4.hide&&Text;.mask-1&&data-src;.public-list-prb&&Text;a&&href',
+    搜索: 'body .hl-one-list&&.hl-list-item;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
 }
