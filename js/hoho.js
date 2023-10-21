@@ -29,7 +29,7 @@ var rule={
             double: false, // 推荐内容是否双层定位
            //推荐: '.module-list;.module-items&&.module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
             //double: true, // 推荐内容是否双层定位
-            一级: '.module-items .module-item;.module-item-title&&Text;img&&data-src;.module-item-caption&&span:eq(1)&&Text;a&&href',
+            一级: '.module-items .module-item;.module-item-title&&Text;img&&data-src;.module-item-caption&&Text;a&&href',
             二级: {
                 "title": "h1&&Text;div.tag-link&&Text",
                 "img": ".module-item-pic&&img&&data-src",
