@@ -1,7 +1,7 @@
 var rule={
     title:'楓林網',
-    //host:'https://imaple.app',
-    host:'https://imaple.co',
+    host:'https://imaple.app',
+    //host:'https://imaple.co',
     url:'/show/fyfilter.html',
     class_name:'電影&電視劇&綜藝&動漫',
     class_url:'1&2&3&4',
@@ -22,7 +22,7 @@ var rule={
     },
     //searchUrl:'/page/fypage/wd/**.html',
     //searchUrl:'/search/wd/**.html',
-    searchUrl:'/search/page/fypage/?wd=**',
+    searchUrl:'/search/page/fypage/wd/**.html',
     searchable:1,//是否启用全局搜索,
     headers:{
         'User-Agent':'UC_UA',
@@ -38,12 +38,12 @@ var rule={
     一级:'.myui-vodlist li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
     二级:
        {
-    	"title":".myui-content__detail .title&&Text",
+    	"title":"h1&&Text;.myui-content__detail a:eq(1)&&Text",
     	"img":".myui-content__thumb .lazyload&&data-original",
-    	"desc":";;.myui-content__detail p:eq(1)&&Text;.myui-content__detail p:eq(2)&&Text;.myui-content__detail p:eq(3)&&Text",
-    	"content":"p.data--span:eq(4)&&Text",
+    	"desc":".myui-vodlist__thumb .pic-text.text-center&&Text;.myui-content__detail a:eq(3)&&Text;.myui-content__detail a:eq(2)&&Text;p.data:eq(2)--span&&Text;p.data:eq(3)--span&&Text",
+    	"content":"p.data.hidden-xs:eq(0)--span&&Text",
     	"tabs":".nav-tabs:eq(0) li",
     	"lists":".myui-content__list:eq(#id) li"
     	},
-    搜索:'.myui-vodlist__media li;a&&title;*;*;a&&href;.text-muted:eq(-1)&&Text',
+    搜索:'.myui-vodlist__media .myui-vodlist__thumb;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
 }
