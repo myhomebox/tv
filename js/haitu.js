@@ -44,9 +44,9 @@ var rule = {
             double: true, // 推荐内容是否双层定位
             一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
             二级: {
-                "title": ".video-cover&&img&&alt;.tag-link:eq(0)&&Text",
+                "title": ".video-cover&&img&&alt;.tag-link:eq(1)&&Text",
                 "img": ".module-item-pic&&img&&data-src",
-                "desc": ".video-info-items:eq(3)&&Text;.tag-link:eq(2)&&Text;.tag-link:eq(3)&&Text;.video-info-actor:eq(0)&&Text;.video-info-actor:eq(1)&&Text",
+                "desc": ".video-info-items:eq(3)&&Text;.video-info-aux a.tag-link:eq(1)&&Text;.video-info-aux a.tag-link:eq(2)&&Text;.video-info-actor:eq(0)&&Text;.video-info-actor:eq(1)&&Text",
                 "content": ".vod_content&&Text",
                 "tabs": ".module-tab-item",
                 "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
@@ -54,4 +54,4 @@ var rule = {
             searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
             detailUrl:'/vod/detail/id/fyid.html', //非必填,二级详情拼接链接
             搜索:'json:list;name;pic;;id',
-}
+        }
