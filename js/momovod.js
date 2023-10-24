@@ -28,13 +28,13 @@ var rule = {
             double: true, // 推荐内容是否双层定位
             一级:'.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
             二级:{
-                "title": "h1&&Text;.myui-content__detail p.data:eq(0)--span a&&Text",
+                "title": "h1&&Text;p.data&&a:eq(0)&&Text",
                 "img": ".myui-content__thumb .lazyload&&data-original",
-                "desc": ".myui-content__thumb .pic-text&&Text;;;p.data:eq(1)--span&&Text;p.data:eq(2)--span&&Text",
+                "desc": "p.data:eq(4)&&Text;p.data&&a:eq(2)&&Text;p.data&&a:eq(1)&&Text;p.data:eq(1)--span&&Text;p.data:eq(2)--span&&Text",
                 "content": "p.data:eq(3)--span&&Text",
                 "tabs": ".myui-panel__head.bottom-line li",
                 "lists": ".myui-content__list:eq(#id) li"
             },
             detailUrl:'/vod/detail/fyid.html', 
-            搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+            搜索: '#searchList li;a&&title;.lazyload&&data-original;.pic-text.text-center&&Text;a&&href',
 }
