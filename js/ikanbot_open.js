@@ -116,7 +116,7 @@ async function detail(id) {
 		vod_area: $(detail).find('h3:nth-child(4)').text(),
 		vod_actor: $(detail).find('h3:nth-child(5)').text(),
 	};
-	const res = await req(url + '/api/getResN?videoId=' + id.substring(id.lastIndexOf('/') + 1) + '&mtype=2&token=9109590b194731fde643ce27924fcf6f', {
+	const res = await req(url + '/api/getResN?videoId=' + id.substring(id.lastIndexOf('/') + 1) + '&mtype=2&token=9m293801920k7f56be39rd7c3fc1263du67a2375e', {
 		headers: {
 			Referer: 'play',
 			'User-Agent': UA,
