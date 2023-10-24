@@ -25,16 +25,16 @@ var rule={
 	play_parse: true,
             lazy: '',
             limit: 6,
-            推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+            推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text.text-right&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
-            一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+            一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text.text-right&&Text;a&&href',
             二级: {
-                "title": "h1&&Text;.data--span:eq(0)&&Text",
+                "title": "h1&&Text;p.data&&a:eq(0)&&Text",
                 "img": ".myui-content__thumb .lazyload&&data-original",
-                "desc": "#score&&Text;;;.data--span:eq(2)&&Text;.data--span:eq(3)&&Text",
+                "desc": "p.data.hidden-sm&&Text;p.data&&a:eq(2)&&Text;p.data&&a:eq(1)&&Text;.data--span:eq(2)&&Text;.data--span:eq(3)&&Text",
                 "content": ".content&&Text",
                 "tabs": ".nav-tabs:eq(0) li",
                 "lists": ".myui-content__list:eq(#id) li"
             },
-            搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+            搜索: '#searchList li;a&&title;.lazyload&&data-original;.pic-text.text-right&&Text;a&&href',
 }
