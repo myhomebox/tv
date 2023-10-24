@@ -116,7 +116,8 @@ async function detail(id) {
 		vod_area: $(detail).find('h3:nth-child(4)').text(),
 		vod_actor: $(detail).find('h3:nth-child(5)').text(),
 	};
-	const res = await req(url + '/api/getResN?videoId=' + id.substring(id.lastIndexOf('/') + 1) + '&mtype=2&token=9m293801920k7f56be39rd7c3fc1263du67a2375e', {
+    const token = getToken($);
+	const res = await req(url + '/api/getResN?videoId=' + id.substring(id.lastIndexOf('/') + 1) + '&mtype=1&token=' + token, {
 		headers: {
 			Referer: 'play',
 			'User-Agent': UA,
@@ -180,6 +181,22 @@ async function detail(id) {
 	return JSON.stringify({
 		list: [vod],
 	});
+}
+
+function getToken($) {
+    const currentId = $('#current_id').val();
+    let eToken = $('#e_token').val();
+    if (!currentId || !eToken) return '';
+    const idLength = currentId.length;
+    const subId = currentId.substring(idLength - 4, idLength);
+    let keys = [];
+    for (let i = 0; i < subId.length; i++) {
+        const curInt = parseInt(subId[i]);
+        const splitPos = curInt % 3 + 1;
+        keys[i] = eToken.substring(splitPos, splitPos + 8);
+        eToken = eToken.substring(splitPos + 8, eToken.length);
+    }
+    return keys.join('');
 }
 
 function base64Encode(text) {
