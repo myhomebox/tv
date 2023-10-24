@@ -52,10 +52,10 @@ var rule = {
     double: true,
     一级: 'li.col-md-2;a&&title;.video-pic&&data-original;.text-bg-r&&Text;a&&href',
     二级: {
-        "title": "h1&&Text;li.col-xs-12--span:eq(1)&&Text",
+        "title": "h1&&Text;li.col-xs-6:eq(0)&&Text",
         "img": ".video-pic:eq(0)&&style",
-        "desc": "li.col-xs-12:eq(0)&&Text;;;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
-        "content": ".details-content-all&&Text",
+        "desc": "li.col-xs-12:eq(0)&&Text;li.col-xs-6:eq(2)--span&&Text;li.col-xs-4--span&&Text;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
+        "content": "li.col-sm-12--span&&Text",
         "tabs": "a.gico",
         "lists": "ul.fade:eq(#id)&&li"
     },
