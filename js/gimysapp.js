@@ -47,12 +47,12 @@ var rule = {
             double: true, // 推荐内容是否双层定位
             一级:'.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
             二级: {
-                "title": "h1&&Text;p.data:eq(0)&&Text",
+                "title": "h1&&Text;p.data&&a:eq(0)&&Text",
                 "img": ".myui-content__thumb .lazyload&&data-original",
-                "desc": "p.data--span:eq(1)&&Text;;;p.data--span:eq(2)&&Text;p.data--span:eq(3)&&Text",
-                "content": ".content&&Text",
+                "desc": "p.data.hidden-sm&&Text;p.data&&a:eq(2)&&Text;p.data&&a:eq(1)&&Text;p.data--span:eq(2)&&Text;p.data--span:eq(3)&&Text",
+                "content": ".content span.data&&Text",
                 "tabs": ".myui-panel__head.bottom-line h3",
                 "lists": ".myui-content__list:eq(#id) li"
             },
-            搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+            搜索: '#searchList li;a&&title;.lazyload&&data-original;.pic-text.text-right&&Text;a&&href',
         }
