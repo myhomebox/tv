@@ -38,7 +38,7 @@ var rule = {
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
         }
-        if (/m3u8|mp4/.test(url)) {
+         if (/m3u8|mp4|flv/.test(url)) {
             input = url
         } else {
             input
@@ -49,12 +49,12 @@ var rule = {
     double: true, // 推荐内容是否双层定位
     一级: '#content&&li;a&&title;a.video-pic&&data-original;.text-bg-r&&Text;a&&href',
     二级: {
-        "title": "h1&&Text;li.col-xs-12--span:eq(1)&&Text",
+        "title": "h1&&Text;li.col-xs-6 a&&Text",
         "img": "meta.img&&content",
-        "desc": "li.col-xs-12:eq(0)&&Text;;;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
+        "desc": "li.col-sm-6:eq(0)&&Text;li.col-sm-6:eq(7)--span&&Text;li.col-sm-6:eq(3)--span&&Text;li.col-md-12--span:eq(1)&&Text;li.col-md-6--span:eq(2)&&Text",
         "content": ".details-content-all&&Text",
-        "tabs": "a.gico",
-        "lists": "ul.fade:eq(#id)&&li"
+        "tabs": "div.gico",
+        "lists": "ul.fade:eq(#id) li"
     },
     搜索: '#content&&div.details-info-min;*;*;.hidden-lg&&Text;*',
 }
