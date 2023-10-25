@@ -2,7 +2,7 @@
 // 一级筛选页面 数字验证
 // 搜索 数字验证
 muban.vfed.二级.title = 'h1&&Text;.fed-col-md3--span:eq(0)&&Text';
-muban.vfed.二级.desc = '.fed-col-md3:eq(3)&&Text;.fed-col-md3--span:eq(2)&&Text;.fed-col-md3--span:eq(1)&&Text;.fed-col-md6:eq(0)&&Text;.fed-col-md6--span:eq(1)&&Text';
+muban.vfed.二级.desc = '.fed-col-md3:eq(3)&&Text;.fed-col-md3--span:eq(2)&&Text;.fed-col-md3--span:eq(1)&&Text;.fed-col-md6--span:eq(0)&&Text;.fed-col-md6--span:eq(1)&&Text';
 var rule = {
 	title: '冷曦影视',
 	模板:'vfed',
