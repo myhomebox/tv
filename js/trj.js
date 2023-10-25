@@ -32,9 +32,9 @@ var rule={
     double:true, // 推荐内容是否双层定位
     一级:'li.vodlist_item;a&&title;a&&data-original;.pic_text.text_right&&Text;a&&href',
     二级:{
-        "title":".lazyload&&title;.data:eq(3)--span&&Text",
+        "title":".lazyload&&title;li.data--span:eq(3)&&Text",
         "img":".lazyload&&data-original",
-        "desc":".data:eq(2)span&&Text;;;.data--span:eq(0)&&Text;.data--span:eq(1)&&Text",
+        "desc":"li.data:eq(2)&&Text;li.data:eq(4) a&&Text;;li.data--span:eq(0)&&Text;li.data--span:eq(1)&&Text",
         "content":".content&&Text",
         "tabs":"#NumTab a",
         "lists":".play_list_box:eq(#id) .playlist_full li"
