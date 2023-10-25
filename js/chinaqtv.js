@@ -17,7 +17,8 @@ var rule={
           一级: '.content&&div.drama;.title&&Text;.imgcover&&style;p&&Text;a&&href',
           二级: {
                 "title": ".title&&Text",
-                "content": "pre&&Text",
+                //"desc": ";;;;;",
+                "content": ".intro.sizing&&Text",
                 "tabs": ".items&&b",//解析源
                 "lists": "body&&.items:eq(#id) li"
             },
