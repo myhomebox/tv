@@ -47,12 +47,12 @@ var rule={
 	limit:6,
 	// double:true, // 推荐内容是否双层定位
 	// 推荐:'body&&.hl-list-wrap;ul&&li;*;*;*;*',
-	推荐:'.hl-rank-list&&.hl-list-item;*;*;.hl-item-hits&&Text;*',
+	推荐:'.hl-rank-list&&.hl-list-item;*;.hl-lazy&&data-original;.hl-item-remarks--span&&Text;a&&href',
 	一级:'.hl-vod-list&&li;a&&title;.hl-lazy&&data-original;.hl-pic-text&&Text;a&&href',
 	二级:{
 		"title":"h2&&Text;li.hl-col-xs-12--em:eq(6)&&Text",
 		"img":".hl-lazy&&data-original",
-		"desc":"li.hl-col-xs-12:eq(1)&&Text;;;li.hl-col-xs-12--em:eq(2)&&Text;li.hl-col-xs-12--em:eq(3)&&Text",
+		"desc":"li.hl-col-xs-12:eq(1)&&Text;li.hl-col-xs-12--em:eq(4)&&Text;li.hl-col-xs-12--em:eq(5)&&Text;li.hl-col-xs-12--em:eq(2)&&Text;li.hl-col-xs-12--em:eq(3)&&Text",
 		"content":".hl-content-text&&Text",
 		"tabs":".hl-from-list&&li",
 		"lists":".hl-plays-list:eq(#id) li"
