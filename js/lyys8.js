@@ -1,5 +1,5 @@
 muban.短视.二级.title = 'h1&&Text;.main-ui-meta&&div:eq(5)--span&&Text';
-muban.短视.二级.desc = '.otherbox&&Text;;;.attrs&&Text;.main-ui-meta&&div:eq(2)--span&&Text';
+muban.短视.二级.desc = '.otherbox&&Text;;.main-ui-meta&&div:eq(6)--span&&Text;.attrs&&a&&Text;.main-ui-meta&&div:eq(2)--span&&Text';
 muban.短视.二级.tabs = '.py-tabs&&li';
 var rule = {
 	title:'凌云影视',
