@@ -5,8 +5,9 @@ http://dyxs.me
 */
 var rule = {
                  title:'电影先生',
-                 host:'http://dyxs.vip',
-                 hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"p:eq(5)&&a&&href");print(src);HOST=src',
+                 host:'https://dyxs30.com',
+                 //host:'http://dyxs.vip',
+                 //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"p:eq(5)&&a&&href");print(src);HOST=src',
                  url:'/pianku-fyclassfyfilter/',
                  searchUrl:'/search-**-----------fypage--/',
                  filterable: 1,//是否启用分类筛选,
@@ -23,9 +24,9 @@ var rule = {
                  double: true, // 推荐内容是否双层定位
                  一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
                  二级: {
-                     "title": "h1&&Text;.video-info-aux&&Text",
+                     "title": "h1&&Text;.tag-link:eq(2)&&Text",
                      "img": ".module-item-pic&&img&&data-src",
-                     "desc": ".video-info-items:eq(3)&&Text;;;.video-info-actor:eq(2)&&Text;.video-info-actor:eq(0)&&Text",
+                     "desc": ".video-info-items:eq(4)&&Text;.tag-link:eq(1)&&Text;.tag-link:eq(3)&&Text;.video-info-actor:eq(2)&&Text;.video-info-actor:eq(0)&&Text",
                      "content": ".video-info-content&&Text",
                      "tabs": ".module-tab-item",
                      "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
