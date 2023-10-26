@@ -40,9 +40,9 @@ var rule = {
             double: true, // 推荐内容是否双层定位
             一级: 'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
             二级: {
-                "title": "h1&&Text;.module-info-tag&&Text",
+                "title": "h1&&Text;.module-info-tag-link:eq(2)&&Text",
                 "img": ".lazyload&&data-original",
-                "desc": ";;;.module-info-item:eq(2) .module-info-item-content&&Text;.module-info-item:eq(1) .module-info-item-content&&Text",
+                "desc": ".module-info-item:eq(4) .module-info-item-content&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item:eq(2) .module-info-item-content&&Text;.module-info-item:eq(1) .module-info-item-content&&Text",
                 "content": ".module-info-introduction&&Text",
                 "tabs": "#y-playList .module-tab-item",
                 "lists": ".module-play-list:eq(#id) a"
