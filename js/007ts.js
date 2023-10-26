@@ -41,9 +41,9 @@ var rule = {
             double: true, // 推荐内容是否双层定位
             一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
             二级: {
-                "title": ".stui-content__detail .title&&Text;.stui-content__detail p:eq(-2)&&Text",
+                "title": ".stui-content__detail .title&&Text;p.data:eq(0)&&Text",
                 "img": ".stui-content__thumb .lazyload&&data-original",
-                "desc": ".data:eq(1)&&Text;;;.data:eq(6)&&Text;.data:eq(5)&&Text",
+                "desc": "p.data:eq(1)&&Text;p.data:eq(4)&&Text;p.data:eq(2)&&Text;p.data:eq(6)&&Text;p.data:eq(5)&&Text",
                 "content": ".detail&&Text",
                 "tabs": ".nav-tabs.dpplay&&li",
                 "lists": ".stui-content__playlist:eq(#id) li"
