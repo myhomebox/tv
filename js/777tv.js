@@ -29,7 +29,7 @@ var rule = {
             二级: {
                 "title":"h1&&Text;p.data--span:eq(0)&&a&&Text",
                 "img":".lazyload&&data-original",
-                "desc":"p.data:eq(3)--span&&Text;;;p.data:eq(1)--span&&Text;",
+                "desc":"p.data:eq(2)&&Text;;;p.data:eq(1)--span&&Text;",
                 "content":".stui-content__desc&&Text",
                 "tabs":"body&&.stui-pannel.clearfix .stui-pannel__head.clearfix:not(:contains(劇情介紹))",
                 "lists":".stui-content__playlist:eq(#id)&&li"
