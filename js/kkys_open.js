@@ -21,7 +21,7 @@ async function request(reqUrl, postData, agentSp, get) {
         headers['sign'] = sign;
         headers['time'] = ts;
         headers['md5'] = rand;
-        headers['version'] = '2.1.0';
+        headers['version'] = '2.1.3';
         headers['system-model'] = device.model;
         headers['system-brand'] = device.brand;
         headers['system-version'] = device.release;
@@ -351,8 +351,8 @@ function randStr(len, withNum) {
 
 function randDevice() {
     return {
-        brand: 'Huawei',
-        model: 'HUAWEI Mate 20',
+        brand: 'HTC',
+        model: 'HTC U20 5G',
         release: '10',
         buildId: randStr(3, false).toUpperCase() + _.random(11, 99) + randStr(1, false).toUpperCase(),
     };
