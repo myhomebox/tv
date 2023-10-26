@@ -31,14 +31,27 @@ var rule={
     class_parse: '.navbar-items&&li;a&&Text;a&&href;.*/(\\d+).html',
     play_parse:true,
     // pagecount:{"6":1,"7":1,"8":1,"9":1,"10":1,"11":1,"12":1,"13":1,"14":1,"15":1,"16":1,"3":1,"4":1},
-    lazy:'',
+    lazy: `js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4|getm3u8?url=http/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
     limit:6,
     推荐: '.module-items&&.module-item;.lazyload&&alt;*;*;*',
     一级: 'a.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     二级: {
-        "title": "h1&&Text;.module-info-tag&&Text",
+        "title": "h1&&Text;.module-info-tag-link:eq(2)&&Text",
         "img": ".ls-is-cached&&data-original",
-        "desc": ".module-info-item-content:eq(3)&&Text;;;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text",
+        "desc": ".module-info-item-content:eq(3)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text",
         "content": ".module-info-introduction-content&&Text",
         "tabs": "#y-playList&&.module-tab-item",
         "lists": ".module-play-list-content:eq(#id)&&a"
