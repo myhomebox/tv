@@ -38,12 +38,12 @@ var rule = {
         }
     `,
     limit:6,
-    推荐:'.foucebox&&.showDiv;h3&&Text;*;p&&Text;*',
+    推荐:'.content-list&&li;a&&title;img&&src;.bottom2&&Text;a&&href',
     一级:'.content-list&&li;a&&title;img&&src;.bottom2&&Text;a&&href',
     二级:{
         "title":"h1--span&&Text;.main-ui-meta&&div--span:eq(4)&&Text",
         "img":".img&&img&&src",
-        "desc":".otherbox&&em&&Text;;;.main-ui-meta&&div--span:eq(3)&&Text;.main-ui-meta&&div--span:eq(2)&&Text",
+        "desc":".otherbox&&em&&Text;;.main-ui-meta&&div--span:eq(5)&&Text;.main-ui-meta&&div--span:eq(3)&&Text;.main-ui-meta&&div--span:eq(2)&&Text",
         "content":".sqjj_a--span&&Text",
         "tabs":".py-tabs&&li",
         "lists":".player:eq(#id)&&li"
