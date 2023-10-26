@@ -1,5 +1,5 @@
-muban.海螺3.二级.title = '.hl-dc-title&&Text;.hl-data-xs&&Text';
-muban.海螺3.二级.desc = 'li.hl-col-xs-12:eq(1)&&Text;;;li.hl-col-xs-12--em:eq(2)&&Text;li.hl-col-xs-12--em:eq(3)&&Text';
+muban.海螺3.二级.title = '.hl-dc-title&&Text;li.hl-col-xs-12--em:eq(6)&&Text';
+muban.海螺3.二级.desc = 'li.hl-col-xs-12:eq(1)&&Text;li.hl-col-xs-12--em:eq(4)&&Text;li.hl-col-xs-12--em:eq(5)&&Text;li.hl-col-xs-12--em:eq(2)&&Text;li.hl-col-xs-12--em:eq(3)&&Text';
 var rule={
     title:'飞兔影视',
     host:'https://www.feitu.tv',
