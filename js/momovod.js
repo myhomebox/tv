@@ -31,7 +31,7 @@ var rule = {
                 "title": "h1&&Text;p.data&&a:eq(0)&&Text",
                 "img": ".myui-content__thumb .lazyload&&data-original",
                 "desc": "p.data:eq(4)&&Text;p.data&&a:eq(2)&&Text;p.data&&a:eq(1)&&Text;p.data:eq(1)--span&&Text;p.data:eq(2)--span&&Text",
-                "content": "p.data:eq(3)--span&&Text",
+                "content": ".data.hidden-xs--a:eq(0)&&Text",
                 "tabs": ".myui-panel__head.bottom-line li",
                 "lists": ".myui-content__list:eq(#id) li"
             },
