@@ -24,4 +24,5 @@ var rule = {
 		zhibo:{cateId:'zhibo',by:'time'}
 	},
 	class_parse: '.nav-list&&li:lt(5);a&&Text;a&&href;/(\\w+).html',
+	搜索: '#searchList li;a&&title;.lazyload&&data-original;.pic-text.text-right&&Text;a&&href;.text-muted:eq(-1)&&Text',
 }
