@@ -24,7 +24,20 @@ var rule = {
 	class_url:'2&1&3&4&30',
 	play_parse:true,
 	// lazy:'js:input = /mp4/.test(input)?{jx:0,url:input,parse:0}:input',
-	lazy:'',
+	lazy: `js:
+                   var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+                   var url = html.url;
+             if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4|flv/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
 	limit:6,
 	推荐:'json:data.list[0].vod_list;*;*;*;*',
 	// 推荐:'*',
