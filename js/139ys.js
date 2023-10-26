@@ -1,5 +1,5 @@
-muban.首图.二级.title = 'h1&&Text;.data:eq(0)--span&&Text';
-muban.首图.二级.desc = '#rating&&Text;;;.data:eq(1)&&Text;.data:eq(2)&&Text';
+muban.首图.二级.title = 'h1&&Text;.data:eq(0)&&a:eq(0)&&Text';
+muban.首图.二级.desc = '#rating&&Text;.data:eq(0)&&a:eq(2)&&Text;.data:eq(0)&&a:eq(1)&&Text;.data:eq(1)--span&&Text;.data:eq(2)--span&&Text';
 muban.首图.二级.content = '.data.hidden-xs--a:eq(0)&&Text';
 var rule = {
 	title:'139影视',
