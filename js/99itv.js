@@ -19,9 +19,9 @@ var rule={
     double:true, // 推荐内容是否双层定位
     一级:'.myui-vodlist li;a&&title;a&&data-original;.text-right&&Text;a&&href',
     二级:{
-    	"title":".myui-content__detail .title&&Text;.myui-content__detail p.data:eq(0) a&&Text",
+    	"title":".myui-content__detail .title&&Text;p.data:eq(0)&&a:eq(0)&&Text",
     	"img":".myui-content__thumb .lazyload&&data-original",
-    	"desc":".myui-content__detail p.data:eq(1) a&&Text;;;.myui-content__detail p.data:eq(2)--span&&Text;.myui-content__detail p.data:eq(3)--span&&Text",
+    	"desc":"p.data:eq(1) a&&Text;p.data:eq(0)&&a:eq(2)&&Text;p.data:eq(0)&&a:eq(1)&&Text;.myui-content__detail p.data:eq(2)--span&&Text;.myui-content__detail p.data:eq(3)--span&&Text",
     	"content":".myui-panel_bd .content span&&Text",
     	"tabs":".nav-tabs:eq(0) li",
     	"lists":".myui-content__list:eq(#id) li"},
