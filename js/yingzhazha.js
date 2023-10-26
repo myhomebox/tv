@@ -1,4 +1,5 @@
-muban.mxpro.二级.desc = '.module-info-item-content:eq(4)&&Text;;;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text';
+muban.mxpro.二级.title = 'h1&&Text;.module-info-tag-link:eq(2)&&Text';
+muban.mxpro.二级.desc = '.module-info-item-content:eq(3)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text';
 muban.mxpro.二级.tabs = '.module-tab-items-box .module-tab-item';
 var rule = {
     title:'影渣渣',
