@@ -110,7 +110,7 @@ var rule = {
 				vod_remarks: pdfh(html, "p.data:eq(1)&&Text"),
 				vod_actor: getLink(vod_actor), // 影视TV click lick
 				vod_director: getLink(vod_director), // 影视TV click lick
-				vod_content: pdfh(html, ".sketch&&Text")
+				vod_content: pdfh(html, "span.data&&Text")
 			};
 			let playFrom = [];
 			let vod_tab_list = [];
