@@ -14,7 +14,7 @@ var rule = {
         filterable: 1,//是否启用分类筛选,
         filter_url:'{{fl.cateId}}&order={{fl.by}}&area={{fl.area}}&jq={{fl.class}}&yuyan={{fl.lang}}&year={{fl.year}}',
         filter: {
-            	"1":[{"key":"cateId","name":"类型","value":[{"n":"全部","v":"1"},{"n":"动作片","v":"5"},{"n":"爱情片","v":"6"},{"n":"科幻片","v":"7"},{"n":"恐怖片","v":"8"},{"n":"战争片","v":"9"},{"n":"喜剧片","v":"10"},{"n":"记录片","v":"11"},{"n":"剧情片","v":"12"},{"n":"🔞伦理片","v":"25"}]},
+            	"1":[{"key":"cateId","name":"类型","value":[{"n":"全部","v":"1"},{"n":"动作片","v":"5"},{"n":"爱情片","v":"6"},{"n":"科幻片","v":"7"},{"n":"恐怖片","v":"8"},{"n":"战争片","v":"9"},{"n":"喜剧片","v":"10"},{"n":"记录片","v":"11"},{"n":"剧情片","v":"12"}]},
             		{"key":"area","name":"地区","value":[{"n":"全部","v":""},{"n":"大陆","v":"大陆"},{"n":"香港","v":"香港"},{"n":"台湾","v":"台湾"},{"n":"日本","v":"日本"},{"n":"韩国","v":"韩国"},{"n":"欧美","v":"欧美"},{"n":"美国","v":"美国"},{"n":"英国","v":"英国"},{"n":"法国","v":"法国"},{"n":"德国","v":"德国"},{"n":"俄罗斯","v":"俄罗斯"},{"n":"泰国","v":"泰国"},{"n":"越南","v":"越南"},{"n":"印度","v":"印度"},{"n":"意大利","v":"意大利"},{"n":"西班牙","v":"西班牙"},{"n":"加拿大","v":"加拿大"},{"n":"新加坡","v":"新加坡"},{"n":"马来西亚","v":"马来西亚"},{"n":"其他","v":"其他"}]},
             	        {"key":"lang","name":"语言","value":[{"n":"全部","v":""},{"n":"国语","v":"国语"},{"n":"英语","v":"英语"},{"n":"粤语","v":"粤语"},{"n":"韩语","v":"韩语"},{"n":"日语","v":"日语"},{"n":"法语","v":"法语"},{"n":"德语","v":"德语"},{"n":"其它","v":"其它"}]},
             	        {"key":"year","name":"时间","value":[{"n":"全部","v":""},{"n":"2024","v":"2024"},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"},{"n":"2010","v":"2010"},{"n":"2009","v":"2009"},{"n":"2008","v":"2008"},{"n":"2007","v":"2007"},{"n":"2006","v":"2006"},{"n":"2005","v":"2005"},{"n":"2004","v":"2004"},{"n":"2003","v":"2003"},{"n":"2002","v":"2002"},{"n":"2001","v":"2001"},{"n":"2000","v":"2000"},{"n":"更早","v":"more"}]},
@@ -59,7 +59,7 @@ var rule = {
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
 		let html = request(input);
-		let list = pdfa(html, ".module-list .module-items .module-item");
+		let list = pdfa(html, ".module-list .module-items .module-item:not(:contains(伦理片))");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a&&title"),
@@ -79,7 +79,7 @@ var rule = {
 			let tid = cateObj.tid.split('_')[0];
 			input = HOST + '/search.php?page=' + MY_PAGE + '&searchword=' + tid + '&searchtype=';
 			html = request(input);
-			list = pdfa(html, ".module-list .module-items&&.module-search-item");
+			list = pdfa(html, ".module-list .module-items&&.module-search-item:not(:contains(伦理片))");
 			list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a:eq(1)&&title"),
@@ -90,7 +90,7 @@ var rule = {
 		});
 		} else {
 			html = request(input);
-			list = pdfa(html, ".module-items .module-item");
+			list = pdfa(html, ".module-items .module-item:not(:contains(伦理片))");
 		
 		list.forEach(it => {
 			d.push({
@@ -158,7 +158,7 @@ var rule = {
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
 		let html = request(input);
-		let list = pdfa(html, ".module-items .module-search-item");
+		let list = pdfa(html, ".module-items .module-search-item:not(:contains(伦理片))");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a:eq(1)&&title"),
