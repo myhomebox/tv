@@ -120,9 +120,10 @@ var rule = {
 				vod_name: pdfh(html, "h1&&Text"),
 				type_name: pdfh(html, ".tag-link:eq(0)&&Text"),
 				vod_year: pdfh(html, ".tag-link:eq(1)&&Text"),
-                               vod_area: pdfh(html, ".tag-link:eq(2)&&Text"),
+                                vod_area: pdfh(html, ".tag-link:eq(2)&&Text"),
 				vod_pic: pd(html, ".module-item-pic&&img&&data-src"),
 				vod_remarks: pdfh(html, ".video-info-items:eq(2)&&Text"),
+                                vod_lang: pdfh(html, ".video-info-item:eq(3)&&Text"),
 				vod_actor: getLink(vod_actor), // 影视TV click lick
 				//vod_director: pdfh(html, ".video-info-actor:eq(0)&&Text"),
 				vod_director: getLink(vod_director), // 影视TV click lick
