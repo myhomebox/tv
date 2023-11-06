@@ -1,5 +1,6 @@
+muban.mxpro.二级.title = 'h1&&Text;.module-info-tag-link:eq(2)&&Text';
 muban.mxpro.二级.img = '.lazyload&&data-src';
-muban.mxpro.二级.desc = '.module-info-item:eq(4)&&Text;;;.module-info-item--span:eq(3)&&Text;.module-info-item--span:eq(1)&&Text';
+muban.mxpro.二级.desc = '.module-info-item:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item--span:eq(3)&&Text;.module-info-item--span:eq(1)&&Text';
 var rule = {
     title:'歪片星球',
     模板:'mxpro',
@@ -28,4 +29,5 @@ var rule = {
     lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);log(html);var url=html.url;if(html.encrypt=='1'){url=unescape(url).split('&')[0]}else if(html.encrypt=='2'){url=unescape(base64Decode(url).split('&')[0])}if(/m3u8|mp4/.test(url)){input=url}else{input}",
     推荐:'*',
     一级: 'a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-src;.module-item-note&&Text;a&&href',
+    搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-src;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',
 }
