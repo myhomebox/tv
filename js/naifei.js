@@ -51,5 +51,5 @@ var rule = {
         "tabs": ".module-tab-content&&.module-tab-item",
         "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
     },
-    搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;a&&href',
+    搜索: '.module-items .module-search-item;a:eq(1)&&title;img&&data-src;.video-serial&&Text;a:eq(1)&&href',
 }
