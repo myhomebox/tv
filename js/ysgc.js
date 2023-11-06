@@ -38,20 +38,7 @@ var rule = {
     class_name: '電影&電視劇&綜藝&動漫',
     class_url: '1&2&3&4',
     play_parse: true,
-    lazy: `js:
-        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-        var url = html.url;
-        if (html.encrypt == '1') {
-            url = unescape(url)
-        } else if (html.encrypt == '2') {
-            url = unescape(base64Decode(url))
-        }
-        if (/m3u8|mp4|getm3u8?url=http/.test(url)) {
-            input = url
-        } else {
-            input
-        }
-    `,
+    lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);log(html);var url=html.url;if(html.encrypt=='1'){url=unescape(url).split('&')[0]}else if(html.encrypt=='2'){url=unescape(base64Decode(url).split('&')[0])}if(/m3u8|mp4/.test(url)){input=url}else{input}",
     limit: 6,
     推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
     double: true, // 推荐内容是否双层定位
