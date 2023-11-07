@@ -40,12 +40,12 @@ var rule = {
     double: true, // 推荐内容是否双层定位
     一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
     二级: {
-        "title": "h1&&Text;.video-info-aux&&a.tag-link,0&&Text",
+        "title": "h1&&Text;.video-info-aux&&a.tag-link:eq(0)&&Text",
         "img": ".module-item-pic&&img&&data-src",
         "desc": "",
         "content": ".video-info-main&&.video-info-content&&Text",
         "tabs": ".module-tab-item",
         "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
     },
-    搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;a&&href',
+    搜索: '.module-items .module-search-item;a:eq(1)&&title;img&&data-src;.video-serial&&Text;a:eq(1)&&href',
 }
