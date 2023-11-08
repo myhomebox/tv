@@ -58,5 +58,5 @@ var rule={
     	"tabs":".nav-tabs:eq(0) li",
     	"lists":".myui-content__list:eq(#id) li"
     	},
-    搜索:'.myui-vodlist__media li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
+    搜索:'#searchList li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
 }
