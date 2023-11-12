@@ -11,7 +11,7 @@ var rule = {
     filter_def: {1: {cateId: '1'},2: {cateId: '2'},3: {cateId: '3'},4: {cateId: '4'},5: {cateId: '5'},20: {cateId: '20'}},
     class_name: '電影&電視劇&港劇區&綜藝&動漫&紀錄片',
     class_url: '1&2&20&3&4&5',
-    lazy:"js:var html=JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);log(html);var url=html.url;if(html.encrypt=='1'){url=unescape(url).split('&')[0]}else if(html.encrypt=='2'){url=unescape(base64Decode(url).split('&')[0])}if(/m3u8|mp4/.test(url)){input=url}else{input}",
+    lazy:'',
     limit: 6,
     推荐: '.module-main.tab-list.active;.module-poster-items-base&&.module-poster-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     double: true, // 推荐内容是否双层定位
