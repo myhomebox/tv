@@ -33,10 +33,10 @@ var rule = {
 			{"key":"by","name":"排序","value":[{"n":"時間","v":"time"},{"n":"人氣","v":"hits"},{"n":"評分","v":"score"}]}]
 	},
 	filter_def:{
-		1:{cateId:'1',by:'hits'},
-		2:{cateId:'2',by:'hits'},
-		3:{cateId:'3',by:'hits'},
-		4:{cateId:'4',by:'hits'}
+		1:{cateId:'1',by:'time'},
+		2:{cateId:'2',by:'time'},
+		3:{cateId:'3',by:'time'},
+		4:{cateId:'4',by:'time'}
 	},
 	class_name:'電影&電視劇&綜藝&動漫',
         class_url:'1&2&3&4',
