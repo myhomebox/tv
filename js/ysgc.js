@@ -4,12 +4,12 @@
  * https://github.com/FongMi/Release/tree/main/apk
  */
 var rule = {
-	title:'影視工廠',
-	//host: 'https://www.ysgc.fun',
-	host:'https://www.ysgcapp.cc',
-	hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,".section-row:eq(1)&&a&&href");print(src);HOST=src',
+	title:'影视工场',
+	host: 'https://www.ysgc.fun',
+	//host:'https://www.ysgcapp.cc',
+	//hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent": "PC_UA","Accept": "text/html"}});let src=jsp.pdfh(html,".section-row:eq(1)&&a&&href");print(src);HOST=src',
 	url: '/vodshow/fyfilter.html',
-	//headers: {'User-Agent': 'PC_UA',},
+	headers: {'User-Agent': 'PC_UA','Accept': 'text/html'},
         searchUrl:'/vodsearch/**----------fypage---.html',
         searchable: 2,//是否启用全局搜索,
         quickSearch: 0,//是否启用快速搜索,
@@ -43,7 +43,7 @@ var rule = {
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
 		let html = request(input);
-		let list = pdfa(html, "ul.myui-vodlist.clearfix li");
+		let list = pdfa(html, "ul.myui-vodlist li");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a&&title"),
@@ -74,7 +74,7 @@ var rule = {
 		});
 		} else {
 			html = request(input);
-			list = pdfa(html, "ul.myui-vodlist.clearfix li");
+			list = pdfa(html, "ul.myui-vodlist&&li");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a&&title"),
@@ -114,7 +114,7 @@ var rule = {
 			};
 			let playFrom = [];
 			let vod_tab_list = [];
-			let tabs = pdfa(html, "ul.nav-tabs:eq(0)&&li");
+			let tabs = pdfa(html, ".nav-tabs:eq(0)&&li");
 			tabs.forEach((it) => {
 				playFrom.push(pdfh(it, "a&&Text"))
 			});
