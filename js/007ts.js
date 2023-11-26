@@ -51,6 +51,4 @@ var rule = {
             searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
             detailUrl:'/detail/fyid.html', //非必填,二级详情拼接链接
             搜索:'json:list;name;pic;;id',
-            搜索1: 'ul.stui-vodlist&&li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
-            搜索2: 'ul.stui-vodlist__media&&li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
         }
