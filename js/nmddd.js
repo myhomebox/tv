@@ -28,8 +28,8 @@ var rule={
 		'User-Agent': 'MOBILE_UA',
 	},
 	// class_parse: '#topnav li:lt(4);a&&Text;a&&href;.*/(.*?).html',
-    class_name:'电影&连续剧&综艺&动漫&短剧',//静态分类名称拼接
-    class_url:'1&2&3&4&26',//静态分类标识拼接
+        class_name:'电影&连续剧&综艺&动漫&短剧',//静态分类名称拼接
+        class_url:'1&2&3&4&26',//静态分类标识拼接
 	play_parse: true,
 	lazy:'',
 	limit:6,
@@ -45,7 +45,7 @@ var rule={
 	},
 	搜索:'.ulPicTxt.clearfix li;*;img&&data-src;.sDes:eq(1)&&Text;*',
 
-	//是否启用辅助嗅探: 1,0
+	/*//是否启用辅助嗅探: 1,0
 	sniffer:1,
 	// 辅助嗅探规则js写法
 	isVideo:`js:
@@ -57,5 +57,5 @@ var rule={
 		}else{
 			input = false
 		}
-	`,
+	`,*/
 }
