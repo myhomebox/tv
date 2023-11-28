@@ -1215,7 +1215,7 @@ Love Nature,mitv://generationnexxxt.com:19806/60f16234ac8a47bc88d1d5be254395f5
 亞洲旅遊台,mitv://generationnexxxt.com:19806/0dca29c5bcd7425fb75b6c88f66bb671
 EYE TV旅遊台,mitv://generationnexxxt.com:19806/4e62678042814976ac0b46b4a337a58c
 
-少,#genre#
+少兒,#genre#
 CCTV14,mitv://135.148.104.228:19806/51fd7b2c60ad4724b38677d452c3b3ca
 CN卡通頻道,mitv://135.148.104.228:19806/feb2748c3ae24fe38b420efa20f6b215
 星空衛視,mitv://135.148.104.228:19806/0974b234503d4ff68a50865bd7d18d2a
