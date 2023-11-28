@@ -1415,9 +1415,9 @@ GINX Esports TV,https://fake-stream.livednow.com/4gtv/179?token=462b277b46841662
 amc最愛電影,https://fake-stream.livednow.com/4gtv/39?token=c8997aef1a692f28d0641fea4f76233e
 
 其他源,#genre#
-東森新聞,https://yt-stream.livednow.com/stream/WHEPzbFA3hw/master.m3u8
-東森財經,https://ytm2.yuanhsing.cf/EBCFinancial.m3u8
-東森財經,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
+東森財經新聞,https://yt-stream.livednow.com/stream/WHEPzbFA3hw/master.m3u8
+東森財經新聞,https://ytm2.yuanhsing.cf/EBCFinancial.m3u8
+東森財經新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
 東森財經新聞,https://yt-stream.livednow.com/stream/WHEPzbFA3hw/master.m3u8
 公視新聞台,https://yt-stream.livednow.com/stream/quwqlazU-c8/master.m3u8
 民視新聞台,https://yt-stream.livednow.com/stream/ylYJSBUgaMA/master.m3u8
