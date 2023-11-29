@@ -34,7 +34,7 @@
         "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-arm64_v8a.apk",
         "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
         "version": "v8a"
-      }
+      },
       {
         "name": "手機-java",
         "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-armeabi_v7a.apk",
@@ -48,7 +48,7 @@
         "version": "v8a"
       }
     ]
-  },
+  }
   /*{
     "name": "v7a",
     "list": [
