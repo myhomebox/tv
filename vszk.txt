@@ -1464,10 +1464,10 @@ TVBS NEWS,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV31.m3u8
 大愛一臺,https://yt-stream.livednow.com/stream/MIqUplvSRWA/master.m3u8
 大愛一臺,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV30.m3u8
 大愛二臺,https://yt-stream.livednow.com/stream/DTNkEm6jaqQ/master.m3u8
-台視新聞,rtmp://9sv2.mine.nu/sat/tv071
-中視新聞,rtmp://9sv2.mine.nu/sat/tv091
-華視新聞,rtmp://9sv2.mine.nu/sat/tv111
-民視新聞,rtmp://9sv2.mine.nu/sat/tv051
+台視HD,rtmp://9sv2.mine.nu/sat/tv071
+中視HD,rtmp://9sv2.mine.nu/sat/tv091
+華視HD,rtmp://9sv2.mine.nu/sat/tv111
+民視HD,rtmp://9sv2.mine.nu/sat/tv051
 TVBS新聞,rtmp://9sv2.mine.nu/sat/tv551
 東森財經新聞,rtmp://9sv2.mine.nu/sat/tv571
 緯來育樂,rtmp://9sv2.mine.nu/sat/tv701
