@@ -1,15 +1,6 @@
 [
-  /*{
-    "name": "推薦",
-    "list": [
-      {
-        "url": "https://github.com/myhomebox/Release/releases/download/other/13.13.2.apk",
-        "icon": "https://raw.githubusercontent.com/myhomebox/Release/main/icon.png"
-      }
-    ]
-  },*/
   {
-    "name": "內測版",
+    "name": "推薦",
     "list": [
       {
         "name": "電視-py",
@@ -18,6 +9,12 @@
         "version": "v7a"
       },
       {
+        "name": "Android-4.x",
+        "url": "https://my.t4tv.hz.cz/apk/kitkat/leanbacK.apk",
+        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+        "version": "v7a"
+      },
+     {
         "name": "Android-4.x py",
         "url": "https://my.t4tv.hz.cz/apk/kitkat/leanback-python.apk",
         "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
@@ -49,149 +46,4 @@
       }
     ]
   }
-  /*{
-    "name": "v7a",
-    "list": [
-      {
-        "name": "ffmpeg",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libffmpegJNI.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "EXO"
-      },
-      {
-        "name": "av1",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libgav1JNI.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "EXO"
-      },
-      {
-        "name": "ffmpeg",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libijkffmpeg.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "IJK"
-      },
-      {
-        "name": "sdl",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libijksdl.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "IJK"
-      },
-      {
-        "name": "player",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libplayer.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "IJK"
-      },
-      {
-        "name": "薦片",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libjpa.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "磁力-1",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libxl_stat.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "磁力-2",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libxl_thunder_sdk.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "晴天",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libmitv.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P2P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp2p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P3P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp3p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P4P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp4p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P5P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp5p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P6P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp6p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P7P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp7p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P8P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp8p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "P9P",
-        "url": "https://my.t4tv.hz.cz/so/armeabi-v7a/libp9p.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      }
-    ]
-  },
-  {
-    "name": "v8a",
-    "list": [
-      {
-        "name": "ffmpeg",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libffmpegJNI.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "EXO"
-      },
-      {
-        "name": "av1",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libgav1JNI.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "EXO"
-      },
-      {
-        "name": "ffmpeg",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libijkffmpeg.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "IJK"
-      },
-      {
-        "name": "sdl",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libijksdl.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "IJK"
-      },
-      {
-        "name": "player",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libplayer.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "IJK"
-      },
-      {
-        "name": "薦片",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libjpa.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "磁力-1",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libxl_stat.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      },
-      {
-        "name": "磁力-2",
-        "url": "https://my.t4tv.hz.cz/so/arm64-v8a/libxl_thunder_sdk.so",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png"
-      }
-    ]
-  }*/
 ]
