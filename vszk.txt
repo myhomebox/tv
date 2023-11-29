@@ -1422,7 +1422,7 @@ TVBS新聞,https://www.youtube.com/watch?v=m_dhMSvUCIc
 台視新聞,https://www.youtube.com/watch?v=xL0ch83RAK8
 華視新聞,https://www.youtube.com/watch?v=wM0g8EoUZ_E
 中視新聞,https://www.youtube.com/watch?v=TCnaIE_SAtM
-民視新聞,https://www.youtube.com/watch?v=YFprzaqKpoY
+民視新聞,https://www.youtube.com/watch?v=ylYJSBUgaMA
 公視新聞,https://www.youtube.com/watch?v=quwqlazU-c8
 
 YT源,#genre#
