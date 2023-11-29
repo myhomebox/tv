@@ -1414,7 +1414,18 @@ GINX Esports TV,https://fake-stream.livednow.com/4gtv/179?token=462b277b46841662
 影迷數位電影台,https://fake-stream.livednow.com/4gtv/4gtv-4gtv011?token=dd94c6a8737444388476b53857446a9c
 amc最愛電影,https://fake-stream.livednow.com/4gtv/39?token=c8997aef1a692f28d0641fea4f76233e
 
-其他源,#genre#
+Youtube,#genre#
+東森新聞,https://www.youtube.com/watch?v=S5WOGu2HSes
+TVBS新聞,https://www.youtube.com/watch?v=m_dhMSvUCIc
+中天新聞,https://www.youtube.com/watch?v=oIgbl7t0S_w
+三立iNEWS,https://www.youtube.com/watch?v=CKjSm5ZeehE
+台視新聞,https://www.youtube.com/watch?v=xL0ch83RAK8
+華視新聞,https://www.youtube.com/watch?v=wM0g8EoUZ_E
+中視新聞,https://www.youtube.com/watch?v=TCnaIE_SAtM
+民視新聞,https://www.youtube.com/watch?v=YFprzaqKpoY
+公視新聞,https://www.youtube.com/watch?v=quwqlazU-c8
+
+YT源,#genre#
 東森財經新聞,https://yt-stream.livednow.com/stream/WHEPzbFA3hw/master.m3u8
 東森財經新聞,https://ytm2.yuanhsing.cf/EBCFinancial.m3u8
 東森財經新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
@@ -1453,3 +1464,26 @@ TVBS NEWS,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV31.m3u8
 大愛一臺,https://yt-stream.livednow.com/stream/MIqUplvSRWA/master.m3u8
 大愛一臺,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV30.m3u8
 大愛二臺,https://yt-stream.livednow.com/stream/DTNkEm6jaqQ/master.m3u8
+台視新聞,rtmp://9sv2.mine.nu/sat/tv071
+中視新聞,rtmp://9sv2.mine.nu/sat/tv091
+華視新聞,rtmp://9sv2.mine.nu/sat/tv111
+民視新聞,rtmp://9sv2.mine.nu/sat/tv051
+TVBS新聞,rtmp://9sv2.mine.nu/sat/tv551
+東森財經新聞,rtmp://9sv2.mine.nu/sat/tv571
+緯來育樂,rtmp://9sv2.mine.nu/sat/tv701
+緯來體育,rtmp://9sv2.mine.nu/sat/tv721
+MOMO綜合,rtmp://9sv2.mine.nu/sat/tv761
+緯來日本,rtmp://9sv2.mine.nu/sat/tv771
+ELEVEN1,rtmp://9sv2.mine.nu/sat/tv731
+ELEVEN2,rtmp://9sv2.mine.nu/sat/tv741
+ELTA體育4,rtmp://9sv2.mine.nu/sat/md041
+ELTA體育3,rtmp://9sv2.mine.nu:1935/sat/md051
+HKC18,rtmp://9sv2.mine.nu/sat/hk021
+愛爾達體育1台,http://vp.ubvip1688.com:8080/vod/510FC806/main.m3u8
+愛爾達體育2台,http://vp.ubvip1688.com:8080/vod/C8DAB756/main.m3u8
+愛爾達體育3台,http://vp.ubvip1688.com:8080/vod/7B0F7DF8/main.m3u8
+衛視電影,http://211.23.114.106:8525/http/116.50.42.19:8081/hls/64/806/ch16.m3u8
+HBO HD,http://125.227.210.55:35210/VideoInput/play.ts
+東森電影,http://gwtv.cnv8.tv:8097/ettvmovie/playlist.m3u8
+東森洋片,http://gwtv.cnv8.tv:8097/ettvwestern/playlist.m3u8
+天映頻道,http://210.210.155.35:80/dr9445/h/h14/02.m3u8
