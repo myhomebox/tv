@@ -120,11 +120,11 @@ HBO,https://www.histar.tv/live/hbo-hd
 parse=1
 衛視電影,https://www.histar.tv/live/star-chinese-movies
 parse=1
-龍祥電影,https://www.histar.tv/live/lstime
+龍祥時代,https://www.histar.tv/live/lstime
 parse=1
 龍華電影,https://www.histar.tv/live/ltv-movies
 parse=1
-靖天國際,https://www.histar.tv/live/jtgj
+靖天國際台,https://www.histar.tv/live/jtgj
 parse=1
 靖天電影,https://www.histar.tv/live/jtdy
 parse=1
@@ -134,7 +134,7 @@ Disney,https://www.histar.tv/live/disney
 parse=1
 美亞電影,https://www.histar.tv/live/meiah-movies
 parse=1
-靖祥戲劇,https://www.histar.tv/live/jyxj
+靖洋戲劇,https://www.histar.tv/live/jyxj
 parse=1
 動物星球,https://www.histar.tv/live/animal-planet
 parse=1
