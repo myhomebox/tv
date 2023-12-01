@@ -1490,6 +1490,12 @@ HBO HD,http://125.227.210.55:35210/VideoInput/play.ts
 
 其他源,#genre#
 parse=1
+台視,https://today.line.me/tw/v2/article/ttv
+parse=1
+中視,https://today.line.me/tw/v2/article/ctv
+parse=1
+華視,https://today.line.me/tw/v2/article/cts
+parse=1
 東森新聞,https://today.line.me/tw/v2/article/grrvVZ
 parse=1
 TVBS新聞,https://today.line.me/tw/v2/article/jggMBa
@@ -1497,6 +1503,7 @@ parse=1
 民視新聞,https://today.line.me/tw/v2/article/PNNoG5
 parse=1
 緯來日本,https://www.histar.tv/live/videoland-japan
+
 CCTV,#genre#
 parse=1
-CCTC-1,https://www.histar.tv/live/cctv1
+CCTV-1,https://www.histar.tv/live/cctv1
