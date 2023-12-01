@@ -1495,3 +1495,5 @@ parse=1
 TVBS新聞,https://today.line.me/tw/v2/article/jggMBa
 parse=1
 民視新聞,https://today.line.me/tw/v2/article/PNNoG5
+parse=1
+緯來日本,https://www.histar.tv/live/videoland-japan
