@@ -88,8 +88,6 @@ parse=1
 parse=1
 民視新聞,https://today.line.me/tw/v2/article/PNNoG5
 parse=1
-民視台灣台,https://television-live.com/zh/2835-peoples-television-taiwan.html
-parse=1
 東森新聞,https://today.line.me/tw/v2/article/grrvVZ
 parse=1
 東森財經新聞,https://www.histar.tv/live/ebc-finance
