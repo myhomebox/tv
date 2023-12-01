@@ -1490,11 +1490,11 @@ HBO HD,http://125.227.210.55:35210/VideoInput/play.ts
 
 其他源,#genre#
 parse=1
-台視,https://today.line.me/tw/v2/article/ttv
+台視新聞,https://today.line.me/tw/v2/article/ttv-news
 parse=1
-中視,https://today.line.me/tw/v2/article/ctv
+中視新聞,https://today.line.me/tw/v2/article/ctv-news
 parse=1
-華視,https://today.line.me/tw/v2/article/cts
+華視新聞,https://today.line.me/tw/v2/article/cts-news
 parse=1
 東森新聞,https://today.line.me/tw/v2/article/grrvVZ
 parse=1
