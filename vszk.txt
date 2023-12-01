@@ -88,6 +88,8 @@ parse=1
 parse=1
 民視新聞,https://today.line.me/tw/v2/article/PNNoG5
 parse=1
+民視台灣台,https://television-live.com/zh/2835-peoples-television-taiwan.html
+parse=1
 東森新聞,https://today.line.me/tw/v2/article/grrvVZ
 parse=1
 東森財經新聞,https://www.histar.tv/live/ebc-finance
@@ -117,8 +119,6 @@ parse=1
 HBO,https://www.histar.tv/live/hbo-hd
 parse=1
 衛視電影,https://www.histar.tv/live/star-chinese-movies
-parse=1
-衛視中文台,https://yeslivetv.com/channels/star-chinese-channel/
 parse=1
 龍祥時代,https://www.histar.tv/live/lstime
 parse=1
