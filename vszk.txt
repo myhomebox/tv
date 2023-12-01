@@ -118,11 +118,11 @@ HBO,https://www.histar.tv/live/hbo-hd
 parse=1
 衛視電影,https://www.histar.tv/live/star-chinese-movies
 parse=1
+衛視中文台,https://yeslivetv.com/channels/star-chinese-channel/
+parse=1
 龍祥時代,https://www.histar.tv/live/lstime
 parse=1
 龍華電影,https://www.histar.tv/live/ltv-movies
-parse=1
-龍華經典,https://www.ofiii.com/channel/watch/litv-longturn21
 parse=1
 靖天國際台,https://www.histar.tv/live/jtgj
 parse=1
