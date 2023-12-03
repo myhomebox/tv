@@ -148,3 +148,19 @@ TVBS新聞台,https://www.4gtv.tv/channel/4gtv-live072?set=4&ch=129
 TVBS台劇台,https://www.4gtv.tv/channel/4gtv-live088?set=4&ch=285
 MOMO親子台,https://www.4gtv.tv/channel/4gtv-live107?set=4&ch=231
 客家電視台,https://www.4gtv.tv/channel/4gtv-4gtv043?set=4&ch=107
+
+中國,#genre#
+parse=1
+player=2
+ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+referer=https://yingshi.tv/livetv/play
+CCTV-1,https://yingshi.tv/livetv/play/id/1.html
+CCTV-2,https://yingshi.tv/livetv/play/id/2.html
+CCTV-5,https://yingshi.tv/livetv/play/id/5.html
+CCTV-7,https://yingshi.tv/livetv/play/id/7.html
+CCTV-8,https://yingshi.tv/livetv/play/id/8.html
+CCTV-9,https://yingshi.tv/livetv/play/id/9.html
+CCTV-10,https://yingshi.tv/livetv/play/id/10.html
+CCTV-17,https://yingshi.tv/livetv/play/id/17.html
+廣東衛視,https://yingshi.tv/livetv/play/id/23.html
+浙江衛視,https://yingshi.tv/livetv/play/id/18.html
