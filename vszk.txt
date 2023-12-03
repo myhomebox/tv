@@ -60,8 +60,8 @@ TVBS新聞,rtmp://9sv2.mine.nu/sat/tv551
 緯來體育,rtmp://9sv2.mine.nu/sat/tv721
 MOMO綜合,rtmp://9sv2.mine.nu/sat/tv761
 緯來日本,rtmp://9sv2.mine.nu/sat/tv771
-ELEVEN 1,rtmp://9sv2.mine.nu/sat/tv731
-ELEVEN 2,rtmp://9sv2.mine.nu/sat/tv741
+ELEVEN體育1台,rtmp://9sv2.mine.nu/sat/tv731
+ELEVEN體育2台,rtmp://9sv2.mine.nu/sat/tv741
 ELTA體育4,rtmp://9sv2.mine.nu/sat/md041
 ELTA體育3,rtmp://9sv2.mine.nu:1935/sat/md051
 HKC18,rtmp://9sv2.mine.nu/sat/hk021

@@ -18,13 +18,13 @@ CINEMAX,http://gwtv.cnv8.tv:8097/cinemax_twn/playlist.m3u8?tid=MF6F1142326311423
 Discovery Asia,http://gwtv.cnv8.tv:8097/discoverytwn_twn/playlist.m3u8?tid=MB1B4014431840144318&ct=19254&tsum=a72e8caa6986ef92c4d6cb743e22a78f
 Discovery Asia,http://gwtv.cnv8.tv:8097/discoverytwn_twn/playlist.m3u8?tid=m42a2d91d6f2413622196&ct=17874&tsum=3653c4c61f0a0443dbb256dc465b4715
 Discovery HD,http://gwtv.cnv8.tv:8097/discoveryhd_twn/playlist.m3u8?tid=MF6F9560989795609897&ct=19254&tsum=5c76a2419ab5b56e7202248db95be60e
-Discovery 頻道,http://gwtv.cnv8.tv:8097/ba86fcd935/playlist.m3u8?tid=m1b458a366fcb&ct=18335&tsum=6ee1498a5e37d8bd1e3f629546229462294f
+Discovery,http://gwtv.cnv8.tv:8097/ba86fcd935/playlist.m3u8?tid=m1b458a366fcb&ct=18335&tsum=6ee1498a5e37d8bd1e3f629546229462294f
 ELEVEN體育1台,http://gwtv.cnv8.tv:8097/golfchannel_twn/playlist.m3u8?tid=MFBF2798068027980680&ct=18393&tsum=d8204023f67120512fc
 ELEVEN體育1台,http://gwtv.cnv8.tv:8097/golfchannel_twn/playlist.m3u8?tid=m43df9270caf7&ct=18335&tsum=3bcc02e810e7073b86bbe
 EYE戲劇,http://gwtv.cnv8.tv:8097/eyetvxiju_twn/playlist.m3u8?tid=ME3E6686724066867240&ct=19254&tsum=728fc49fcd53cd770381ffbff
-EYE戲劇,http://gwtv.cnv8.tv:8097/eyetvxiju_twn/playlist.m3u8?tid=m379e8846d31b14432367&ct=17874&tsum=2c4c2acd16a5a5e00797564fcc
-EYE旅遊,http://gwtv.cnv8.tv:8097/eyetvtravel_twn/playlist.m3u8?tid=MFDF5066608450666084&ct=19254&tsum=0bb4cbfc0d32bff89ab5b3fa
-GOOD TV2,http://gwtv.cnv8.tv:8097/good2_twn/playlist.m3u8?tid=ME9E3966510439665104&ct=19225&tsum=a2788b2ccea04a8a808382d
+EYE TV戲劇,http://gwtv.cnv8.tv:8097/eyetvxiju_twn/playlist.m3u8?tid=m379e8846d31b14432367&ct=17874&tsum=2c4c2acd16a5a5e00797564fcc
+EYE TV旅遊,http://gwtv.cnv8.tv:8097/eyetvtravel_twn/playlist.m3u8?tid=MFDF5066608450666084&ct=19254&tsum=0bb4cbfc0d32bff89ab5b3fa
+好消息2,http://gwtv.cnv8.tv:8097/good2_twn/playlist.m3u8?tid=ME9E3966510439665104&ct=19225&tsum=a2788b2ccea04a8a808382d
 HBOHD,http://gwtv.cnv8.tv:8097/hbohd_twn/playlist.m3u8?tid=ME9E5260921952609219&ct=19225&tsum=a904cd480db106670bect=19225&tsum=a904cd480db106670bect=1925&tsum=a904cd480db106670bect=11d1414fbfce
 HBOSIGNATURE,http://gwtv.cnv8.tv:8097/hbosignature_twn/playlist.m3u8?tid=MC5C5754321157543211&ct=19225&tsum=2b86077147813534bbbcae648
 HBOSIGNATURE,http://gwtv.cnv8.tv:8097/hbosignature_twn/playlist.m3u8?tid=MD6D5767423357674233&ct=18392&tsum=995709f1100cf1b07964790160b4fbee
@@ -42,7 +42,7 @@ TVBS歡樂台,http://gwtv.cnv8.tv:8097/tvbshuanle_twn/playlist.m3u8?tid=MA5A9262
 三立台灣,http://gwtv.cnv8.tv:8097/sanlitaiwan/playlist.m3u8?tid=m92ccadc4dc3718157816&ct=17874&tsum=3570a8198ca0fb7ebb803807e38b
 三立戲劇,http://gwtv.cnv8.tv:8097/sanlixiju_twn/playlist.m3u8?ct=19226&tid=MBDB8405357084053570&tsum=78944c0951d21a699e46ff
 三立戲劇,http://gwtv.cnv8.tv:8097/sanlixiju_twn/playlist.m3u8?tid=MA8A4626080046260800&ct=19053&tsum=205a453781925589656
-三立戲劇台,http://gwtv.cnv8.tv:8097/sanlixiju_twn/playlist.m3u8?tid=MC3C7351075373510753&ct=19249&tsum=f70fc544635e38bbbfd7b
+三立戲劇,http://gwtv.cnv8.tv:8097/sanlixiju_twn/playlist.m3u8?tid=MC3C7351075373510753&ct=19249&tsum=f70fc544635e38bbbfd7b
 三立綜合,http://gwtv.cnv8.tv:8097/sanlizhonghe/playlist.m3u8?tid=MB0B8754413687544136&ct=19193&tsum=b815a8eec252a8266b531678
 三立綜合,http://gwtv.cnv8.tv:8097/sanlizhonghe/playlist.m3u8?tid=MF4F9472920894729208&ct=19249&tsum=874aaa2015440b417746e510c
 三立綜合,http://gwtv.cnv8.tv:8097/sanlizhonghe/playlist.m3u8?tid=m3362167a08a014596868&ct=17874&tsum=4472a7c943b6868&ct=17874&tsum=4472a7c943b67bf5256b
@@ -78,18 +78,18 @@ TVBS歡樂台,http://gwtv.cnv8.tv:8097/tvbshuanle_twn/playlist.m3u8?tid=MA5A9262
 博斯網球,http://gwtv.cnv8.tv:8097/bositennis_twn/playlist.m3u8?tid=MA9A5922328659223286&ct=19225&tsum=c83f112dbae37be6d20618138fddcf7
 博斯網球,http://gwtv.cnv8.tv:8097/bositennis_twn/playlist.m3u8?tid=MDCD2148551721485517&ct=19249&tsum=bab41ccd3843b938886a640065
 博斯網球,http://gwtv.cnv8.tv:8097/bositennis_twn/playlist.m3u8?tid=m60f4fd9da4d1&ct=18335&tsum=4d026bfb332da29886aa772f2e149edb
-博斯運動1,http://gwtv.cnv8.tv:8097/bosisport1_twn/playlist.m3u8?tid=MDAD4087844840878448&ct=19249&tsum=0a23fd28e83ff8205a515273215274b
-博斯運動2,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=ME9E7698135376981353&ct=19249&tsum=9eadcc8585f74357f09f146464646
-博斯運動2,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=mb50f39eebf51&ct=18335&tsum=4f8960c36a3e7f2b069d57429380099
-博斯高球1,http://gwtv.cnv8.tv:8097/bosigolf1_twn/playlist.m3u8?tid=MD5D3832704238327042&ct=18393&tsum=cbf3bf749c9b0bf4885abb
-博斯高球1,http://gwtv.cnv8.tv:8097/bosigolf1_twn/playlist.m3u8?tid=m51c41c232c43&ct=18335&tsum=26e2e08302bf0409db94a692921fa08b
-博斯高球2,http://gwtv.cnv8.tv:8097/bosigolf2_twn/playlist.m3u8?tid=MC1C7192072371920723&ct=19249&tsum=0ea99cd84e728423423fdc
+博斯運動,http://gwtv.cnv8.tv:8097/bosisport1_twn/playlist.m3u8?tid=MDAD4087844840878448&ct=19249&tsum=0a23fd28e83ff8205a515273215274b
+博斯運動2台,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=ME9E7698135376981353&ct=19249&tsum=9eadcc8585f74357f09f146464646
+博斯運動2台,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=mb50f39eebf51&ct=18335&tsum=4f8960c36a3e7f2b069d57429380099
+博斯高球,http://gwtv.cnv8.tv:8097/bosigolf1_twn/playlist.m3u8?tid=MD5D3832704238327042&ct=18393&tsum=cbf3bf749c9b0bf4885abb
+博斯高球,http://gwtv.cnv8.tv:8097/bosigolf1_twn/playlist.m3u8?tid=m51c41c232c43&ct=18335&tsum=26e2e08302bf0409db94a692921fa08b
+博斯高球2台,http://gwtv.cnv8.tv:8097/bosigolf2_twn/playlist.m3u8?tid=MC1C7192072371920723&ct=19249&tsum=0ea99cd84e728423423fdc
 國家地理,http://gwtv.cnv8.tv:8097/Natgeo/playlist.m3u8?tid=MD9D9302547893025478&ct=19249&tsum=98e3f2f5104d6ed1e826d12493d
 國家地理HD,http://gwtv.cnv8.tv:8097/natgeohd_twn/playlist.m3u8?tid=MD3D4446495344464953&ct=19249&tsum=f8c0bfc8c564a4a282470d
 地理野生動物,http://gwtv.cnv8.tv:8097/natgeowildtamil_raj/playlist.m3u8?tid=MA3A7576802775768027&ct=19249&tsum=38e4069aeedc94944b451293c
 地理野生動物HD,http://gwtv.cnv8.tv:8097/Natgeowild/playlist.m3u8?tid=MCEC8162047281620472&ct=19249&tsum=903a62e36d9cd6c67654b4bd
-大愛1台,http://gwtv.cnv8.tv:8097/daai_twn/playlist.m3u8?tid=ME5E3594665135946651&ct=19249&tsum=1628ac38fd6a79879fccae3bde
-好消息 2,http://gwtv.cnv8.tv:8097/good2_twn/playlist.m3u8?tid=MB3B3734070237340702&ct=19249&tsum=611b90a32eb986741a0b15656528
+大愛一臺,http://gwtv.cnv8.tv:8097/daai_twn/playlist.m3u8?tid=ME5E3594665135946651&ct=19249&tsum=1628ac38fd6a79879fccae3bde
+好消息2,http://gwtv.cnv8.tv:8097/good2_twn/playlist.m3u8?tid=MB3B3734070237340702&ct=19249&tsum=611b90a32eb986741a0b15656528
 好萊塢電影,http://gwtv.cnv8.tv:8097/hollywoodmovies_twn/playlist.m3u8?tid=MA8A4005638840056388&ct=18392&tsum=a1f1517d4ea64fd0126799
 好萊塢電影,http://gwtv.cnv8.tv:8097/hollywoodmovies_twn/playlist.m3u8?tid=MECE5611281156112811&ct=19225&tsum=ad8884ee16b04f885f24bab
 好萊塢電影,http://gwtv.cnv8.tv:8097/hollywoodmovies_twn/playlist.m3u8?tid=MF6F7143280071432800&ct=19211&tsum=c0bc00f05a03ebbef05a031916747
@@ -128,7 +128,7 @@ TVBS歡樂台,http://gwtv.cnv8.tv:8097/tvbshuanle_twn/playlist.m3u8?tid=MA5A9262
 美亞電影,http://gwtv.cnv8.tv:8097/meiyamovie_twn/playlist.m3u8?tid=MD3D6323299363232993&ct=18392&tsum=3f73f541d332993&ct=18392&tsum=3f73f541d3332993&ct=18392&tsum=3f73f541d333371140028
 美亞電影,http://gwtv.cnv8.tv:8097/meiyamovie_twn/playlist.m3u8?tid=ME9E6301165163011651&ct=19249&tsum=c2c246af848b424b68e5437
 美亞電影,http://gwtv.cnv8.tv:8097/meiyamovie_twn/playlist.m3u8?tid=mcfe3e109029013892155&ct=17874&tsum=164baeda6ab6c4160f2751128
-美亞電影台,http://gwtv.cnv8.tv:8097/meiyamovie_twn/playlist.m3u8?tid=MFEF1001328410013284&ct=19226&tsum=9839709ca0f376415310b
+美亞電影,http://gwtv.cnv8.tv:8097/meiyamovie_twn/playlist.m3u8?tid=MFEF1001328410013284&ct=19226&tsum=9839709ca0f376415310b
 美食星球,http://gwtv.cnv8.tv:8097/foodplanet_twn/playlist.m3u8?tid=MCCC8639507586395075&ct=19226&tsum=69f5a90ff21aa5f4f58667bcdd713353
 衛視中文台,http://gwtv.cnv8.tv:8097/weishichinese_twn/playlist.m3u8?tid=MB7B8325601583256015&ct=19249&tsum=88f84634240050b869fbbecc
 野生動物HD,http://gwtv.cnv8.tv:8097/natgeowild_twn/playlist.m3u8?tid=MF6F5354447153544471&ct=19249&tsum=fcc679b64dded7ec16a0f098
