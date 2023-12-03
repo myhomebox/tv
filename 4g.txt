@@ -1,4 +1,4 @@
-四季,#genre#
+台灣,#genre#
 parse=1
 player=2
 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
@@ -19,7 +19,7 @@ referer=https://www.4gtv.tv
 智林體育,https://www.4gtv.tv/channel/4gtv-4gtv101?set=4&ch=58
 時尚運動X,https://www.4gtv.tv/channel/4gtv-4gtv014?set=4&ch=69
 新唐人亞太台,https://www.4gtv.tv/channel/4gtv-live050?set=4&ch=223
-愛爾達生活旅遊,https://www.4gtv.tv/channel/4gtv-live120?set=4&ch=237
+ELTA 生活旅遊,https://www.4gtv.tv/channel/4gtv-live120?set=4&ch=237
 寰宇新聞,https://www.4gtv.tv/channel/litv-longturn14?set=4&ch=36
 鏡新聞,https://www.4gtv.tv/channel/4gtv-4gtv075?set=4&ch=268
 大愛,https://www.4gtv.tv/channel/4gtv-live007?set=4&ch=209
@@ -38,4 +38,4 @@ TVBS綜藝台,https://www.4gtv.tv/channel/4gtv-live087?set=4&ch=284
 TVBS新聞台,https://www.4gtv.tv/channel/4gtv-live072?set=4&ch=129
 TVBS台劇台,https://www.4gtv.tv/channel/4gtv-live088?set=4&ch=285
 MOMO親子台,https://www.4gtv.tv/channel/4gtv-live107?set=4&ch=231
-客家電視台,https://www.4gtv.tv/channel/4gtv-4gtv043?set=4&ch=107
+客家電視,https://www.4gtv.tv/channel/4gtv-4gtv043?set=4&ch=107
