@@ -8,6 +8,8 @@ TVBS新聞,https://www.youtube.com/watch?v=m_dhMSvUCIc
 中視新聞,https://www.youtube.com/watch?v=TCnaIE_SAtM
 民視新聞,https://www.youtube.com/watch?v=ylYJSBUgaMA
 公視新聞,https://www.youtube.com/watch?v=quwqlazU-c8
+寰宇新聞,https://www.youtube.com/watch?v=w87VGpgd90U
+鏡新聞,https://www.youtube.com/watch?v=5n0y6b0Q25o
 
 YT,#genre#
 東森財經新聞,https://yt-stream.livednow.com/stream/WHEPzbFA3hw/master.m3u8
