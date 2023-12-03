@@ -74,8 +74,9 @@ HBO,http://125.227.210.55:35210/VideoInput/play.ts
 
 LINE,#genre#
 parse=1
-民視新聞,https://today.line.me/tw/v2/article/PNNoG5
 東森新聞,https://today.line.me/tw/v2/article/grrvVZ
+TVBS新聞,https://today.line.me/tw/v2/article/jggMBa
+民視新聞,https://today.line.me/tw/v2/article/PNNoG5
 
 星星,#genre#
 parse=1
@@ -88,7 +89,6 @@ parse=1
 東森財經新聞,https://www.histar.tv/live/ebc-finance
 東森電影,https://www.histar.tv/live/ebc-movie
 東森綜合,https://www.histar.tv/live/ebc-ettv
-TVBS新聞,https://today.line.me/tw/v2/article/jggMBa
 TVBS,https://www.histar.tv/live/tvbs-hd
 TVBS歡樂台,https://www.histar.tv/live/tvbs-huanle
 中天新聞,https://www.histar.tv/live/cti-news
