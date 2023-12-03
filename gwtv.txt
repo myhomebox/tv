@@ -79,11 +79,11 @@ TVBS歡樂台,http://gwtv.cnv8.tv:8097/tvbshuanle_twn/playlist.m3u8?tid=MA5A9262
 博斯網球,http://gwtv.cnv8.tv:8097/bositennis_twn/playlist.m3u8?tid=MDCD2148551721485517&ct=19249&tsum=bab41ccd3843b938886a640065
 博斯網球,http://gwtv.cnv8.tv:8097/bositennis_twn/playlist.m3u8?tid=m60f4fd9da4d1&ct=18335&tsum=4d026bfb332da29886aa772f2e149edb
 博斯運動,http://gwtv.cnv8.tv:8097/bosisport1_twn/playlist.m3u8?tid=MDAD4087844840878448&ct=19249&tsum=0a23fd28e83ff8205a515273215274b
-博斯運動2台,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=ME9E7698135376981353&ct=19249&tsum=9eadcc8585f74357f09f146464646
-博斯運動2台,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=mb50f39eebf51&ct=18335&tsum=4f8960c36a3e7f2b069d57429380099
+博斯運動二台,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=ME9E7698135376981353&ct=19249&tsum=9eadcc8585f74357f09f146464646
+博斯運動二台,http://gwtv.cnv8.tv:8097/bosisport2_twn/playlist.m3u8?tid=mb50f39eebf51&ct=18335&tsum=4f8960c36a3e7f2b069d57429380099
 博斯高球,http://gwtv.cnv8.tv:8097/bosigolf1_twn/playlist.m3u8?tid=MD5D3832704238327042&ct=18393&tsum=cbf3bf749c9b0bf4885abb
 博斯高球,http://gwtv.cnv8.tv:8097/bosigolf1_twn/playlist.m3u8?tid=m51c41c232c43&ct=18335&tsum=26e2e08302bf0409db94a692921fa08b
-博斯高球2台,http://gwtv.cnv8.tv:8097/bosigolf2_twn/playlist.m3u8?tid=MC1C7192072371920723&ct=19249&tsum=0ea99cd84e728423423fdc
+博斯高球二台,http://gwtv.cnv8.tv:8097/bosigolf2_twn/playlist.m3u8?tid=MC1C7192072371920723&ct=19249&tsum=0ea99cd84e728423423fdc
 國家地理,http://gwtv.cnv8.tv:8097/Natgeo/playlist.m3u8?tid=MD9D9302547893025478&ct=19249&tsum=98e3f2f5104d6ed1e826d12493d
 國家地理HD,http://gwtv.cnv8.tv:8097/natgeohd_twn/playlist.m3u8?tid=MD3D4446495344464953&ct=19249&tsum=f8c0bfc8c564a4a282470d
 地理野生動物,http://gwtv.cnv8.tv:8097/natgeowildtamil_raj/playlist.m3u8?tid=MA3A7576802775768027&ct=19249&tsum=38e4069aeedc94944b451293c
@@ -117,7 +117,7 @@ TVBS歡樂台,http://gwtv.cnv8.tv:8097/tvbshuanle_twn/playlist.m3u8?tid=MA5A9262
 東森綜合,http://gwtv.cnv8.tv:8097/ettvzhonghe/playlist.m3u8?tid=MC4C1214674912146749&ct=19254&tsum=9b96a50ba99dca1a02b
 東森財經,http://gwtv.cnv8.tv:8097/ettvcaijing_twn/playlist.m3u8?tid=MD5D9010164090101640&ct=19225&tsum=cc229773020f89af853b
 東森財經,http://gwtv.cnv8.tv:8097/ettvcaijing_twn/playlist.m3u8?tid=m999b5a0f7fca17599138&ct=17874&tsum=345085d2d6d4401f3db
-東森財經新聞,http://gwtv.cnv8.tv:8097/ettvcaijing_twn/playlist.m3u8?tid=MB8B2069463920694639&ct=19249&tsum=05ff51a1b27457d31
+東森財經,http://gwtv.cnv8.tv:8097/ettvcaijing_twn/playlist.m3u8?tid=MB8B2069463920694639&ct=19249&tsum=05ff51a1b27457d31
 東森超視,http://gwtv.cnv8.tv:8097/ettvsuper/playlist.m3u8?tid=MA4A3005409230054092&ct=19225&tsum=c5d89f66fa1a8bcd26f4825d
 東森超視,http://gwtv.cnv8.tv:8097/ettvsuper/playlist.m3u8?tid=MB0B9022098390220983&ct=19249&tsum=594e3a93afe766cfcf27fd21b88
 東森電影,http://gwtv.cnv8.tv:8097/ettvmovie/playlist.m3u8?tid=MBDB9268852192688521&ct=19254&tsum=7514b50ebc2e4b06f2e40296d
@@ -133,7 +133,7 @@ TVBS歡樂台,http://gwtv.cnv8.tv:8097/tvbshuanle_twn/playlist.m3u8?tid=MA5A9262
 衛視中文台,http://gwtv.cnv8.tv:8097/weishichinese_twn/playlist.m3u8?tid=MB7B8325601583256015&ct=19249&tsum=88f84634240050b869fbbecc
 野生動物HD,http://gwtv.cnv8.tv:8097/natgeowild_twn/playlist.m3u8?tid=MF6F5354447153544471&ct=19249&tsum=fcc679b64dded7ec16a0f098
 阿里郎 Arirang,http://gwtv.cnv8.tv:8097/arirang_twn/playlist.m3u8?tid=MF5F3988861839888618&ct=19249&tsum=781d490a6abe9f48f5b93e211cbe0307
-靖天卡通,http://gwtv.cnv8.tv:8097/jingtiancartoon_twn/playlist.m3u8?tid=m1465dab025b5&ct=18335&tsum=ba935e583d90bfbe1d1d9662e9ac60c
+靖天卡通台,http://gwtv.cnv8.tv:8097/jingtiancartoon_twn/playlist.m3u8?tid=m1465dab025b5&ct=18335&tsum=ba935e583d90bfbe1d1d9662e9ac60c
 靖天卡通台,http://gwtv.cnv8.tv:8097/jingtiancartoon_twn/playlist.m3u8?tid=MD1D2636832926368329&ct=19226&tsum=22c17cfa6920f0b4a
 靖天國際台,http://gwtv.cnv8.tv:8097/jingtianintl_twn/playlist.m3u8?tid=MC7C4153806141538061&ct=19254&tsum=79854f3ccdc2369339da
 靖天國際台,http://gwtv.cnv8.tv:8097/jingtianintl_twn/playlist.m3u8?tid=ME4E7632479576324795&ct=19226&tsum=9922eeed6392bba21e1710ccd
