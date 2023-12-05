@@ -162,7 +162,7 @@ CCTV-10,http://gwtv.cnv8.tv:8097/cctv10hd/playlist.m3u8?tid=MD5D5225889152258891
 CCTV-12,http://gwtv.cnv8.tv:8097/cctv12/playlist.m3u8?tid=ME5E1868210218682102&ct=19225&tsum=91f63d21af1bd01ed7de6e5cde5cd55c
 CCTV-13,http://gwtv.cnv8.tv:8097/cctv13/playlist.m3u8?tid=MEAE5893429158934291&ct=19225&tsum=7e437e531910f3c24213fd3661fcc983
 CCTV-14,http://gwtv.cnv8.tv:8097/cctv14/playlist.m3u8?tid=MA1A2502333425023334&ct=19225&tsum=c1ac4fbf128b149d27738f3315c5dfc1
-衛視視頻道,#genre#
+衛視頻道,#genre#
 江蘇衛視,http://gwtv.cnv8.tv:8097/jiangsu_twn/playlist.m3u8?tid=MA6A5213905852139058&ct=19226&tsum=561feb226ebe64b3644f38
 浙江衛視(備),http://gwtv.cnv8.tv:8097/zhejiang_twn/playlist.m3u8?tid=MD7D8766114087661140&ct=19226&tsum=c7f1ba96c1394e500bd
 浙江衛視,http://gwtv.cnv8.tv:8097/Zhejiang/playlist.m3u8?tid=MC7C4621237046212370&ct=19226&tsum=78beb1b45c44b53e6219226&tsum=78beb1b45c44b53e62103b
