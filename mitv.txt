@@ -668,6 +668,6 @@ tvN Movies HD,mitv://generationnexxxt.com:19806/c6e40b3dec3344909fc0ca9378a7f4c7
 龍華戲劇,mitv://generationnexxxt.com:19806/4511c973b5064d63914ce966b67a0ae5
 靖天戲劇台,mitv://generationnexxxt.com:19806/7fe8cb5b76c3474fa12e8be41a1b12d7
 靖洋戲劇台,mitv://generationnexxxt.com:19806/1bbac21e6ebe4709950e49444c8d2504
-EYETV戲劇台,mitv://generationnexxxt.com:19806/cd6da14318f94349af694a75016299bc
-愛爾達影劇台,mitv://generationnexxxt.com:19806/12f7a228accf451fbc6a5ee35a7633ef
+EYETV戲劇,mitv://generationnexxxt.com:19806/cd6da14318f94349af694a75016299bc
+ELTA影劇,mitv://generationnexxxt.com:19806/12f7a228accf451fbc6a5ee35a7633ef
 亞洲劇台,mitv://generationnexxxt.com:19806/ee081a662356489d8b2170952ec91d24
