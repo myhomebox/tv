@@ -14,7 +14,7 @@
 中視(備),mitv://generationnexxxt.com:19806/3fec360233c04a118b83033439d48e72
 中視新聞台,mitv://generationnexxxt.com:19806/426b2fba482049a5b7033e93ae063de3
 中視經典台,mitv://generationnexxxt.com:19806/b0c366a0ec6946a0b96be1f085d10a3c
-中視菁採台,mitv://generationnexxxt.com:19806/38564773104e4fa6ae4fb2dcd97cb82a
+中視菁采台,mitv://generationnexxxt.com:19806/38564773104e4fa6ae4fb2dcd97cb82a
 華視,mitv://generationnexxxt.com:19806/914471dbe906408ab28f27dfde9e65e5
 華視(備),mitv://generationnexxxt.com:19806/84f1379996eb4e9c9098c84c076b3f73
 華視新聞,mitv://generationnexxxt.com:19806/29c6de65134a4161bffa537bdacbc633
@@ -24,12 +24,12 @@ Animax,mitv://generationnexxxt.com:19806/31dd197f10474ca68a7dc6f102c72411
 BBCEARTH,mitv://generationnexxxt.com:19806/def93dc32a3a4630bac1107a81ebdf05
 BBC Lifestyle,mitv://generationnexxxt.com:19806/2af7150f25f04c94b4941b4c11cd6dc2
 BBCWorldNews,mitv://generationnexxxt.com:19806/ecc7214268ee448ab42b65d9f2e2663a
-BloombergTV,mitv://generationnexxxt.com:19806/885bb543b9cb4bbeb5bcfe518fb90780
+Bloomberg,mitv://generationnexxxt.com:19806/885bb543b9cb4bbeb5bcfe518fb90780
 CINEMAX,mitv://generationnexxxt.com:19806/949188b5e8994b979e49a606292ea82d
 CLASSICA古典樂,mitv://generationnexxxt.com:19806/35c3747623d34cb6b223510d03ebd1b8
 CNBC,mitv://generationnexxxt.com:19806/b642a4ce45734a7190f0acbd8cd462dd
 CN卡通頻道,mitv://generationnexxxt.com:19806/fcc624c778f4427795b0d95223788bef
-CatchPlay電影台,mitv://generationnexxxt.com:19806/ba69ad560bad43fc994268b224dd418c
+CatchPlay,mitv://generationnexxxt.com:19806/ba69ad560bad43fc994268b224dd418c
 CinemaWorld,mitv://generationnexxxt.com:19806/ef9b0154056a429a967c80231ad87351
 DMAX,mitv://generationnexxxt.com:19806/a0f0ccb2c8a34cef93c31f6d327ed943
 Discovery Asia,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
