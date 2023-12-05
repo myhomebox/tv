@@ -1,12 +1,12 @@
 ﻿台灣,#genre#
 公視,mitv://generationnexxxt.com:19806/3a73e13acc1a41d285a93788f717b0b0
 公視3台,mitv://generationnexxxt.com:19806/783f5b7c7dfc4b5abe8c376123cc853b
-台視,mitv://generationnexxxt.com:19806/ebccb2e01e0f41e7b681e96281c675eb
 民視,mitv://generationnexxxt.com:19806/050a9d9538584fd4a3149eba929e6380
 民視(備),mitv://generationnexxxt.com:19806/a5470856f0f24c98b3b47e53466d748d
 民視台灣台,mitv://generationnexxxt.com:19806/bd1c8ef4f2a648d5a526c30b122865b9
 民視新聞台,mitv://generationnexxxt.com:19806/d4d7f70b9cfb4d85a28f20201a718698
 民視第一台,mitv://generationnexxxt.com:19806/fc3d5f7aba9d4413aff88db864cbe6ab
+台視,mitv://generationnexxxt.com:19806/ebccb2e01e0f41e7b681e96281c675eb
 台視(備),mitv://generationnexxxt.com:19806/8e890cd1869849b98ef182f49ad73093
 台視新聞台,mitv://generationnexxxt.com:19806/70340fb53bc248af9674f098ae036cb4
 台視財經台,mitv://generationnexxxt.com:19806/803a5c2806a24ee1a5d09816e079e020
