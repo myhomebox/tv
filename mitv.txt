@@ -32,7 +32,7 @@ CN卡通頻道,mitv://generationnexxxt.com:19806/fcc624c778f4427795b0d95223788be
 Catch Play,mitv://generationnexxxt.com:19806/ba69ad560bad43fc994268b224dd418c
 Cinema World,mitv://generationnexxxt.com:19806/ef9b0154056a429a967c80231ad87351
 DMAX,mitv://generationnexxxt.com:19806/a0f0ccb2c8a34cef93c31f6d327ed943
-探索亞洲,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
+Discovery Asia,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
 探索科學,mitv://generationnexxxt.com:19806/7018bd3538a64872bc4fb0ee49b4727b
 ELEVEN體育1台,mitv://generationnexxxt.com:19806/bdc9416b38cd436b82ef6679fb81455f
 ELEVEN體育2台,mitv://generationnexxxt.com:19806/7f0fbfe53bb44890ace3711231a48968
@@ -123,7 +123,7 @@ tvN,mitv://generationnexxxt.com:19806/5653c9fb655842ee99b4590ff903efe7
 愛爾達體育3台,mitv://generationnexxxt.com:19806/5bf8004ab604480e8465c9f476cac3b2
 愛爾達體育4台,mitv://generationnexxxt.com:19806/fc3f3879173449e2a57ff8b84e870e3e
 采昌影劇,mitv://generationnexxxt.com:19806/cbfb4a3875174dcea9ff6fe04b211390
-探索頻道,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
+Discovery,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
 星衛電影,mitv://generationnexxxt.com:19806/986ca501dd434ba9ba58d7cbb99d968f
 星衛娛樂台,mitv://generationnexxxt.com:19806/b8666465195b464295b9b0665f2eff2a
 智林體育台,mitv://generationnexxxt.com:19806/dba109bb145f466284008744f9f6363a
@@ -586,8 +586,8 @@ CCTV9,mitv://generationnexxxt.com:19806/1d25488429514e78ab4d100819bece3e
 TLC旅遊生活,mitv://generationnexxxt.com:19806/4eb91e5c22f9435db7993103e263625c
 動物星球,mitv://generationnexxxt.com:19806/a78f79542cfe47a3bd91a4bab7575c83
 ELTV,mitv://generationnexxxt.com:19806/ae8a080515d7483ca15383b985b115a0
-探索頻道,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
-探索亞洲,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
+Discovery,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
+Discovery Asia,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
 探索科學,mitv://generationnexxxt.com:19806/7018bd3538a64872bc4fb0ee49b4727b
 DMAX,mitv://generationnexxxt.com:19806/a0f0ccb2c8a34cef93c31f6d327ed943
 EVE,mitv://generationnexxxt.com:19806/a26496fd44644b2f8ad10bf496857b91
