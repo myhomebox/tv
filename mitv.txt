@@ -32,8 +32,8 @@ CN卡通頻道,mitv://generationnexxxt.com:19806/fcc624c778f4427795b0d95223788be
 Catch Play,mitv://generationnexxxt.com:19806/ba69ad560bad43fc994268b224dd418c
 Cinema World,mitv://generationnexxxt.com:19806/ef9b0154056a429a967c80231ad87351
 DMAX,mitv://generationnexxxt.com:19806/a0f0ccb2c8a34cef93c31f6d327ed943
-Discovery Asia,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
-Discovery科學頻道,mitv://generationnexxxt.com:19806/7018bd3538a64872bc4fb0ee49b4727b
+探索亞洲,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
+探索科學,mitv://generationnexxxt.com:19806/7018bd3538a64872bc4fb0ee49b4727b
 ELEVEN體育1台,mitv://generationnexxxt.com:19806/bdc9416b38cd436b82ef6679fb81455f
 ELEVEN體育2台,mitv://generationnexxxt.com:19806/7f0fbfe53bb44890ace3711231a48968
 ELTV,mitv://generationnexxxt.com:19806/ae8a080515d7483ca15383b985b115a0
@@ -117,11 +117,11 @@ tvN,mitv://generationnexxxt.com:19806/5653c9fb655842ee99b4590ff903efe7
 年代新聞,mitv://generationnexxxt.com:19806/02859632a4f44d129592493beeee6ba7
 影迷數位電影,mitv://generationnexxxt.com:19806/41c05bb4d9a3475a87496143feb40ad5
 愛爾達影劇,mitv://generationnexxxt.com:19806/12f7a228accf451fbc6a5ee35a7633ef
-愛爾達體育1合,mitv://generationnexxxt.com:19806/f75b0c47eede402d98bdcfcec0ca5d42
-愛爾達體育1合(備),mitv://generationnexxxt.com:19806/e423400adfd94586ad7523b54d3b2a28
-愛爾達體育2合,mitv://generationnexxxt.com:19806/60274848f6314371bc9eb8e368a45881
-愛爾達體育3合,mitv://generationnexxxt.com:19806/5bf8004ab604480e8465c9f476cac3b2
-愛爾達體育4合,mitv://generationnexxxt.com:19806/fc3f3879173449e2a57ff8b84e870e3e
+愛爾達體育1台,mitv://generationnexxxt.com:19806/f75b0c47eede402d98bdcfcec0ca5d42
+愛爾達體育1台(備),mitv://generationnexxxt.com:19806/e423400adfd94586ad7523b54d3b2a28
+愛爾達體育2台,mitv://generationnexxxt.com:19806/60274848f6314371bc9eb8e368a45881
+愛爾達體育3台,mitv://generationnexxxt.com:19806/5bf8004ab604480e8465c9f476cac3b2
+愛爾達體育4台,mitv://generationnexxxt.com:19806/fc3f3879173449e2a57ff8b84e870e3e
 采昌影劇,mitv://generationnexxxt.com:19806/cbfb4a3875174dcea9ff6fe04b211390
 探索頻道,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
 星衛電影,mitv://generationnexxxt.com:19806/986ca501dd434ba9ba58d7cbb99d968f
@@ -583,12 +583,12 @@ AstroSuperSport5,mitv://generationnexxxt.com:19806/d41f257d25e54a0aa09227bde87ec
 知識,#genre#
 CCTV9,mitv://generationnexxxt.com:19806/1d25488429514e78ab4d100819bece3e
 國家地理,mitv://generationnexxxt.com:19806/3c77f62e84e940e6b3cd7ed687f17fb2
-探索頻道,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
 TLC旅遊生活,mitv://generationnexxxt.com:19806/4eb91e5c22f9435db7993103e263625c
 動物星球,mitv://generationnexxxt.com:19806/a78f79542cfe47a3bd91a4bab7575c83
 ELTV,mitv://generationnexxxt.com:19806/ae8a080515d7483ca15383b985b115a0
-Discovery Asia,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
-Discovery科學頻道,mitv://generationnexxxt.com:19806/7018bd3538a64872bc4fb0ee49b4727b
+探索頻道,mitv://generationnexxxt.com:19806/2dc9b3e78b8a4baf99413b4a1ea04c66
+探索亞洲,mitv://generationnexxxt.com:19806/957b38f6df914c41b14c26b4e5f2b36f
+探索科學,mitv://generationnexxxt.com:19806/7018bd3538a64872bc4fb0ee49b4727b
 DMAX,mitv://generationnexxxt.com:19806/a0f0ccb2c8a34cef93c31f6d327ed943
 EVE,mitv://generationnexxxt.com:19806/a26496fd44644b2f8ad10bf496857b91
 歷史頻道,mitv://generationnexxxt.com:19806/236e5069557944b6ac5178399997e647
