@@ -67,7 +67,7 @@ TVBS,mitv://generationnexxxt.com:19806/dc0d0f0cf6ac4ea9bd8d189dbe8dad73
 TVBS新聞台,mitv://generationnexxxt.com:19806/a8ad4e3845464a669fccc51465687c47
 TVBS歡樂台,mitv://generationnexxxt.com:19806/e922dd26fd4d4119aae849ad40c05943
 TVBS精采台,mitv://generationnexxxt.com:19806/1229cb6ed8c248e3b56fb7b33ecff98d
-Tech Storm,mitv://generationnexxxt.com:19806/b2681e4f15bc452189db655bd6496229
+TECHSTORM,mitv://generationnexxxt.com:19806/b2681e4f15bc452189db655bd6496229
 WARNERTV,mitv://generationnexxxt.com:19806/7082da0b39574d6094f9315032cc18d1
 Z頻道,mitv://generationnexxxt.com:19806/fb84d5facd3f46989f7ef7ce214c1150
 i-Fun動漫台,mitv://generationnexxxt.com:19806/665f0f90839748ccbc78eb36908692cf
@@ -506,7 +506,7 @@ France24,mitv://generationnexxxt.com:19806/72d5e1665d3e4b729ff9dbd4325e8694
 JKN18,mitv://generationnexxxt.com:19806/5fa4254f665e421688ac293bd1dd1d59
 MSNBC,mitv://generationnexxxt.com:19806/27c4d56058c44a4e9c41a98a99a7bc13
 NDTV,mitv://generationnexxxt.com:19806/d7fc2d61608d43098f59f35647342c6f
-NHK新聞資訊台,mitv://generationnexxxt.com:19806/fcb85967ce844a31b2bbad6936812ce1
+NHK,mitv://generationnexxxt.com:19806/fcb85967ce844a31b2bbad6936812ce1
 SkyNews,mitv://generationnexxxt.com:19806/f023e7189a5541b3a288267608b4836a
 TNN16,mitv://generationnexxxt.com:19806/5fa63eddc30543879c96b0a0a08ea60d
 TheWeatherChannel,mitv://generationnexxxt.com:19806/499917ffa94444328d65744d929c1eb3
@@ -655,9 +655,9 @@ CHC家庭劇院,mitv://generationnexxxt.com:19806/28fb3856055c452db8f17441c99f21
 CHC高清電影,mitv://generationnexxxt.com:19806/02385419696a411db959037c2190cf11
 CINEMAX,mitv://generationnexxxt.com:19806/949188b5e8994b979e49a606292ea82d
 CatchPlay電影台,mitv://generationnexxxt.com:19806/ba69ad560bad43fc994268b224dd418c
-CinemaWorld,mitv://generationnexxxt.com:19806/ef9b0154056a429a967c80231ad87351
+Cinema World,mitv://generationnexxxt.com:19806/ef9b0154056a429a967c80231ad87351
 Thrill,mitv://generationnexxxt.com:19806/7a770651f7d94d479b6ee1d867768bd4
-WARNER TV,mitv://generationnexxxt.com:19806/7082da0b39574d6094f9315032cc18d1
+WARNERTV,mitv://generationnexxxt.com:19806/7082da0b39574d6094f9315032cc18d1
 tvN Movies HD,mitv://generationnexxxt.com:19806/c6e40b3dec3344909fc0ca9378a7f4c7
 
 戲劇,#genre#
