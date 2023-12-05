@@ -14,7 +14,7 @@ referer=https://www.4gtv.tv
 民視新聞,https://www.4gtv.tv/channel/litv-ftv13?set=4&ch=31
 民視影劇,https://www.4gtv.tv/channel/litv-ftv09?set=4&ch=24
 民視台灣台,https://www.4gtv.tv/channel/4gtv-4gtv001?set=4&ch=2
-東森財經新聞台,https://www.4gtv.tv/channel/4gtv-live019?set=4&ch=211
+東森財經新聞,https://www.4gtv.tv/channel/4gtv-live019?set=4&ch=211
 東森新聞,https://www.4gtv.tv/channel/4gtv-live114?set=4&ch=234
 智林體育,https://www.4gtv.tv/channel/4gtv-4gtv101?set=4&ch=58
 時尚運動X,https://www.4gtv.tv/channel/4gtv-4gtv014?set=4&ch=69
@@ -34,8 +34,8 @@ ELTA 生活旅遊,https://www.4gtv.tv/channel/4gtv-live120?set=4&ch=237
 中天新聞,https://www.4gtv.tv/channel/4gtv-4gtv009?set=4&ch=30
 三立綜合,https://www.4gtv.tv/channel/4gtv-live207?set=4&ch=169
 三立iNEWS,https://www.4gtv.tv/channel/4gtv-live089?set=4&ch=229
-TVBS綜藝台,https://www.4gtv.tv/channel/4gtv-live087?set=4&ch=284
+TVBS綜藝,https://www.4gtv.tv/channel/4gtv-live087?set=4&ch=284
 TVBS新聞台,https://www.4gtv.tv/channel/4gtv-live072?set=4&ch=129
-TVBS台劇台,https://www.4gtv.tv/channel/4gtv-live088?set=4&ch=285
+TVBS台劇,https://www.4gtv.tv/channel/4gtv-live088?set=4&ch=285
 MOMO親子台,https://www.4gtv.tv/channel/4gtv-live107?set=4&ch=231
 客家電視,https://www.4gtv.tv/channel/4gtv-4gtv043?set=4&ch=107
