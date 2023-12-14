@@ -19,7 +19,8 @@ var rule = {
         class_url: '1&2&3&4',
 	//class_parse:'.nav-list li;a&&Text;a&&href;.*/(.*?).html',
 	play_parse: true,
-	lazy:`js:
+	lazy:'',
+	/*lazy:`js:
 		let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		let url = html.url;
 		if (html.encrypt == '1') {
@@ -32,7 +33,7 @@ var rule = {
 		} else {
 			input
 		}
-	`,
+	`,*/
 	limit: 6,
 	推荐:`js:
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
