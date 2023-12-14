@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=quwqlazU-c8
 video://https://www.4gtv.tv/channel/4gtv-4gtv003?set=1&ch=1
 #EXTINF:-1,tvg-id="民視台灣台" tvg-name="民視台灣台" tvg-logo="https://epg.112114.xyz/logo/民視台灣台.png" group-title="台灣",民視台灣台
 video://https://www.4gtv.tv/channel/4gtv-4gtv001?set=1&ch=2
-#EXTINF:-1,tvg-id="民視" tvg-name="民視" tvg-logo="https://epg.112114.xyz/logo/民視.png" group-title="台灣",民視
+#EXTINF:-1,tvg-id="民視" tvg-name="民視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV.png" group-title="台灣",民視
 video://https://www.4gtv.tv/channel/4gtv-4gtv002?set=1&ch=3
 #EXTINF:-1,tvg-id="民視新聞" tvg-name="民視新聞" tvg-logo="https://epg.112114.xyz/logo/民視新聞.png" group-title="台灣",民視新聞
 video://https://today.line.me/tw/v2/article/PNNoG5
@@ -21,9 +21,9 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv004?set=4&ch=16
 video://https://www.4gtv.tv/channel/litv-ftv07?set=4&ch=61
 #EXTINF:-1,tvg-id="民視影劇" tvg-name="民視影劇" tvg-logo="https://epg.112114.xyz/logo/民視影劇.png" group-title="台灣",民視影劇
 video://https://www.4gtv.tv/channel/litv-ftv09?set=4&ch=24
-#EXTINF:-1,tvg-id="民視戲劇" tvg-name="民視戲劇" tvg-logo="https://epg.112114.xyz/logo/民視.png" group-title="台灣",民視戲劇
+#EXTINF:-1,tvg-id="民視戲劇" tvg-name="民視戲劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV.png" group-title="台灣",民視戲劇
 https://ytm2.yuanhsing.cf/FTVDRAMA.m3u8
-#EXTINF:-1,tvg-id="民視戲劇" tvg-name="民視戲劇" tvg-logo="https://epg.112114.xyz/logo/民視.png" group-title="台灣",民視戲劇
+#EXTINF:-1,tvg-id="民視戲劇" tvg-name="民視戲劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV.png" group-title="台灣",民視戲劇
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV76.m3u8
 #EXTINF:-1,tvg-id="台視" tvg-name="台視" tvg-logo="https://epg.112114.xyz/logo/台視.png" group-title="台灣",台視
 video://https://www.histar.tv/live/ttv
