@@ -9,10 +9,7 @@ var rule = {
 	host: 'http://www.lzizy9.com',
 	url:'/index.php/vod/show/id/fyfilter.html',
         searchUrl:'/index.php/vod/search/page/fypage/wd/**.html',
-        headers: { //网站的请求头,完整支持所有的,常带ua和cookies
-        'User-Agent': 'MOBILE_UA',
-        // "Cookie": "searchneed=ok"
-    },
+        headers: {'User-Agent':'MOBILE_UA'},
         searchable: 2,//是否启用全局搜索,
         quickSearch: 0,//是否启用快速搜索,
         filterable: 1,//是否启用分类筛选,
@@ -31,7 +28,7 @@ var rule = {
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-		if (/m3u8|mp4/.test(url)) {
+		if (/m3u8|mp4|flv/.test(url)) {
 			input = {jx:0, url:url, parse:0}
 		} else {
 			input
