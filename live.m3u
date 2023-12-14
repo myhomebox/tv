@@ -138,7 +138,7 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv017?set=1&ch=39
 #EXTINF:-1,tvg-id="緯來電影" tvg-name="緯來電影" tvg-logo="https://epg.112114.xyz/logo/緯來電影.png" group-title="台灣",緯來電影台
 video://https://www.histar.tv/live/videoland-movie
 #EXTINF:-1,tvg-id="衛視電影" tvg-name="衛視電影" tvg-logo="https://epg.112114.xyz/logo/衛視電影.png" group-title="台灣",衛視電影台
-video://https://www.histar.tv/live/videoland-movie
+video://https://www.histar.tv/live/star-chinese-movies
 #EXTINF:-1,tvg-id="龍祥時代" tvg-name="龍祥時代" tvg-logo="https://epg.112114.xyz/logo/龍祥時代.png" group-title="台灣",龍祥時代
 video://https://www.histar.tv/live/lstime
 #EXTINF:-1,tvg-id="美亞電影" tvg-name="美亞電影" tvg-logo="https://epg.112114.xyz/logo/美亞電影.png" group-title="台灣",美亞電影
