@@ -257,17 +257,17 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv049?set=1&ch=25
 https://fake-stream.livednow.com/youtube/s2waUruqze4?token=2d8b533fc1ee27efe5db4fd2f5085a99&user_id=6603028310&user_token=b9c4323649499cce4aa68507d5d1d7a4
 #EXTINF:-1,tvg-id="三立綜合" tvg-name="三立綜合" tvg-logo="https://epg.112114.xyz/logo/三立綜合.png" group-title="台灣",三立綜合
 video://https://www.4gtv.tv/channel/4gtv-live207?set=1&ch=169
-#EXTINF:-1,tvg-id="TVBSHD" tvg-name="TVBSHD" tvg-logo="https://epg.112114.xyz/logo/TVBS.png" group-title="台灣",TVBS HD
+#EXTINF:-1,tvg-id="TVBSHD" tvg-name="TVBSHD" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS.png" group-title="台灣",TVBS HD
+video://https://www.4gtv.tv/channel/4gtv-4gtv068?set=1&ch=183
+#EXTINF:-1,tvg-id="TVBS歡樂台" tvg-name="TVBS歡樂台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS2.png" group-title="台灣",TVBS歡樂台
 video://https://www.4gtv.tv/channel/4gtv-4gtv068?set=1&ch=184
-#EXTINF:-1,tvg-id="TVBS歡樂台" tvg-name="TVBS歡樂台" tvg-logo="https://epg.112114.xyz/logo/TVBS歡樂台.png" group-title="台灣",TVBS歡樂台
-video://https://www.4gtv.tv/channel/4gtv-4gtv068?set=1&ch=184
-#EXTINF:-1,tvg-id="TVBS歡樂台" tvg-name="TVBS歡樂台" tvg-logo="https://epg.112114.xyz/logo/TVBS歡樂台.png" group-title="台灣",TVBS歡樂台
+#EXTINF:-1,tvg-id="TVBS歡樂台" tvg-name="TVBS歡樂台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS2.png" group-title="台灣",TVBS歡樂台
 video://https://www.histar.tv/live/tvbs-huanle
-#EXTINF:-1,tvg-id="TVBS綜藝台" tvg-name="TVBS綜藝台" tvg-logo="https://epg.112114.xyz/logo/TVBS.png" group-title="台灣",TVBS綜藝台
+#EXTINF:-1,tvg-id="TVBS綜藝台" tvg-name="TVBS綜藝台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS.png" group-title="台灣",TVBS綜藝台
 video://https://www.4gtv.tv/channel/4gtv-live087?set=4&ch=284
-#EXTINF:-1,tvg-id="TVBS精采台" tvg-name="TVBS精采台" tvg-logo="https://epg.112114.xyz/logo/TVBS精采台.png" group-title="台灣",TVBS精采
+#EXTINF:-1,tvg-id="TVBS精采台" tvg-name="TVBS精采台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS3.png" group-title="台灣",TVBS精采
 video://https://www.4gtv.tv/channel/4gtv-4gtv067?set=1&ch=227
-#EXTINF:-1,tvg-id="TVBS台劇" tvg-name="TVBS台劇" tvg-logo="https://epg.112114.xyz/logo/TVBS.png" group-title="台灣",TVBS台劇
+#EXTINF:-1,tvg-id="TVBS台劇" tvg-name="TVBS台劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS.png" group-title="台灣",TVBS台劇
 video://https://www.4gtv.tv/channel/4gtv-live088?set=4&ch=285
 #EXTINF:-1,tvg-id="CI" tvg-name="CI" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Crimeplus.png" group-title="台灣",CI罪案偵緝
 video://https://www.4gtv.tv/channel/4gtv-live027?set=1&ch=215
