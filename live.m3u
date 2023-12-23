@@ -173,16 +173,12 @@ video://https://www.histar.tv/live/videoland-movie
 video://https://www.histar.tv/live/star-chinese-movies
 #EXTINF:-1,tvg-id="龍祥時代" tvg-name="龍祥時代" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LStime.png" group-title="台灣",龍祥時代
 video://https://www.histar.tv/live/lstime
-#EXTINF:-1,tvg-id="衛視中文台" tvg-name="衛視中文台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/weishi1.png" group-title="台灣",衛視中文台
-video://https://yeslivetv.com/channels/star-chinese-channel/
 #EXTINF:-1,tvg-id="美亞電影" tvg-name="美亞電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/meiyady.png" group-title="台灣",美亞電影
 video://https://www.histar.tv/live/meiah-movies
 #EXTINF:-1,tvg-id="Disney" tvg-name="Disney" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Disney.png" group-title="台灣",Disney
 video://https://www.histar.tv/live/disney
 #EXTINF:-1,tvg-id="CINEMAWORLD" tvg-name="CINEMAWORLD" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CinemaWorld.png" group-title="台灣",CINEMA WORLD
 video://https://www.4gtv.tv/channel/4gtv-live069?set=1&ch=225
-#EXTINF:-1,tvg-id="CATCHPLAY" tvg-name="CATCHPLAY" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CatchPlay1.png" group-title="台灣",CATCHPLAY
-video://https://yeslivetv.com/channels/catchplay/
 #EXTINF:-1,tvg-id="MYCINEMAEUROPE" tvg-name="MYCINEMAEUROPE" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/MyCinema.png" group-title="台灣",歐洲光影
 video://https://www.4gtv.tv/channel/4gtv-live157?set=1&ch=176
 #EXTINF:-1,tvg-id="ROCK Action" tvg-name="ROCK Action" tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/live138_mobile.png" group-title="台灣",ROCK Action
@@ -319,8 +315,6 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv045?set=1&ch=118
 video://https://www.histar.tv/live/jyxj
 #EXTINF:-1,tvg-id="采昌影劇" tvg-name="采昌影劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/caichang.png" group-title="台灣",采昌影劇
 video://https://www.4gtv.tv/channel/4gtv-4gtv049?set=1&ch=25
-#EXTINF:-1,tvg-id="Taiwan+" tvg-name="Taiwan+" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TaiwanPlus.png" group-title="台灣",Taiwan+
-video://https://yeslivetv.com/channels/taiwanplus/
 #EXTINF:-1,tvg-id="中天亞洲台" tvg-name="中天亞洲台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI4.png" group-title="台灣",中天亞洲台
 video://https://www.ofiii.com/channel/watch/ofiii36
 #EXTINF:-1,tvg-id="中天亞洲台" tvg-name="中天亞洲台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI4.png" group-title="台灣",中天亞洲台
