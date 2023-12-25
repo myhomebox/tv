@@ -125,6 +125,10 @@ video://https://www.histar.tv/live/cti-news
 video://https://www.4gtv.tv/channel/4gtv-4gtv009?set=4&ch=30
 #EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png"" group-title="台灣",中天新聞(備)
 https://www.youtube.com/watch?v=oIgbl7t0S_w
+#EXTINF:-1,tvg-id="非凡新聞" tvg-name="非凡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Unique1.png"" group-title="台灣",非凡新聞
+video://https://yeslivetv.com/channels/ustv/
+#EXTINF:-1,tvg-id="非凡商業" tvg-name="非凡商業" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Unique2.png"" group-title="台灣",非凡商業
+video://https://yeslivetv.com/channels/ustvbiz/
 #EXTINF:-1,tvg-id="大愛一臺" tvg-name="大愛一臺" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Daai1.png" group-title="台灣",大愛一臺
 video://https://www.4gtv.tv/channel/4gtv-live007?set=1&ch=209
 #EXTINF:-1,tvg-id="大愛二臺" tvg-name="大愛二臺" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Daai2.png" group-title="台灣",大愛二臺
@@ -365,6 +369,8 @@ video://https://yingshi.tv/livetv/play/id/1.html
 video://https://yingshi.tv/livetv/play/id/2.html
 #EXTINF:-1,tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV5.png" group-title="中國",CCTV-5
 video://https://yingshi.tv/livetv/play/id/5.html
+#EXTINF:-1,tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV5plus.png" group-title="中國",CCTV-5+
+video://https://yeslivetv.com/channels/cctv5-plus/
 #EXTINF:-1,tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV7.png" group-title="中國",CCTV-7
 video://https://yingshi.tv/livetv/play/id/7.html
 #EXTINF:-1,tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV8.png" group-title="中國",CCTV-8
