@@ -242,7 +242,7 @@ video://https://www.histar.tv/live/elta-sport2
 #EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="台灣",愛爾達體育3
 video://https://www.histar.tv/live/elta-sport3
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="台灣",愛爾達體育4
-video://https://euorigin.scdn.pp.ua/live/elta4.m3u8?token=XEcIbu1g-0SR5S5Cv6MQ6Q&expires=1703664113
+video://https://yeslivetv.com/channels/elta-tv-4/
 #EXTINF:-1,tvg-id="ELEVEN體育1台" tvg-name="ELEVEN體育1台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven1.png" group-title="台灣",ELEVEN體育1台
 video://https://www.histar.tv/live/eleven-sport1
 #EXTINF:-1,tvg-id="ELEVEN體育2台" tvg-name="ELEVEN體育2台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven2.png" group-title="台灣",ELEVEN體育2台
@@ -383,8 +383,6 @@ video://https://www.4gtv.tv/channel/4gtv-live023?set=1&ch=212
 video://https://www.4gtv.tv/channel/4gtv-4gtv043?set=1&ch=107
 #EXTINF:-1,tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV1.png" group-title="中國",CCTV-1
 video://https://yingshi.tv/livetv/play/id/1.html
-#EXTINF:-1,tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV1.png" group-title="中國",CCTV-1
-video://https://www.yangshipin.cn/#/tv/home?pid=600001859
 #EXTINF:-1,tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV2.png" group-title="中國",CCTV-2
 video://https://yingshi.tv/livetv/play/id/2.html
 #EXTINF:-1,tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV5.png" group-title="中國",CCTV-5
@@ -483,7 +481,7 @@ video://https://www.histar.tv/live/elta-sport2
 #EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="體育",愛爾達體育3
 video://https://www.histar.tv/live/elta-sport3
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
-video://https://euorigin.scdn.pp.ua/live/elta4.m3u8?token=XEcIbu1g-0SR5S5Cv6MQ6Q&expires=1703664113
+video://https://yeslivetv.com/channels/elta-tv-4/
 #EXTINF:-1,tvg-id="ELEVEN體育1台" tvg-name="ELEVEN體育1台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven1.png" group-title="體育",ELEVEN體育1台
 video://https://www.histar.tv/live/eleven-sport1
 #EXTINF:-1,tvg-id="ELEVEN體育2台" tvg-name="ELEVEN體育2台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven2.png" group-title="體育",ELEVEN體育2台
