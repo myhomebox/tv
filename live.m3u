@@ -400,49 +400,6 @@ video://https://yingshi.tv/livetv/play/id/10.html
 #EXTINF:-1,tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV17.png" group-title="中國",CCTV-17
 video://https://yingshi.tv/livetv/play/id/17.html
 
-#EXTINF:-1,tvg-id="江蘇衛視" tvg-name="江蘇衛視" tvg-logo="https://epg.112114.xyz/logo/江蘇衛視.png" group-title="中國",江蘇衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002521
-#EXTINF:-1,tvg-id="浙江衛視" tvg-name="浙江衛視" tvg-logo="https://epg.112114.xyz/logo/浙江衛視.png" group-title="中國",浙江衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002520
-#EXTINF:-1,tvg-id="湖南衛視" tvg-name="湖南衛視" tvg-logo="https://epg.112114.xyz/logo/湖南衛視.png" group-title="中國",湖南衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002475
-#EXTINF:-1,tvg-id="北京衛視" tvg-name="北京衛視" tvg-logo="https://epg.112114.xyz/logo/北京衛視.png" group-title="中國",北京衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002309
-#EXTINF:-1,tvg-id="東方衛視" tvg-name="東方衛視" tvg-logo="https://epg.112114.xyz/logo/東方衛視.png" group-title="中國",東方衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002483
-#EXTINF:-1,tvg-id="山東衛視" tvg-name="山東衛視" tvg-logo="https://epg.112114.xyz/logo/山東衛視.png" group-title="中國",山東衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002513
-#EXTINF:-1,tvg-id="四川衛視" tvg-name="四川衛視" tvg-logo="https://epg.112114.xyz/logo/四川衛視.png" group-title="中國",四川衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002516
-#EXTINF:-1,tvg-id="安徽衛視" tvg-name="安徽衛視" tvg-logo="https://epg.112114.xyz/logo/安徽衛視.png" group-title="中國",安徽衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002532
-#EXTINF:-1,tvg-id="江西衛視" tvg-name="江西衛視" tvg-logo="https://epg.112114.xyz/logo/江西衛視.png" group-title="中國",江西衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002503
-#EXTINF:-1,tvg-id="東南衛視" tvg-name="東南衛視" tvg-logo="https://epg.112114.xyz/logo/東南衛視.png" group-title="中國",東南衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002484
-#EXTINF:-1,tvg-id="河北衛視" tvg-name="河北衛視" tvg-logo="https://epg.112114.xyz/logo/河北衛視.png" group-title="中國",河北衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002493
-#EXTINF:-1,tvg-id="河南衛視" tvg-name="河南衛視" tvg-logo="https://epg.112114.xyz/logo/河南衛視.png" group-title="中國",河南衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002525
-#EXTINF:-1,tvg-id="重慶衛視" tvg-name="重慶衛視" tvg-logo="https://epg.112114.xyz/logo/重慶衛視.png" group-title="中國",重慶衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002531
-#EXTINF:-1,tvg-id="海南衛視" tvg-name="海南衛視" tvg-logo="https://epg.112114.xyz/logo/海南衛視.png" group-title="中國",海南衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002506
-#EXTINF:-1,tvg-id="深圳衛視" tvg-name="深圳衛視" tvg-logo="https://epg.112114.xyz/logo/深圳衛視.png" group-title="中國",深圳衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002481
-#EXTINF:-1,tvg-id="湖北衛視" tvg-name="湖北衛視" tvg-logo="https://epg.112114.xyz/logo/湖北衛視.png" group-title="中國",湖北衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002508
-#EXTINF:-1,tvg-id="貴州衛視" tvg-name="貴州衛視" tvg-logo="https://epg.112114.xyz/logo/貴州衛視.png" group-title="中國",貴州衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002490
-#EXTINF:-1,tvg-id="廣西衛視" tvg-name="廣西衛視" tvg-logo="https://epg.112114.xyz/logo/廣西衛視.png" group-title="中國",廣西衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002509
-#EXTINF:-1,tvg-id="廣東衛視" tvg-name="廣東衛視" tvg-logo="https://epg.112114.xyz/logo/廣東衛視.png" group-title="中國",廣東衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002485
-#EXTINF:-1,tvg-id="遼寧衛視" tvg-name="遼寧衛視" tvg-logo="https://epg.112114.xyz/logo/遼寧衛視.png" group-title="中國",遼寧衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002505
-#EXTINF:-1,tvg-id="黑龍江衛視" tvg-name="黑龍江衛視" tvg-logo="https://epg.112114.xyz/logo/黑龍江衛視.png" group-title="中國",黑龍江衛視
-video://https://www.yangshipin.cn/#/tv/home?pid=600002498
-
 #EXTINF:-1,tvg-id="TVB 翡翠台" tvg-name="TVB 翡翠台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB1.png" group-title="港澳",TVB翡翠台
 video://https://www.histar.tv/live/feicui
 #EXTINF:-1,tvg-id="TVB 無線新聞" tvg-name="TVB 無線新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB4.png" group-title="港澳",TVB無線新聞
