@@ -58,5 +58,6 @@ var rule = {
         "tabs":"ul.nav-tabs li",
         "lists":"ul.myui-content__list:eq(#id) li"
     },
-    搜索: 'ul.searchList li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
+    detailUrl:'/voddetail/fyid.html', //非必填,二级详情拼接链接
+    搜索: '#searchList li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
 }
