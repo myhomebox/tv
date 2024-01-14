@@ -2,7 +2,7 @@ var rule = {
     title: '嗷嗷影視',
     host: 'https://m.aoao.tv',
     url: '/show/fyfilter',
-    searchUrl: '/vodsearch/**----------fypage---.html',
+    searchUrl: '/search/**----------fypage---.html',
     searchable: 1, //是否启用全局搜索,
     quickSearch: 1, //是否启用快速搜索,
     filterable: 1, //是否启用分类筛选,
@@ -47,7 +47,7 @@ var rule = {
     二级: {
         "title": "h1&&Text;.module-info-tag-link:eq(2)&&Text",
         "img": ".lazyload&&data-original",
-        "desc": ".module-info-item-title:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(2)&&Text;.module-info-item-content:eq(0)&&Text",
+        "desc": ".module-info-item:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(2)&&Text;.module-info-item-content:eq(0)&&Text",
         "content": ".module-info-introduction&&Text",
         "tabs": ".module-tab-items-box .module-tab-item",
         "lists": ".module-play-list:eq(#id) a"
