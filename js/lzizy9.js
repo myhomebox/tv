@@ -39,7 +39,7 @@ var rule = {
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
 		let html = request(input);
-		let list = pdfa(html, ".module-list .module-items .module-item");
+		let list = pdfa(html, ".module-list .module-items .module-item:not(:contains(伦理片))");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a&&title"),
@@ -59,7 +59,7 @@ var rule = {
 			let tid = cateObj.tid.split('_')[0];
 			input = HOST + '/index.php/vod/search/actor/' + tid + '/page/' + MY_PAGE + '.html';
 			html = request(input);
-			list = pdfa(html, ".module-list .module-items&&.module-search-item");
+			list = pdfa(html, ".module-list .module-items&&.module-search-item:not(:contains(伦理片))");
 			list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a:eq(1)&&title"),
@@ -70,7 +70,7 @@ var rule = {
 		});
 		} else {
 			html = request(input);
-			list = pdfa(html, ".module-items .module-item");
+			list = pdfa(html, ".module-items .module-item:not(:contains(伦理片))");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a&&title"),
@@ -137,7 +137,7 @@ var rule = {
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
 		let html = request(input);
-		let list = pdfa(html, ".module-items .module-search-item");
+		let list = pdfa(html, ".module-items .module-search-item:not(:contains(伦理片))");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, ".video-serial&&title"),
