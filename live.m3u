@@ -105,8 +105,6 @@ video://https://today.line.me/tw/v2/article/grrvVZ
 video://https://www.4gtv.tv/channel/4gtv-live114?set=1&ch=234
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞
 video://http://everydaytv.top/play-3-43-0.html
-#EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞(備)
-https://www.youtube.com/watch?v=S5WOGu2HSes
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森LIVE
 https://www.youtube.com/live/2dfAzcDf8Zg?si=TobBhknb3_lNwvF6
 #EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="台灣",東森財經新聞
@@ -581,8 +579,6 @@ video://https://today.line.me/tw/v2/article/grrvVZ
 video://https://www.4gtv.tv/channel/4gtv-live114?set=1&ch=234
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
 video://http://everydaytv.top/play-3-43-0.html
-#EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞(備)
-https://www.youtube.com/watch?v=S5WOGu2HSes
 #EXTINF:-1,tvg-id="民視新聞" tvg-name="民視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV1.png" group-title="新聞",民視新聞
 video://https://today.line.me/tw/v2/article/PNNoG5
 #EXTINF:-1,tvg-id="民視新聞" tvg-name="民視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV1.png" group-title="新聞",民視新聞
