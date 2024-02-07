@@ -1,6 +1,6 @@
 var rule = {
             title:'海兔影院',
-            host:'https://www.haitu.tv',
+            host:'https://www.haituu.tv',
             url:'/vod/show/id/fyfilter.html',
             searchable: 2,//是否启用全局搜索,
             quickSearch: 0,//是否启用快速搜索,
