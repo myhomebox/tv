@@ -24,14 +24,31 @@ var rule={
             class_url:'dianying&dianshiju&zongyi&dongmna&jilupian',
             //class_parse:'.stui-header__menu li;a&&Text;a&&href;.*/(.*?).html',
             play_parse: true,
-            lazy: '',
+            lazy:`js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/\\.m3u8|\\.mp4/.test(url)) {
+            input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
+        } else {
+            input
+        }
+    `,
             limit: 6,
             推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
             一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
             二级: {
-                "title": ".stui-content__detail .title&&Text;p.data:eq(2)--span&&Text",
-                "img": ".stui-content__thumb .lazyload&&data-original",
+                "title": "a&&title;p.data:eq(2)--span&&Text",
+                "img": ".lazyload&&data-original",
                 "desc": ";;;p.data:eq(0)--span&&Text;p.data:eq(1)--span&&Text",
                 "content": ".detail-content&&Text",
                 "tabs": ".stui-pannel__head h3",
