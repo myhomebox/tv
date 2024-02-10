@@ -10,7 +10,8 @@ var rule = {
 	//hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent": "PC_UA","Accept": "text/html"}});let src=jsp.pdfh(html,".section-row:eq(1)&&a&&href");print(src);HOST=src',
 	url: '/vodshow/fyfilter.html',
 	headers: {'User-Agent': 'PC_UA','Accept': 'text/html'},
-        searchUrl:'/vodsearch/**----------fypage---.html',
+	searchUrl: '/index.php/rss/index.xml?wd=**',
+        //searchUrl:'/vodsearch/**----------fypage---.html',
         searchable: 2,//是否启用全局搜索,
         quickSearch: 0,//是否启用快速搜索,
         filterable: 1,//是否启用分类筛选,
@@ -141,16 +142,33 @@ var rule = {
 	搜索:`js:
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
-		let html = request(input);
-		let list = pdfa(html, "#searchList&&li");
-		list.forEach(it => {
+		var html = request(input);
+		let list = pdfa(html, "rss&&item");
+		for (var i = 0; i < list.length; i++) {
+			var title = list[i].match(/\\<title\\>(.*?)\\<\\/title\\>/)[1];
+			var desc = pdfh(list[i], 'description&&Text');
+			var cont = pdfh(list[i], 'pubdate&&Text');
+			var url = list[i].match(/\\<link\\>(.*?)\\n/)[1];
 			d.push({
-				title: pdfh(it, "a&&title"),
-				desc: pdfh(it, ".pic-text&&Text"),
-				pic_url: pd(it, ".lazyload&&data-original"),
-				url: pd(it, "a&&href")
+				title: title,
+				desc: desc,
+				content: cont,
+				url: url
 			})
-		});
+		}
 		setResult(d)
+	`,
+	//是否启用辅助嗅探: 1,0
+	sniffer:1,
+	// 辅助嗅探规则js写法
+	isVideo:`js:
+		log(input);
+		if (/m3u8\\?sign=/.test(input)) {
+			input = true
+		} else if (/index\\.m3u8/.test(input)) {
+			input = true
+		} else {
+			input = false
+		}
 	`,
 }
