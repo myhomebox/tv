@@ -21,18 +21,26 @@ var rule = {
 	//class_parse:'.navbar-items li:gt(1):lt(6);a&&Text;a&&href;/(\\d+).html',
 	searchUrl:'/phsch/page/fypage/wd/**.html',
 	searchable: 1,
-	lazy:`js:
+	lazy: `js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
-		if (html.encrypt == '1') {
-			url = unescape(url)
-		} else if (html.encrypt == '2') {
-			url = unescape(base64Decode(url))
-		}
-		if (/m3u8|mp4/.test(url)) {
-			input = url
-		} else {
-			input
+		var from = html.from;
+		var next = HOST + html.link_next;
+		var paurl = request(HOST + "/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+		var purl = paurl + url + "&next=" + next;
+		if (/SLNB|qq|qiyi|youku|mgtv|bilibili|sohu|letv|pptv|xigua|m1905/.test(from)) {
+			input = {
+				jx: 0,
+				url: url + "&next=" + next,
+				playUrl: paurl,
+				parse: 1
+			}
+		} else if (/https/.test(paurl)) {
+			input = {
+				jx: 0,
+				url: request(purl).match(/url": "(.*?)"/)[1],
+				parse: 0
+			}
 		}
 	`,
             limit: 6,
@@ -48,4 +56,8 @@ var rule = {
                 "lists": ".module-play-list:eq(#id) a"
             },
             搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',
+            //是否启用辅助嗅探: 1,0
+	    sniffer: 1,
+	   // 辅助嗅探规则
+	   isVideo: "http((?!http).){26,}\\.(m3u8|mp4|flv|avi|mkv|wmv|mpg|mpeg|mov|ts|3gp|rm|rmvb|asf|m4a|mp3|wma)",
 }
