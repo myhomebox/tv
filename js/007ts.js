@@ -37,16 +37,16 @@ var rule = {
            input
             }`,
             limit: 6,
-            推荐: '.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
+            推荐: 'ul.myui-vodlist;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
-            一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+            一级: 'ul.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
             二级: {
-                "title": ".stui-content__detail .title&&Text;p.data:eq(0)&&Text",
+                "title": "h1.title&&Text;p.data:eq(0)&&Text",
                 "img": ".stui-content__thumb .lazyload&&data-original",
-                "desc": "p.data:eq(1)&&Text;p.data:eq(4)&&Text;p.data:eq(2)&&Text;p.data:eq(6)&&Text;p.data:eq(5)&&Text",
+                "desc": "p.data:eq(3)&&Text;;;p.data--span:eq(1)&&Text;p.data--span:eq(2)&&Text",
                 "content": ".detail&&Text",
-                "tabs": ".nav-tabs.dpplay&&li",
-                "lists": ".stui-content__playlist:eq(#id) li"
+                "tabs": ".nav-tabs.active&&li",
+                "lists": ".myui-content__list:eq(#id) li"
             },
             searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
             detailUrl:'/detail/fyid.html', //非必填,二级详情拼接链接
