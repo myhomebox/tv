@@ -41,39 +41,22 @@ var rule = {
 	class_name:'電影&電視劇&綜藝&動漫',
         class_url:'1&2&3&4',
 	play_parse: true,
-        lazy: `js:
+        	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
-		var from = html.from;
 		if (html.encrypt == '1') {
 			url = unescape(url)
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-		if (/m3u8|mp4/.test(url)) {
-			input = url
-		} else {
-			var MacPlayerConfig = {};
-			eval(fetch(HOST + '/static/js/playerconfig.js').replace('var Mac', 'Mac'));
-			var jx = MacPlayerConfig.player_list[from].parse;
-			if (jx == '') {
-				// jx = MacPlayerConfig.parse
-				jx = urljoin2(input, '/player/player.php?url=')
-			}
-			if (jx.startsWith('/')) {
-				jx = urljoin2(input, jx)
-			}
-			var pconfig = jsp.pdfh(request(jx + url), 'body&&script,1&&Html').match(/config = {[\\s\\S]*?}/)[0];
-			var config = {};
-			eval(pconfig);
+		if (/\\.m3u8|\\.mp4/.test(url)) {
 			input = {
 				jx: 0,
-				url: urljoin2(input, config.url),
-				parse: 1,
-				header: JSON.stringify({
-					'referer': HOST
-				})
+				url: url,
+				parse: 0
 			}
+		} else {
+			input
 		}
 	`,
         limit: 6,
