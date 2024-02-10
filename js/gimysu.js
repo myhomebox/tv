@@ -32,21 +32,26 @@ var rule = {
     class_name: '電影&電視劇&綜藝&動漫',
     class_url: '1&2&3&4',
     //class_parse: '.navbar-left&&li;a&&Text;a&&href;/(\\d+).html',
+    tab_rename:{'WYun':'無盡','海外雲':'海外看','SYun':'闪电','TYun':'天空','QYun':'飞速','Uyun':'U酷','OYun':'卧龙','NYun':'量子','JYun':'鱼乐','Kyun': '快播'},
     play_parse: true,
-    lazy: `js:
-            var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-            var url = html.url;
-        if (html.encrypt == '1') {
-            url = unescape(url)
-        } else if (html.encrypt == '2') {
-            url = unescape(base64Decode(url))
-        }
-        if (/m3u8|mp4/.test(url)) {
-            input = url
-        } else {
-            input
-        }
-    `,
+    lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else {
+			input
+		}
+	`,
     limit: 6,
     推荐: 'ul.col-md-8;li;*;*;*;*',
     double: true,
