@@ -23,7 +23,20 @@ var rule={
 	class_url:'7&6&3&5&21',
 	//class_parse:'.myui-header__menu&&li.hidden-xs:gt(0):lt(7);a&&Text;a&&href;./(\\d+).html',
 	play_parse: true,
-            lazy: '',
+        lazy:`js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
             limit: 6,
             推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-text.text-right&&Text;a&&href',
             double: true, // 推荐内容是否双层定位
