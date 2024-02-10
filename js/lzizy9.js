@@ -21,15 +21,26 @@ var rule = {
 	//class_parse:'.nav-list li;a&&Text;a&&href;.*/(.*?).html',
 	play_parse: true,
 	lazy:`js:
-		let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-		let url = html.url;
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
 		if (html.encrypt == '1') {
 			url = unescape(url)
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-		if (/m3u8|mp4|flv/.test(url)) {
-			input = {jx:0, url:url, parse:0}
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else if (/\\/share/.test(url)) {
+			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
 		} else {
 			input
 		}
