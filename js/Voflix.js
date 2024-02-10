@@ -22,7 +22,7 @@ var rule={
             class_url:'1&2&3&4',
             //class_parse: '.navbar-items&&li;a&&Text;a&&href;/(\\d+).html',
             play_parse: true,
-            lazy:`js:
+            lazy: `js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
         if (html.encrypt == '1') {
@@ -30,8 +30,12 @@ var rule={
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
         }
-        if (/m3u8|mp4/.test(url)) {
-            input = url
+        if (/\\.m3u8|\\.mp4/.test(url)) {
+            input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
         } else {
             input
         }
