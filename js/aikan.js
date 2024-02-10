@@ -3,7 +3,7 @@
 
 var rule = {
     title: '爱看',
-    模板:'短视2',
+    //模板:'mxpro',
     // host:'https://akanhd.com',
     host:'https://aikanys.vip',
     hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(2)&&a&&href");print(src);HOST=src',
@@ -36,19 +36,13 @@ var rule = {
     class_name:'电影&连续剧&综艺&动漫&日韩剧&美剧&港台剧&纪录片',
     class_url:'1&2&3&4&15&16&14&20',
     play_parse:true,
-lazy:`js:
+    lazy:`js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
-        var from = html.from;
-        var next = html.link_next;
         if (html.encrypt == '1') {
             url = unescape(url)
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
-        } else if (html.encrypt == '3') {
-            url = url.substring(8, url.length);
-            url = base64Decode(url);
-            url = url.substring(8, (url.length) - 8)
         }
         if (/\\.m3u8|\\.mp4/.test(url)) {
             input = {
@@ -57,15 +51,7 @@ lazy:`js:
                 parse: 0
             }
         } else {
-            var paurl = request(HOST + '/static/player/' + from + '.js').match(/ src="(.*?)'/)[1];
-            if (/https/.test(paurl)) {
-                var purl = paurl + url + '&next=' + next + '&title=';
-                input = {
-                    jx: 0,
-                    url: purl,
-                    parse: 1
-                }
-            }
+            input
         }
     `,
     推荐: '.tab-list.active;a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
