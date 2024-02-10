@@ -1,6 +1,6 @@
 // 搜索安全验证 > rss
-muban.短视.二级.title = '.img&&img&&alt;.main-ui-meta&&div:eq(6)--span&&Text';
-muban.短视.二级.desc = 'a.douban&&Text;;;.main-ui-meta&&div:eq(5)&&Text;.main-ui-meta&&div:eq(3)&&Text';
+muban.短视.二级.title = 'h1&&Text;.main-ui-meta&&div:eq(6)--span&&Text';
+muban.短视.二级.desc = 'a.douban&&Text;body&&span.year&&Text;.main-ui-meta&&div:eq(7)&&Text;.attrs&&a&&Text;.main-ui-meta&&div:eq(3)--span&&Text';
 muban.短视.二级.tabs = '.py-tabs&&li';
 muban.短视.二级.tab_text = 'body--small&&Text';
 var rule = {
