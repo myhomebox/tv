@@ -64,7 +64,7 @@
 		pdfh = jsp.pdfh, pdfa = jsp.pdfa, pd = jsp.pd;
 		let d = [];
 		let html = request(input);
-		let list = pdfa(html, "ul.myui-vodlist:eq(0)&&li");
+		let list = pdfa(html, "li.col-sm-4&&li");
 		list.forEach(it => {
 			d.push({
 				title: pdfh(it, "a&&title"),
