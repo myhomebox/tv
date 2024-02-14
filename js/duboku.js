@@ -115,6 +115,10 @@
             url = unescape(url)
         } else if (html.encrypt == '2') {
             url = unescape(base64Decode(url))
+       } else if (html.encrypt == '3') {
+            url = url.substring(8, url.length);
+	    url = base64Decode(url);
+	    url = url.substring(8, (url.length) - 8)
         }
         if (/m3u8|mp4/.test(url)) {
             input = url
