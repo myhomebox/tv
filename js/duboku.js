@@ -195,12 +195,14 @@
 				log('vod_director ===> ' + vod_director);
 			VOD = {
 				vod_name: pdfh(html, "h1&&Text"),
-				type_name: pdfh(html, "p.data--span:eq(0)&&Text"),
+				type_name: pdfh(html, "p.data:eq(0)&&a:eq(0)&&Text"),
+				vod_area: pd(html, "p.data:eq(0)&&a:eq(1)&&Text"),
+				vod_year: pd(html, "p.data:eq(0)&&a:eq(2)&&Text"),
 				vod_pic: pd(html, ".lazyload&&data-original"),
 				vod_remarks: pdfh(html, "p.data:eq(1)&&Text"),
 				vod_actor: getLink(vod_actor), // 影视TV click lick
 				vod_director: getLink(vod_director), // 影视TV click lick
-				vod_content: pdfh(html, ".sketch&&Text")
+				vod_content: pdfh(html, "span.data&&Text")
 			};
 			let playFrom = [];
 			let vod_tab_list = [];
