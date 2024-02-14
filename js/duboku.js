@@ -111,6 +111,7 @@
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
         var from = html.from;
+        var next = html.link_next;
         if (html.encrypt == '1') {
             url = unescape(url)
         } else if (html.encrypt == '2') {
