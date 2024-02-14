@@ -8,7 +8,7 @@
   "cateName": "/text()",
   "cateId": "/@href",
   "cateIdR": "/vodtype/(\\w+).html",
-  "cateManual": {"電影":"1","電視劇":"2","綜藝":"3","動漫":"4"},
+  "cateManual": {"電影":"1","電視劇":"2","綜藝":"3","動漫":"4","陸劇":"13","台泰劇":"14","日韓劇":"15","港劇":"20","短劇":"21"},
   "homeVodNode": "//ul[contains(@class,'myui-vodlist')]/li/div/a",
   "homeVodName": "/@title",
   "homeVodId": "/@href",
