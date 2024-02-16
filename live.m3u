@@ -41,8 +41,6 @@ https://ytm2.yuanhsing.cf/FTVDRAMA.m3u8
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV76.m3u8
 #EXTINF:-1,tvg-id="台視" tvg-name="台視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV.png" group-title="台灣",台視HD
 video://https://www.ofiii.com/channel/watch/4gtv-4gtv066
-#EXTINF:-1,tvg-id="台視" tvg-name="台視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV.png" group-title="台灣",台視HD
-video://https://www.histar.tv/live/ttv
 #EXTINF:-1,tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV2.png" group-title="台灣",台視新聞
 video://https://www.ofiii.com/channel/watch/4gtv-4gtv051
 #EXTINF:-1,tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV2.png" group-title="台灣",台視新聞
@@ -53,12 +51,8 @@ https://www.youtube.com/watch?v=xL0ch83RAK8
 video://https://www.ofiii.com/channel/watch/4gtv-4gtv040
 #EXTINF:-1,tvg-id="中視" tvg-name="中視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV.png" group-title="台灣",中視HD
 video://https://www.4gtv.tv/channel/4gtv-4gtv040?set=1&ch=4
-#EXTINF:-1,tvg-id="中視" tvg-name="中視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV.png" group-title="台灣",中視HD
-video://https://www.histar.tv/live/ctv
 #EXTINF:-1,tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV1.png" group-title="台灣",中視新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv074?set=4&ch=33
-#EXTINF:-1,tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV1.png" group-title="台灣",中視新聞
-video://https://www.histar.tv/live/ctv-news
 #EXTINF:-1,tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV1.png" group-title="台灣",中視新聞(備)
 https://www.youtube.com/watch?v=TCnaIE_SAtM
 #EXTINF:-1,tvg-id="中視經典" tvg-name="中視經典" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV2.png" group-title="台灣",中視經典
@@ -72,8 +66,6 @@ video://https://www.ofiii.com/channel/watch/4gtv-4gtv041
 #EXTINF:-1,tvg-id="華視" tvg-name="華視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS.png" group-title="台灣",華視HD
 video://https://www.4gtv.tv/channel/4gtv-4gtv041?set=1&ch=6
 #EXTINF:-1,tvg-id="華視" tvg-name="華視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS.png" group-title="台灣",華視HD
-video://https://www.histar.tv/live/cts
-#EXTINF:-1,tvg-id="華視" tvg-name="華視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS.png" group-title="台灣",華視HD
 video://http://everydaytv.top/play-3-86-0.html
 #EXTINF:-1,tvg-id="華視綜藝" tvg-name="華視綜藝" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS.png" group-title="台灣",華視綜藝
 https://ytm2.yuanhsing.cf/TBSCTSSHOW.m3u8
@@ -85,8 +77,6 @@ https://ytm2.yuanhsing.cf/ctsprog.m3u8
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
 #EXTINF:-1,tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS1.png" group-title="台灣",華視新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv052?set=1&ch=34
-#EXTINF:-1,tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS1.png" group-title="台灣",華視新聞
-video://https://www.histar.tv/live/cts-news
 #EXTINF:-1,tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS1.png" group-title="台灣",華視新聞(備)
 https://www.youtube.com/watch?v=wM0g8EoUZ_E
 #EXTINF:-1,tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS1.png" group-title="台灣",TVBS新聞
@@ -106,11 +96,9 @@ video://https://www.4gtv.tv/channel/4gtv-live114?set=1&ch=234
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞
 video://http://everydaytv.top/play-3-43-0.html
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森LIVE
-https://www.youtube.com/live/2dfAzcDf8Zg?si=TobBhknb3_lNwvF6
+https://www.youtube.com/live/2dfAzcDf8Zg
 #EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="台灣",東森財經新聞
 video://https://www.4gtv.tv/channel/4gtv-live019?set=4&ch=211
-#EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="台灣",東森財經新聞
-video://https://www.histar.tv/live/ebc-finance
 #EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="台灣",東森財經新聞
 video://http://everydaytv.top/play-3-38-0.html
 #EXTINF:-1,tvg-id="三立iNEWS" tvg-name="三立iNEWS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/SET3.png" group-title="台灣",三立iNEWS
@@ -119,8 +107,6 @@ video://https://www.4gtv.tv/channel/4gtv-live089?set=4&ch=229
 https://www.youtube.com/watch?v=CKjSm5ZeehE
 #EXTINF:-1,tvg-id="寰宇新聞" tvg-name="寰宇新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global2.png" group-title="台灣",寰宇新聞
 video://https://www.4gtv.tv/channel/litv-longturn14?set=4&ch=36
-#EXTINF:-1,tvg-id="寰宇新聞" tvg-name="寰宇新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global2.png" group-title="台灣",寰宇新聞
-video://https://www.histar.tv/live/global-news
 #EXTINF:-1,tvg-id="寰宇新聞" tvg-name="寰宇新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global2.png" group-title="台灣",寰宇新聞(備)
 https://www.youtube.com/watch?v=w87VGpgd90U
 #EXTINF:-1,tvg-id="寰宇新聞台灣台" tvg-name="寰宇新聞台灣台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global3.png" group-title="台灣",寰宇新聞台灣台
@@ -135,14 +121,8 @@ video://https://www.4gtv.tv/channel/4gtv-live060?set=4&ch=224
 video://http://everydaytv.top/play-3-139-0.html
 #EXTINF:-1,tvg-id="鏡新聞" tvg-name="鏡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Mnews.png" group-title="台灣",鏡新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv075?set=1&ch=268
-#EXTINF:-1,tvg-id="鏡新聞" tvg-name="鏡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Mnews.png" group-title="台灣",鏡新聞
-video://https://www.histar.tv/live/mnews
 #EXTINF:-1,tvg-id="鏡新聞" tvg-name="鏡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Mnews.png" group-title="台灣",鏡新聞(備)
 https://www.youtube.com/watch?v=5n0y6b0Q25o
-#EXTINF:-1,tvg-id="壹新聞" tvg-name="壹新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NextTV2.png" group-title="台灣",壹電視新聞
-video://https://www.histar.tv/live/nexttv
-#EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png" group-title="台灣",中天新聞
-video://https://www.histar.tv/live/cti-news
 #EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png"" group-title="台灣",中天新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv009?set=4&ch=30
 #EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png"" group-title="台灣",中天新聞(備)
@@ -176,8 +156,6 @@ video://https://www.ofiii.com/channel/watch/litv-longturn03
 #EXTINF:-1,tvg-id="龍華電影" tvg-name="龍華電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" group-title="台灣",龍華電影
 video://https://www.4gtv.tv/channel/litv-longturn03?set=1&ch=121
 #EXTINF:-1,tvg-id="龍華電影" tvg-name="龍華電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" group-title="台灣",龍華電影
-video://https://www.histar.tv/live/ltv-movies
-#EXTINF:-1,tvg-id="龍華電影" tvg-name="龍華電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV1.png" group-title="台灣",龍華電影
 video://http://everydaytv.top/play-3-108-0.html
 #EXTINF:-1,tvg-id="龍華洋片" tvg-name="龍華洋片" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LTV2.png" group-title="台灣",龍華洋片
 video://http://everydaytv.top/play-3-117-0.html
@@ -205,12 +183,10 @@ video://https://www.ofiii.com/channel/watch/litv-longturn01
 video://https://www.ofiii.com/channel/watch/litv-longturn22
 #EXTINF:-1,tvg-id="影迷數位電影" tvg-name="影迷數位電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FANS1.png" group-title="台灣",影迷數位電影
 video://https://www.4gtv.tv/channel/4gtv-4gtv011?set=1&ch=40
-#EXTINF:-1,tvg-id="HBOHITS" tvg-name="HBOHITS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HITS.png" group-title="台灣",HITS
+#EXTINF:-1,tvg-id="HITS" tvg-name="HITS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HITS.png" group-title="台灣",HITS
 video://https://www.4gtv.tv/channel/4gtv-live620?set=1&ch=186
 #EXTINF:-1,tvg-id="東森超視" tvg-name="東森超視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC2.png" group-title="台灣",東森超視
 video://http://everydaytv.top/play-3-39-0.html
-#EXTINF:-1,tvg-id="東森電影" tvg-name="東森電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC3.png" group-title="台灣",東森電影台
-video://https://www.histar.tv/live/ebc-movie
 #EXTINF:-1,tvg-id="東森電影" tvg-name="東森電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC3.png" group-title="台灣",東森電影台
 video://http://everydaytv.top/play-3-40-0.html
 #EXTINF:-1,tvg-id="東森洋片" tvg-name="東森洋片" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC4.png" group-title="台灣",東森洋片台
@@ -221,8 +197,6 @@ video://http://everydaytv.top/play-3-45-0.html
 video://http://everydaytv.top/play-3-42-0.html
 #EXTINF:-1,tvg-id="HBO" tvg-name="HBO" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO.png" group-title="台灣",HBO
 video://http://everydaytv.top/play-3-78-0.html
-#EXTINF:-1,tvg-id="HBO" tvg-name="HBO" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO.png" group-title="台灣",HBO
-video://https://www.histar.tv/live/hbo-hd
 #EXTINF:-1,tvg-id="HBO HD" tvg-name="HBO HD" tvg-logo="https://epg.112114.xyz/logo/HBOHD.png" group-title="台灣",HBO HD
 http://125.227.210.55:35210/VideoInput/play.ts
 #EXTINF:-1,tvg-id="HBO Family" tvg-name="HBO Family" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO1.png" group-title="台灣",HBO家庭
@@ -240,13 +214,9 @@ video://http://everydaytv.top/play-3-85-0.html
 #EXTINF:-1,tvg-id="緯來電影" tvg-name="緯來電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland2.png"" group-title="台灣",緯來電影台
 video://http://everydaytv.top/play-3-171-0.html
 #EXTINF:-1,tvg-id="緯來日本" tvg-name="緯來日本" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland5.png" group-title="台灣",緯來日本台
-video://https://www.histar.tv/live/videoland-japan
-#EXTINF:-1,tvg-id="緯來日本" tvg-name="緯來日本" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland5.png" group-title="台灣",緯來日本台
 video://http://everydaytv.top/play-3-173-0.html
 #EXTINF:-1,tvg-id="緯來日本" tvg-name="緯來日本" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland5.png" group-title="台灣",緯來日本台
 video://https://yeslivetv.com/channels/videoland-japan/
-#EXTINF:-1,tvg-id="緯來電影" tvg-name="緯來電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland2.png" group-title="台灣",緯來電影台
-video://https://www.histar.tv/live/videoland-movie
 #EXTINF:-1,tvg-id="緯來戲劇" tvg-name=""緯來戲劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland3.png" group-title="台灣",緯來戲劇台
 video://http://everydaytv.top/play-3-175-0.html
 
@@ -254,24 +224,16 @@ video://http://everydaytv.top/play-3-175-0.html
 video://https://yeslivetv.com/channels/videoland-maxtv/
 #EXTINF:-1,tvg-id="緯來綜合" tvg-name="緯來綜合" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland1.png" group-title="台灣",緯來綜合台
 video://http://everydaytv.top/play-3-177-0.html
-#EXTINF:-1,tvg-id="衛視電影" tvg-name="衛視電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/weishi2.png" group-title="台灣",衛視電影台
-video://https://www.histar.tv/live/star-chinese-movies
 #EXTINF:-1,tvg-id="星衛電影" tvg-name="星衛電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/xingwei2.png" group-title="台灣",星衛電影台
 video://http://everydaytv.top/play-3-182-0.html
 #EXTINF:-1,tvg-id="龍祥時代" tvg-name="龍祥時代" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LStime.png" group-title="台灣",龍祥時代
 video://http://everydaytv.top/play-3-119-0.html
-#EXTINF:-1,tvg-id="龍祥時代" tvg-name="龍祥時代" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/LStime.png" group-title="台灣",龍祥時代
-video://https://www.histar.tv/live/lstime
 #EXTINF:-1,tvg-id="衛視中文台" tvg-name="衛視中文台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/weishi1.png" group-title="台灣",衛視中文台
 video://http://everydaytv.top/play-3-179-0.html
 #EXTINF:-1,tvg-id="衛視中文台" tvg-name="衛視中文台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/weishi1.png" group-title="台灣",衛視中文台
 video://https://yeslivetv.com/channels/star-chinese-channel/
-#EXTINF:-1,tvg-id="美亞電影" tvg-name="美亞電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/meiyady.png" group-title="台灣",美亞電影
-video://https://www.histar.tv/live/meiah-movies
 #EXTINF:-1,tvg-id="Cinemax" tvg-name="Cinemax" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Cinemax.png" group-title="台灣",Cinemax
 video://http://everydaytv.top/play-3-27-0.html
-#EXTINF:-1,tvg-id="Disney" tvg-name="Disney" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Disney.png" group-title="台灣",Disney
-video://https://www.histar.tv/live/disney
 #EXTINF:-1,tvg-id="CINEMAWORLD" tvg-name="CINEMAWORLD" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CinemaWorld.png" group-title="台灣",CINEMA WORLD
 video://https://www.4gtv.tv/channel/4gtv-live069?set=1&ch=225
 #EXTINF:-1,tvg-id="MYCINEMAEUROPE" tvg-name="MYCINEMAEUROPE" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/MyCinema.png" group-title="台灣",歐洲光影
@@ -298,8 +260,6 @@ video://https://www.4gtv.tv/channel/4gtv-live107?set=1&ch=231
 video://https://www.4gtv.tv/channel/litv-ftv15?set=1&ch=60
 #EXTINF:-1,tvg-id="靖天卡通台" tvg-name="靖天卡通台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV7.png" group-title="台灣",靖天卡通台
 video://https://www.4gtv.tv/channel/4gtv-4gtv044?set=1&ch=15
-#EXTINF:-1,tvg-id="靖天卡通台" tvg-name="靖天卡通台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV7.png" group-title="台灣",靖天卡通台
-video://https://www.histar.tv/live/jtkt
 #EXTINF:-1,tvg-id="靖洋卡通台" tvg-name="靖洋卡通NiceBingo" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/jy1.png" group-title="台灣",靖洋卡通
 video://https://www.4gtv.tv/channel/4gtv-4gtv057?set=1&ch=59
 #EXTINF:-1,tvg-id="CN卡通" tvg-name="CN卡通" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CNCartoon.png" group-title="台灣",CN卡通
@@ -311,8 +271,6 @@ video://https://www.4gtv.tv/channel/4gtv-live032?set=1&ch=219
 #EXTINF:-1,tvg-id="尼克兒童頻道" tvg-name="尼克兒童頻道" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Nickelodeon.png" group-title="台灣",尼克兒童頻道
 video://https://www.4gtv.tv/channel/4gtv-live105?set=1&ch=185
 #EXTINF:-1,tvg-id="東森綜合" tvg-name="東森綜合" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC1.png" group-title="台灣",東森綜合
-video://https://www.histar.tv/live/ebc-ettv
-#EXTINF:-1,tvg-id="東森綜合" tvg-name="東森綜合" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC1.png" group-title="台灣",東森綜合
 video://http://everydaytv.top/play-3-46-0.html
 #EXTINF:-1,tvg-id="DREAMWORKS" tvg-name="DREAMWORKS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/DreamWorks.png" group-title="台灣",DREAM WORKS
 video://https://www.4gtv.tv/channel/4gtv-live017?set=1&ch=282
@@ -321,19 +279,11 @@ video://https://www.4gtv.tv/channel/4gtv-live059?set=1&ch=283
 #EXTINF:-1,tvg-id="Pet Club TV" tvg-name="Pet Club TV" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/PetClubTV.png" group-title="台灣",Pet Club TV
 video://https://www.4gtv.tv/channel/4gtv-live110?set=1&ch=182
 #EXTINF:-1,tvg-id="緯來體育台" tvg-name="緯來體育台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland7.png" group-title="台灣",緯來體育台
-video://https://www.histar.tv/live/videoland-sport
-#EXTINF:-1,tvg-id="緯來體育台" tvg-name="緯來體育台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland7.png" group-title="台灣",緯來體育台
 video://http://everydaytv.top/play-3-174-0.html
-#EXTINF:-1,tvg-id="愛爾達體育1" tvg-name="愛爾達體育1" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA4.png" group-title="台灣",愛爾達體育1
-video://https://www.histar.tv/live/elta-sport1
 #EXTINF:-1,tvg-id="愛爾達體育1" tvg-name="愛爾達體育1" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA4.png" group-title="台灣",愛爾達體育1
 video://http://everydaytv.top/play-3-51-0.html
 #EXTINF:-1,tvg-id="愛爾達體育2" tvg-name="愛爾達體育2" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA5.png" group-title="台灣",愛爾達體育2
-video://https://www.histar.tv/live/elta-sport2
-#EXTINF:-1,tvg-id="愛爾達體育2" tvg-name="愛爾達體育2" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA5.png" group-title="台灣",愛爾達體育2
 video://http://everydaytv.top/play-3-52-0.html
-#EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="台灣",愛爾達體育3
-video://https://www.histar.tv/live/elta-sport3
 #EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="台灣",愛爾達體育3
 video://http://everydaytv.top/play-3-53-0.html
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
@@ -341,17 +291,11 @@ video://http://everydaytv.top/play-3-67-0.html
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="台灣",愛爾達體育4
 video://https://yeslivetv.com/channels/elta-tv-4/
 #EXTINF:-1,tvg-id="ELEVEN體育1台" tvg-name="ELEVEN體育1台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven1.png" group-title="台灣",ELEVEN體育1台
-video://https://www.histar.tv/live/eleven-sport1
-#EXTINF:-1,tvg-id="ELEVEN體育1台" tvg-name="ELEVEN體育1台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven1.png" group-title="台灣",ELEVEN體育1台
 video://http://everydaytv.top/play-3-49-0.html
-#EXTINF:-1,tvg-id="ELEVEN體育2台" tvg-name="ELEVEN體育2台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven2.png" group-title="台灣",ELEVEN體育2台
-video://https://www.histar.tv/live/eleven-sport2
 #EXTINF:-1,tvg-id="ELEVEN體育2台" tvg-name="ELEVEN體育2台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven2.png" group-title="台灣",ELEVEN體育2台
 video://http://everydaytv.top/play-3-50-0.html
 #EXTINF:-1,tvg-id="博斯高球I" tvg-name="博斯高球I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast3.png" group-title="台灣",博斯高球I
 video://https://www.4gtv.tv/channel/litv-longturn05?set=1&ch=48
-#EXTINF:-1,tvg-id="博斯高球I" tvg-name="博斯高球I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast3.png" group-title="台灣",博斯高球I
-video://https://www.histar.tv/live/sportcast-golf1
 #EXTINF:-1,tvg-id="博斯高球I" tvg-name="博斯高球I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast3.png" group-title="台灣",博斯高球I
 video://http://everydaytv.top/play-3-16-0.html
 #EXTINF:-1,tvg-id="博斯高球II" tvg-name="博斯高球II" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast4.png" group-title="台灣",博斯高球II
@@ -359,21 +303,15 @@ video://http://everydaytv.top/play-3-17-0.html
 #EXTINF:-1,tvg-id="博斯運動I" tvg-name="博斯運動I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast1.png" group-title="台灣",博斯運動I
 video://https://www.4gtv.tv/channel/litv-longturn07?set=1&ch=50
 #EXTINF:-1,tvg-id="博斯運動I" tvg-name="博斯運動I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast1.png" group-title="台灣",博斯運動I
-video://https://www.histar.tv/live/sportcast1
-#EXTINF:-1,tvg-id="博斯運動I" tvg-name="博斯運動I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast1.png" group-title="台灣",博斯運動I
 video://http://everydaytv.top/play-3-23-0.html
 #EXTINF:-1,tvg-id="博斯運動II" tvg-name="博斯運動II" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast2.png" group-title="台灣",博斯運動II
 video://http://everydaytv.top/play-3-24-0.html
 #EXTINF:-1,tvg-id="博斯無限I" tvg-name="博斯無限I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast7.png" group-title="台灣",博斯無限I
 video://https://www.4gtv.tv/channel/litv-longturn07?set=1&ch=50
 #EXTINF:-1,tvg-id="博斯無限I" tvg-name="博斯無限I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast7.png" group-title="台灣",博斯無限I
-video://https://www.histar.tv/live/sportcast-wx
-#EXTINF:-1,tvg-id="博斯無限I" tvg-name="博斯無限I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast7.png" group-title="台灣",博斯無限I
 video://http://everydaytv.top/play-3-21-0.html
 #EXTINF:-1,tvg-id="博斯網球" tvg-name="博斯網球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast5.png" group-title="台灣",博斯網球
 video://https://www.4gtv.tv/channel/litv-longturn09?set=1&ch=52
-#EXTINF:-1,tvg-id="博斯網球" tvg-name="博斯網球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast5.png" group-title="台灣",博斯網球
-video://https://www.histar.tv/live/sportcast-tennis
 #EXTINF:-1,tvg-id="博斯網球" tvg-name="博斯網球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast5.png" group-title="台灣",博斯網球
 video://http://everydaytv.top/play-3-20-0.html
 #EXTINF:-1,tvg-id="智林體育" tvg-name="智林體育" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TSL.png" group-title="台灣",智林體育
@@ -432,14 +370,10 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv018?set=1&ch=11
 video://https://www.4gtv.tv/channel/4gtv-4gtv016?set=1&ch=76
 #EXTINF:-1,tvg-id="靖天國際" tvg-name="靖天國際" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV10.png" group-title="台灣",靖天國際台
 video://https://www.4gtv.tv/channel/4gtv-4gtv063?set=1&ch=84
-#EXTINF:-1,tvg-id="靖天國際" tvg-name="靖天國際" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV10.png" group-title="台灣",靖天國際台
-video://https://www.histar.tv/live/jtgj
 #EXTINF:-1,tvg-id="靖天歡樂" tvg-name="靖天歡樂" tvg-logo="https://4gtvimg2.4gtv.tv/4gtv-Image/Channel/mobile/logo_4gtv_4gtv-4gtv054_mobile.png" group-title="台灣",靖天歡樂
 video://https://www.4gtv.tv/channel/4gtv-4gtv054?set=1&ch=119
 #EXTINF:-1,tvg-id="靖天電影" tvg-name="靖天電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV9.png" group-title="台灣",靖天電影
 video://https://www.4gtv.tv/channel/4gtv-4gtv061?set=1&ch=82
-#EXTINF:-1,tvg-id="靖天電影" tvg-name="靖天電影" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV9.png" group-title="台灣",靖天電影
-video://https://www.histar.tv/live/jtdy
 #EXTINF:-1,tvg-id="靖天綜合" tvg-name="靖天綜合" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV1.png" group-title="台灣",靖天綜合
 video://https://www.4gtv.tv/channel/4gtv-4gtv046?set=1&ch=21
 #EXTINF:-1,tvg-id="靖天日本台" tvg-name="靖天日本台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/GoldenTV6.png" group-title="台灣",靖天日本
@@ -454,8 +388,6 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv065?set=1&ch=88
 video://https://www.4gtv.tv/channel/4gtv-4gtv062?set=1&ch=83
 #EXTINF:-1,tvg-id="靖洋戲劇" tvg-name="靖洋戲劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/jy2.png" group-title="台灣",靖洋戲劇
 video://https://www.4gtv.tv/channel/4gtv-4gtv045?set=1&ch=118
-#EXTINF:-1,tvg-id="靖洋戲劇" tvg-name="靖洋戲劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/jy2.png" group-title="台灣",靖洋戲劇
-video://https://www.histar.tv/live/jyxj
 #EXTINF:-1,tvg-id="采昌影劇" tvg-name="采昌影劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/caichang.png" group-title="台灣",采昌影劇
 video://https://www.4gtv.tv/channel/4gtv-4gtv049?set=1&ch=25
 #EXTINF:-1,tvg-id="中天綜合台" tvg-name="中天綜合台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI1.png" group-title="台灣",中天綜合台
@@ -501,8 +433,6 @@ video://https://www.4gtv.tv/channel/4gtv-live208?set=1&ch=139
 #EXTINF:-1,tvg-id="HISTORY" tvg-name="HISTORY" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/History1.png" group-title="台灣",歷史頻道
 video://https://www.4gtv.tv/channel/4gtv-live026?set=1&ch=214
 #EXTINF:-1,tvg-id="動物星球" tvg-name="動物星球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/animalplanet.png" group-title="台灣",動物星球
-video://https://www.histar.tv/live/animal-planet
-#EXTINF:-1,tvg-id="動物星球" tvg-name="動物星球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/animalplanet.png" group-title="台灣",動物星球
 video://http://everydaytv.top/play-3-47-0.html
 #EXTINF:-1,tvg-id="國家地理" tvg-name="國家地理" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NATGEO.png" group-title="台灣",國家地理
 video://http://everydaytv.top/play-3-66-0.html
@@ -543,42 +473,14 @@ video://https://yingshi.tv/livetv/play/id/9.html
 video://https://yingshi.tv/livetv/play/id/10.html
 #EXTINF:-1,tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV17.png" group-title="中國",CCTV-17
 video://https://yingshi.tv/livetv/play/id/17.html
-
-#EXTINF:-1,tvg-id="TVB 翡翠台" tvg-name="TVB 翡翠台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB1.png" group-title="港澳",TVB翡翠台
-video://https://www.histar.tv/live/feicui
-#EXTINF:-1,tvg-id="TVB 無線新聞" tvg-name="TVB 無線新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB4.png" group-title="港澳",TVB無線新聞
-video://https://www.histar.tv/live/tvb-news
-#EXTINF:-1,tvg-id="TVB 星河" tvg-name="TVB 星河" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB6.png" group-title="港澳",TVB星河
-video://https://www.histar.tv/live/tvb-xinghe
-#EXTINF:-1,tvg-id="TVB韓劇台" tvg-name="TVB韓劇台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB7.png" group-title="港澳",TVB韓劇
-video://https://www.histar.tv/live/tvb-asia-drama
-#EXTINF:-1,tvg-id="TVB 千禧經典" tvg-name="TVB 千禧經典" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB8.png" group-title="港澳",TVB千禧經典
-video://https://www.histar.tv/live/tvb-classic
-#EXTINF:-1,tvg-id="TVB粵語片" tvg-name="TVB粵語片" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB12.png" group-title="港澳",TVB粵語片
-video://https://www.histar.tv/live/tvb-yueyu
-#EXTINF:-1,tvg-id="TVB華語劇" tvg-name="TVB華語劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB13.png" group-title="港澳",TVB華語劇
-video://https://www.histar.tv/live/tvb-drama
-#EXTINF:-1,tvg-id="RTHK31" tvg-name="RTHK31" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/RTHK31.png" group-title="港澳",RTHK31
-video://https://www.histar.tv/live/rthk31
-#EXTINF:-1,tvg-id="RTHK32" tvg-name="RTHK32" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/RTHK32.png" group-title="港澳",RTHK32
-video://https://www.histar.tv/live/rthk32
-#EXTINF:-1,tvg-id="HOY78" tvg-name="HOY78" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HOY1.png" group-title="港澳",HOY資訊台
-video://https://www.histar.tv/live/hoy-info
-#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB3.png" group-title="港澳",J2
-video://https://yeslivetv.com/channels/j2/
-#EXTINF:-1,tvg-id="鳳凰衛視" tvg-name="鳳凰衛視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Phoenix1.png" group-title="港澳",鳳凰衛視中文台
-video://https://www.histar.tv/live/phtv-cn
-#EXTINF:-1,tvg-id="鳳凰衛視" tvg-name="鳳凰衛視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Phoenix2.png" group-title="港澳",鳳凰衛視資訊台
-video://https://www.histar.tv/live/phtv-info
-#EXTINF:-1,tvg-id="蓮花衛視" tvg-name="蓮花衛視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Lotus.png" group-title="港澳",澳門蓮花
-video://https://www.histar.tv/live/lotustv
-
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
 video://https://today.line.me/tw/v2/article/grrvVZ
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
 video://https://www.4gtv.tv/channel/4gtv-live114?set=1&ch=234
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
 video://http://everydaytv.top/play-3-43-0.html
+#EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞(備)
+https://www.youtube.com/live/2dfAzcDf8Zg
 #EXTINF:-1,tvg-id="民視新聞" tvg-name="民視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV1.png" group-title="新聞",民視新聞
 video://https://today.line.me/tw/v2/article/PNNoG5
 #EXTINF:-1,tvg-id="民視新聞" tvg-name="民視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FTV1.png" group-title="新聞",民視新聞
@@ -589,20 +491,14 @@ video://http://everydaytv.top/play-3-131-0.html
 https://www.youtube.com/watch?v=ylYJSBUgaMA
 #EXTINF:-1,tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV2.png" group-title="新聞",台視新聞
 video://https://www.ofiii.com/channel/watch/4gtv-4gtv051
-#EXTINF:-1,tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV2.png" group-title="新聞",台視新聞
-video://https://www.histar.tv/live/ttv-news
 #EXTINF:-1,tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TTV2.png" group-title="新聞",台視新聞(備)
 https://www.youtube.com/watch?v=xL0ch83RAK8
 #EXTINF:-1,tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV1.png" group-title="新聞",中視新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv074?set=4&ch=33
-#EXTINF:-1,tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV1.png" group-title="新聞",中視新聞
-video://https://www.histar.tv/live/ctv-news
 #EXTINF:-1,tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTV1.png" group-title="新聞",中視新聞(備)
 https://www.youtube.com/watch?v=TCnaIE_SAtM
 #EXTINF:-1,tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS1.png" group-title="新聞",華視新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv052?set=1&ch=34
-#EXTINF:-1,tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS1.png" group-title="新聞",華視新聞
-video://https://www.histar.tv/live/cts-news
 #EXTINF:-1,tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTS1.png" group-title="新聞",華視新聞(備)
 https://www.youtube.com/watch?v=wM0g8EoUZ_E
 #EXTINF:-1,tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS1.png" group-title="新聞",TVBS新聞
@@ -618,8 +514,6 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV31.m3u8
 #EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="新聞",東森財經新聞
 video://https://www.4gtv.tv/channel/4gtv-live019?set=4&ch=211
 #EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="新聞",東森財經新聞
-video://https://www.histar.tv/live/ebc-finance
-#EXTINF:-1,tvg-id="東森財經新聞" tvg-name="東森財經新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC7.png" group-title="新聞",東森財經新聞
 video://http://everydaytv.top/play-3-38-0.html
 #EXTINF:-1,tvg-id="三立iNEWS" tvg-name="三立iNEWS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/SET3.png" group-title="新聞",三立iNEWS
 video://https://www.4gtv.tv/channel/4gtv-live089?set=4&ch=229
@@ -627,8 +521,6 @@ video://https://www.4gtv.tv/channel/4gtv-live089?set=4&ch=229
 https://www.youtube.com/watch?v=CKjSm5ZeehE
 #EXTINF:-1,tvg-id="寰宇新聞" tvg-name="寰宇新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global2.png" group-title="新聞",寰宇新聞
 video://https://www.4gtv.tv/channel/litv-longturn14?set=4&ch=36
-#EXTINF:-1,tvg-id="寰宇新聞" tvg-name="寰宇新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global2.png" group-title="新聞",寰宇新聞
-video://https://www.histar.tv/live/global-news
 #EXTINF:-1,tvg-id="寰宇新聞" tvg-name="寰宇新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global2.png" group-title="新聞",寰宇新聞(備)
 https://www.youtube.com/watch?v=w87VGpgd90U
 #EXTINF:-1,tvg-id="寰宇新聞台灣台" tvg-name="寰宇新聞台灣台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Global3.png" group-title="新聞",寰宇新聞台灣台
@@ -643,14 +535,8 @@ video://https://www.4gtv.tv/channel/4gtv-live060?set=4&ch=224
 video://http://everydaytv.top/play-3-139-0.html
 #EXTINF:-1,tvg-id="鏡新聞" tvg-name="鏡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Mnews.png" group-title="新聞",鏡新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv075?set=1&ch=268
-#EXTINF:-1,tvg-id="鏡新聞" tvg-name="鏡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Mnews.png" group-title="新聞",鏡新聞
-video://https://www.histar.tv/live/mnews
 #EXTINF:-1,tvg-id="鏡新聞" tvg-name="鏡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Mnews.png" group-title="新聞",鏡新聞(備)
 https://www.youtube.com/watch?v=5n0y6b0Q25o
-#EXTINF:-1,tvg-id="壹新聞" tvg-name="壹新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NextTV2.png" group-title="新聞",壹電視新聞
-video://https://www.histar.tv/live/nexttv
-#EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png" group-title="新聞",中天新聞
-video://https://www.histar.tv/live/cti-news
 #EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png"" group-title="新聞",中天新聞
 video://https://www.4gtv.tv/channel/4gtv-4gtv009?set=4&ch=30
 #EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png"" group-title="新聞",中天新聞(備)
@@ -663,19 +549,11 @@ video://https://yeslivetv.com/channels/ustv/
 video://https://yeslivetv.com/channels/ustvbiz/
 
 #EXTINF:-1,tvg-id="緯來體育台" tvg-name="緯來體育台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland7.png" group-title="體育",緯來體育台
-video://https://www.histar.tv/live/videoland-sport
-#EXTINF:-1,tvg-id="緯來體育台" tvg-name="緯來體育台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Videoland7.png" group-title="體育",緯來體育台
 video://http://everydaytv.top/play-3-174-0.html
-#EXTINF:-1,tvg-id="愛爾達體育1" tvg-name="愛爾達體育1" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA4.png" group-title="體育",愛爾達體育1
-video://https://www.histar.tv/live/elta-sport1
 #EXTINF:-1,tvg-id="愛爾達體育1" tvg-name="愛爾達體育1" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA4.png" group-title="體育",愛爾達體育1
 video://http://everydaytv.top/play-3-51-0.html
 #EXTINF:-1,tvg-id="愛爾達體育2" tvg-name="愛爾達體育2" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA5.png" group-title="體育",愛爾達體育2
-video://https://www.histar.tv/live/elta-sport2
-#EXTINF:-1,tvg-id="愛爾達體育2" tvg-name="愛爾達體育2" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA5.png" group-title="體育",愛爾達體育2
 video://http://everydaytv.top/play-3-52-0.html
-#EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="體育",愛爾達體育3
-video://https://www.histar.tv/live/elta-sport3
 #EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="體育",愛爾達體育3
 video://http://everydaytv.top/play-3-53-0.html
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
@@ -683,17 +561,11 @@ video://http://everydaytv.top/play-3-67-0.html
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
 video://https://yeslivetv.com/channels/elta-tv-4/
 #EXTINF:-1,tvg-id="ELEVEN體育1台" tvg-name="ELEVEN體育1台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven1.png" group-title="體育",ELEVEN體育1台
-video://https://www.histar.tv/live/eleven-sport1
-#EXTINF:-1,tvg-id="ELEVEN體育1台" tvg-name="ELEVEN體育1台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven1.png" group-title="體育",ELEVEN體育1台
 video://http://everydaytv.top/play-3-49-0.html
-#EXTINF:-1,tvg-id="ELEVEN體育2台" tvg-name="ELEVEN體育2台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven2.png" group-title="體育",ELEVEN體育2台
-video://https://www.histar.tv/live/eleven-sport2
 #EXTINF:-1,tvg-id="ELEVEN體育2台" tvg-name="ELEVEN體育2台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Eleven2.png" group-title="體育",ELEVEN體育2台
 video://http://everydaytv.top/play-3-50-0.html
 #EXTINF:-1,tvg-id="博斯高球I" tvg-name="博斯高球I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast3.png" group-title="體育",博斯高球I
 video://https://www.4gtv.tv/channel/litv-longturn05?set=1&ch=48
-#EXTINF:-1,tvg-id="博斯高球I" tvg-name="博斯高球I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast3.png" group-title="體育",博斯高球I
-video://https://www.histar.tv/live/sportcast-golf1
 #EXTINF:-1,tvg-id="博斯高球I" tvg-name="博斯高球I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast3.png" group-title="體育",博斯高球I
 video://http://everydaytv.top/play-3-16-0.html
 #EXTINF:-1,tvg-id="博斯高球II" tvg-name="博斯高球II" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast4.png" group-title="體育",博斯高球II
@@ -701,21 +573,15 @@ video://http://everydaytv.top/play-3-17-0.html
 #EXTINF:-1,tvg-id="博斯運動I" tvg-name="博斯運動I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast1.png" group-title="體育",博斯運動I
 video://https://www.4gtv.tv/channel/litv-longturn07?set=1&ch=50
 #EXTINF:-1,tvg-id="博斯運動I" tvg-name="博斯運動I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast1.png" group-title="體育",博斯運動I
-video://https://www.histar.tv/live/sportcast1
-#EXTINF:-1,tvg-id="博斯運動I" tvg-name="博斯運動I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast1.png" group-title="體育",博斯運動I
 video://http://everydaytv.top/play-3-23-0.html
 #EXTINF:-1,tvg-id="博斯運動II" tvg-name="博斯運動II" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast2.png" group-title="體育",博斯運動II
 video://http://everydaytv.top/play-3-24-0.html
 #EXTINF:-1,tvg-id="博斯無限I" tvg-name="博斯無限I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast7.png" group-title="體育",博斯無限I
 video://https://www.4gtv.tv/channel/litv-longturn07?set=1&ch=50
 #EXTINF:-1,tvg-id="博斯無限I" tvg-name="博斯無限I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast7.png" group-title="體育",博斯無限I
-video://https://www.histar.tv/live/sportcast-wx
-#EXTINF:-1,tvg-id="博斯無限I" tvg-name="博斯無限I" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast7.png" group-title="體育",博斯無限I
 video://http://everydaytv.top/play-3-21-0.html
 #EXTINF:-1,tvg-id="博斯網球" tvg-name="博斯網球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast5.png" group-title="體育",博斯網球
 video://https://www.4gtv.tv/channel/litv-longturn09?set=1&ch=52
-#EXTINF:-1,tvg-id="博斯網球" tvg-name="博斯網球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast5.png" group-title="體育",博斯網球
-video://https://www.histar.tv/live/sportcast-tennis
 #EXTINF:-1,tvg-id="博斯網球" tvg-name="博斯網球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/sportcast5.png" group-title="體育",博斯網球
 video://http://everydaytv.top/play-3-20-0.html
 #EXTINF:-1,tvg-id="智林體育" tvg-name="智林體育" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TSL.png" group-title="體育",智林體育
