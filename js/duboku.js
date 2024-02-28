@@ -5,13 +5,15 @@
  */
 
  var rule = {
-	title:'独播库[飞]',
+	title:'獨播庫',
 	//host:'https://www.duboku.tv',
 	host:'https://u.duboku.io',
 	//host:'https://w.duboku.io',
-	url: '/vodtype/fyclass-fypage.html',
+	//url:'/vodtype/fyclass-fypage.html',
+	url:'/vodshow/fyfilter.html',
 	detailUrl:'/voddetail/fyid.html', //非必填,二级详情拼接链接
-	/*filterable:1,//是否启用分类筛选,
+	headers: {'User-Agent':'MOBILE_UA'},
+	filterable:1,//是否启用分类筛选,
 	filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
 	filter:{
   	        "1":[{"key":"class","name":"類型","value":[{"n":"全部","v":""},{"n":"動作","v":"动作"},{"n":"喜劇","v":"喜剧"},{"n":"愛情","v":"爱情"},{"n":"科幻","v":"科幻"},{"n":"恐怖","v":"恐怖"},{"n":"懸疑","v":"悬疑"},{"n":"警匪","v":"警匪"},{"n":"驚悚","v":"惊悚"},{"n":"犯罪","v":"犯罪"},{"n":"槍戰","v":"枪战"},{"n":"戰爭","v":"战争"},{"n":"劇情","v":"剧情"},{"n":"動畫","v":"动画"},{"n":"奇幻","v":"奇幻"},{"n":"武俠","v":"武侠"},{"n":"古装","v":"古装"},{"n":"冒險","v":"冒险"},{"n":"紀錄片","v":"纪录片"},{"n":"歌舞","v":"歌舞"},{"n":"青春","v":"青春"},{"n":"文藝","v":"文艺"}]},
@@ -71,7 +73,7 @@
 		15:{cateId:'15'},
 	        20:{cateId:'20'},
 	        21:{cateId:'21'}
-	},*/
+	},
 	searchUrl:'/vodsearch/**----------fypage---.html',
 	searchable: 2,
         class_name:'電影&電視劇&綜藝&動漫&陸劇&台泰劇&日韓劇&港劇&短劇',
@@ -209,7 +211,7 @@
 			};
 			let playFrom = [];
 			let vod_tab_list = [];
-			let tabs = pdfa(html, "body .nav-tabs");
+			let tabs = pdfa(html, ".nav-tabs&&li");
 			tabs.forEach((it) => {
 				playFrom.push(pdfh(it, "a&&Text"))
 			});
@@ -248,4 +250,4 @@
 		});
 		setResult(d)
 	`,
-}
+				}
