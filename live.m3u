@@ -92,6 +92,8 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV31.m3u8
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞
 video://https://today.line.me/tw/v2/article/grrvVZ
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞
+http://ali.hlspull.yximgs.com/live/twlivemhzttuzzcvbyzuozdzzezywefzzfbxfbxxvbzzzlzzhzsxw.flv
+#EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞
 video://https://www.4gtv.tv/channel/4gtv-live114?set=1&ch=234
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="台灣",東森新聞
 video://http://everydaytv.top/play-3-43-0.html
@@ -475,6 +477,8 @@ video://https://yingshi.tv/livetv/play/id/10.html
 video://https://yingshi.tv/livetv/play/id/17.html
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
 video://https://today.line.me/tw/v2/article/grrvVZ
+#EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
+http://ali.hlspull.yximgs.com/live/twlivemhzttuzzcvbyzuozdzzezywefzzfbxfbxxvbzzzlzzhzsxw.flv
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
 video://https://www.4gtv.tv/channel/4gtv-live114?set=1&ch=234
 #EXTINF:-1,tvg-id="東森新聞" tvg-name="東森新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/EBC6.png" group-title="新聞",東森新聞
