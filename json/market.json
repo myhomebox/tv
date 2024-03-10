@@ -1,61 +1,67 @@
 [
-  {
-    "name": "推薦",
-    "list": [
-      {
-        "name": "電視-py",
-        "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "v7a"
-      },
-      {
-        "name": "美華KTV",
-        "url": "https://github.com/myhomebox/Release/releases/download/dev/skyktv.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "9.9.9"
-      },
-      {
-        "name": "卡拉OK",
-        "url": "https://github.com/myhomebox/Release/releases/download/dev/ktv.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "30.2.2"
-      }, 
-      {
-        "name": "Android-4.x",
-        "url": "https://my.t4tv.hz.cz/apk/kitkat/leanbacK.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "v7a"
-      },
-     {
-        "name": "Android-4.x py",
-        "url": "https://my.t4tv.hz.cz/apk/kitkat/leanback-python.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-        "version": "v7a"
-      },
-      {
-        "name": "手機-py",
-        "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-armeabi_v7a.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-        "version": "v7a"
-      },
-      {
-        "name": "手機-py",
-        "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-arm64_v8a.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-        "version": "v8a"
-      },
-      {
-        "name": "手機-java",
-        "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-armeabi_v7a.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-        "version": "v7a"
-      },
-      {
-        "name": "手機-java",
-        "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-arm64_v8a.apk",
-        "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-        "version": "v8a"
-      }
-    ]
-  }
+    {
+        "name": "推薦",
+        "list": [
+            {
+                "name": "電視-py",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "v7a"
+            },
+            {
+                "name": "想唱就唱",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/origioyktv.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "2.15.63.2401241253"
+            },
+            {
+                "name": "美華KTV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/skyktv.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "9.9.9"
+            },
+            {
+                "name": "卡拉OK",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/ktv.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "30.2.2"
+            },
+            {
+                "name": "Android-4.x",
+                "url": "https://my.t4tv.hz.cz/apk/kitkat/leanbacK.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "v7a"
+            },
+            {
+                "name": "Android-4.x py",
+                "url": "https://my.t4tv.hz.cz/apk/kitkat/leanback-python.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "v7a"
+            },
+            {
+                "name": "手機-py",
+                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-armeabi_v7a.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "version": "v7a"
+            },
+            {
+                "name": "手機-py",
+                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-arm64_v8a.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "version": "v8a"
+            },
+            {
+                "name": "手機-java",
+                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-armeabi_v7a.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "version": "v7a"
+            },
+            {
+                "name": "手機-java",
+                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-arm64_v8a.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "version": "v8a"
+            }
+        ]
+    }
 ]
