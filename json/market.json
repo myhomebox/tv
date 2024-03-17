@@ -27,10 +27,10 @@
                 "version": "9.9.9"
             },
             {
-                "name": "卡拉OK",
+                "name": "IKTV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/ktv.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-                "version": "30.2.2"
+                "version": "40.0.0"
             },
             {
                 "name": "Android-4.x",
