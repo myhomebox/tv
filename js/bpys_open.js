@@ -4,7 +4,7 @@ import {
 from 'assets://js/lib/cat.js';
 
 let key = '996白嫖ys';
-let HOST = 'http://www.baipiaoys.cc/';
+let HOST = 'http://www.baipiaoys.com/';
 let siteKey = '';
 let siteType = 0;
 
@@ -1392,7 +1392,7 @@ async function detail(id) {
         vod_actor: $('.stui-content__detail p.data:contains(主演：)').text().substring(3).replaceAll('&nbsp;',' '),
         vod_pic: $('.hl-full-box .hl-item-thumb').attr('data-original'),
         vod_remarks: $('.stui-content__thumb span.pic-text').text().replaceAll('&nbsp;',''),
-        vod_content: '[关注公众号:影视资源站]  ' + $('div#desc .stui-pannel_bd').text().substring(4).replaceAll('&nbsp;',''),
+        vod_content: $('div#desc .stui-pannel_bd').text().substring(4).replaceAll('&nbsp;',''),
     };
     const playMap = {};
     const tabs = $('div.playlist h3.title');
