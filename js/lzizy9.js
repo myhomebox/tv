@@ -28,11 +28,13 @@ var rule = {
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
+                let play_Url = 'json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=';
 		if (/\\.m3u8|\\.mp4/.test(url)) {
 			input = {
 				jx: 0,
 				url: url,
-				parse: 0
+                                playUrl: play_Url,
+				parse: 1
 			}
 		} else if (/\\/share/.test(url)) {
 			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
