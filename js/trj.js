@@ -1,5 +1,5 @@
 var rule={
-    title:'唐人街影视[飞]',
+    title:'唐人街影视',
     host:'https://www.trjyy.com',
     //host:'https://www.tangrenjie.tv',
     // url:'/vod/show/id/fyclass/page/fypage.html',
@@ -51,7 +51,7 @@ var rule={
     },
     //class_parse:'.top_nav&&li:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
     play_parse:true,
-    lazy:`js:
+	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
 		if (html.encrypt == '1') {
@@ -59,12 +59,25 @@ var rule={
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-		if (/m3u8|mp4/.test(url)) {
-			input = url
+		let play_Url = 'json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=';
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				playUrl: play_Url,
+				parse: 1
+			}
+		} else if (/\\/share/.test(url)) {
+			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
 		} else {
 			input
 		}
-	`,    
+	`,
      limit:6,
     推荐:'ul.vodlist.vodlist_wi;li;*;*;*;*',
     double:true, // 推荐内容是否双层定位
