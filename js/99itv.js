@@ -37,7 +37,33 @@ var rule = {
     class_name: '電影&電視劇&綜藝&動漫',
     class_url: 'movie&drama&variety&anime',
     play_parse: true,
-    lazy: '',
+    	lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		let play_Url = 'json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=';
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				playUrl: play_Url,
+				parse: 1
+			}
+		} else if (/\\/share/.test(url)) {
+			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else {
+			input
+		}
+	`,
     limit: 6,
     推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.pic-tag.text-right&&Text;a&&href',
     double: true, // 推荐内容是否双层定位
