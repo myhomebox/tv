@@ -30,20 +30,33 @@ var rule = {
     class_url: '1&2&29&30',
     //class_parse: '.navbar-left&&li;a&&Text;a&&href;/(\\d+).html',
     play_parse: true,
-    lazy: `js:
-        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-        var url = html.url;
-        if (html.encrypt == '1') {
-            url = unescape(url)
-        } else if (html.encrypt == '2') {
-            url = unescape(base64Decode(url))
-        }
-         if (/m3u8|mp4|flv/.test(url)) {
-            input = url
-        } else {
-            input
-        }
-    `,
+	lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		let play_Url = 'json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=';
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				playUrl: play_Url,
+				parse: 1
+			}
+		} else if (/\\/share/.test(url)) {
+			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else {
+			input
+		}
+	`,
     limit: 6,
     推荐: 'li.col-xs-4;li;a&&title;a.video-pic&&data-original;.text-bg-r&&Text;a&&href',
     double: true, // 推荐内容是否双层定位
