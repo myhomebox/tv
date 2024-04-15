@@ -31,22 +31,31 @@ var rule={
     class_url:'1&2&3&4&51',
     //class_parse: 'body&&.hl-nav li:gt(0);a&&Text;a&&href;.*/(\\d+)/',
     //cate_exclude:'成人影院',
-    lazy:`js:
-        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-        var url = html.url;
-        if (html.encrypt == '1') {
-            url = unescape(url)
-        } else if (html.encrypt == '2') {
-            url = unescape(base64Decode(url))
-        }
-        if (/\\.m3u8|\\.mp4/.test(url)) {
-            input = {
-                jx: 0,
-                url: url,
-                parse: 0
-            }
-        } else {
-            input
-        }
-    `,
+	lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		let play_Url = 'json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=';
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				playUrl: play_Url,
+				parse: 1
+			}
+		} else if (/\\/share/.test(url)) {
+			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else {
+			input
+		}
+	`,
 }
