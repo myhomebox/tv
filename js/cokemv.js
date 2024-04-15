@@ -18,9 +18,10 @@ var rule = {
     class_name: '电影&电视剧&动漫&综艺',
     class_url: '1&2&3&4',
     play_parse: true,
-	lazy:`js:
+    lazy: `js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
+		var from = html.from;
 		if (html.encrypt == '1') {
 			url = unescape(url)
 		} else if (html.encrypt == '2') {
@@ -34,15 +35,28 @@ var rule = {
 				playUrl: play_Url,
 				parse: 1
 			}
-		} else if (/\\/share/.test(url)) {
-			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+		} else {
+			var MacPlayerConfig = {};
+			eval(fetch(HOST + '/static/js/playerconfig.js').replace('var Mac', 'Mac'));
+			var jx = MacPlayerConfig.player_list[from].parse;
+			if (jx == '') {
+				// jx = MacPlayerConfig.parse
+				jx = urljoin2(input, '/player/player.php?url=')
+			}
+			if (jx.startsWith('/')) {
+				jx = urljoin2(input, jx)
+			}
+			var pconfig = jsp.pdfh(request(jx + url), 'body&&script,1&&Html').match(/config = {[\\s\\S]*?}/)[0];
+			var config = {};
+			eval(pconfig);
 			input = {
 				jx: 0,
-				url: url,
-				parse: 0
+				url: urljoin2(input, config.url),
+				parse: 1,
+				header: JSON.stringify({
+					'referer': HOST
+				})
 			}
-		} else {
-			input
 		}
 	`,
     limit: 6,
