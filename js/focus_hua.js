@@ -1,6 +1,6 @@
 function getAddress(field) {
    const id = getQueryParameter.call({ url: field.url, key: "id" });
-   const add ='http://103.45.68.47:6800/gy/gy_PGaA/p3p端口.php';
+   const add ='http://103.45.68.47:6800/gy/gy_ZMmg/p3p端口.php';
    const object = { url: add };
    const port = get.call(object);
    const hua = 'p3p://108.181.20.';  /*歐華*/
