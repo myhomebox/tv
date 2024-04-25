@@ -3,7 +3,7 @@ function getAddress(field) {
         url: field.url,
         key: "id"
     });
-    const add = 'http://103.45.68.47:6800/gy/gy_wPwX/p3p端口.php';
+    const add = 'http://103.45.68.47:6800/gy/gy_rfFL/p3p端口.php';
     const object = {
         url: add
     };
