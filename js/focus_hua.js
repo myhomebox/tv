@@ -23,7 +23,7 @@ function getAddress(field) {
             'User-Agent': 'regimcode_162100bbs=123'
         };
 
-        res = post.call({ url: 'http://103.45.68.47:6800/gy/gy-fabu.php', headers: JSON.stringify(headers), body: 'captcha=123' });
+        res = post.call({ url: 'http://103.45.68.47:6800/gy/gy-urkP.php', headers: JSON.stringify(headers), body: 'captcha=123' });
 
         result = />p3p端口：<a href="(.*?)"/.exec(res);
 
