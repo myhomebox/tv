@@ -274,7 +274,7 @@ http://193.24.209.91/Smart.php?id=hbohd_twn
 #EXTINF:-1,tvg-id="HBO Family" tvg-name="HBO Family" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO1.png" group-title="台灣",HBO家庭
 http://193.24.209.91/Smart.php?id=fyi_twn
 #EXTINF:-1,tvg-id="HBO Signature" tvg-name="HBO Signature" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO3.png" group-title="台灣",HBO原創
-http://193.24.209.91/Smart.php?id=fyi_twn
+http://193.24.209.91/Smart.php?id=Hbosignature
 #EXTINF:-1,tvg-id="HBO HiTS" tvg-name="HBO HBO HiTS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO2.png" group-title="台灣",HBO強檔
 https://z88.ubtvfans.com/live/rx1/330/c990900a99eee375a426b8200e7f150f/index.m3u8
 #EXTINF:-1,tvg-id="AXN" tvg-name="AXN" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/AXNTV.png" group-title="台灣",AXN
