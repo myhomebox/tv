@@ -117,6 +117,8 @@ video://https://www.4gtv.tv/channel/4gtv-live072?set=4&ch=291
 https://z88.ubtvfans.com/live/rx5/2736/be2d52910873cb20d510f4f1ef0804ba/index.m3u8
 #EXTINF:-1,tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS1.png" group-title="台灣",TVBS新聞(備)
 https://www.youtube.com/watch?v=m_dhMSvUCIc
+#EXTINF:-1,tvg-id="TVBS 亞洲台" tvg-name="TVBS 亞洲台" tvg-logo="https://epg.112114.xyz/logo/TVBS4.png" group-title="台灣",TVBS亞洲台
+http://193.24.209.91/Smart.php?id=Tvbasia
 #EXTINF:-1,tvg-id="TVBS NEWS" tvg-name="TVBS NEWS" tvg-logo="https://epg.112114.xyz/logo/TVBSNEWS.png" group-title="台灣",TVBS NEWS
 https://yt-stream.livednow.com/stream/m_dhMSvUCIc/master.m3u8
 #EXTINF:-1,tvg-id="TVBS NEWS" tvg-name="TVBS NEWS" tvg-logo="https://epg.112114.xyz/logo/TVBSNEWS.png" group-title="台灣",TVBS NEWS
@@ -270,6 +272,8 @@ https://z88.ubtvfans.com/live/rx1/2825/6a22401f69113d2529c575454321ddc8/index.m3
 #EXTINF:-1,tvg-id="HBO HD" tvg-name="HBO HD" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO.png" group-title="台灣",HBO HD
 http://193.24.209.91/Smart.php?id=hbohd_twn
 #EXTINF:-1,tvg-id="HBO Family" tvg-name="HBO Family" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO1.png" group-title="台灣",HBO家庭
+http://193.24.209.91/Smart.php?id=fyi_twn
+#EXTINF:-1,tvg-id="HBO Signature" tvg-name="HBO Signature" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO3.png" group-title="台灣",HBO原創
 http://193.24.209.91/Smart.php?id=fyi_twn
 #EXTINF:-1,tvg-id="HBO HiTS" tvg-name="HBO HBO HiTS" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/HBO2.png" group-title="台灣",HBO強檔
 https://z88.ubtvfans.com/live/rx1/330/c990900a99eee375a426b8200e7f150f/index.m3u8
@@ -599,6 +603,8 @@ https://z88.ubtvfans.com/live/rx1/66/eb0b7ce954370f0a298581ca34110539/index.m3u8
 video://https://www.4gtv.tv/channel/4gtv-4gtv067?set=1&ch=227
 #EXTINF:-1,tvg-id="TVBS台劇" tvg-name="TVBS台劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS.png" group-title="台灣",TVBS台劇
 video://https://www.4gtv.tv/channel/4gtv-live088?set=4&ch=285
+#EXTINF:-1,tvg-id="CI" tvg-name="CI" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Crimeplus.png" group-title="台灣",CI罪案偵緝
+http://193.24.209.91/Smart.php?id=ci_twn
 #EXTINF:-1,tvg-id="CI" tvg-name="CI" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Crimeplus.png" group-title="台灣",CI罪案偵緝
 video://https://www.4gtv.tv/channel/4gtv-live027?set=1&ch=215
 #EXTINF:-1,tvg-id="幸福空間居家台" tvg-name="幸福空間居家台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Gorgeous.png" group-title="台灣",幸福空間居家台
