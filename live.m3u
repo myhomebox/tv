@@ -117,7 +117,7 @@ video://https://www.4gtv.tv/channel/4gtv-live072?set=4&ch=291
 https://z88.ubtvfans.com/live/rx5/2736/be2d52910873cb20d510f4f1ef0804ba/index.m3u8
 #EXTINF:-1,tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS1.png" group-title="台灣",TVBS新聞(備)
 https://www.youtube.com/watch?v=m_dhMSvUCIc
-#EXTINF:-1,tvg-id="TVBS 亞洲台" tvg-name="TVBS 亞洲台" tvg-logo="https://epg.112114.xyz/logo/TVBS4.png" group-title="台灣",TVBS亞洲台
+#EXTINF:-1,tvg-id="TVBS 亞洲台" tvg-name="TVBS 亞洲台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVBS4.png" group-title="台灣",TVBS亞洲台
 http://193.24.209.91/Smart.php?id=Tvbasia
 #EXTINF:-1,tvg-id="TVBS NEWS" tvg-name="TVBS NEWS" tvg-logo="https://epg.112114.xyz/logo/TVBSNEWS.png" group-title="台灣",TVBS NEWS
 https://yt-stream.livednow.com/stream/m_dhMSvUCIc/master.m3u8
@@ -180,7 +180,7 @@ video://https://www.4gtv.tv/channel/4gtv-4gtv009?set=4&ch=30
 #EXTINF:-1,tvg-id="中天新聞" tvg-name="中天新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CTI2.png"" group-title="台灣",中天新聞(備)
 https://www.youtube.com/watch?v=oIgbl7t0S_w
 #EXTINF:-1,tvg-id="非凡新聞" tvg-name="非凡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Unique1.png"" group-title="台灣",非凡新聞
-http://?id=feifannews_twn
+http://193.24.209.91/Smart.php?id=feifannews_twn
 #EXTINF:-1,tvg-id="非凡新聞" tvg-name="非凡新聞" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Unique1.png"" group-title="台灣",非凡新聞
 video://https://yeslivetv.com/channels/ustv/
 #EXTINF:-1,tvg-id="非凡商業" tvg-name="非凡商業" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Unique2.png"" group-title="台灣",非凡商業
