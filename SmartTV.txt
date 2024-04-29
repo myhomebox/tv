@@ -37,7 +37,6 @@ TVBS歡樂台,http://193.24.209.91/Smart.php?id=tvbshuanle_twn
 民視新聞台,http://193.24.209.91/Smart.php?id=ftvnew_taiwan
 台視,http://193.24.209.91/Smart.php?id=ttv_taiwan
 台視新聞台,http://193.24.209.91/Smart.php?id=ttvnews_twn
-台視綜合台,http://193.24.209.91/Smart.php?id=ttvzhonghe_twn
 中視,http://193.24.209.91/Smart.php?id=zhongshihd_twn
 中視新聞台,http://193.24.209.91/Smart.php?id=zhongshinews_twn
 華視,http://193.24.209.91/Smart.php?id=ctshd_twn
