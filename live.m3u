@@ -398,6 +398,8 @@ http://193.24.209.91/Smart.php?id=eltasport3_twn
 #EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="台灣",愛爾達體育3
 https://z88.ubtvfans.com/live/rx1/194/749cd52700d298fec937024cc818e97e/index.m3u8
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="台灣",愛爾達體育4
+http://193.24.209.91/Smart.php?id=natgeowild_twn
+#EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="台灣",愛爾達體育4
 https://z88.ubtvfans.com/live/rx1/2820/8fa58ea004e930612ad1d0ed8726ebfc/index.m3u8
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="台灣",愛爾達體育4
 video://https://yeslivetv.com/channels/elta-tv-4/
@@ -622,11 +624,7 @@ http://193.24.209.91/Smart.php?id=animalplanet_twn
 #EXTINF:-1,tvg-id="動物星球" tvg-name="動物星球" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/animalplanet.png" group-title="台灣",動物星球
 https://z88.ubtvfans.com/live/rx1/367/ec2a5cc942ff9cd56dfea2aa478c5f35/index.m3u8
 #EXTINF:-1,tvg-id="國家地理" tvg-name="國家地理" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NATGEO.png" group-title="台灣",國家地理頻道
-http://193.24.209.91/Smart.php?id=natgeohd_twn
-#EXTINF:-1,tvg-id="國家地理" tvg-name="國家地理" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NATGEO.png" group-title="台灣",國家地理頻道
 https://z88.ubtvfans.com/live/rx1/302/5c562b6b602c232f4ef70bd948dc2f7f/index.m3u8
-#EXTINF:-1,tvg-id="國家地理野生頻道" tvg-name="國家地理野生頻道" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/NATGEO.png" group-title="台灣",國家地理野生頻道
-http://193.24.209.91/Smart.php?id=natgeowild_twn
 #EXTINF:-1,tvg-id="探索頻道" tvg-name="探索頻道" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Discovery.png" group-title="台灣",探索頻道
 http://193.24.209.91/Smart.php?id=discoveryhd_twn
 #EXTINF:-1,tvg-id="探索頻道" tvg-name="探索頻道" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Discovery.png" group-title="台灣",探索頻道
