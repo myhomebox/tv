@@ -6,6 +6,8 @@ http://193.24.209.91/Smart.php?id=ctv_taiwan
 #EXTINF:-1,tvg-id="公視" tvg-name="公視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/PTS.png" group-title="台灣",公視
 https://z88.ubtvfans.com/live/rx1/86/2f64eb300d6fad1c8adac3bd2cd0f82a/index.m3u8
 #EXTINF:-1,tvg-id="公視台語" tvg-name="公視台語" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/PTS1.png" group-title="台灣",公視台語
+https://www.youtube.com/watch?v=6KlRR_DGhmI
+#EXTINF:-1,tvg-id="公視台語" tvg-name="公視台語" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/PTS1.png" group-title="台灣",公視台語
 video://https://yeslivetv.com/channels/pts-drama/
 #EXTINF:-1,tvg-id="公視戲劇" tvg-name="公視戲劇" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/PTS3.png" group-title="台灣",公視戲劇
 video://https://www.4gtv.tv/channel/4gtv-4gtv042?set=4&ch=7
