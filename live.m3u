@@ -652,9 +652,9 @@ https://z88.ubtvfans.com/live/rx1/93/7febf95a8704191f5eaec5b937d1400b/index.m3u8
 #EXTINF:-1,tvg-id="MEZZOLIVEHD" tvg-name="MEZZOLIVEHD" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/mezzolive.png" group-title="台灣",MEZZO LIVE HD
 video://https://www.4gtv.tv/channel/4gtv-4gtv083?set=1&ch=79
 #EXTINF:-1,tvg-id="視納華仁紀實" tvg-name="視納華仁紀實" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/cnex.png" group-title="台灣",視納華仁紀實
-https://z88.ubtvfans.com/live/rx1/91/fbf3ac800330583a2479794ad81148c5/index.m3u8
-#EXTINF:-1,tvg-id="視納華仁紀實" tvg-name="視納華仁紀實" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/cnex.png" group-title="台灣",視納華仁紀實
 video://https://www.4gtv.tv/channel/4gtv-4gtv013?set=1&ch=38
+#EXTINF:-1,tvg-id="視納華仁紀實" tvg-name="視納華仁紀實" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/cnex.png" group-title="台灣",視納華仁紀實
+https://z88.ubtvfans.com/live/rx1/91/fbf3ac800330583a2479794ad81148c5/index.m3u8
 #EXTINF:-1,tvg-id="影迷數位紀實" tvg-name="影迷數位紀實" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/FANS2.png" group-title="台灣",影迷數位紀實
 video://https://www.4gtv.tv/channel/4gtv-live023?set=1&ch=212
 #EXTINF:-1,tvg-id="客家電視" tvg-name="客家電視" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/Hakka.png" group-title="台灣",客家電視
@@ -824,6 +824,8 @@ https://z88.ubtvfans.com/live/rx1/193/f01050f0321a89cddc7767ff7a972d75/index.m3u
 http://193.24.209.91/Smart.php?id=eltasport3_twn
 #EXTINF:-1,tvg-id="愛爾達體育3" tvg-name="愛爾達體育3" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/ELTA6.png" group-title="體育",愛爾達體育3
 https://z88.ubtvfans.com/live/rx1/194/749cd52700d298fec937024cc818e97e/index.m3u8
+#EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
+http://193.24.209.91/Smart.php?id=natgeowild_twn
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
 https://z88.ubtvfans.com/live/rx1/2820/8fa58ea004e930612ad1d0ed8726ebfc/index.m3u8
 #EXTINF:-1,tvg-id="愛爾達體育4" tvg-name="愛爾達體育4" tvg-logo="https://cdn.jsdelivr.net/gh/myhomebox/tv@main/img/ELTA7.png" group-title="體育",愛爾達體育4
