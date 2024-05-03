@@ -698,6 +698,8 @@ https://myhomebox.serv00.net/Smart.php?id=cctv11
 https://myhomebox.serv00.net/ysp.php?id=cctv11
 #EXTINF:-1,tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV12.png" group-title="中國",CCTV-12
 https://myhomebox.serv00.net/Smart.php?id=cctv12
+#EXTINF:-1,tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV12.png" group-title="中國",CCTV-12
+https://myhomebox.serv00.net/ysp.php?id=cctv12
 #EXTINF:-1,tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV13.png" group-title="中國",CCTV-13
 https://myhomebox.serv00.net/Smart.php?id=cctv13
 #EXTINF:-1,tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/CCTV13.png" group-title="中國",CCTV-13
