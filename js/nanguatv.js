@@ -1,3 +1,4 @@
+
 // 注入全局方法 (仅支持tvbox的js1以及c#版drpy的js0，暂不支持drpy官方py版的js0)
 // 注入全局方法 (仅支持tvbox的js1以及c#版drpy的js0，暂不支持drpy官方py版的js0)
 // 注入全局方法 (仅支持tvbox的js1以及c#版drpy的js0，暂不支持drpy官方py版的js0)
@@ -16,7 +17,7 @@ globalThis.getHeaders= function(input){
 }
 	
 var rule = {
-	title:'南瓜影视',
+	title:'南瓜影视[优]',
 	host:'http://ys.changmengyun.com',
 	homeUrl:'/api.php/provide/vod_rank?app=ylys&sort_type=month&imei=c431ea542cee9679&id=2&page=1',
     url:'/api.php/provide/vod_list?app=ylys&id=fyclassfyfilter&page=fypage&imei=c431ea542cee9679',
