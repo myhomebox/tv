@@ -1,5 +1,5 @@
 {
-    "spider": "./JAR/spider2.jar",
+    "spider": "../JAR/spider2.jar",
     "sites": [
         {
             "key": "drpy_js_hclyz",
