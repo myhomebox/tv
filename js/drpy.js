@@ -1,151 +1,212 @@
-
 /**
- * 影视TV 超連結跳轉支持
+ * 影视TV 超链接跳转支持
  * https://t.me/fongmi_offical/
  * https://github.com/FongMi/Release/tree/main/apk
  */
 
-var rule = {
-	title: '荐片',
-	host: 'http://api2.rinhome.com',
-	homeUrl: '/api/tag/hand?code=unknown601193cf375db73d&channel=wandoujia',//网站的首页链接,用于分类获取和推荐获取
-	// url:'/api/crumb/list?area=0&category_id=fyclass&page=fypage&type=0&limit=24&fyfilter',
-	url: '/api/crumb/list?page=fypage&type=0&limit=24&fyfilter',
-	class_name: '全部&电影&电视剧&动漫&综艺',     // 筛选 /api/term/ad_fenlei?limit=10&page=1
-	class_url: '0&1&2&3&4',
-	detailUrl: '/api/node/detail?channel=wandoujia&token=&id=fyid',//二级详情拼接链接(json格式用)
-	searchUrl: '/api/video/search?key=**&page=fypage',
-	searchable: 2,
-	quickSearch: 0,
-	filterable: 1,
-	filter: {
-		"0":[{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
-		"1":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"1"},{"n":"首推","v":"5"},{"n":"动作","v":"6"},{"n":"喜剧","v":"7"},{"n":"战争","v":"8"},{"n":"恐怖","v":"9"},{"n":"剧情","v":"10"},{"n":"爱情","v":"11"},{"n":"科幻","v":"12"},{"n":"动画","v":"13"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
-		"2":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"2"},{"n":"首推","v":"14"},{"n":"国产","v":"15"},{"n":"港台","v":"16"},{"n":"日韩","v":"17"},{"n":"海外","v":"18"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
-		"3":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"3"},{"n":"首推","v":"19"},{"n":"海外","v":"20"},{"n":"日本","v":"21"},{"n":"国产","v":"22"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
-		"4":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"4"},{"n":"首推","v":"23"},{"n":"国产","v":"24"},{"n":"海外","v":"25"},{"n":"港台","v":"26"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"中国香港","v":"3"},{"n":"中国台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}]
-	},
-	filter_url: 'area={{fl.area or "0"}}&sort={{fl.sort or "update"}}&year={{fl.year or "0"}}&category_id={{fl.cateId}}',
-	filter_def: {
-		0:{cateId:'0'},
-		1:{cateId:'1'},
-		2:{cateId:'2'},
-		3:{cateId:'3'},
-		4:{cateId:'4'}
-	},
-	headers: {
-		'User-Agent': 'jianpian-android/350',
-		'JPAUTH': 'y261ow7kF2dtzlxh1GS9EB8nbTxNmaK/QQIAjctlKiEv'
-	},
-	timeout: 5000,
-	limit: 8,
-	play_parse: true,
-	play_json: [{
-		re: '*',
-		json: {
-			parse: 0,
-			jx: 0
-		}
-	}],
-	lazy: '',
-	图片来源: '@Referer=www.jianpianapp.com@User-Agent=jianpian-version353',
-	// 推荐:'json:.video;*;*;*;*',
-	推荐: `js:
-        var d = [];
-        let html = request(input);
-        html = JSON.parse(html).data[0].video;
-        html.forEach(it => {
-            d.push({
-                title: it.title,
-                img: it.path,
-                desc: it.playlist.title + ' ⭐' + it.score,
-                url: it.id
-            })
-        });
-        setResult(d);
-    `,
-	// 一级:'json:data;title;path;playlist.title;id',
-	一级: `js:
-		cateObj.tid = cateObj.tid+'';
-        if (cateObj.tid.endsWith('_clicklink')) {
-            cateObj.tid = cateObj.tid.split('_')[0];
-            input = HOST + '/api/video/search?key=' + cateObj.tid + '&page=' + + MY_PAGE;
+let siteUrl = "http://23dhpx.dsgirmcohen248.cc";
+let siteKey = "abcdefghijklmnopqrstuvwxyz0123456789";
+let siteType = [];
+const UA = "webank/h5face;webank/1.0;netType:NETWORK_MOBILE;appVersion:369;packageName:com.jp3.xg3";
+
+let imgDomain = req(siteUrl + "/api/appAuthConfig", {
+    method: "get",
+    headers: {
+        "User-Agent": UA
+    }
+}).content;
+/** 检查siteUrl是否可用 */
+if (!imgDomain) {
+    for (let i = 0; i < 6; i++) {
+        siteType.push(siteKey.charAt(Math.floor(Math.random() * 36)));
+    }
+    siteType = siteType.join("");
+    siteUrl = siteUrl.replace("23dhpx", siteType);
+    imgDomain = req(siteUrl + "/api/appAuthConfig", {
+        method: "get",
+        headers: {
+            "User-Agent": UA
         }
-        var d = [];
-        let html = request(input);
-        html = JSON.parse(html).data;
-        html.forEach(it => {
-            d.push({
-                title: it.title,
-                img: it.thumbnail||it.path,
-                desc: (it.mask || it.playlist.title) + ' ⭐' + it.score,
-                url: it.id
-            })
-        });
-        setResult(d);
-    `,
-	二级: `js:
-        function getLink(data) {
-            let link = data.map(it => {
-                return '[a=cr:' + JSON.stringify({'id':it.name+'_clicklink','name':it.name}) + '/]' + it.name + '[/a]'
-            }).join(', ');
-            return link
+    }).content;
+}
+if (!imgDomain) {
+    imgDomain = JSON.parse(req("https://dns.alidns.com/resolve?name=swrdsfeiujo25sw.cc&type=16", {
+        method: "get",
+        headers: {
+            "User-Agent": UA,
+            "Host": "dns.alidns.com"
         }
-		try {
-            let html = request(input);
-            html = JSON.parse(html);
-            let node = html.data;
-            VOD = {
-                vod_id: node.id,
-                vod_name: node.title,
-                vod_pic: node.thumbnail,
-                type_name: node.types[0].name,
-                vod_year: node.year.title,
-                vod_area: node.area.title,
-                vod_remarks: node.score,
-                vod_actor: getLink(node.actors),
-                vod_director: getLink(node.directors),
-                vod_content: node.description.strip()
-            };
-            if (typeof play_url === 'undefined') {
-                var play_url = ''
+    }).content);
+    siteUrl = [siteUrl, ...imgDomain.Answer[0].data.replace(/"/g,"").split(",")];
+    for (let i = 1; i < siteUrl.length; i++) {
+        imgDomain = req("http://" + siteType + "." + siteUrl[i] + "/api/appAuthConfig", {
+            method: "get",
+            headers: {
+                "User-Agent": UA
             }
-            let playMap = {};
-			if (node.have_ftp_ur == 1) {
-				playMap["边下边播超清版"] = node.new_ftp_list.map(it => {
-					return it.title + "$" + (/m3u8/.test(it.url) ? play_url + it.url : "tvbox-xg:" + it.url)
-				}).join('#');
-			}
-			if (node.have_m3u8_ur == 1) {
-				playMap["在线点播普清版"] = node.new_m3u8_list.map(it => {
-					return it.title + "$" + (/m3u8/.test(it.url) ? play_url + it.url : "tvbox-xg:" + it.url)
-				}).join('#');
-			}
-            let playFrom = [];
-            let playList = [];
-            Object.keys(playMap).forEach(key => {
-                playFrom.append(key);
-                playList.append(playMap[key])
-            });
-            VOD.vod_play_from = playFrom.join('$$$');
-            VOD.vod_play_url = playList.join('$$$');
-        } catch (e) {
-            log("获取二级详情页发生错误:" + e.message);
+        }).content;
+        if(imgDomain) {
+            siteUrl = "http://" + siteType + "." + siteUrl[i];
+            break;
         }
-	`,
-	// 搜索:'json:data;*;thumbnail;mask;*',
-	搜索: `js:
-        var d = [];
-        let html = request(input);
-        html = JSON.parse(html).data;
-        html.forEach(it => {
-            d.push({
-                title: it.title,
-                img: it.thumbnail,
-                desc: it.mask + ' ⭐' + it.score,
-                url: it.id
-            })
-        });
-        setResult(d);
-    `,
+    };
+}
+imgDomain = "https://" + JSON.parse(imgDomain).data.imgDomain;
+
+async function init(cfg) {
+    siteKey = cfg.skey;
+    siteType = cfg.stype;
+}
+
+async function home(filter) {
+    let CLASS = [
+        {"type_id":"1","type_name":"电影"},
+        {"type_id":"2","type_name":"电视剧"},
+        {"type_id":"3","type_name":"动漫"},
+        {"type_id":"4","type_name":"综艺"}];
+    let FILTERS = {};
+    for (let i = 0; i < CLASS.length; i++) {
+        let json = JSON.parse(await req(siteUrl + "/api/crumb/filterOptions?fcate_pid=" + CLASS[i].type_id, {
+            method: "get"
+        }).content.replace(/data/g, "value").replace(/name/g, "n").replace(/(?<!_)id/g, "v")).value;
+        FILTERS[CLASS[i].type_id] = json;
+    }
+    return JSON.stringify({
+        "class": CLASS,
+        "filters": FILTERS
+    });
+}
+
+async function homeVod() {
+    let json = JSON.parse(await req(siteUrl + "/api/dyTag/list?category_id=88", {
+        method: "get",
+        headers: {
+            "User-Agent": UA
+        }
+    }).content).data[0].dataList;
+    let videos = [];
+    for (let i = 0; i < json.length; i++) {
+        videos.push({
+            vod_id: json[i].id,
+            vod_name: json[i].title,
+            vod_pic: imgDomain + (json[i].path || json[i].tvimg),
+            vod_remarks: json[i].mask + " ⭐" + json[i].score
+        })
+    }
+    return JSON.stringify({
+        list: videos
+    });
+}
+
+async function category(tid, pg, filter, extend) {
+    if(pg <= 0) pg = 1;
+    let type = extend["type"]?extend["type"]:"";
+    let area = extend["area"]?extend["area"]:"";
+    let year = extend["year"]?extend["year"]:"";    
+    let sort = extend["sort"]?extend["sort"]:"update";
+    let category_id = extend["category_id"]?extend["category_id"]:"";
+
+    let json = JSON.parse(await req(siteUrl + "/api/crumb/list?fcate_pid=" + tid + "&category_id=" + category_id + "&area=" + area + "&year=" + year + "&type=" + type + "&sort=" + sort + "&page=" + pg, {
+        method: "get",
+        headers: {
+            "User-Agent": UA
+        }
+    }).content).data;
+    let videos = [];
+    for (let i=0; i < json.length; i++) {
+        videos.push({
+            vod_id: json[i].id,
+            vod_name: json[i].title,
+            vod_pic: imgDomain + (json[i].path || json[i].cover_image || json[i].thumbnail),
+            vod_remarks: json[i].mask + (Boolean(Number(json[i].score)) ? " ⭐" + json[i].score : "")
+        })
+    }
+    return JSON.stringify({
+        page: pg,
+        limit: json.length,
+        list: videos
+    });
+}
+
+async function detail(id) {
+    let json = JSON.parse(await req(siteUrl + "/api/video/detailv2?id=" + id, {
+        method: "get",
+        headers: {
+            "User-Agent": UA
+        }
+    }).content).data;
+    let vod = {
+        vod_name: json.title,
+        vod_pic: imgDomain + json.thumbnail,
+        vod_year: json.year,
+        vod_area: json.area,
+        vod_remarks: Boolean(Number(json.score)) ? json.score : "",
+        vod_content: json.description,
+        type_name: JSON.stringify(json.types).match(/[\u4e00-\u9fa5]+/g)?.join(", ") || "",
+        vod_director: JSON.stringify(json.directors).match(/[\u4e00-\u9fa5]+/g)?.join(", ") || "",
+        vod_actor: JSON.stringify(json.actors).match(/[\u4e00-\u9fa5]+/g)?.join(", ") || "",
+        vod_play_from: [],
+        vod_play_url: []
+    };
+    
+    id = [];
+    for(let i = 0; i < json.source_list_source.length; i++) {
+        vod.vod_play_from.push(json.source_list_source[i].name);
+        for(let j = 0; j < json.source_list_source[i].source_list.length; j++) {
+            vod.vod_play_url.push(json.source_list_source[i].source_list[j].source_name
+            + "$"
+            + json.source_list_source[i].source_list[j].url);
+        }
+        id.push(vod.vod_play_url.join("#"));
+    }
+    vod.vod_play_from = vod.vod_play_from.join("$$$");
+    vod.vod_play_url = id.join("$$$");
+    return JSON.stringify({
+        list: [vod]
+    });
+}
+
+async function play(flag, id, flags) {
+    return JSON.stringify({
+        url: id,
+        flag: flag,
+        flags: flags
+    });
+}
+
+async function search(wd, quick, pg) {
+    let page = pg || 1;
+    if (page == 0) page = 1;
+    let json = JSON.parse(await req(siteUrl + "/api/search/video?key=" + wd + "&category_id=88&page=" + page, {
+        method: "get",
+        headers: {
+            "User-Agent": UA
+        }
+    }).content).data;
+    let videos = [];
+    for (let i = 0; i < json.length; i++) {
+        videos.push({
+            vod_id: json[i].id,
+            vod_name: json[i].title,
+            vod_pic: imgDomain + (json[i].path||json[i].tvimg),
+            vod_remarks: json[i].mask + (Boolean(Number(json[i].score)) ? " ⭐" + json[i].score : "")
+        })
+    }
+    return JSON.stringify({
+        page: page,
+        quick: quick,
+        list: videos
+    });
+}
+
+export function __jsEvalReturn() {
+    return {
+        init: init,
+        home: home,
+        homeVod: homeVod,
+        category: category,
+        detail: detail,
+        play: play,
+        search: search
+    };
 }
