@@ -249,7 +249,7 @@ class Spider(Spider):
         name = self.extract_middle_text(code, "s1='", "'", 0)
         Jumps = self.extract_middle_text(code, "s2='", "'", 0)
 
-        content = self.extract_middle_text(res,'<div class="yp_context">','</p>', 0)
+        content = '请不要相信任何广告！！！祝您观影愉快！🐰兔爷🐇为您介绍剧情👉-' + self.extract_middle_text(res,'<div class="yp_context">','</p>', 0)
         content = content.replace('\t', '').replace('<p>', '').replace(' ', '').replace('\n', '')
 
         if name not in content:
