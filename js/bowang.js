@@ -16,7 +16,7 @@ var rule = {
     class_url: '1&2&3&4',
     //class_parse: '.navbar-items li:gt(1):lt(6);a&&Text;a&&href;.*/(\\d+).html',
     play_parse: true,
-	lazy:`js:
+    lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
 		if (html.encrypt == '1') {
@@ -24,13 +24,11 @@ var rule = {
 		} else if (html.encrypt == '2') {
 			url = unescape(base64Decode(url))
 		}
-		let play_Url = 'json:http://127.0.0.1:10079/parse/?thread=0&proxy=&url=';
 		if (/\\.m3u8|\\.mp4/.test(url)) {
 			input = {
 				jx: 0,
 				url: url,
-				playUrl: play_Url,
-				parse: 1
+				parse: 0
 			}
 		} else if (/\\/share/.test(url)) {
 			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
