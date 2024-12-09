@@ -2,8 +2,8 @@
 var rule = {
     title:'两个BT',
     // host:'https://www.bttwo.net',
-    host:'https://www.bttwo.me/',
-    //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src = jsp.pdfh(html,"li:eq(0)&&a&&href");print(src);HOST=src',//网页域名根动态抓取js代码。通过HOST=赋值
+    host:'https://www.bttwo.vip/',
+    hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src = jsp.pdfh(html,"li:eq(0)&&a&&href");print(src);HOST=src',//网页域名根动态抓取js代码。通过HOST=赋值
     // url:'/fyclass/page/fypage',
     url:'/fyclassfyfilter',
 	filterable:1,//是否启用分类筛选,
@@ -23,32 +23,8 @@ var rule = {
     class_url:'movie_bt&dsj&gf&hot&hot-month&new-movie&zgjun&meiju&jpsrtv',//静态分类标识拼接
     // class_parse: '.navlist li:gt(0):lt(7);a&&Text;a&&href;.*/(\\w+)',
     play_parse:true,
-    lazy:`js:
-		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-		var url = html.url;
-		if (html.encrypt == '1') {
-			url = unescape(url)
-		} else if (html.encrypt == '2') {
-			url = unescape(base64Decode(url))
-		}
-		if (/\\.m3u8|\\.mp4/.test(url)) {
-			input = {
-				jx: 0,
-				url: url,
-				parse: 0
-			}
-		} else if (/\\/share/.test(url)) {
-			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
-			input = {
-				jx: 0,
-				url: url,
-				parse: 0
-			}
-		} else {
-			input
-		}
-	`,
-    limit:6,
+    lazy:'',
+    limit:5,
     推荐:'.leibox;li;*;*;*;*',
     double:true, // 推荐内容是否双层定位
     一级:'.bt_img li;.lazy&&alt;.thumb.lazy&&data-original;.jidi span&&Text;a&&href',
