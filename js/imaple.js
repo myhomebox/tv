@@ -31,20 +31,31 @@ var rule={
     //class_parse:'.myui-header__menu&&li:gt(0):lt(6);a&&Text;a&&href;.*/(.*?).html',
     //cate_exclude: '专题',
     play_parse:true,
-    lazy: `js:
-        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-        var url = html.url;
-        if (html.encrypt == '1') {
-            url = unescape(url)
-        } else if (html.encrypt == '2') {
-            url = unescape(base64Decode(url))
-        }
-         if (/m3u8|mp4|flv/.test(url)) {
-            input = url
-        } else {
-            input
-        }
-    `,
+    lazy:`js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		if (/\\.m3u8|\\.mp4/.test(url)) {
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else if (/\\/share/.test(url)) {
+			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
+			input = {
+				jx: 0,
+				url: url,
+				parse: 0
+			}
+		} else {
+			input
+		}
+	`,
     limit:6,
     推荐:'ul.myui-vodlist;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
     double:true, // 推荐内容是否双层定位
