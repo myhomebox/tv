@@ -3,12 +3,18 @@
         "name": "推薦",
         "list": [
             {
-                "name": "電視-py",
+                "name": "電視",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-                "version": "v7a"
+                "version": "2.6.3"
             },
-                        {
+            {
+                "name": "電視 Pro",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-Pro.apk",
+                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "version": "2.8.9"
+            },
+            {
                 "name": "YTTV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/ythack.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
@@ -33,40 +39,28 @@
                 "version": "40.0.0"
             },
             {
-                "name": "Android-4.x",
-                "url": "https://my.t4tv.hz.cz/apk/kitkat/leanbacK.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-                "version": "v7a"
-            },
-            {
-                "name": "Android-4.x py",
-                "url": "https://my.t4tv.hz.cz/apk/kitkat/leanback-python.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
-                "version": "v7a"
-            },
-            {
-                "name": "手機-py",
-                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-armeabi_v7a.apk",
+                "name": "紅星TV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/RedStar.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-                "version": "v7a"
+                "version": "20241007"
             },
             {
-                "name": "手機-py",
-                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-python-arm64_v8a.apk",
+                "name": "YogurtTV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/YogurtTV.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-                "version": "v8a"
+                "version": "2.13-20241121(1732164606)"
             },
             {
-                "name": "手機-java",
-                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-armeabi_v7a.apk",
+                "name": "手機",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-armeabi_v7a.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-                "version": "v7a"
+                "version": "2.6.3"
             },
             {
-                "name": "手機-java",
-                "url": "https://my.t4tv.hz.cz/apk/dev/mobile-java-arm64_v8a.apk",
+                "name": "手機 Pro",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
                 "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
-                "version": "v8a"
+                "version": "2.8.9"
             }
         ]
     }
