@@ -10,7 +10,7 @@ var rule = {
     url:'/search.php?page=fypage&searchtype=5&tid=fyfilter',
     filterable:1,//是否启用分类筛选,
     headers: { //网站的请求头,完整支持所有的,常带ua和cookies
-             'User-Agent': 'okhttp/3.15', // "Cookie": "searchneed=ok"
+             'User-Agent': 'PC_UA', // "Cookie": "searchneed=ok"
      },    
     filter_url:'{{fl.cateId}}&jq={{fl.class}}&area={{fl.area}}&year={{fl.year}}&state={{fl.state}}&order={{fl.by}}',
     filter:{
