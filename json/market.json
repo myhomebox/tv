@@ -5,61 +5,61 @@
             {
                 "name": "電視",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.6.3"
             },
             {
                 "name": "電視 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-Pro.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.8.9"
             },
             {
                 "name": "YTTV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/ythack.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "1.0.0"
             },
             {
                 "name": "想唱就唱",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/origioyktv.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.15.63.2401241253"
             },
             {
                 "name": "美華KTV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/skyktv.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "9.9.9"
             },
             {
                 "name": "IKTV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/ktv.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8nk2.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "40.0.0"
             },
             {
                 "name": "紅星TV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/RedStar.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "20241007"
             },
             {
                 "name": "YogurtTV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/YogurtTV.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.13-20241121(1732164606)"
             },
             {
                 "name": "手機",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-armeabi_v7a.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.6.3"
             },
             {
                 "name": "手機 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
-                "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.8.9"
             }
         ]
