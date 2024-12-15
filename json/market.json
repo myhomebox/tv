@@ -15,6 +15,12 @@
                 "version": "2.9.2"
             },
             {
+                "name": "Hello TV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/Hello_TV.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "20241204"
+            },
+            {
                 "name": "想唱就唱",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/origioyktv.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
