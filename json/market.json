@@ -6,13 +6,13 @@
                 "name": "電視",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.6.5"
+                "version": "2.6.6"
             },
             {
                 "name": "電視 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.9.7"
+                "version": "2.9.8"
             },
             {
                 "name": "Hello TV",
@@ -54,13 +54,13 @@
                 "name": "手機",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.6.5"
+                "version": "2.6.6"
             },
             {
                 "name": "手機 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.9.7"
+                "version": "2.9.8"
             }
         ]
     }
