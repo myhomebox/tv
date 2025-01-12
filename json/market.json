@@ -6,19 +6,13 @@
                 "name": "電視",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.6.8"
+                "version": "2.6.9"
             },
             {
                 "name": "電視 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.0.2"
-            },
-            {
-                "name": "Hello TV",
-                "url": "https://github.com/myhomebox/Release/releases/download/dev/Hello_TV.apk",
-                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "20241204"
+                "version": "3.0.3"
             },
             {
                 "name": "想唱就唱",
@@ -39,13 +33,7 @@
                 "version": "40.0.0"
             },
             {
-                "name": "紅星TV",
-                "url": "https://github.com/myhomebox/Release/releases/download/dev/RedStar.apk",
-                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "20241007"
-            },
-            {
-                "name": "YogurtTV",
+                "name": "優格TV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/YogurtTV.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.13-20241121(1732164606)"
@@ -54,13 +42,13 @@
                 "name": "手機",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.6.8"
+                "version": "2.6.9"
             },
             {
                 "name": "手機 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.0.2"
+                "version": "3.0.3"
             }
         ]
     }
