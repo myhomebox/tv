@@ -33,11 +33,16 @@
                 "version": "40.0.0"
             },
             {
+                "name": "簡單TV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/jdiptv.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "1.39"
+            },
+            {
                 "name": "優格TV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/YogurtTV.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.13-20241121(1732164606)"
-            },
+                
             {
                 "name": "手機",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-armeabi_v7a.apk",
