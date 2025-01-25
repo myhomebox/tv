@@ -6,13 +6,13 @@
                 "name": "電視",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.7.2"
+                "version": "2.7.3"
             },
             {
                 "name": "電視 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.0.6"
+                "version": "3.0.7"
             },
             {
                 "name": "想唱就唱",
@@ -39,12 +39,6 @@
                 "version": "1.39"
             },
             {
-                "name": "環球TV",
-                "url": "https://github.com/myhomebox/Release/releases/download/dev/DreamTV.apk",
-                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "20240211"
-            },
-            {
                 "name": "優格TV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/YogurtTV.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
@@ -54,13 +48,13 @@
                 "name": "手機",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.7.2"
+                "version": "2.7.3"
             },
             {
                 "name": "手機 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.0.6"
+                "version": "3.0.7"
             }
         ]
     }
