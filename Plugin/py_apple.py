@@ -70,8 +70,8 @@ class Spider(Spider):  # 元类 默认的元类 type
             'token': 'RXQbgQKl3QkFZkIPGwGvH5kofvCokkkn/a893wC2IId7HQFmy0Eh24osz555X12xGVFxQLTaGuBqU/Y7KU4lStp4UjR7giPxdwoTOsU6R3oc4yZZTQc/yTKh1mH3ckZhx6VsQCEoFf6q',
             'user_id': 'XPGBOX',
             'token2': 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
-            'hash': 'c56f',
-            'timestamp': '1727236846'
+            'hash': '74ea',
+            'timestamp': '1738137301'
         }
 
     def homeVideoContent(self):
