@@ -31,7 +31,7 @@ class Spider(Spider):
         result = {}
         cateManual = {
             # "直播": "live",
-            '排行榜': 'rank',
+            # '排行榜': 'rank',
             "电影": "1",
             "剧集": "2",
             "综艺": "3",
