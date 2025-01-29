@@ -31,7 +31,7 @@ class Spider(Spider):
         result = {}
         cateManual = {
             # "直播": "live",
-            # '排行榜': 'rank',
+            '排行榜': 'rank',
             "电影": "1",
             "剧集": "2",
             "综艺": "3",
@@ -269,7 +269,7 @@ class Spider(Spider):
             'vod_area': data1['area'],
             'vod_director': data1['main_actor'],
             'vod_content': data1['video_desc'],
-            'vod_play_from': '嗷呜在线',
+            'vod_play_from': 'Hi视频',
             'vod_play_url': '#'.join(urls),
         }
         result = {
