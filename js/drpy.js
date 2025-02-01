@@ -1,5 +1,3 @@
-
-
 /**
  * 影视TV 超連結跳轉支持
  * https://t.me/fongmi_offical/
@@ -8,17 +6,30 @@
 
 var rule = {
 	title: '荐片',
-	host: 'http://api2.rinhome.com',
-	homeUrl: '/api/tag/hand?code=unknown601193cf375db73d&channel=wandoujia',//网站的首页链接,用于分类获取和推荐获取
-	// url:'/api/crumb/list?area=0&category_id=fyclass&page=fypage&type=0&limit=24&fyfilter',
-	url: '/api/crumb/list?page=fypage&type=0&limit=24&fyfilter',
-	class_name: '全部&电影&电视剧&动漫&综艺',     // 筛选 /api/term/ad_fenlei?limit=10&page=1
-	class_url: '0&1&2&3&4',
-	detailUrl: '/api/node/detail?channel=wandoujia&token=&id=fyid',//二级详情拼接链接(json格式用)
-	searchUrl: '/api/video/search?key=**&page=fypage',
-	searchable: 2,
-	quickSearch: 0,
-	filterable: 1,
+        host: 'https://dns.alidns.com/resolve?name=jpmobile.jianpiandns.com&type=TXT',
+        hostJs: async function () {
+        let {HOST} = this;
+        log(HOST)
+        var html = await request(HOST, {headers: {"User-Agent": MOBILE_UA}});
+        let json = JSON.parse(html);
+        let data = json.Answer[0].data.replace(/'|"/g, '').split(',');
+        src = data[0];
+        if (!src.startsWith('http')) {
+            src = 'https://' + src;
+        }
+        HOST = src
+        return HOST
+    },
+    homeUrl: '/api/tag/hand?code=unknown601193cf375db73d&channel=wandoujia',//网站的首页链接,用于分类获取和推荐获取
+    // url:'/api/crumb/list?area=0&category_id=fyclass&page=fypage&type=0&limit=24&fyfilter',
+    url: '/api/crumb/list?page=fypage&type=0&limit=24&fyfilter',
+    class_name: '全部&电影&电视剧&动漫&综艺',     // 筛选 /api/term/ad_fenlei?limit=10&page=1
+    class_url: '0&1&2&3&4',
+    detailUrl: '/api/node/detail?channel=wandoujia&token=&id=fyid',//二级详情拼接链接(json格式用)
+    searchUrl: '/api/video/search?key=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
 	filter: {
 		"0":[{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"香港","v":"3"},{"n":"台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2024","v":"119"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
 		"1":[{"key":"cateId","name":"分类","value":[{"n":"全部","v":"1"},{"n":"首推","v":"5"},{"n":"动作","v":"6"},{"n":"喜剧","v":"7"},{"n":"战争","v":"8"},{"n":"恐怖","v":"9"},{"n":"剧情","v":"10"},{"n":"爱情","v":"11"},{"n":"科幻","v":"12"},{"n":"动画","v":"13"}]},{"key":"area","name":"地區","value":[{"n":"全部","v":"0"},{"n":"国产","v":"1"},{"n":"香港","v":"3"},{"n":"台湾","v":"6"},{"n":"美国","v":"5"},{"n":"韩国","v":"18"},{"n":"日本","v":"2"}]},{"key":"year","name":"年代","value":[{"n":"全部","v":"0"},{"n":"2024","v":"119"},{"n":"2023","v":"153"},{"n":"2022","v":"101"},{"n":"2021","v":"118"},{"n":"2020","v":"16"},{"n":"2019","v":"7"},{"n":"2018","v":"2"},{"n":"2017","v":"3"},{"n":"2016","v":"22"}]},{"key":"sort","name":"排序","value":[{"n":"热门","v":"hot"},{"n":"评分","v":"rating"},{"n":"更新","v":"update"}]}],
