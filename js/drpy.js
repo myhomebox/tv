@@ -35,7 +35,7 @@ var rule = {
 		4:{cateId:'4'}
 	},
 	headers: {
-		'User-Agent': 'jianpian-android/350',
+		'User-Agent': 'jianpian-android/360',
 		'JPAUTH': 'y261ow7kF2dtzlxh1GS9EB8nbTxNmaK/QQIAjctlKiEv'
 	},
 	timeout: 5000,
