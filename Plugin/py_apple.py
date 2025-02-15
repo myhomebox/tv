@@ -1,12 +1,13 @@
 # coding=utf-8
 # !/usr/bin/python
 import sys
+from pprint import pprint
 
-sys.path.append('')
+sys.path.append('..')
 from base.spider import Spider
 from urllib.parse import quote
 
-class Spider(Spider):
+class Spider(Spider):  # 元类 默认的元类 type
     def getName(self):
         return "xpg"
 
@@ -62,16 +63,16 @@ class Spider(Spider):
         result["filters"] = filters
         return result
 
-    host = "http://item.xpgtv.com"
+    host = "http://c.xpgtv.net"
     header = {
-        'User-Agent': 'okhttp/3.12.11',
-        'token': 'RXQbgQKl3QkFZkIPGwGvH5kofvCokkkn/a893wC2IId7HQFmy0Eh24osz555X12xGVFxQLTaGuBqU/Y7KU4lStp4UjR7giPxdwoTOsU6R3oc4yZZTQc/yTKh1mH3ckZhx6VsQCEoFf6q',
-        'token2': 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
-        'user_id': 'XPGBOX',
-        'version': 'XPGBOX com.phoenix.tv1.5.3',
-        'timestamp': '1732286435',
-        'hash': '74ea',
-    }
+            'User-Agent': 'okhttp/3.12.11',
+            'version': 'XPGBOX com.phoenix.tv1.3.3',
+            'token': 'RXQbgQKl3QkFZkIPGwGvH5kofvCokkkn/a893wC2IId7HQFmy0Eh24osz555X12xGVFxQLTaGuBqU/Y7KU4lStp4UjR7giPxdwoTOsU6R3oc4yZZTQc/yTKh1mH3ckZhx6VsQCEoFf6q',
+            'user_id': 'XPGBOX',
+            'token2': 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
+            'hash': '74ea',
+            'timestamp': '1738137301'
+        }
 
     def homeVideoContent(self):
         rsp = self.fetch("{0}/api.php/v2.main/androidhome".format(self.host), headers=self.header)
@@ -95,9 +96,9 @@ class Spider(Spider):
         parms.append(f"page={pg}")
         parms.append(f"type={tid}")
         if extend.get('areas'):
-            parms.append(f"area={quote(extend['areaes'])}")
+            parms.append(f"area={quote(extend['areas'])}")
         if extend.get('years'):
-            parms.append(f"year={quote(extend['yeares'])}")
+            parms.append(f"year={quote(extend['years'])}")
         if extend.get('sortby'):
             parms.append(f"sortby={extend['sortby']}")
         if extend.get('classes'):
@@ -128,7 +129,7 @@ class Spider(Spider):
         rsp = self.fetch(url, headers=self.header)
         root = rsp.json()['data']
         node = root['urls']
-        d = [it['key'] + "$" + f"http://c.xpgtv.net/m3u8/{it['url']}.m3u8" for it in node]
+        d = [it['key'] + "$" + (f"http://c.xpgtv.net/m3u8/{it['url']}.m3u8" if '.m3u8' not in it['url'] else it['url']) for it in node]
         vod = {
             "vod_name": root['name'],
             'vod_play_from': '小苹果',
