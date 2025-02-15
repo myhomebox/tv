@@ -140,7 +140,7 @@ class Spider(Spider):
             tid=tid.split('click_')[-1]
             if pg=='1':
                 hdata=self.getpq(tid)
-                self.token=hdata('.searchInput').attr('data-token')
+                self.token=hdata('#searchInput').attr('data-token')
             tid=tid.split('playlist/')[-1]
             data=self.getpq(f'/playlist/viewChunked?id={tid}&token={self.token}&page={pg}')
             vdata=self.getlist(data('.pcVideoListItem .phimage'))
