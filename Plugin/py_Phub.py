@@ -223,9 +223,10 @@ class Spider(Spider):
                 'vod_name': i('a').attr('title'),
                 'vod_pic': i('img').attr('src'),
                 'vod_remarks': i('.bgShadeEffect').text() or i('.duration').text(),
+                'style': {'ratio': 1.33, 'type': 'rect'}
             })
         return vlist
 
     def getpq(self,path):
-        data=self.fetch(f'{self.host}{path}', headers=self.headers).text
+        data=self.fetch(f'{self.host}{path}', headers=self.headers).content.decode()
         return pq(self.cleanText(data))
