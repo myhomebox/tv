@@ -88,7 +88,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			"vod_name":"",
 			"vod_pic":"",
 			"type_name":"",
-			"vod_content": "🔥小司机出品,必属精品",
+			"vod_content": "",
 			"vod_play_from": "精彩线路",
 			"vod_play_url": "播放$" + tid
 		}
