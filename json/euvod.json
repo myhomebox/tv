@@ -1,0 +1,18 @@
+{
+  "主页url": "https://euvod.tv/",
+  "分类url": "https://euvod.tv/vodshow/{cateId}--------{catePg}---.html",
+  "分类数组": "library-item&&</a>",
+  "分类ID": "/vodshow/&&-----------.html",
+  "分类标题": ">&&</a>",
+  "数组": "module-item-pic&&</div>",
+  "标题": "title=\"&&\"",
+  "图片": "data-src=\"&&\"",
+  "链接": "href=\"&&\"",
+  "播放数组": "scroll-content&&</div>",
+  "播放标题": "<span>&&</span>",
+  "播放列表": "<a&&</a>",
+  "线路数组": "data-dropdown-value&&</div>",
+  "线路标题": "<span>&&</span>",
+  "搜索数组": "video-info&&</h3>",
+  "搜索url": "https://euvod.tv/vodsearch/-------------.html?wd={wd}"
+}
