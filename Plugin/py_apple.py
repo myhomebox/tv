@@ -65,12 +65,12 @@ class Spider(Spider):
     host = "http://item.xpgtv.com"
     header = {
         'User-Agent': 'okhttp/3.12.11',
-        'token': 'ElEDlwCVgXcFHFhddiq2JKteHofExRBUrfNlmHrWetU3VVkxnzJAodl52N9EUFS+Dig2A/fBa/V9RuoOZRBjYvI+GW8kx3+xMlRecaZuECdb/3AdGkYpkjW3wCnpMQxf8vVeCz5zQLDr8l8bUChJiLLJLGsI+yiNskiJTZz9HiGBZhZuWh1mV1QgYah5CLTbSz8=',
-        'token2': 'a0kEsBKRgTkBZ29NZ3WcNKN/C4T00RN/hNkmmGa5JMBeEENnqydLoetm/t8=',
+        'token': 'RXQbgQKl3QkFZkIPGwGvH5kofvCokkkn/a893wC2IId7HQFmy0Eh24osz555X12xGVFxQLTaGuBqU/Y7KU4lStp4UjR7giPxdwoTOsU6R3oc4yZZTQc/yTKh1mH3ckZhx6VsQCEoFf6q',
+        'token2': 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
         'user_id': 'XPGBOX',
         'version': 'XPGBOX com.phoenix.tv1.5.3',
         'timestamp': '1732286435',
-        'hash': 'd9ab',
+        'hash': '74ea',
     }
 
     def homeVideoContent(self):
