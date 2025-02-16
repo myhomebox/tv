@@ -14,6 +14,8 @@ from base.spider import Spider
 class Spider(Spider):
 
     def init(self, extend=""):
+        self.host=self.gethost()
+        self.headers['referer']=f'{self.host}/'
         self.session = Session()
         self.session.headers.update(self.headers)
         pass
@@ -30,23 +32,25 @@ class Spider(Spider):
     def destroy(self):
         pass
 
-    host = "https://cn.pornhub.com"
-
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5410.0 Safari/537.36',
-        'pragma': 'no-cache',
-        'cache-control': 'no-cache',
-        'sec-ch-ua-platform': '"Windows"',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
         'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
-        'dnt': '1',
         'sec-ch-ua-mobile': '?0',
-        'origin': host,
-        'sec-fetch-site': 'cross-site',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        'referer': f'{host}/',
+        'sec-ch-ua-full-version': '"133.0.6943.98"',
+        'sec-ch-ua-arch': '"x86"',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-ch-ua-platform-version': '"19.0.0"',
+        'sec-ch-ua-model': '""',
+        'sec-ch-ua-full-version-list': '"Not(A:Brand";v="99.0.0.0", "Google Chrome";v="133.0.6943.98", "Chromium";v="133.0.6943.98"',
+        'dnt': '1',
+        'upgrade-insecure-requests': '1',
+        'sec-fetch-site': 'none',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-user': '?1',
+        'sec-fetch-dest': 'document',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
-        'priority': 'u=1, i',
+        'priority': 'u=0, i'
     }
 
     def homeContent(self, filter):
@@ -196,11 +200,35 @@ class Spider(Spider):
         return {'list':self.getlist(data('#videoSearchResult .pcVideoListItem .phimage'))}
 
     def playerContent(self, flag, id, vipFlags):
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5410.0 Safari/537.36',
+            'pragma': 'no-cache',
+            'cache-control': 'no-cache',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
+            'dnt': '1',
+            'sec-ch-ua-mobile': '?0',
+            'origin': self.host,
+            'sec-fetch-site': 'cross-site',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-dest': 'empty',
+            'referer': f'{self.host}/',
+            'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
+            'priority': 'u=1, i',
+        }
         ids=self.d64(id).split('@@@@')
-        return {'parse': int(ids[0]), 'url': ids[1], 'header': self.headers}
+        return {'parse': int(ids[0]), 'url': ids[1], 'header': headers}
 
     def localProxy(self, param):
         pass
+
+    def gethost(self):
+        try:
+            response = self.fetch('https://www.pornhub.com',headers=self.headers,allow_redirects=False)
+            return response.headers['Location'][:-1]
+        except Exception as e:
+            print(f"获取主页失败: {str(e)}")
+            return "https://www.pornhub.com"
 
     def e64(self, text):
         try:
@@ -234,8 +262,8 @@ class Spider(Spider):
 
     def getpq(self, path):
         try:
-            response = self.session.get(f'{self.host}{path}')
-            return pq(self.cleanText(response.content.decode('utf-8')))
+            response = self.session.get(f'{self.host}{path}').text
+            return pq(response.encode('utf-8'))
         except Exception as e:
             print(f"请求失败: , {str(e)}")
             return None
