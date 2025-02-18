@@ -24,7 +24,7 @@ class Spider(Spider):
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "site": "https://www.tjrongze.com"
+                "site": "https://www.cfkj86.com"
             }
         },
         fm写法
