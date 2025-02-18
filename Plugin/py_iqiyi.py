@@ -207,8 +207,7 @@ class Spider(Spider):
         return {'list':videos,'page':pg}
 
     def playerContent(self, flag, id, vipFlags):
-        video_url = f'https://jx.xmflv.com/?url={id}'
-        return {'parse': 1, 'url': video_url, 'header': ''}
+        return  {'parse': 1, 'url': id, 'header': ''}
 
     def localProxy(self, param):
         pass
