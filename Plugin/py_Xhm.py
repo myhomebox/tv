@@ -56,6 +56,7 @@ class Spider(Spider):
         result = {}
         cateManual = {
             "4K": "/4k",
+            "国产": "two_click_/categories/chinese",
             "最新": "/newest",
             "最佳": "/best",
             "频道": "/channels",
@@ -163,18 +164,25 @@ class Spider(Spider):
             plist = []
             d = djs['xplayerSettings']['sources']
             f = d.get('standard')
-            ah=[]
+            def custom_sort_key(url):
+                quality = url.split('$')[0]
+                number = ''.join(filter(str.isdigit, quality))
+                number = int(number) if number else 0
+                return -number, quality
+                
+            if f:
+                for key, value in f.items():
+                    if isinstance(value, list):
+                        for info in value:
+                            id = self.e64(f'{0}@@@@{info.get("url") or info.get("fallback")}')
+                            plist.append(f"{info.get('label') or info.get('quality')}${id}")
+            plist.sort(key=custom_sort_key)
             if d.get('hls'):
                 for format_type, info in d['hls'].items():
                     if url := info.get('url'):
                         encoded = self.e64(f'{0}@@@@{url}')
                         plist.append(f"{format_type}${encoded}")
-            if f and f.get('av1'):ah.extend(f['av1'])
-            if f and f.get('h264'):ah.extend(f['av1'])
-            if len(ah):
-                for info in ah:
-                    id = self.e64(f'{0}@@@@{info.get("url") or info.get("fallback")}')
-                    plist.append(f"{info.get('label') or info.get('quality')}${id}")
+                        
         except Exception as e:
             plist = [f"{vn}${self.e64(f'{1}@@@@{ids[0]}')}"]
             print(f"获取视频信息失败: {str(e)}")
@@ -260,4 +268,3 @@ class Spider(Spider):
         vhtml = data("script[id='initials-script']").text()
         jst = json.loads(vhtml.split('initials=')[-1][:-1])
         return jst
-
