@@ -11,7 +11,6 @@ from base64 import b64decode, b64encode
 from Crypto.Cipher import AES
 from Crypto.Hash import MD5
 from Crypto.Util.Padding import unpad, pad
-
 sys.path.append('..')
 from base.spider import Spider
 
@@ -19,12 +18,12 @@ from base.spider import Spider
 class Spider(Spider):
 
     def init(self, extend=""):
-        self.did=self.random_str(16)
-        self.ntid=self.random_str(24)
-        self.sign= {'token':None, 'uid':None}
-        _ = self.gettoken()
-        # self.phost, self.phz,self.mphost=self.getpic()
-        self.phost, self.phz,self.mphost = ('https://dbtp.tgydy.com','.log','https://dplay.nbzsmc.com')
+        self.ut = False
+        # self.did, self.ntid =self.getdid()
+        self.did, self.ntid = 'e59eb2465f61b9ca','65a0de19b3a2ec93fa479ad6'
+        self.token, self.uid = self.gettoken()
+        self.phost, self.phz,self.mphost=self.getpic()
+        # self.phost, self.phz,self.mphost = ('https://dbtp.tgydy.com','.log','https://dplay.nbzsmc.com')
         pass
 
     def getName(self):
@@ -49,6 +48,22 @@ class Spider(Spider):
     def uuid(self):
         return str(uuid.uuid4())
 
+    def getdid(self):
+        did = self.random_str(16)
+        ntid = self.random_str(24)
+        return did, ntid
+        # try:
+        #     if self.getCache('did'):
+        #         return self.getCache('did'), self.getCache('ntid')
+        #     else:
+        #         self.setCache('did', did)
+        #         self.setCache('ntid', ntid)
+        #         return did, ntid
+        # except Exception as e:
+        #     self.setCache('did', did)
+        #     self.setCache('ntid', ntid)
+        #     return did, ntid
+
     def aes(self, text, bool=True):
         key = b64decode('c0k4N1RfKTY1U1cjJERFRA==')
         iv = b64decode('VzIjQWRDVkdZSGFzSEdEVA==')
@@ -70,13 +85,12 @@ class Spider(Spider):
     def gettoken(self):
         params={"deviceId":self.did,"deviceModel":"8848钛晶手机","devicePlatform":"1","tenantId":self.ntid}
         data=self.getdata('/supports/anonyLogin',params)
-        self.sign['token']=data['data']['token']
-        self.sign['uid'] = data['data']['userId']
-        return 666
+        self.ut=True
+        return data['data']['token'], data['data']['userId']
 
     def getdata(self,path,params=None):
-        t = int(time.time())
-        n=self.md5(f'{self.uuid()}{t*1000}')
+        t = int(time.time()*1000)
+        n=self.md5(f'{self.uuid()}{t}')
         if params:
             ct=self.aes(json.dumps(params))
         else:
@@ -88,15 +102,14 @@ class Spider(Spider):
             'Accept-Language': 'zh-CN,zh;q=0.8',
             'tenantId': self.ntid,
             'n': n,
-            't': str(t),
+            't': str(int(t/1000)),
             's': s,
-            # 'Content-Type': 'application/json; charset=utf-8',
         }
-        if self.sign['token']:
-            headers['ta-token'] = self.sign['token']
-            headers['userId'] = self.sign['uid']
+        if self.ut:
+            headers['ta-token'] = self.token
+            headers['userId'] = self.uid
         if params:
-            params={'ct':ct.replace('=','\u003d')}
+            params={'ct':ct}
             response = self.post(f'{self.host}{path}', headers=headers, json=params).text
         else:
             response = self.fetch(f'{self.host}{path}', headers=headers).text
@@ -104,16 +117,47 @@ class Spider(Spider):
         return data
 
     def getpic(self):
-        data=self.getdata(f'/supports/configs?tenantId={self.ntid}')
-        oic=['','','']
-        for i in data['data']:
-            if i['name']=='image_cdn':
-                oic[0]=i['records'][0]['value']
-            if i['name']=='image_cdn_path':
-                oic[1]=i['records'][0]['value']
-            if i['name']=='cdn-domain':
-                oic[1]=i['records'][0]['value'].split('#')[0]
-        return (oic[0],oic[1],oic[2])
+        try:
+            at = int(time.time() * 1000)
+            t=str(int(at/ 1000))
+            n = self.md5(f'{self.uuid()}{at}')
+            headers = {
+                'Host': '192.151.245.34:8089',
+                'User-Agent': 'okhttp-okgo/jeasonlzy',
+                'Connection': 'Keep-Alive',
+                'Accept-Language': 'zh-CN,zh;q=0.8',
+                'tenantId': self.ntid,
+                'userId': self.uid,
+                'ta-token': self.token,
+                'n': n,
+                't': t,
+                's': self.md5(f'{t}{n}8j@78m.367HGDF')
+            }
+            params = {
+                'tenantId': self.ntid,
+            }
+            response = self.fetch(f'{self.host}/supports/configs', params=params, headers=headers).text
+            data=self.aes(response[1:-1],False)
+            config = {
+                'image_cdn': '',
+                'image_cdn_path': '',
+                'cdn-domain': ''
+            }
+            for item in data.get('data', []):
+                name = item.get('name')
+                records = item.get('records', [])
+
+                if name in config and records:
+                    value = records[0].get('value', '')
+                    if name == 'cdn-domain':
+                        value = value.split('#')[0]
+                    config[name] = value
+
+            return config['image_cdn'], config['image_cdn_path'], config['cdn-domain']
+
+        except Exception as e:
+            print(f"Error in getpic: {e}")
+            return 'https://dbtp.tgydy.com', '.log', 'https://dplay.nbzsmc.com'
 
     def getlist(self,data):
         vod=[]
@@ -214,7 +258,7 @@ class Spider(Spider):
                 vods.append({
                     'vod_id': f'{i.get("id")}@',
                     'vod_name': i.get('name'),
-                    'vod_pic': f'{self.getProxyUrl()}&path={i.get("avatar")}',
+                    'vod_pic': i.get('avatar'),
                     'vod_tag': 'folder',
                     'vod_remarks': f'作品{i.get("movieNum")}',
                     'style': {"type": "oval"}
@@ -239,7 +283,7 @@ class Spider(Spider):
         print(data)
         plist=[f'第{i.get("entryNum")}集${i.get("mp4PlayAddress") or i.get("playAddress")}' for i in data['data']['records']]
         vod = {
-            'vod_play_from': '线路一',
+            'vod_play_from': '爱看短剧',
             'vod_play_url': '#'.join(plist),
         }
         return {'list':[vod]}
@@ -258,8 +302,8 @@ class Spider(Spider):
         data=self.fetch(f'{self.phost}{param.get("path")}{self.phz}',headers={'User-Agent':'Dalvik/2.1.0 (Linux; U; Android 11; M2012K10C Build/RP1A.200720.011)'})
         def decrypt(encrypted_text):
             try:
-                key = b64decode("iM41VipvCFtToAFFRExEXw==")
-                iv = b64decode("0AXRTXzmMSrlRSemWb4sVQ==")
+                key = base64.urlsafe_b64decode("iM41VipvCFtToAFFRExEXw==")
+                iv = base64.urlsafe_b64decode("0AXRTXzmMSrlRSemWb4sVQ==")
                 cipher = AES.new(key, AES.MODE_CBC, iv)
                 decrypted_padded = cipher.decrypt(encrypted_text)
                 decrypted_data = unpad(decrypted_padded, AES.block_size)
