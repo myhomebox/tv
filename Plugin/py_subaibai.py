@@ -23,7 +23,7 @@ import os
 
 sys.path.append('..')
 
-xurl = "https://www.subaibai.vip"
+xurl = "https://www.subaibai.com"
 
 headerx = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
