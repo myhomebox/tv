@@ -7,7 +7,7 @@
   "分类标题": ">&&</a>",
   "数组": "module-item-pic&&</div>",
   "标题": "title=\"&&\"",
-  "副标题": "module-item-text&&</div>",
+  "副标题": "text\">&&<",
   "图片": "data-src=\"&&\"",
   "链接": "href=\"&&\"",
   "播放数组": "scroll-content&&</div>",
