@@ -39,6 +39,12 @@
                 "version": "1.39"
             },
             {
+                "name": "環球TV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/GLOBALTV.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "1.1.1"
+            },    
+            {
                 "name": "優格TV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/YogurtTV.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
