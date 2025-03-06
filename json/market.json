@@ -12,7 +12,7 @@
                 "name": "電視 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.1.8"
+                "version": "3.1.9"
             },
             {
                 "name": "想唱就唱",
@@ -42,7 +42,7 @@
                 "name": "環球TV",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/GLOBALTV.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "1.1.1"
+                "version": "20210717"
             },    
             {
                 "name": "優格TV",
@@ -60,7 +60,7 @@
                 "name": "手機 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.1.8"
+                "version": "3.1.9"
             }
         ]
     }
