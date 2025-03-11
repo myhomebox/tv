@@ -75,13 +75,14 @@ class Spider(Spider):
         for i in data['items']:
             for j in i['video'][0]['data']:
                 id = j.get('firstId')
-                if id:
+                pic=j.get('prevue',{}).get('image_url') or j.get('album_image_url_hover')
+                if id and pic:
                     pu=j.get('prevue',{}).get('page_url') or j.get('page_url').split('?')[0]
                     id = f'{id}@{self.e64(pu)}'
                     vlist.append({
                         'vod_id': id,
                         'vod_name': j.get('display_name'),
-                        'vod_pic': j.get('prevue',{}).get('image_url'),
+                        'vod_pic': pic,
                         'vod_year': j.get('sns_score'),
                         'vod_remarks': j.get('dq_updatestatus') or j.get('rank_prefix')
                     })
@@ -129,12 +130,6 @@ class Spider(Spider):
         ids = ids[0].split('@')
         ids[-1] = self.d64(ids[-1])
         data = self.fetch(f'{self.dhost}/h5/mina/baidu/play/body/v1/{ids[0]}/', headers=self.headers).json()
-        # t=str(int(time.time()*1000))
-        # e = 'ad_ext={"r":"1.2.1-ares6-pure"}&ad_param=[{"azt":"730","azd":"1000000000942","lm":1,"position":"related"},{"azt":"731","azd":"1000000000943","lm":1,"position":"recommend"},{"azt":"734","azd":"1000000000910","lm":1,"position":"middlecard"},{"azt":"738","azd":"1000000000911","lm":1,"position":"bottomcard"},{"azt":"612","azd":"1000000000695","lm":2,"position":"recommend_full"},{"azt":"","azd":"1000000000912","lm":1,"position":"rcd_image"}]&app_mode=standard&app_version=13.014.21150&auth_cookie=&conduit_id=&device_id='+self.did+'&entity_id='+ids[0]+'&entity_type=1&filter=&ext=&os=&src=pca_tvg&timestamp=' + t + '&user_id=0&vip_status=0&vip_type=-1&secret_key=howcuteitis'
-        # sign=self.md5(e).upper()
-        # path=f'/tvg/v2/lw/base_info?entity_id={ids[0]}&device_id={self.did}&auth_cookie&user_id=0&vip_type=-1&vip_status=0&conduit_id&app_version=13.014.21150&ext&app_mode=standard&timestamp={t}&src=pca_tvg&os&ad_param=%5B%7B%22azt%22:%22730%22,%22azd%22:%221000000000942%22,%22lm%22:1,%22position%22:%22related%22%7D,%7B%22azt%22:%22731%22,%22azd%22:%221000000000943%22,%22lm%22:1,%22position%22:%22recommend%22%7D,%7B%22azt%22:%22734%22,%22azd%22:%221000000000910%22,%22lm%22:1,%22position%22:%22middlecard%22%7D,%7B%22azt%22:%22738%22,%22azd%22:%221000000000911%22,%22lm%22:1,%22position%22:%22bottomcard%22%7D,%7B%22azt%22:%22612%22,%22azd%22:%221000000000695%22,%22lm%22:2,%22position%22:%22recommend_full%22%7D,%7B%22azt%22:%22%22,%22azd%22:%221000000000912%22,%22lm%22:1,%22position%22:%22rcd_image%22%7D%5D&ad_ext=%7B%22r%22:%221.2.1-ares6-pure%22%7D&sign={sign}'
-        # vdata=self.fetch(f'{self.hhost}{path}', headers=self.headers).json()
-        # print(vdata)
         v=data['data']['playInfo']
         vod = {
             'vod_name': v.get('albumName'),
