@@ -139,47 +139,51 @@ class Spider(Spider):
         return result
 
     def detailContent(self, ids):
-        data=self.session.get(f'{self.ihost}/v_getvideo_info/?showId={ids[0]}').json()
-        v=data['data']
-        vod = {
-            'type_name': v.get('showVideotype'),
-            'vod_year': v.get('lastUpdate'),
-            'vod_remarks': v.get('rc_title'),
-            'vod_actor': v.get('_personNameStr'),
-            'vod_content': v.get('showdesc'),
-            'vod_play_from': '优酷',
-            'vod_play_url': ''
-        }
-        params={"biz":"new_detail_web2","videoId":v.get('vid'),"scene":"web_page","componentVersion":"3","ip":data.get('ip'),"debug":0,"utdid":"ZYmGMAAAACkDAMU8hbiMmYdd","userId":0,"platform":"pc","nextSession":"","gray":0,"source":"pcNoPrev","showId":ids[0]}
-        sdata,index=self.getinfo(params)
-        pdata=sdata['nodes']
-        if index > len(pdata):
-            batch_size = len(pdata)
-            total_batches = ((index + batch_size - 1) // batch_size) - 1
-            ssj = json.loads(sdata['data']['session'])
-            with ThreadPoolExecutor(max_workers=total_batches) as executor:
-                futures = []
-                for batch in range(total_batches):
-                    start = batch_size + 1 + (batch * batch_size)
-                    end = start + batch_size - 1
-                    next_session = ssj.copy()
-                    next_session.update({
-                        "itemStartStage": start,
-                        "itemEndStage": min(end, index)
-                    })
-                    current_params = params.copy()
-                    current_params['nextSession'] = json.dumps(next_session)
-                    futures.append((start, executor.submit(self.getvinfo, current_params)))
-                futures.sort(key=lambda x: x[0])
+        try:
+            data=self.session.get(f'{self.ihost}/v_getvideo_info/?showId={ids[0]}').json()
+            v=data['data']
+            vod = {
+                'type_name': v.get('showVideotype'),
+                'vod_year': v.get('lastUpdate'),
+                'vod_remarks': v.get('rc_title'),
+                'vod_actor': v.get('_personNameStr'),
+                'vod_content': v.get('showdesc'),
+                'vod_play_from': '优酷',
+                'vod_play_url': ''
+            }
+            params={"biz":"new_detail_web2","videoId":v.get('vid'),"scene":"web_page","componentVersion":"3","ip":data.get('ip'),"debug":0,"utdid":"ZYmGMAAAACkDAMU8hbiMmYdd","userId":0,"platform":"pc","nextSession":"","gray":0,"source":"pcNoPrev","showId":ids[0]}
+            sdata,index=self.getinfo(params)
+            pdata=sdata['nodes']
+            if index > len(pdata):
+                batch_size = len(pdata)
+                total_batches = ((index + batch_size - 1) // batch_size) - 1
+                ssj = json.loads(sdata['data']['session'])
+                with ThreadPoolExecutor(max_workers=total_batches) as executor:
+                    futures = []
+                    for batch in range(total_batches):
+                        start = batch_size + 1 + (batch * batch_size)
+                        end = start + batch_size - 1
+                        next_session = ssj.copy()
+                        next_session.update({
+                            "itemStartStage": start,
+                            "itemEndStage": min(end, index)
+                        })
+                        current_params = params.copy()
+                        current_params['nextSession'] = json.dumps(next_session)
+                        futures.append((start, executor.submit(self.getvinfo, current_params)))
+                    futures.sort(key=lambda x: x[0])
 
-                for _, future in futures:
-                    try:
-                        result = future.result()
-                        pdata.extend(result['nodes'])
-                    except Exception as e:
-                        print(f"Error fetching data: {str(e)}")
-        vod['vod_play_url'] = '#'.join([f"{i['data'].get('title')}${i['data']['action'].get('value')}" for i in pdata])
-        return {'list': [vod]}
+                    for _, future in futures:
+                        try:
+                            result = future.result()
+                            pdata.extend(result['nodes'])
+                        except Exception as e:
+                            print(f"Error fetching data: {str(e)}")
+            vod['vod_play_url'] = '#'.join([f"{i['data'].get('title')}${i['data']['action'].get('value')}" for i in pdata])
+            return {'list': [vod]}
+        except Exception as e:
+            print(e)
+            return {'list': [{'vod_play_from': '哎呀翻车啦', 'vod_play_url': f'呜呜呜${self.host}'}]}
 
     def searchContent(self, key, quick, pg="1"):
         data=self.session.get(f'{self.shost}/api/search?pg={pg}&keyword={key}').json()
@@ -290,8 +294,7 @@ class Spider(Spider):
     def getinfo(self,params):
         i = self.getvinfo(params)
         jdata=i['nodes'][0]['nodes'][3]
-        if i['data']['extra']['showCategory']=='电影':
-            jdata = i['nodes'][0]['nodes'][4]
         info=i['data']['extra']['episodeTotal']
+        if i['data']['extra']['showCategory'] in ['电影','游戏']:
+            jdata = i['nodes'][0]['nodes'][4]
         return jdata,info
-
