@@ -72,7 +72,7 @@ class Spider(Spider):
     def homeVideoContent(self):
         data=self.fetch(f'{self.hhost}/portal/lw/v5/channel/recommend?v=13.014.21150', headers=self.headers).json()
         vlist = []
-        for i in data['items']:
+        for i in data['items'][1:]:
             for j in i['video'][0]['data']:
                 id = j.get('firstId')
                 pic=j.get('prevue',{}).get('image_url') or j.get('album_image_url_hover')
