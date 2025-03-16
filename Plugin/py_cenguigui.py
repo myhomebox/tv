@@ -85,7 +85,7 @@ class Spider(Spider):
             'vod_year': v.get('time'),
             'vod_remarks': v.get('duration'),
             'vod_content': v.get('desc'),
-            'vod_play_from': '嗷呜爱看短剧',
+            'vod_play_from': '甜圈短剧',
             'vod_play_url': '#'.join([f"{i['title']}${i['video_id']}" for i in v['data']])
         }
         return {'list':[vod]}
