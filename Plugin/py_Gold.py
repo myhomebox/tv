@@ -24,14 +24,14 @@ class Spider(Spider):
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "site": "https://www.tjrongze.com,https://www.jiabaide.cn,https://cqzuoer.com"
+                "site": "https://www.jiabaide.cn,https://www.tjrongze.com,https://cqzuoer.com"
             }
         },
         fm写法
         '''
         if extend:
             hosts=json.loads(extend)['site']
-        # hosts = "https://www.tjrongze.com,https://www.jiabaide.cn,https://cqzuoer.com"
+        # hosts = "https://www.jiabaide.cn,https://www.tjrongze.com,https://cqzuoer.com"
         self.host = self.host_late(hosts)
         pass
 
@@ -123,7 +123,7 @@ class Spider(Spider):
     def detailContent(self, ids):
         data=self.fetch(f"{self.host}/api/mw-movie/anonymous/video/detail?id={ids[0]}",headers=self.getheaders({'id':ids[0]})).json()
         vod=self.getvod([data['data']])[0]
-        vod['vod_play_from']='嗷呜有金牌'
+        vod['vod_play_from']='金牌播放器'
         vod['vod_play_url'] = '#'.join(
             f"{i['name'] if len(vod['episodelist']) > 1 else vod['vod_name']}${ids[0]}@@{i['nid']}" for i in
             vod['episodelist'])
@@ -224,4 +224,3 @@ class Spider(Spider):
 
     def getvod(self, array):
         return [{self.convert_field_name(k): v for k, v in item.items()} for item in array]
-
