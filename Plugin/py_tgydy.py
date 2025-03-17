@@ -283,7 +283,7 @@ class Spider(Spider):
         print(data)
         plist=[f'第{i.get("entryNum")}集${i.get("mp4PlayAddress") or i.get("playAddress")}' for i in data['data']['records']]
         vod = {
-            'vod_play_from': '爱看短剧',
+            'vod_play_from': '剧多短剧',
             'vod_play_url': '#'.join(plist),
         }
         return {'list':[vod]}
