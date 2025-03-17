@@ -1,10 +1,8 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import sys
 sys.path.append("..")
 import re
-import os
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from base64 import b64encode, b64decode
@@ -126,7 +124,7 @@ class Spider(Spider):
 
     def detailContent(self, ids):
         url = f"{self.host}/api/v3/drama/getDetail?id={ids[0]}"
-        data = self.fetch(url, headers=self.headers).json()["data"]
+        data = self.post(url, headers=self.headers).json()["data"]
         vod = {
             'vod_name': data.get("name"),
             'vod_area': data.get("area"),
@@ -176,7 +174,8 @@ class Spider(Spider):
         if "vodPlayFrom" in url:
             try:
                 path = self.aes(self.aes(id, self.key[1], 'encrypt'), self.key[0], 'encrypt', True)
-                data = self.fetch(f"{self.host}/api/ex/v3/security/videoUsableUrl?query={path}", headers=self.headers).json()[
+                data = \
+                self.fetch(f"{self.host}/api/ex/v3/security/videoUsableUrl?query={path}", headers=self.headers).json()[
                     "data"]
                 url = self.aes(self.aes(data, self.key[0]), self.key[1], 'decrypt', True)['playUrl']
                 # try:
