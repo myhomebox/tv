@@ -1,9 +1,9 @@
+# -*- coding: utf-8 -*-
 # by @嗷呜
 import re
 import sys
-from pprint import pprint
 from Crypto.Hash import MD5
-sys.path.append("..")
+sys.path.append('..')
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from urllib.parse import quote, urlparse
