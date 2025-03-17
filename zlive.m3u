@@ -1,4 +1,5 @@
-#EXTM3U x-tvg-url="https://live.fanmingming.cn/e.xml"
+#EXTM3U
+#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_HK.xml"
 #EXTINF:-1 tvg-id="HK TVB 翡翠台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB1.png" group-title="香港",HK TVB 翡翠台
 zlive://38.114.114.155:6678/b79e039cf916301bdf2cd5003dcffcb8
 #EXTINF:-1 tvg-id="HK TVB Plus" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB3.png" group-title="香港",HK TVB Plus
