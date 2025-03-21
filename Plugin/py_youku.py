@@ -1,9 +1,9 @@
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pprint import pprint
 from urllib.parse import quote
 from Crypto.Hash import MD5
 import requests
@@ -201,7 +201,7 @@ class Spider(Spider):
         return {'list': vlist, 'page': pg}
 
     def playerContent(self, flag, id, vipFlags):
-        return  {'parse': 1, 'url': f"{self.ihost}/video?vid={id}", 'header': ''}
+        return  {'jx':1,'parse': 1, 'url': f"{self.ihost}/video?vid={id}", 'header': ''}
 
     def localProxy(self, param):
         pass
