@@ -1,13 +1,10 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import random
 import sys
 from base64 import b64encode, b64decode
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pprint import pprint
 from urllib.parse import urlencode
-
 sys.path.append('..')
 from base.spider import Spider
 
@@ -202,7 +199,7 @@ class Spider(Spider):
         return {'list':videos,'page':pg}
 
     def playerContent(self, flag, id, vipFlags):
-        return  {'parse': 1, 'url': id, 'header': ''}
+        return  {'jx':1,'parse': 1, 'url': id, 'header': ''}
 
     def localProxy(self, param):
         pass
