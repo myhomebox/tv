@@ -104,8 +104,18 @@ class Spider(Spider):
         return {'list': self.getlist(data['data']['list'])}
 
     def playerContent(self, flag, id, vipFlags):
-        return {'parse': 0, 'url': id,
-                'header': {'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 11; M2012K10C Build/RP1A.200720.011)','Referer':'https://rysp.tv'}}
+        # https://rysp.tv
+        # https://aigua.tv
+        result = {
+            "parse": 0,
+            "url": "id",
+            "header": {
+                "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 11; M2012K10C Build/RP1A.200720.011)",
+                "Origin": "https://aigua.tv",
+                "Referer": "https://aigua.tv/"
+            }
+        }
+        return result
 
     def localProxy(self, param):
         pass
@@ -152,4 +162,3 @@ class Spider(Spider):
                 'vod_remarks': i.get('flag'),
             })
         return videos
-
