@@ -1,6 +1,5 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
 import sys
 import uuid
@@ -225,7 +224,7 @@ class Spider(Spider):
     def playerContent(self, flag, id, vipFlags):
         ids = id.split('@')
         url = f"{self.host}/x/cover/{ids[0]}/{ids[1]}.html"
-        return {'parse': 1, 'url': url, 'header': ''}
+        return {'jx':1,'parse': 1, 'url': url, 'header': ''}
 
     def localProxy(self, param):
         pass
@@ -320,5 +319,3 @@ class Spider(Spider):
                 continue
             query.append(f"{k}={v}")
         return "&".join(query)
-
-
