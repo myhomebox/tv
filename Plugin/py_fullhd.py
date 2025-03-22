@@ -185,7 +185,8 @@ class Spider(Spider):
                     id = ids[0]['href']
 
                     pics = vod.find('img', class_="thumb")
-                    pic = pics['src' or 'data-src']
+                    if pic = pics['src']
+                    else: pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
