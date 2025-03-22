@@ -59,7 +59,7 @@ zlive://38.114.114.155:6678/967cb22aa344eb2c3e88a715fa122035
 zlive://38.114.114.155:6678/23b807f42fb46d21c3eff9656e26a77a
 #EXTINF:-1 tvg-id="Celestial 天映頻道(國)" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/typd.png" group-title="香港",天映頻道(國)
 zlive://38.114.114.155:6678/8d30cac1e593b2e82b2e894e31ddce98
-#EXTINF:-1 tvg-id="CCM 天映經典(粵)" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/tyjdpd.png" group-title="香港",映經典(粵)
+#EXTINF:-1 tvg-id="CCM 天映經典(粵)" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/tyjdpd.png" group-title="香港",天映經典(粵)
 zlive://38.114.114.155:6678/dd54373672143f7f41c1fdf563d9bad6
 #EXTINF:-1 tvg-id="CCM 天映經典(國)" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/tyjdpd.png" group-title="香港",天映經典(國)
 zlive://38.114.114.155:6678/98aaa10c6345098ede9e3542ae585635
@@ -67,7 +67,7 @@ zlive://38.114.114.155:6678/98aaa10c6345098ede9e3542ae585635
 zlive://38.114.114.155:6678/b94704e71259efdb85ce835db2619be9
 #EXTINF:-1 tvg-id="PopC" tvg-logo="https://assets.livednow.com/logo/PopC.png" group-title="香港",PopC
 zlive://38.114.114.155:6678/5db3928bd38f723cc58096fde4a2cc08
-#EXTINF:-1 tvg-id="Thrill" tvg-logo="https://assets.livednow.com/logo/Thrill.png" group-title="香港",Thrill
+#EXTINF:-1 tvg-id="Thrill" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/thrill.png" group-title="香港",Thrill
 zlive://38.114.114.155:6678/43b0192a4ad7daa4b375e33f27131ea4
 #EXTINF:-1 tvg-id="TVB 黃金翡翠台" tvg-logo="https://cdn.jsdelivr.net/gh/wanglindl/TVlogo@main/img/TVB14.png" group-title="香港",TVB 黃金翡翠台
 zlive://38.114.114.155:6678/9e5d025c2829f35a23a9b765dce5fa2d
