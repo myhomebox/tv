@@ -4,7 +4,7 @@ import re
 from base.spider import Spider
 import sys
 import json
-import base64
+from base64 import b64decode, b64encode
 import urllib.parse
 from Crypto.Cipher import ARC4
 from Crypto.Util.Padding import unpad
@@ -185,7 +185,7 @@ class Spider(Spider):
                     id = ids[0]['href']
 
                     pics = vod.find('img', class_="thumb")
-                    pic = pics['src']
+                    pic = pics['src','data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
