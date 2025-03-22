@@ -322,7 +322,7 @@ class Spider(Spider):
         result['total'] = 999999
         return result
 
-    def searchContent(self, key, quick):
+    def searchContent(self, key, quick, pg="1"):
         return self.searchContentPage(key, quick, '1')
 
     def localProxy(self, params):
