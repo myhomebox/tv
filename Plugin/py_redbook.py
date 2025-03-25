@@ -132,7 +132,7 @@ class Spider(Spider):
         data2 = data1['data']
         return data2['token'], data2['imgDomain']
 
-    host = 'https://jhfkdnov21vfd.dyfcbkggxn.work'
+    host = 'https://jhfkdnov21vfd.fhoumpjjih.work'
 
     def headers(self):
         henda = {
