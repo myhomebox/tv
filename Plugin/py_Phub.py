@@ -1,11 +1,11 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
 import re
 import sys
-from pyquery import PyQuery as pq
 from base64 import b64decode, b64encode
+import requests
+from pyquery import PyQuery as pq
 from requests import Session
 sys.path.append('..')
 from base.spider import Spider
@@ -14,9 +14,14 @@ from base.spider import Spider
 class Spider(Spider):
 
     def init(self, extend=""):
-        self.host=self.gethost()
-        self.headers['referer']=f'{self.host}/'
+        try:
+            self.proxies = json.loads(extend)
+        except:
+            self.proxies = {}
+        self.host = self.gethost()
+        self.headers['referer'] = f'{self.host}/'
         self.session = Session()
+        self.session.proxies.update(self.proxies)
         self.session.headers.update(self.headers)
         pass
 
@@ -76,7 +81,7 @@ class Spider(Spider):
     def homeVideoContent(self):
         data = self.getpq('/recommended')
         vhtml = data("#recommendedListings .pcVideoListItem .phimage")
-        return {'list':self.getlist(vhtml)}
+        return {'list': self.getlist(vhtml)}
 
     def categoryContent(self, tid, pg, filter, extend):
         vdata = []
@@ -85,14 +90,14 @@ class Spider(Spider):
         result['pagecount'] = 9999
         result['limit'] = 90
         result['total'] = 999999
-        if tid=='/video' or '_this_video' in tid:
+        if tid == '/video' or '_this_video' in tid:
             pagestr = f'&' if '?' in tid else f'?'
-            tid=tid.split('_this_video')[0]
-            data=self.getpq(f'{tid}{pagestr}page={pg}')
-            vdata=self.getlist(data('#videoCategory .pcVideoListItem'))
+            tid = tid.split('_this_video')[0]
+            data = self.getpq(f'{tid}{pagestr}page={pg}')
+            vdata = self.getlist(data('#videoCategory .pcVideoListItem'))
         elif tid == '/playlists':
-            data=self.getpq(f'{tid}?page={pg}')
-            vhtml=data('#playListSection li')
+            data = self.getpq(f'{tid}?page={pg}')
+            vhtml = data('#playListSection li')
             vdata = []
             for i in vhtml.items():
                 vdata.append({
@@ -103,77 +108,78 @@ class Spider(Spider):
                     'vod_remarks': i('.playlist-videos .number').text(),
                     'style': {"type": "rect", "ratio": 1.33}
                 })
-        elif tid=='/channels':
-            data=self.getpq(f'{tid}?o=rk&page={pg}')
-            vhtml=data('#filterChannelsSection li .description')
-            vdata=[]
+        elif tid == '/channels':
+            data = self.getpq(f'{tid}?o=rk&page={pg}')
+            vhtml = data('#filterChannelsSection li .description')
+            vdata = []
             for i in vhtml.items():
                 vdata.append({
-                    'vod_id': 'director_click_'+i('.avatar a').attr('href'),
+                    'vod_id': 'director_click_' + i('.avatar a').attr('href'),
                     'vod_name': i('.avatar img').attr('alt'),
                     'vod_pic': i('.avatar img').attr('src'),
-                    'vod_tag':'folder',
+                    'vod_tag': 'folder',
                     'vod_remarks': i('.descriptionContainer ul li').eq(-1).text(),
-                    'style':{"type": "rect", "ratio": 1.33}
+                    'style': {"type": "rect", "ratio": 1.33}
                 })
-        elif tid=='/categories' and pg=='1':
+        elif tid == '/categories' and pg == '1':
             result['pagecount'] = 1
-            data=self.getpq(f'{tid}')
-            vhtml=data('.categoriesListSection li .relativeWrapper')
-            vdata=[]
+            data = self.getpq(f'{tid}')
+            vhtml = data('.categoriesListSection li .relativeWrapper')
+            vdata = []
             for i in vhtml.items():
                 vdata.append({
-                    'vod_id': i('a').attr('href')+'_this_video',
+                    'vod_id': i('a').attr('href') + '_this_video',
                     'vod_name': i('a').attr('alt'),
                     'vod_pic': i('a img').attr('src'),
-                    'vod_tag':'folder',
-                    'style':{"type": "rect", "ratio": 1.33}
+                    'vod_tag': 'folder',
+                    'style': {"type": "rect", "ratio": 1.33}
                 })
-        elif tid=='/pornstars':
-            data=self.getpq(f'{tid}?o=t&page={pg}')
-            vhtml=data('#popularPornstars .performerCard .wrap')
-            vdata=[]
+        elif tid == '/pornstars':
+            data = self.getpq(f'{tid}?o=t&page={pg}')
+            vhtml = data('#popularPornstars .performerCard .wrap')
+            vdata = []
             for i in vhtml.items():
                 vdata.append({
-                    'vod_id': 'pornstars_click_'+i('a').attr('href'),
+                    'vod_id': 'pornstars_click_' + i('a').attr('href'),
                     'vod_name': i('.performerCardName').text(),
                     'vod_pic': i('a img').attr('src'),
-                    'vod_tag':'folder',
-                    'vod_year':i('.performerVideosViewsCount span').eq(0).text(),
+                    'vod_tag': 'folder',
+                    'vod_year': i('.performerVideosViewsCount span').eq(0).text(),
                     'vod_remarks': i('.performerVideosViewsCount span').eq(-1).text(),
-                    'style':{"type": "rect", "ratio": 1.33}
+                    'style': {"type": "rect", "ratio": 1.33}
                 })
         elif 'playlists_click' in tid:
-            tid=tid.split('click_')[-1]
-            if pg=='1':
-                hdata=self.getpq(tid)
-                self.token=hdata('#searchInput').attr('data-token')
+            tid = tid.split('click_')[-1]
+            if pg == '1':
+                hdata = self.getpq(tid)
+                self.token = hdata('#searchInput').attr('data-token')
                 vdata = self.getlist(hdata('#videoPlaylist .pcVideoListItem .phimage'))
             else:
-                tid=tid.split('playlist/')[-1]
-                data=self.getpq(f'/playlist/viewChunked?id={tid}&token={self.token}&page={pg}')
-                vdata=self.getlist(data('.pcVideoListItem .phimage'))
+                tid = tid.split('playlist/')[-1]
+                data = self.getpq(f'/playlist/viewChunked?id={tid}&token={self.token}&page={pg}')
+                vdata = self.getlist(data('.pcVideoListItem .phimage'))
         elif 'director_click' in tid:
-            tid=tid.split('click_')[-1]
-            data=self.getpq(f'{tid}/videos?page={pg}')
-            vdata=self.getlist(data('#showAllChanelVideos .pcVideoListItem .phimage'))
+            tid = tid.split('click_')[-1]
+            data = self.getpq(f'{tid}/videos?page={pg}')
+            vdata = self.getlist(data('#showAllChanelVideos .pcVideoListItem .phimage'))
         elif 'pornstars_click' in tid:
-            tid=tid.split('click_')[-1]
-            data=self.getpq(f'{tid}/videos?page={pg}')
-            vdata=self.getlist(data('#mostRecentVideosSection .pcVideoListItem .phimage'))
+            tid = tid.split('click_')[-1]
+            data = self.getpq(f'{tid}/videos?page={pg}')
+            vdata = self.getlist(data('#mostRecentVideosSection .pcVideoListItem .phimage'))
         result['list'] = vdata
         return result
 
     def detailContent(self, ids):
         url = f"{self.host}{ids[0]}"
         data = self.getpq(ids[0])
-        vn=data('meta[property="og:title"]').attr('content')
-        dtext=data('.userInfo .usernameWrap a')
-        pdtitle = '[a=cr:' + json.dumps({'id': 'director_click_'+dtext.attr('href'), 'name': dtext.text()}) + '/]' + dtext.text() + '[/a]'
+        vn = data('meta[property="og:title"]').attr('content')
+        dtext = data('.userInfo .usernameWrap a')
+        pdtitle = '[a=cr:' + json.dumps(
+            {'id': 'director_click_' + dtext.attr('href'), 'name': dtext.text()}) + '/]' + dtext.text() + '[/a]'
         vod = {
             'vod_name': vn,
-            'vod_director':pdtitle,
-            'vod_remarks': (data('.userInfo').text()+' / '+data('.ratingInfo').text()).replace('\n',' / '),
+            'vod_director': pdtitle,
+            'vod_remarks': (data('.userInfo').text() + ' / ' + data('.ratingInfo').text()).replace('\n', ' / '),
             'vod_play_from': 'Pornhub',
             'vod_play_url': ''
         }
@@ -193,11 +199,11 @@ class Spider(Spider):
         except Exception as e:
             print(f"提取mediaDefinitions失败: {str(e)}")
         vod['vod_play_url'] = '#'.join(plist)
-        return {'list':[vod]}
+        return {'list': [vod]}
 
     def searchContent(self, key, quick, pg="1"):
-        data=self.getpq(f'/video/search?search={key}&page={pg}')
-        return {'list':self.getlist(data('#videoSearchResult .pcVideoListItem .phimage'))}
+        data = self.getpq(f'/video/search?search={key}&page={pg}')
+        return {'list': self.getlist(data('#videoSearchResult .pcVideoListItem .phimage'))}
 
     def playerContent(self, flag, id, vipFlags):
         headers = {
@@ -216,7 +222,7 @@ class Spider(Spider):
             'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'priority': 'u=1, i',
         }
-        ids=self.d64(id).split('@@@@')
+        ids = self.d64(id).split('@@@@')
         return {'parse': int(ids[0]), 'url': ids[1], 'header': headers}
 
     def localProxy(self, param):
@@ -224,7 +230,8 @@ class Spider(Spider):
 
     def gethost(self):
         try:
-            response = self.fetch('https://www.pornhub.com',headers=self.headers,allow_redirects=False)
+            response = requests.get('https://www.pornhub.com', headers=self.headers, proxies=self.proxies,
+                                    allow_redirects=False)
             return response.headers['Location'][:-1]
         except Exception as e:
             print(f"获取主页失败: {str(e)}")
@@ -239,7 +246,7 @@ class Spider(Spider):
             print(f"Base64编码错误: {str(e)}")
             return ""
 
-    def d64(self,encoded_text):
+    def d64(self, encoded_text):
         try:
             encoded_bytes = encoded_text.encode('utf-8')
             decoded_bytes = b64decode(encoded_bytes)
@@ -249,7 +256,7 @@ class Spider(Spider):
             return ""
 
     def getlist(self, data):
-        vlist=[]
+        vlist = []
         for i in data.items():
             vlist.append({
                 'vod_id': i('a').attr('href'),
