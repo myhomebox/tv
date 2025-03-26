@@ -1,4 +1,5 @@
 #EXTM3U
+#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg.xml"
 
 #EXTINF:-1 tvg-id="989" tvg-name="8TV" tvg-logo="https://vpic.6868c.cc/channellogo/20211022/c20406.png" group-title="回看",8TV
 tvbus://4AaPdix6QWJ4oUzbPh88wyMweyQKFK7A1WREYzZjHFBEMrepoV
