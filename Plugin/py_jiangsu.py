@@ -28,7 +28,7 @@ class Spider(Spider):
 
 
     def liveContent(self, url):
-        tv_list = ['EXTM3U x-tvg-url="https://assets.livednow.com/epg.xml"',
+        tv_list = ['#EXTM3U',
                    '#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://logo.doube.eu.org/江苏卫视.png" group-title="江蘇",江蘇衛視',
                    'http://127.0.0.1:9978/proxy?do=py&type=abc&pid=jsws_live',
                    '#EXTINF:-1 tvg-id="江苏城市频道" tvg-name="江苏城市频道" tvg-logo="https://logo.doube.eu.org/江苏城市.png" group-title="江蘇",江蘇城市',
