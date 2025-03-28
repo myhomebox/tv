@@ -62,4 +62,52 @@ class Spider(Spider):
     def searchContent(self, key, quick, page='1'):
         return {}
 
-    de
+    def searchContentPage(self, keywords, quick, page):
+        return {}
+
+    def playerContent(self, flag, pid, vipFlags):
+        return {}
+
+    def localProxy(self, params):
+        if params['type'] == "m3u8":
+            return self.proxyM3u8(params)
+        if params['type'] == "ts":
+            return self.get_ts(params)
+        return [302, "text/plain", None, {'Location': 'https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4'}]
+    def proxyM3u8(self, params):
+        pid = params['pid']
+        info = pid.split(',')
+        a = info[0]
+        b = info[1]
+        c = info[2]
+        timestamp = int(time.time() / 4 - 355017625)
+        t = timestamp * 4
+        m3u8_text = f'#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:4\n#EXT-X-MEDIA-SEQUENCE:{timestamp}\n'
+        for i in range(10):
+            url = f'https://ntd-tgc.cdn.hinet.net/live/pool/{a}/litv-pc/{a}-avc1_6000000={b}-mp4a_134000_zho={c}-begin={t}0000000-dur=40000000-seq={timestamp}.ts'
+            if self.is_proxy:
+                url = f'http://127.0.0.1:9978/proxy?do=py&type=ts&url={self.b64encode(url)}'
+
+            m3u8_text += f'#EXTINF:4,\n{url}\n'
+            timestamp += 1
+            t += 4
+        return [200, "application/vnd.apple.mpegurl", m3u8_text]
+
+    def get_ts(self, params):
+        url = self.b64decode(params['url'])
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        response = requests.get(url, headers=headers, stream=True, proxies=self.proxy)
+        return [206, "application/octet-stream", response.content]
+
+    def destroy(self):
+        return '正在Destroy'
+
+    def b64encode(self, data):
+        return base64.b64encode(data.encode('utf-8')).decode('utf-8')
+
+    def b64decode(self, data):
+        return base64.b64decode(data.encode('utf-8')).decode('utf-8')
+
+
+if __name__ == '__main__':
+    pass
