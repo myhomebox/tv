@@ -1,9 +1,10 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
 import re
 import sys
+import requests
 from pyquery import PyQuery as pq
 from base64 import b64decode, b64encode
 from requests import Session
@@ -12,10 +13,11 @@ from base.spider import Spider
 
 
 class Spider(Spider):
-
     def init(self, extend=""):
-        self.headers['referer']=f'{self.host}/'
+        try:self.proxies = json.loads(extend)
+        except:self.proxies = {}
         self.session = Session()
+        self.session.proxies.update(self.proxies)
         self.session.headers.update(self.headers)
         pass
 
@@ -34,24 +36,20 @@ class Spider(Spider):
     host = "https://www.xvideos.com"
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-full-version': '"133.0.6943.98"',
-        'sec-ch-ua-arch': '"x86"',
-        'sec-ch-ua-platform': '"Windows"',
-        'sec-ch-ua-platform-version': '"19.0.0"',
-        'sec-ch-ua-model': '""',
-        'sec-ch-ua-full-version-list': '"Not(A:Brand";v="99.0.0.0", "Google Chrome";v="133.0.6943.98", "Chromium";v="133.0.6943.98"',
-        'dnt': '1',
-        'upgrade-insecure-requests': '1',
-        'sec-fetch-site': 'none',
-        'sec-fetch-mode': 'navigate',
-        'sec-fetch-user': '?1',
-        'sec-fetch-dest': 'document',
-        'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
-        'priority': 'u=0, i'
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5410.0 Safari/537.36",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"",
+        "dnt": "1",
+        "origin":host,
+        'referer':f'{host}/',
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "priority": "u=1, i"
     }
 
     def homeContent(self, filter):
@@ -90,7 +88,7 @@ class Spider(Spider):
             vdata=self.getlist(data(".mozaique .frame-block"))
         elif tid=='/best':
             if pg=='1':
-                self.path=self.session.get(f'{self.host}{tid}',headers=self.headers,allow_redirects=False).headers['Location']
+                self.path=self.session.get(f'{self.host}{tid}',allow_redirects=False).headers['Location']
             data=self.getpq(f'{self.path}{page}')
             vdata=self.getlist(data(".mozaique .frame-block"))
         elif tid=='/channels-index' or tid=='/pornstars-index':
@@ -105,7 +103,7 @@ class Spider(Spider):
                 vdata.append({
                     'vod_id': f"channels_click_{'/channels'if tid=='/channels-index' else ''}"+a.attr('href'),
                     'vod_name': a('.profile-name').text() or i('.profile-name').text().replace('\xa0','/'),
-                    'vod_pic': img,
+                    'vod_pic': self.proxy(img),
                     'vod_tag': 'folder',
                     'vod_remarks': i('.thumb-under .profile-counts').text(),
                     'style': {'ratio': 1.33, 'type': 'rect'}
@@ -126,14 +124,12 @@ class Spider(Spider):
                     })
         elif 'channels_click' in tid:
             tid=tid.split('click_')[-1]
-            headers=self.session.headers.copy()
-            headers.update({'Accept': 'application/json, text/javascript, */*; q=0.01'})
-            vhtml=self.post(f'{self.host}{tid}/videos/best/{int(pg)-1}',headers=headers).json()
+            vhtml=self.session.post(f'{self.host}{tid}/videos/best/{int(pg)-1}').json()
             for i in vhtml['videos']:
                 vdata.append({
                     'vod_id': i.get('u'),
                     'vod_name': i.get('tf'),
-                    'vod_pic': i.get('il'),
+                    'vod_pic': self.proxy(i.get('il')),
                     'vod_year': i.get('n'),
                     'vod_remarks': i.get('d'),
                     'style': {'ratio': 1.33, 'type': 'rect'}
@@ -198,27 +194,16 @@ class Spider(Spider):
         return {'list':self.getlist(data(".mozaique .frame-block")),'page':pg}
 
     def playerContent(self, flag, id, vipFlags):
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5410.0 Safari/537.36',
-            'pragma': 'no-cache',
-            'cache-control': 'no-cache',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
-            'dnt': '1',
-            'sec-ch-ua-mobile': '?0',
-            'origin': self.host,
-            'sec-fetch-site': 'cross-site',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-dest': 'empty',
-            'referer': f'{self.host}/',
-            'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
-            'priority': 'u=1, i',
-        }
         ids=self.d64(id).split('@@@@')
-        return {'parse': int(ids[0]), 'url': ids[1], 'header': headers}
+        if '.m3u8' in ids[1]:ids[1]=self.proxy(ids[1],'m3u8')
+        return {'parse': int(ids[0]), 'url': ids[1], 'header': self.headers}
 
     def localProxy(self, param):
-        pass
+        url=self.d64(param['url'])
+        if param.get('type') == 'm3u8':
+            return self.m3Proxy(url)
+        else:
+            return self.tsProxy(url)
 
     def e64(self, text):
         try:
@@ -246,7 +231,7 @@ class Spider(Spider):
             vlist.append({
                 'vod_id': a.attr('href'),
                 'vod_name': b('a').attr('title'),
-                'vod_pic': a('img').attr('data-src'),
+                'vod_pic': self.proxy(a('img').attr('data-src')),
                 'vod_year': a('.video-hd-mark').text(),
                 'vod_remarks': b('.duration').text(),
                 'style': {'ratio': 1.33, 'type': 'rect'}
@@ -260,3 +245,26 @@ class Spider(Spider):
         except Exception as e:
             print(f"{str(e)}")
             return pq(response.encode('utf-8'))
+
+    def m3Proxy(self, url):
+        ydata = requests.get(url, headers=self.headers, proxies=self.proxies, allow_redirects=False)
+        data = ydata.content.decode('utf-8')
+        if ydata.headers.get('Location'):
+            url = ydata.headers['Location']
+            data = requests.get(url, headers=self.headers, proxies=self.proxies).content.decode('utf-8')
+        lines = data.strip().split('\n')
+        last_r = url[:url.rfind('/')]
+        for index, string in enumerate(lines):
+            if '#EXT' not in string and 'http' not in string:
+                line = last_r + ('' if string.startswith('/') else '/') + string
+                lines[index] = self.proxy(line, string.split('.')[-1])
+        data = '\n'.join(lines)
+        return [200, "application/vnd.apple.mpegur", data]
+
+    def tsProxy(self, url):
+        data = requests.get(url, headers=self.headers, proxies=self.proxies, stream=True)
+        return [200, data.headers['Content-Type'], data.content]
+
+    def proxy(self, data, type='img'):
+        if data and len(self.proxies):return f"{self.getProxyUrl()}&url={self.e64(data)}&type={type}"
+        else:return data
