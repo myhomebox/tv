@@ -1,4 +1,5 @@
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import binascii
 import json
 import os
@@ -121,11 +122,9 @@ class Spider(Spider):
         return {'list':vlist,'page':pg}
 
     def playerContent(self, flag, id, vipFlags):
-        pa=1
         data=json.loads(self.d64(id))
-        url=data.get('url')
         parse=data.get('parse')
-        head=''
+        url,p,head = data.get('url'),1,''
         if parse:
             parse=json.loads(self.d64(parse))
         if not re.search(r'\.m3u8|.mp4|\.flv', url) and parse:
@@ -134,20 +133,18 @@ class Spider(Spider):
                     data=self.fetch(f'{p}{url}',self.headers).json()
                     url=data.get('data',{}).get('url') or data.get('url')
                     head=data.get('data',{}).get('header') or data.get('header')
-                    pa=0
+                    p=0
                     break
                 except:
-                    pass
-        if head == '':
-            head= {'User-Agent': 'okhttp/4.9.0'}
-        return  {'parse': pa, 'url': url, 'header': head}
+                    p,url=1,data.get('url')
+                    head = {'User-Agent': 'okhttp/4.9.0'}
+        return  {'parse': p, 'url': url, 'header': head}
 
     def localProxy(self, param):
         pass
 
     def getf(self, map):
-        id = map['type_id']
-        ft = []
+        ft,id =[], map['type_id']
         try:
             fdata = self.getdata('/api.php/provide/nav', self.getbody({'tid': id, 'pg': '1'}))
             dy = ['area', 'year', 'lang', 'type']
@@ -310,7 +307,6 @@ class Spider(Spider):
         if response.headers.get('Sign'):
             dkey=self.drsa(response.headers['Sign'])
             rdata=self.daes(rdata, dkey)
-            print(rdata)
         return json.loads(rdata)
         
     def e64(self, text):
@@ -338,7 +334,3 @@ class Spider(Spider):
     
     def uuid(self):
         return str(uuid.uuid4())
-
-
-
-
