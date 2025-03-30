@@ -18,7 +18,7 @@ class Spider(Spider):
     def init(self, extend=""):
         '''
         如果一直访问不了，手动访问导航页:https://a.hdys.top，替换：
-        self.host = 'https://xxx.xxx.xxx'
+        self.host = 'https://hd.huaduys.com/'
         '''
         self.session = requests.Session()
         self.headers = {
