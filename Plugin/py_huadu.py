@@ -5,6 +5,7 @@ import re
 import sys
 import threading
 import time
+from base64 import b64encode, b64decode
 from urllib.parse import urlparse
 import requests
 from pyquery import PyQuery as pq
@@ -15,6 +16,10 @@ from base.spider import Spider
 class Spider(Spider):
 
     def init(self, extend=""):
+        '''
+        如果一直访问不了，手动访问导航页:https://a.hdys.top，替换：
+        self.host = 'https://xxx.xxx.xxx'
+        '''
         self.session = requests.Session()
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
@@ -31,6 +36,7 @@ class Spider(Spider):
         try:self.proxies = json.loads(extend)
         except:self.proxies = {}
         self.hsot=self.gethost()
+        # self.hsot='https://hd.hdys2.com'
         self.headers.update({'referer': f"{self.hsot}/"})
         self.session.proxies.update(self.proxies)
         self.session.headers.update(self.headers)
@@ -132,7 +138,7 @@ class Spider(Spider):
             'v': '1',
         }
         self.headers.update({'referer': 'https://a.hdys.top/'})
-        response = self.session.get('https://a.hdys.top/assets/js/config.js',proxies=self.proxies,params=params,headers=self.headers)
+        response = self.session.get('https://a.hdys.top/assets/js/config.js',proxies=self.proxies, params=params, headers=self.headers)
         return self.host_late(response.text.split(';')[:-4])
 
     def getlist(self,data):
@@ -143,8 +149,7 @@ class Spider(Spider):
                 'vod_name': i('img').attr('alt'),
                 'vod_pic': self.proxy(i('img').attr('data-original')),
                 'vod_year': i('.pic-tag-t').text(),
-                'vod_remarks': i('.pic-tag-b').text(),
-                'style': {"type": "rect", "ratio": 1.33}
+                'vod_remarks': i('.pic-tag-b').text()
             })
         return videos
 
@@ -216,3 +221,21 @@ class Spider(Spider):
     def proxy(self, data, type='img'):
         if data and len(self.proxies):return f"{self.getProxyUrl()}&url={self.e64(data)}&type={type}"
         else:return data
+
+    def e64(self, text):
+        try:
+            text_bytes = text.encode('utf-8')
+            encoded_bytes = b64encode(text_bytes)
+            return encoded_bytes.decode('utf-8')
+        except Exception as e:
+            print(f"Base64编码错误: {str(e)}")
+            return ""
+
+    def d64(self,encoded_text):
+        try:
+            encoded_bytes = encoded_text.encode('utf-8')
+            decoded_bytes = b64decode(encoded_bytes)
+            return decoded_bytes.decode('utf-8')
+        except Exception as e:
+            print(f"Base64解码错误: {str(e)}")
+            return ""
