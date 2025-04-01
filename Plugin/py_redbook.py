@@ -1,8 +1,8 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
 import random
+import string
 import sys
 import time
 from base64 import b64decode
@@ -15,12 +15,9 @@ from base.spider import Spider
 
 class Spider(Spider):
 
-    def getName(self):
-        return "小红书"
-
     def init(self, extend=""):
-        self.did = self.random_str(32)
-        self.token,self.phost = self.gettoken()
+        self.did = self.getdid()
+        self.token,self.phost,self.host = self.gettoken()
         pass
 
     def isVideoFormat(self, url):
@@ -32,14 +29,7 @@ class Spider(Spider):
     def destroy(self):
         pass
 
-    def random_str(self,length=16):
-        hex_chars = '0123456789abcdef'
-        return ''.join(random.choice(hex_chars) for _ in range(length))
-
-    def md5(self, text: str) -> str:
-        h = MD5.new()
-        h.update(text.encode('utf-8'))
-        return h.hexdigest()
+    hs = ['fhoumpjjih', 'dyfcbkggxn', 'rggwiyhqtg', 'bpbbmplfxc']
 
     def homeContent(self, filter):
         data = self.fetch(f'{self.host}/api/video/queryClassifyList?mark=4', headers=self.headers()).json()['encData']
@@ -62,7 +52,7 @@ class Spider(Spider):
         vdata=self.aes(data)
         for k in vdata['data']:
             videos.append({"vod_id": k['videoId'], 'vod_name': k.get('title'), 'vod_pic': self.getProxyUrl() + '&url=' + k['coverImg'],
-                           'vod_remarks': self.dtim(k.get('playTime'))})
+                           'vod_remarks': self.dtim(k.get('playTime')),'style': {"type": "rect", "ratio": 1.33}})
         result["list"] = videos
         result["page"] = pg
         result["pagecount"] = 9999
@@ -92,6 +82,11 @@ class Spider(Spider):
     def localProxy(self, param):
         return self.action(param)
 
+    def md5(self, text):
+        h = MD5.new()
+        h.update(text.encode('utf-8'))
+        return h.hexdigest()
+
     def aes(self, word):
         key = b64decode("SmhiR2NpT2lKSVV6STFOaQ==")
         iv = key
@@ -117,27 +112,42 @@ class Spider(Spider):
                 return f"{formatted_minutes}:{formatted_seconds}"
         except:
             return ''
-        
+
+    def getdid(self):
+        did = self.getCache('did')
+        if not did:
+            t = str(int(time.time()))
+            did = self.md5(t)
+            self.setCache('did', did)
+        return did
+
     def getsign(self):
         t=str(int(time.time() * 1000))
-        return self.md5(t[3:8])
+        return self.md5(t[3:8]),t
         
-    def gettoken(self):
-        url = f'{self.host}/api/user/traveler'
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/xhs/ver=1.2.6',
-            'deviceid': self.did, 't': str(int(time.time() * 1000)), 's': self.getsign(), }
-        data = {'deviceId': self.did, 'tt': 'U', 'code': '', 'chCode': 'dafe13'}
-        data1 = self.post(url, json=data, headers=headers).json()
-        data2 = data1['data']
-        return data2['token'], data2['imgDomain']
-
-    host = 'https://jhfkdnov21vfd.fhoumpjjih.work'
+    def gettoken(self, i=0, max_attempts=10):
+        if i >= len(self.hs) or i >= max_attempts:
+            return ''
+        current_domain = f"https://{''.join(random.choices(string.ascii_lowercase + string.digits, k=random.randint(5, 10)))}.{self.hs[i]}.work"
+        try:
+            sign,t=self.getsign()
+            url = f'{current_domain}/api/user/traveler'
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/xhs/ver=1.2.6',
+                'deviceid': self.did, 't': t, 's': sign, }
+            data = {'deviceId': self.did, 'tt': 'U', 'code': '', 'chCode': 'dafe13'}
+            data1 = self.post(url, json=data, headers=headers)
+            data1.raise_for_status()
+            data2 = data1.json()['data']
+            return data2['token'], data2['imgDomain'],current_domain
+        except:
+            return self.gettoken(i+1, max_attempts)
 
     def headers(self):
+        sign,t=self.getsign()
         henda = {
             'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/xhs/ver=1.2.6',
-            'deviceid': self.did, 't': str(int(time.time() * 1000)), 's': self.getsign(), 'aut': self.token}
+            'deviceid': self.did, 't': t, 's': sign, 'aut': self.token}
         return henda
 
     def action(self, param):
