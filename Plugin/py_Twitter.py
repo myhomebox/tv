@@ -1,7 +1,8 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
+import random
+import string
 import sys
 import time
 from base64 import b64decode
@@ -15,12 +16,9 @@ from base.spider import Spider
 
 class Spider(Spider):
 
-    def getName(self):
-        return "tuit"
-
     def init(self, extend=""):
-        self.did = MD5.new((self.t).encode()).hexdigest()
-        self.token = self.gettoken()
+        self.did = self.getdid()
+        self.token,self.phost,self.host = self.gettoken()
         pass
 
     def isVideoFormat(self, url):
@@ -35,48 +33,9 @@ class Spider(Spider):
     def destroy(self):
         pass
 
-    def aes(self, word):
-        key = b64decode("SmhiR2NpT2lKSVV6STFOaQ==")
-        iv = key
-        cipher = AES.new(key, AES.MODE_CBC, iv)
-        decrypted = unpad(cipher.decrypt(b64decode(word)), AES.block_size)
-        return json.loads(decrypted.decode('utf-8'))
+    hs=['wcyfhknomg','pdcqllfomw','alxhzjvean','bqeaaxzplt','hfbtpixjso']
 
-    def dtim(self, seconds):
-        seconds = int(seconds)
-        hours = seconds // 3600
-        remaining_seconds = seconds % 3600
-        minutes = remaining_seconds // 60
-        remaining_seconds = remaining_seconds % 60
-
-        formatted_minutes = str(minutes).zfill(2)
-        formatted_seconds = str(remaining_seconds).zfill(2)
-
-        if hours > 0:
-            formatted_hours = str(hours).zfill(2)
-            return f"{formatted_hours}:{formatted_minutes}:{formatted_seconds}"
-        else:
-            return f"{formatted_minutes}:{formatted_seconds}"
-
-    def gettoken(self):
-        url = 'https://d1frehx187fm2c.cloudfront.net/api/user/traveler'
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.3.4',
-            'deviceid': self.did, 't': self.t, 's': self.sign, }
-        data = {'deviceId': self.did, 'tt': 'U', 'code': '', 'chCode': ''}
-        data1 = self.post(url, json=data, headers=headers).json()
-        token = data1['data']['token']
-        return token
-
-    t = str(int(time.time() * 1000))
-    sign = MD5.new((t[3:8]).encode()).hexdigest()
-    host = 'https://api.wcyfhknomg.work'
-
-    def headers(self):
-        henda = {
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.3.4',
-            'deviceid': self.did, 't': self.t, 's': self.sign, 'aut': self.token}
-        return henda
+    ua='Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.4.4'
 
     def homeContent(self, filter):
         data = self.fetch(f'{self.host}/api/video/classifyList', headers=self.headers()).json()['encData']
@@ -130,11 +89,10 @@ class Spider(Spider):
         result = {}
         videos = []
         for k in data1:
-            img = 'https://dg2ordyr4k5v3.cloudfront.net/' + k.get('coverImg')[0]
             id = f'{k.get("videoId")}?{k.get("userId")}?{k.get("nickName")}'
             if 'click' in tid:
                 id = id + 'click'
-            videos.append({"vod_id": id, 'vod_name': k.get('title'), 'vod_pic': self.getProxyUrl() + '&url=' + img,
+            videos.append({"vod_id": id, 'vod_name': k.get('title'), 'vod_pic': self.getProxyUrl() + f"&url={k.get('coverImg')[0]}",
                            'vod_remarks': self.dtim(k.get('playTime')),'style': {"type": "rect", "ratio": 1.33}})
         result["list"] = videos
         result["page"] = pg
@@ -162,9 +120,8 @@ class Spider(Spider):
         result = {}
         videos = []
         for k in data1:
-            img = 'https://dg2ordyr4k5v3.cloudfront.net/' + k.get('coverImg')[0]
             id = f'{k.get("videoId")}?{k.get("userId")}?{k.get("nickName")}'
-            videos.append({"vod_id": id, 'vod_name': k.get('title'), 'vod_pic': self.getProxyUrl() + '&url=' + img,
+            videos.append({"vod_id": id, 'vod_name': k.get('title'), 'vod_pic': self.getProxyUrl() + f"&url={k.get('coverImg')[0]}",
                            'vod_remarks': self.dtim(k.get('playTime')), 'style': {"type": "rect", "ratio": 1.33}})
         result["list"] = videos
         result["page"] = pg
@@ -174,20 +131,92 @@ class Spider(Spider):
         return result
 
     def playerContent(self, flag, id, vipFlags):
-        result = {"parse": 0, "url": id, "header": {'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.3.4'}}
-        return result
+        return {"parse": 0, "url": id, "header": {'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.4.4'}}
 
     def localProxy(self, param):
         return self.imgs(param)
 
+    def getsign(self):
+        t = str(int(time.time() * 1000))
+        sign = self.md5(t)
+        return sign, t
+
+    def headers(self):
+        sign, t = self.getsign()
+        return {'User-Agent': self.ua,'deviceid': self.did, 't': t, 's': sign, 'aut': self.token}
+
+    def aes(self, word):
+        key = b64decode("SmhiR2NpT2lKSVV6STFOaQ==")
+        iv = key
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        decrypted = unpad(cipher.decrypt(b64decode(word)), AES.block_size)
+        return json.loads(decrypted.decode('utf-8'))
+
+    def dtim(self, seconds):
+        try:
+            seconds = int(seconds)
+            hours = seconds // 3600
+            remaining_seconds = seconds % 3600
+            minutes = remaining_seconds // 60
+            remaining_seconds = remaining_seconds % 60
+
+            formatted_minutes = str(minutes).zfill(2)
+            formatted_seconds = str(remaining_seconds).zfill(2)
+
+            if hours > 0:
+                formatted_hours = str(hours).zfill(2)
+                return f"{formatted_hours}:{formatted_minutes}:{formatted_seconds}"
+            else:
+                return f"{formatted_minutes}:{formatted_seconds}"
+        except:
+            return "666"
+
+    def gettoken(self, i=0, max_attempts=10):
+        if i >= len(self.hs) or i >= max_attempts:
+            return ''
+        current_domain = f"https://{''.join(random.choices(string.ascii_lowercase + string.digits, k=random.randint(5, 10)))}.{self.hs[i]}.work"
+        try:
+            url = f'{current_domain}/api/user/traveler'
+            sign, t = self.getsign()
+            headers = {
+                'User-Agent': self.ua,
+                'Accept': 'application/json',
+                'deviceid': self.did,
+                't': t,
+                's': sign,
+            }
+            data = {
+                'deviceId': self.did,
+                'tt': 'U',
+                'code': '##X-4m6Goo4zzPi1hF##',
+                'chCode': 'tt09'
+            }
+            response = self.post(url, json=data, headers=headers)
+            response.raise_for_status()
+            data1 = response.json()['data']
+            return data1['token'], data1['imgDomain'], current_domain
+        except Exception as e:
+            return self.gettoken(i + 1, max_attempts)
+
+    def getdid(self):
+        did = self.getCache('did')
+        if not did:
+            t = str(int(time.time()))
+            did = self.md5(t)
+            self.setCache('did', did)
+        return did
+
+    def md5(self, text):
+        h = MD5.new()
+        h.update(text.encode('utf-8'))
+        return h.hexdigest()
+
     def imgs(self, param):
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.3.4'}
+        headers = {'User-Agent': self.ua}
         url = param['url']
-        type = url.split('.')[-1].split('_')[0]
-        data = self.fetch(url,headers=headers).content
-        bdata = self.img(data, 100, '2020-zq3-888')
-        return [200, f'image/{type}', bdata]
+        data = self.fetch(f"{self.phost}{url}",headers=headers)
+        bdata = self.img(data.content, 100, '2020-zq3-888')
+        return [200, data.headers.get('Content-Type'), bdata]
 
     def img(self, data: bytes, length: int, key: str):
         GIF = b'\x47\x49\x46'
