@@ -131,7 +131,7 @@ class Spider(Spider):
         return result
 
     def playerContent(self, flag, id, vipFlags):
-        return {"parse": 0, "url": id, "header": {'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;SuiRui/twitter/ver=1.4.4'}}
+        return {"parse": 0, "url": id, "header": self.headers()}
 
     def localProxy(self, param):
         return self.imgs(param)
