@@ -4,148 +4,246 @@ import re
 import sys
 import requests
 from pyquery import PyQuery as pq
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-
 sys.path.append('..')
 from base.spider import Spider
 
 class Spider(Spider):
-    name = "香蕉資源"
-    base_url = "https://25kkuu.vip/xjzy"
-    version = "2024.07.15"
-
     def init(self, extend=""):
         self.session = requests.Session()
-        self.retries = Retry(total=3, backoff_factor=1, 
-                           status_forcelist=[500, 502, 503, 504])
-        self.session.mount('https://', HTTPAdapter(max_retries=self.retries))
-        
+        self.default_host = "https://25kkuu.vip/xjzy"
+        self.host = self.default_host
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
-            'Referer': self.base_url + '/',
-            'X-Requested-With': 'XMLHttpRequest'
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 15; PJX110 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.40 Mobile Safari/537.36',
+            'accept-language': 'zh-CN,zh;q=0.9',
         }
 
-        try:
-            if extend:
-                extend_data = json.loads(extend)
-                self.base_url = extend_data.get('host', self.base_url).rstrip('/')
-                self.session.proxies = extend_data.get('proxies', {})
-        except Exception as e:
-            print(f"擴展參數解析失敗: {e}")
+        retries = Retry(total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
+        self.session.mount('http://', HTTPAdapter(max_retries=retries))
+        self.session.mount('https://', HTTPAdapter(max_retries=retries))
 
-    # ----------- 關鍵修覆部分 -----------
-    def categoryContent(self, tid, pg, filter, extend):
         try:
-            # 修正分類頁URL模式
-            url = f"{self.base_url}/vod/show/{tid}/--------{pg}---.html"
-            print(f"分類頁URL: {url}")  # 調試日志
-            html = self._fetchUrl(url)
-            doc = pq(html)
+            extend_data = json.loads(extend)
+            if 'host' in extend_data:
+                self.host = extend_data['host'].rstrip('/')
+            self.proxies = extend_data.get('proxies', {})
+        except:
+            self.proxies = {}
+            print("未提供外部域名，使用默认域名")
+
+        self.host = self.detect_host(self.host)
+        self.headers.update({'referer': f"{self.host}/"})
+        self.session.headers.update(self.headers)
+        self.session.proxies.update(self.proxies)
+
+        self.pheader = {
+            'User-Agent': self.headers['User-Agent'],
+            'Referer': f"{self.host}/",
+            'Origin': self.host,
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'accept-language': 'zh-CN,zh;q=0.9',
+        }
+
+    def detect_host(self, host):
+        try:
+            response = self.session.get(host, allow_redirects=False, timeout=10)
+            if response.status_code in [301, 302]:
+                new_location = response.headers.get('Location', '')
+                if new_location:
+                    parsed = urlparse(new_location)
+                    new_host = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rstrip('/')}"
+                    print(f"域名重定向: {host} -> {new_host}")
+                    return new_host
+            return host
+        except Exception as e:
+            print(f"域名检测失败: {host}, 错误: {str(e)}")
+            return host
+
+    def getName(self):
+        return "香蕉资源"
+
+    def isVideoFormat(self, url):
+        return '.m3u8' in url or '.mp4' in url
+
+    def homeContent(self, filter):
+        response = self.session.get(self.host)
+        data = self.getpq(response)
+        print(f"Home HTML snippet: {response.text[:500]}")  # 打印前500字符检查 HTML
+        result = {}
+        class_map = {
+            "解说原片": "cn-jieshuoyuanpian",
+            "3D同人": "cn-3Dtongren",
+            "中文无码": "cn-zhongwenwuma",
+            "中文综合": "cn-zhongwenzonghe",
+            "中文近亲": "cn-zhongwenjingqing",
+            "中文护士": "cn-zhongwenhushi",
+            "中文师生": "cn-zhongwenshisheng",
+            "中文强奸": "cn-zhongwenqiangjian",
+            "明星淫梦": "cn-mingxingyinmeng",
+            "国产自拍": "cn-guochanzipai",
+            "三级伦理": "cn-sanjizonghe"
+        }
+        result['class'] = [{"type_name": k, "type_id": v} for k, v in class_map.items()]
+        ldata = data('.list-videos .item')
+        result['list'] = self.getlist(ldata)
+        print(f"Home list: {result['list']}")
+        return result
+
+    def homeVideoContent(self):
+        return {'list': ''}
+
+    def categoryContent(self, tid, pg, filter, extend):
+        url = f"https://25kkuu.vip/xjzy/{tid}-{pg}.html"
+        data = self.getpq(self.session.get(url))
+        result = {
+            'list': self.getlist(data('.list-videos .item')),
+            'page': int(pg),
+            'pagecount': 9999,
+            'limit': 20,
+            'total': 999999
+        }
+        print(f"Category list: {result['list']}")
+        return result
+
+    def detailContent(self, ids):
+        vod_id = ids[0]
+        url = f"https://25kkuu.vip/xjzy/xplay{vod_id}.html"
+        response = self.session.get(url)
+        data = self.getpq(response)
+        print(f"Detail HTML snippet: {response.text[:500]}")  # 打印前500字符检查 HTML
+        title = data('strong.title').text().strip() or self.extract(data, 'title="', '"')
+        cover = (data('.img img').attr('data-original') or 
+                 data('img[data-original]').attr('data-original') or 
+                 data('img').attr('data-original') or 
+                 self.extract(response.text, 'data-original="', '"'))
+        print(f"Raw cover extracted: {cover}")
+        if cover and not cover.startswith('http'):
+            cover = f"https:{cover}"
+        
+        vod = {
+            'vod_id': vod_id,
+            'vod_name': title,
+            'vod_pic': cover if cover else '',
+            'vod_actor': '',
+            'vod_play_from': '香蕉资源',
+            'vod_play_url': f"播放源1${url}"
+        }
+        print(f"Detail: {vod}")
+        return {'list': [vod]}
+
+    def searchContent(self, key, quick, pg="1"):
+        url = f"https://25kkuu.vip/xjzy/vod/search/page/{pg}/wd/{key}.html"
+        data = self.getpq(self.session.get(url))
+        result = {
+            'list': self.getlist(data('.list-videos .item')),
+            'page': pg
+        }
+        print(f"Search list: {result['list']}")
+        return result
+
+    def playerContent(self, flag, id, vipFlags):
+        url = id if id.startswith('http') else f"https://25kkuu.vip/xjzy/xplay{id}.html"
+        print(f"Fetching player URL: {url}")
+        try:
+            response = self.session.get(url)
+            data = self.getpq(response)
+            print(f"Player HTML snippet: {response.text[:500]}")  # 打印前500字符检查 HTML
+            scripts = data('script')
+            m3u8_url = None
+            for script in scripts.items():
+                script_text = script.text()
+                if 'player_aaaa' in script_text:
+                    print(f"Found player script: {script_text}")
+                    match = re.search(r'"url":"(https?://[^"]+)"', script_text)
+                    if match:
+                        m3u8_url = match.group(1).replace('\\', '')
+                        print(f"Extracted m3u8: {m3u8_url}")
+                        break
+            
+            if not m3u8_url:
+                print("未找到 player_aaaa 中的 URL，尝试嗅探")
+                m3u8_url = self.sniff_url(url)
+                print(f"Sniffed URL: {m3u8_url}")
+            
+            if not m3u8_url:
+                print("未找到 m3u8 链接，返回播放页面 URL")
+                return {'parse': 1, 'url': url, 'header': self.pheader}
+
+            # 测试 m3u8 链接
+            response = requests.get(m3u8_url, headers=self.pheader, timeout=15)
+            print(f"m3u8 response: {response.status_code}, content: {response.text[:200]}")
+            if response.status_code != 200:
+                print(f"m3u8 请求失败，返回播放页面 URL")
+                return {'parse': 1, 'url': url, 'header': self.pheader}
+
             return {
-                'list': self._parseVideoList(doc('.list-videos .item')),
-                'page': int(pg),
-                'pagecount': 9999,
-                'limit': 30,
-                'total': 999999
+                'parse': 0,
+                'url': m3u8_url,
+                'header': self.pheader
             }
         except Exception as e:
-            print(f"分類頁異常 [{tid}-{pg}]: {str(e)}")
-            return {'list': []}
+            print(f"playerContent 错误: {str(e)}")
+            return {'parse': 1, 'url': url, 'header': self.pheader}
 
-    def _parseVideoList(self, items):
+    def sniff_url(self, url):
+        try:
+            response = self.session.get(url)
+            text = response.text
+            match = re.search(r'https?://[^"\']+\.m3u8', text)
+            if match:
+                return match.group(0)
+            return None
+        except Exception as e:
+            print(f"Sniff error: {str(e)}")
+            return None
+
+    def getlist(self, data):
         videos = []
-        for item in items.items():
-            try:
-                href = item('a').attr('href')
-                print(f"原始href: {href}")  # 調試日志
-                
-                # 增強ID提取
-                vid = None
-                patterns = [
-                    r'xplay(\d+)\.html',
-                    r'-(\d+)\.html',
-                    r'/video/(\d+)/'
-                ]
-                for pattern in patterns:
-                    if match := re.search(pattern, href):
-                        vid = match.group(1)
-                        break
-                
-                if not vid:
-                    print(f"無法解析視頻ID: {href}")
-                    continue
-                
-                # 封面處理
-                img = item('img')
-                cover = self._normalizeUrl(
-                    img.attr('data-src') or 
-                    img.attr('src') or 
-                    img.attr('data-original')
-                )
-                
-                videos.append({
-                    'vod_id': vid,
-                    'vod_name': item('.title').text().strip(),
-                    'vod_pic': cover,
-                    'vod_remarks': item('.duration').text()
-                })
-            except Exception as e:
-                print(f"列表項解析失敗: {str(e)}")
+        for item in data.items():
+            vod_id = self.extract(item, 'href="/xjzy/xplay', '.html')
+            if not vod_id:
+                continue
+            title = item('strong.title').text().strip() or self.extract(item, 'title="', '"')
+            cover = (item('.img img').attr('data-original') or 
+                     item('img[data-original]').attr('data-original') or 
+                     item('img').attr('data-original') or 
+                     self.extract(item.html(), 'data-original="', '"'))
+            remarks = self.extract(item, '<div class="duration">', '</div>')
+            print(f"Raw cover extracted in getlist: {cover}")
+            if cover and not cover.startswith('http'):
+                cover = f"https:{cover}"
+            video = {
+                'vod_id': vod_id,
+                'vod_name': title,
+                'vod_pic': cover if cover else '',
+                'vod_remarks': remarks or '',
+                'style': {"type": "rect", "ratio": 1.33}
+            }
+            videos.append(video)
         return videos
 
-    def _parsePlayerUrl(self, html):
-        """增強版播放地址解析"""
-        # 模式1：JSON數據塊
-        if match := re.search(r'var playerData = ({.*?});', html, re.DOTALL):
-            try:
-                data = json.loads(match.group(1))
-                return data.get('url', '')
-            except json.JSONDecodeError:
-                pass
-        
-        # 模式2：iframe嵌套
-        if iframe_src := re.search(r'<iframe[^>]+src="(https?://[^"]+)"', html):
-            print(f"發現iframe: {iframe_src.group(1)}")
-            iframe_html = self._fetchUrl(iframe_src.group(1))
-            return self._parsePlayerUrl(iframe_html)  # 遞歸解析
-        
-        # 模式3：標準m3u8匹配
-        if m3u8 := re.search(r'(https?://[^\s"\'<>]+?\.m3u8)', html):
-            return m3u8.group(0)
-        
-        return ''
-
-    # ----------------------------------
-    # 其余保持原有代碼結構（homeContent/detailContent等）
-    # ...
-
-    def _fetchUrl(self, url, retry=2):
-        """帶調試的請求方法"""
-        print(f"🌀 請求: {url}")
+    def extract(self, data, start, end):
         try:
-            resp = self.session.get(url, headers=self.headers, timeout=15)
-            print(f"響應狀態: {resp.status_code}")
-            resp.raise_for_status()
-            return resp.text
-        except Exception as e:
-            print(f"❌ 請求失敗 [{url}]: {str(e)}")
-            if retry > 0:
-                return self._fetchUrl(url, retry-1)
-            return ""
+            text = data.html() if hasattr(data, 'html') else str(data)
+            s = text.find(start)
+            if s == -1:
+                return ''
+            s += len(start)
+            e = text.find(end, s)
+            if e == -1:
+                return ''
+            return text[s:e].strip()
+        except:
+            return ''
 
-if __name__ == '__main__':
-    # 本地測試代碼
-    spider = Spider()
-    spider.init()
-    
-    # 測試首頁
-    print("測試首頁:", spider.homeContent({}))
-    
-    # 測試分類頁
-    print("測試分類:", spider.categoryContent("cn-jieshuoyuanpian", 1, {}, {}))
-    
-    # 測試詳情頁
-    print("測試詳情:", spider.detailContent(["123"]))  # 替換實際ID
+    def getpq(self, data):
+        try:
+            return pq(data.text)
+        except:
+            return pq(data.text.encode('utf-8'))
+
+    def destroy(self):
+        pass
