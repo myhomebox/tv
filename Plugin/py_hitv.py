@@ -1,8 +1,6 @@
-# coding=utf-8
-# !/usr/bin/python
-# 嗷呜
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import sys
-
 sys.path.append('..')
 from base.spider import Spider
 import requests
@@ -115,7 +113,7 @@ class Spider(Spider):
             'vod_area': data1['area'],
             'vod_director': data1['main_actor'],
             'vod_content': data1['video_desc'],
-            'vod_play_from': 'Hi视频',
+            'vod_play_from': '嗷呜在线',
             'vod_play_url': '#'.join(urls),
         }
         result = {
