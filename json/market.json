@@ -6,7 +6,7 @@
                 "name": "電視",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/leanback-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.9.1"
+                "version": "2.9.2"
             },
             {
                 "name": "電視 Pro",
@@ -48,7 +48,7 @@
                 "name": "手機",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "2.9.1"
+                "version": "2.9.2"
             },
             {
                 "name": "手機 Pro",
