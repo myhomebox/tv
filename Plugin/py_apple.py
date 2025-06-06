@@ -110,15 +110,15 @@ class Spider(Spider):
     def playerContent(self, flag, id, vipFlags):
         header = {
             'user_id': 'XPGBOX',
-            'token2': 'SnAXiSW8vScXE0Z9aDOnK5xffbO75w1+uPom3WjnYfVEA1oWtUdi2Ihy1N8=',
+            'token2': 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
             'version': 'XPGBOX com.phoenix.tv1.5.7',
-            'hash': 'd78a',
-            'screenx': '2345',
+            'hash': 'fc0b',
+            'screenx': '1280',
             'user-agent': 'Lavf/58.12.100',
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
-            'token': 'ElEDlwCVgXcFHFhddiq2JKteHofExRBUrfNlmHrWetU3VVkxnzJAodl52N9EUFS+Dig2A/fBa/V9RuoOZRBjYvI+GW8kx3+xMlRecaZuECdb/3AdGkYpkjW3wCnpMQxf8vVeCz5zQLDr8l8bUChJiLLJLGsI+yiNskiJTZz9HiGBZhZuWh1mV1QgYah5CLTbSz8=',
-            'timestamp': '1743060300',
-            'screeny': '1065',
+            'token': 'RXQbgQKl3QkFZkIPGwGvH5kofvCokkkn/a893wC2IId7HQFmy0Eh24osz555X12xGVFxQLTaGuBqU/Y7KU4lStp4UjR7giPxdwoTOsU6R3oc4yZZTQc/yTKh1mH3ckZhx6VsQCEoFf6q',
+            'timestamp': '1749173874',
+            'screeny': '720',
         }
         if 'http' not in id:id=f"http://c.xpgtv.net/m3u8/{id}.m3u8"
         return {"parse": 0, "url": id, "header": header}
