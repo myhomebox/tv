@@ -111,7 +111,7 @@ class Spider(Spider):
         header = {
             'user_id': 'XPGBOX',
             'token2': 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
-            'version': 'XPGBOX com.phoenix.tv1.5.7',
+            'version': 'XPGBOX com.phoenix.tv1.3.3',
             'hash': 'fc0b',
             'screenx': '1280',
             'user-agent': 'Lavf/58.12.100',
