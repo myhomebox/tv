@@ -1,12 +1,1 @@
-Object.assign(muban.mxpro.二级, {
-    tab_text: 'div--small&&Text',
-});
-var rule = {
-    模板: 'mxpro',
-    title: '剧圈圈',
-    host: 'https://www.jqqzx.cc/',
-    url: '/vodshow/id/fyclass/page/fypage.html',
-    searchUrl: '/vodsearch**/page/fypage.html',
-    class_parse: '.navbar-items li:gt(2):lt(8);a&&Text;a&&href;.*/(.*?)\.html',
-    cate_exclude: '今日更新|热榜',
-}
+T2JqZWN0LmFzc2lnbihtdWJhbi5teHByby7kuoznuqcsIHsKICAgIHRhYl90ZXh0OiAnZGl2LS1zbWFsbCYmVGV4dCcsCn0pOwp2YXIgcnVsZSA9IHsKICAgIOaooeadvzogJ214cHJvJywKICAgIHRpdGxlOiAn5Ymn5ZyI5ZyIJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy5qcXF6eC5jYy8nLAogICAgdXJsOiAnL3ZvZHNob3cvaWQvZnljbGFzcy9wYWdlL2Z5cGFnZS5odG1sJywKICAgIHNlYXJjaFVybDogJy92b2RzZWFyY2gqKi9wYWdlL2Z5cGFnZS5odG1sJywKICAgIGNsYXNzX3BhcnNlOiAnLm5hdmJhci1pdGVtcyBsaTpndCgyKTpsdCg4KTthJiZUZXh0O2EmJmhyZWY7LiovKC4qPylcLmh0bWwnLAogICAgY2F0ZV9leGNsdWRlOiAn5LuK5pel5pu05pawfOeDreamnCcsCn0=
