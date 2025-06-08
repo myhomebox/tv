@@ -1,10 +1,9 @@
-# coding=utf-8
-# !/usr/bin/python
+# -*- coding: utf-8 -*-
+# by @嗷呜
 import json
 import sys
 import threading
 import uuid
-from pprint import pprint
 import requests
 sys.path.append('..')
 from base.spider import Spider
@@ -12,26 +11,25 @@ import time
 from Crypto.Hash import MD5, SHA1
 
 class Spider(Spider):
-
+    '''
+    配置示例：
+    {
+        "key": "xxxx",
+        "name": "xxxx",
+        "type": 3,
+        "api": ".所在路径/金牌.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "filterable": 1,
+        "changeable": 1,
+        "ext": {
+            "site": "https://www.jiabaide.cn,域名2,域名3"
+        }
+    },
+    '''
     def init(self, extend=""):
-        '''
-        {
-            "key": "",
-            "name": "",
-            "type": 3,
-            "api": "",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "site": "https://www.jiabaide.cn,https://www.tjrongze.com,https://cqzuoer.com"
-            }
-        },
-        fm写法
-        '''
         if extend:
             hosts=json.loads(extend)['site']
-        # hosts = "https://www.jiabaide.cn,https://www.tjrongze.com,https://cqzuoer.com"
         self.host = self.host_late(hosts)
         pass
 
@@ -123,7 +121,7 @@ class Spider(Spider):
     def detailContent(self, ids):
         data=self.fetch(f"{self.host}/api/mw-movie/anonymous/video/detail?id={ids[0]}",headers=self.getheaders({'id':ids[0]})).json()
         vod=self.getvod([data['data']])[0]
-        vod['vod_play_from']='金牌播放器'
+        vod['vod_play_from']='金牌'
         vod['vod_play_url'] = '#'.join(
             f"{i['name'] if len(vod['episodelist']) > 1 else vod['vod_name']}${ids[0]}@@{i['nid']}" for i in
             vod['episodelist'])
@@ -224,3 +222,4 @@ class Spider(Spider):
 
     def getvod(self, array):
         return [{self.convert_field_name(k): v for k, v in item.items()} for item in array]
+
