@@ -20,9 +20,9 @@ var rule = {
 		3:{cateId:'3'},
 		4:{cateId:'4'}
 	},
-	class_name:'電影&電視劇&綜藝&動漫', 
-	class_url:'1&2&3&4',
-	//class_parse: '.navbar-items&&li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
+	//class_name:'電影&電視劇&綜藝&動漫', 
+	//class_url:'1&2&3&4',
+	class_parse: '.navbar-items&&li:gt(1):lt(8);a&&title;a&&href;.*/(.*?).html',
 	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
