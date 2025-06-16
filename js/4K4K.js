@@ -1,9 +1,5 @@
-muban.mxpro.二级.title = 'h1&&Text;.module-info-tag-link:eq(2)&&Text';
-muban.mxpro.二级.desc = '.module-info-item:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text';
-muban.mxpro.二级.tab_text = 'body--small&&Text';
 var rule = {
-	title:'4K剧院', //原91free
-	模板:'mxpro',
+	title:'4K剧院', 
 	host:'https://4k4k.live',
 	url:'/vodshow/fyfilter.html',
 	filterable:1,//是否启用分类筛选,
@@ -39,9 +35,18 @@ var rule = {
 			input
 		}
 	`,
+	limit: 6,
 	推荐: '*',
 	double: false, // 推荐内容是否双层定位
-
+       一级:'module-list:eq(0).module-item;a&&title;.lazyload&&data-src;.module-item-text&&Text;a&&href',
+       二级: {
+                "title":"h1&&Text;.module-info-tag-link:eq(2)&&Text",
+                "img":".lazyload&&data-original",
+                "desc":".module-info-item:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text",
+                "content":".module-info-introduction&&Text",
+                "tabs":".module-tab-content",
+                "lists":".module-play-list:eq(#id) a"
+            },
 	// searchUrl:'/vodsearch/**----------fypage---.html',
 	searchUrl:'/index.php/ajax/suggest?mid=1&wd=**&limit=50',
 	detailUrl:'/voddetail/fyid.html', //非必填,二级详情拼接链接
