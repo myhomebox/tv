@@ -36,7 +36,7 @@ var rule = {
 		}
 	`,
 	limit: 6,
-	推荐: '.module-list:eq(0).module-item;a&&title;.lazyload&&data-src;.module-item-text&&Text;a&&href',
+	推荐: '*',
 	double: false, // 推荐内容是否双层定位
        一级:'.module-list:eq(0).module-item;a&&title;.lazyload&&data-src;.module-item-text&&Text;a&&href',
        二级: {
