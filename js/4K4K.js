@@ -5,7 +5,7 @@ var rule = {
 	title:'4K剧院',
 	模板:'mxpro',
 	host:'https://4k4k.live',
-	url:'/vodshow/fyfilter.html',
+	url:'/vodshow/fyclassfyfilter',
 	filterable:1,//是否启用分类筛选,
 	filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by or "time"}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
 	filter: {
@@ -20,9 +20,9 @@ var rule = {
 		3:{cateId:'3'},
 		4:{cateId:'4'}
 	},
-	//class_name:'電影&電視劇&綜藝&動漫', 
-	//class_url:'1&2&3&4',
-	class_parse: '.navbar-items&&li:gt(1):lt(8);a&&title;a&&href;.*/(.*?).html',
+	class_name:'電影&電視劇&綜藝&動漫', 
+	class_url:'1&2&3&4',
+	//class_parse: '.navbar-items&&li:gt(1):lt(8);a&&title;a&&href;.*/(.*?).html',
 	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
