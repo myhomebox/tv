@@ -40,7 +40,7 @@ var rule = {
 	limit: 6,
 	推荐: '*',
 	double: false, // 推荐内容是否双层定位
-        一级:'body .module-list .module-item;a&&title;.lazyload&&data-src;.module-item-note&&Text;a&&href',
+        一级:'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
         二级: {
                 "title":"h1&&Text;.module-info-tag-link:eq(2)&&Text",
                 "img":".lazyload&&data-original",
