@@ -16,7 +16,7 @@ var rule = {
 		3:{cateId:'3'},
 		4:{cateId:'4'}
 	},
-	headers: {'User-Agent': 'Dart/2.14 (dart:io)'},
+	headers: {'User-Agent': 'PC_UA'},
 	class_name:'电影&电视剧&综艺&动漫', 
 	class_url:'1&2&3&4',
 	play_parse: true,
