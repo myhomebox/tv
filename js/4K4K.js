@@ -44,7 +44,7 @@ var rule = {
         一级:'body a.module-poster-item.module-item;a&&title;.lazyloaded&&data-src;.module-item-text&&Text;a&&href',
         二级: {
                 "title":"h1&&Text;.module-info-tag-link:eq(2)&&Text",
-                "img":".lazyload&&data-original",
+                "img":".lazyloaded&&data-src",
                 "desc":".module-info-item:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text",
                 "content":".module-info-introduction&&Text",
                 "tabs":".module-tab-item",
