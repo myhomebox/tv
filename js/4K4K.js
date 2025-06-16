@@ -1,9 +1,8 @@
 muban.mxpro.二级.title = 'h1&&Text;.module-info-tag-link:eq(2)&&Text';
 muban.mxpro.二级.desc = '.module-info-item:eq(4)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text';
-muban.mxpro.二级.tabs = '.module-tab-item.tab-item';
-//muban.mxpro.二级.tab_text = 'body--small&&Text';
+muban.mxpro.二级.tab_text = 'body--small&&Text';
 var rule = {
-	title:'4K剧院', //原91free
+	title:'4K剧院',
 	模板:'mxpro',
 	host:'https://4k4k.live',
 	url:'/vodshow/fyfilter.html',
@@ -21,7 +20,9 @@ var rule = {
 		3:{cateId:'3'},
 		4:{cateId:'4'}
 	},
-	class_parse: '.navbar-items&&li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
+	class_name:'電影&電視劇&綜藝&動漫', 
+	class_url:'1&2&3&4',
+	//class_parse: '.navbar-items&&li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
 	lazy:`js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
