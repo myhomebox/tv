@@ -161,20 +161,17 @@ class Spider(Spider):
         except:
             pass
 
-    def categoryContent(self, tid, pg, filter, extend):
+    def categoryContent(self, cid, pg, filter, ext):
         result = {}
-        if pg:
-            page = int(pg)
-        else:
-            page = 1
-        page = int(pg)
         videos = []
+        if not pg:
+            page = 1
 
         if page == '1':
-            url = f'{xurl}/{tid}/'
+            url = f'{xurl}/{cid}/'
 
         else:
-            url = f'{xurl}/{tid}/{str(page)}/'
+            url = f'{xurl}/{cid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
@@ -244,7 +241,7 @@ class Spider(Spider):
             "vod_actor": yanuan,
             "vod_director": '',
             "vod_content": content,
-            "vod_play_from": '线路一',
+            "vod_play_from": 'FullHD',
             "vod_play_url": bofang
                      })
 
@@ -310,7 +307,7 @@ class Spider(Spider):
                     id = ids[0]['href']
 
                     pics = vod.find('img', class_="thumb")
-                    pic = pics['data-src']
+                    pic == pics['data-src'] or pics['src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
