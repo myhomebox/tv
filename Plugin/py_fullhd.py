@@ -129,7 +129,7 @@ class Spider(Spider):
                     id = ids[0]['href']
 
                     pics = vod.find('img', class_="thumb")
-                    pic = pics['data-src','src']
+                    pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -185,7 +185,7 @@ class Spider(Spider):
                     id = ids[0]['href']
 
                     pics = vod.find('img', class_="thumb")
-                    pic = pics['data-src','src']
+                    pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -233,7 +233,7 @@ class Spider(Spider):
             "vod_actor": yanuan,
             "vod_director": '',
             "vod_content": content,
-            "vod_play_from": 'FullHD',
+            "vod_play_from": '线路一',
             "vod_play_url": bofang
                      })
 
@@ -299,7 +299,7 @@ class Spider(Spider):
                     id = ids[0]['href']
 
                     pics = vod.find('img', class_="thumb")
-                    pic = pics['data-src','src']
+                    pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
