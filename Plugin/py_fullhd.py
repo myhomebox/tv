@@ -161,7 +161,7 @@ class Spider(Spider):
         except:
             pass
 
-    def categoryContent(self, tid, pg, filter, ext):
+    def categoryContent(self, tid, pg, filter, extend):
         result = {}
         if pg:
             page = int(pg)
@@ -174,7 +174,7 @@ class Spider(Spider):
             url = f'{xurl}/{tid}/'
 
         else:
-            url = f'{xurl}//{tid}/{str(page)}/'
+            url = f'{xurl}/{tid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
