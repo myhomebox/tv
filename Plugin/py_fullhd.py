@@ -1,10 +1,3 @@
-"""
-
-作者 乐哥 🚓 内容均从互联网收集而来 仅供交流学习使用 版权归原创者所有 如侵犯了您的权益 请通知作者 将及时删除侵权内容
-                    ====================lege====================
-
-"""
-
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -135,8 +128,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="lazyload")
-                    pic = pics['data-src']
+                    pics = vod.find('img', class_="thumb")
+                    pic = pics['data-src','src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -191,8 +184,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="lazyload")
-                    pic = pics['data-src']
+                    pics = vod.find('img', class_="thumb")
+                    pic = pics['data-src','src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -229,7 +222,7 @@ class Spider(Spider):
         res1.encoding = "utf-8"
         res = res1.text
 
-        content = '资源来源于网络🚓侵权请联系删除👉' + self.extract_middle_text(res,'<h1>','</h1>', 0)
+        content = self.extract_middle_text(res,'<h1>','</h1>', 0)
 
         yanuan = self.extract_middle_text(res, '<span>Pornstars:</span>','</div>',1, 'href=".*?">(.*?)</a>')
 
@@ -240,7 +233,7 @@ class Spider(Spider):
             "vod_actor": yanuan,
             "vod_director": '',
             "vod_content": content,
-            "vod_play_from": '💗数逼毛💗',
+            "vod_play_from": 'FullHD',
             "vod_play_url": bofang
                      })
 
@@ -305,8 +298,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="lazyload")
-                    pic = pics['data-src']
+                    pics = vod.find('img', class_="thumb")
+                    pic = pics['data-src','src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
