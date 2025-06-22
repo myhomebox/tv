@@ -7,6 +7,7 @@
 
 import requests
 from bs4 import BeautifulSoup
+from lxml import etree
 import re
 from base.spider import Spider
 import sys
@@ -170,7 +171,7 @@ class Spider(Spider):
             url = f'{xurl}/{cid}/'
 
         else:
-            url = f'{xurl}/{cid}/{pg}/'
+            url = f'{xurl}/{cid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
@@ -285,7 +286,7 @@ class Spider(Spider):
             url = f'{xurl}/search/{key}/'
 
         else:
-            url = f'{xurl}/search/{key}/{pg}/'
+            url = f'{xurl}/search/{key}/{str(page)}/'
 
         detail = requests.get(url=url, headers=headerx)
         detail.encoding = "utf-8"
