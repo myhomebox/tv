@@ -1,3 +1,10 @@
+"""
+
+作者 乐哥 🚓 内容均从互联网收集而来 仅供交流学习使用 版权归原创者所有 如侵犯了您的权益 请通知作者 将及时删除侵权内容
+                    ====================lege====================
+
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -15,18 +22,7 @@ sys.path.append('..')
 xurl = "https://www.fullhd.xxx/zh/"
 
 headerx = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
-    'Pragma': 'no-cache',
-    'Cache-Control': 'no-cache',
-    'sec-ch-ua-platform': '"macOS"',
-    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="134", "Google Chrome";v="134"',
-    'DNT': '1',
-    'sec-ch-ua-mobile': '?0',
-    'Origin': '',
-    'Sec-Fetch-Site': 'cross-site',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Dest': 'empty',
-    'Accept-Language': 'zh-CN,zh;q=0.9',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36'
           }
 
 pm = ''
@@ -139,8 +135,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="thumb")
-                    pic == pics['data-src'] or pics['src']
+                    pics = vod.find('img', class_="lazyload")
+                    pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -163,11 +159,18 @@ class Spider(Spider):
 
     def categoryContent(self, cid, pg, filter, ext):
         result = {}
-        videos = []
-        if not pg:
+        if pg:
+            page = int(pg)
+        else:
             page = 1
+        page = int(pg)
+        videos = []
 
-            url = xurl +cid + "/" + str(page)
+        if page == '1':
+            url = f'{xurl}/{cid}/'
+
+        else:
+            url = f'{xurl}/{cid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
@@ -188,8 +191,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="thumb")
-                    pic == pics['data-src'] or pics['src']
+                    pics = vod.find('img', class_="lazyload")
+                    pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -226,7 +229,7 @@ class Spider(Spider):
         res1.encoding = "utf-8"
         res = res1.text
 
-        content = self.extract_middle_text(res,'<h1>','</h1>', 0)
+        content = '资源来源于网络🚓侵权请联系删除👉' + self.extract_middle_text(res,'<h1>','</h1>', 0)
 
         yanuan = self.extract_middle_text(res, '<span>Pornstars:</span>','</div>',1, 'href=".*?">(.*?)</a>')
 
@@ -237,7 +240,7 @@ class Spider(Spider):
             "vod_actor": yanuan,
             "vod_director": '',
             "vod_content": content,
-            "vod_play_from": 'FullHD',
+            "vod_play_from": '💗数逼毛💗',
             "vod_play_url": bofang
                      })
 
@@ -302,8 +305,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="thumb")
-                    pic == pics['data-src'] or pics['src']
+                    pics = vod.find('img', class_="lazyload")
+                    pic = pics['data-src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
