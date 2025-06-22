@@ -167,11 +167,7 @@ class Spider(Spider):
         if not pg:
             page = 1
 
-        if page == '1':
-            url = f'{xurl}/{cid}/'
-
-        else:
-            url = f'{xurl}/{cid}/{str(page)}/'
+            url = xurl +cid + "/" + str(page)
 
         try:
             detail = requests.get(url=url, headers=headerx)
