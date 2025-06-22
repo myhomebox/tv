@@ -163,7 +163,7 @@ class Spider(Spider):
             url = f'{xurl}/{cid}/'
 
         else:
-            url = f'{xurl}/{cid}/{str(page)}/'
+            url = f'{xurl}//{cid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
