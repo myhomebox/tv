@@ -139,8 +139,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="lazyload")
-                    pic = pics['data-src']
+                    pics = vod.find('img', class_="thumb")
+                    pic == pics['data-src'] or pics['src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -174,7 +174,7 @@ class Spider(Spider):
             url = f'{xurl}/{tid}/'
 
         else:
-            url = f'{xurl}/{tid}/{str(page)}/'
+            url = f'{xurl}//{tid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
@@ -195,8 +195,8 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="lazyload")
-                    pic = pics['data-src']
+                    pics = vod.find('img', class_="thumb")
+                    pic == pics['data-src'] or pics['src']
 
                     if 'http' not in pic:
                         pic = xurl + pic
@@ -309,7 +309,7 @@ class Spider(Spider):
                     ids = vod.find_all('a')
                     id = ids[0]['href']
 
-                    pics = vod.find('img', class_="lazyload")
+                    pics = vod.find('img', class_="thumb")
                     pic = pics['data-src']
 
                     if 'http' not in pic:
