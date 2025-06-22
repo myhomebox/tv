@@ -15,7 +15,18 @@ sys.path.append('..')
 xurl = "https://www.fullhd.xxx/zh/"
 
 headerx = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+    'Pragma': 'no-cache',
+    'Cache-Control': 'no-cache',
+    'sec-ch-ua-platform': '"macOS"',
+    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="134", "Google Chrome";v="134"',
+    'DNT': '1',
+    'sec-ch-ua-mobile': '?0',
+    'Origin': '',
+    'Sec-Fetch-Site': 'cross-site',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Dest': 'empty',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
           }
 
 pm = ''
@@ -150,7 +161,7 @@ class Spider(Spider):
         except:
             pass
 
-    def categoryContent(self, cid, pg, filter, ext):
+    def categoryContent(self, tid, pg, filter, ext):
         result = {}
         if pg:
             page = int(pg)
@@ -160,9 +171,10 @@ class Spider(Spider):
         videos = []
 
         if page == '1':
-            url = f'{xurl}/{cid}/'
+            url = f'{xurl}/{tid}/'
 
-        
+        else:
+            url = f'{xurl}/{tid}/{str(page)}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
