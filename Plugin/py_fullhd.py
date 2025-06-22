@@ -170,7 +170,7 @@ class Spider(Spider):
             url = f'{xurl}/{cid}/'
 
         else:
-            url = f'{xurl}/{cid}/{str(page)}/'
+            url = f'{xurl}/{cid}/{pg}/'
 
         try:
             detail = requests.get(url=url, headers=headerx)
@@ -285,7 +285,7 @@ class Spider(Spider):
             url = f'{xurl}/search/{key}/'
 
         else:
-            url = f'{xurl}/search/{key}/{str(page)}/'
+            url = f'{xurl}/search/{key}/{pg}/'
 
         detail = requests.get(url=url, headers=headerx)
         detail.encoding = "utf-8"
