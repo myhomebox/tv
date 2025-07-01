@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Author  : Doubebly
-# @Time    : 2025/1/21 20:57
-# JianPian
 import sys
 import requests
 sys.path.append('..')
@@ -13,11 +9,11 @@ class Spider(Spider):
         return "JianPian"
 
     def init(self, extend):
-        self.home_url = 'http://apijp.jianpianedge.com'
+        self.home_url = 'https://api.ubj83.com'
         self.headers = {
-            "User-Agent": "jianpian-android/365",
-            'Host': 'apijp.jianpianedge.com',
-            'JPAUTH': 'bhhxAK8WwQNOcZk9C4+mO4H+W3IdMN52/XBD3ND0yr4C',
+            "User-Agent": "jianpian-android/360",
+            'Host': 'https://api.ubj83.com',
+            'JPAUTH': 'y261ow7kF2dtzlxh1GS9EB8nbTxNmaK/QQIAjctlKiEv',
             'Connection': 'keep-alive',
             'Accept-Encoding': 'gzip',
         }
