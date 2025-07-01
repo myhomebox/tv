@@ -51,7 +51,7 @@ class Spider(Spider):
     def homeVideoContent(self):
         a = []
         try:
-            res = requests.get(url=self.home_url + '/api/crumb/list?code=unknownbe2a5c4162bb5528&category_id=0&area=0&year=0&limit=24&channel=wandoujia&page=1&sort=hot&type=0', headers=self.headers)
+            res = requests.get(url=self.home_url + '/api/crumb/list?fcate_pid=0&category_id=0&area=0&year=0&limit=24&channel=wandoujia&page=1&sort=hot&type=0', headers=self.headers)
             if res.status_code != 200:
                 return {'list': [], 'parse': 0, 'jx': 0, 'msg': f'status_code: {res.status_code}'}
             data_list = res.json()['data']
@@ -72,7 +72,7 @@ class Spider(Spider):
     def categoryContent(self, cid, page, filter, ext):
         a = []
         try:
-            res = requests.get(url=self.home_url + f'/api/crumb/list?code=unknownbe2a5c4162bb5528&category_id={cid}&area=0&year=0&limit=24&channel=wandoujia&page={page}&sort=hot&type=0',
+            res = requests.get(url=self.home_url + f'/api/crumb/list?fcate_pid={cid}&category_id={cid}&area=0&year=0&limit=24&channel=wandoujia&page={page}&sort=hot&type=0',
                                headers=self.headers)
             if res.status_code != 200:
                 return {'list': [], 'parse': 0, 'jx': 0, 'msg': f'status_code: {res.status_code}'}
