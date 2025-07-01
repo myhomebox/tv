@@ -51,7 +51,18 @@ class Spider(Spider):
         } for i in data['data']]
         return id,fts
 
-    
+    def build_cl(self,data,tid=''):
+        videos=[]
+        for i in data:
+            text=json.dumps(i.get('res_categories',[]))
+            videos.append({
+                'vod_id': f"{i.get('id')}@{'67' if json.dumps('短剧') in text and '67' in text else tid}",
+                'vod_name': i.get('title'),
+                'vod_pic': f"{self.ihost}{i.get('path') or i.get('cover_image') or i.get('thumbnail')}",
+                'vod_remarks': i.get('mask'),
+                'vod_year': i.get('score'),
+            })
+        return videos
 
     def homeContent(self, filter):
         result = {}
