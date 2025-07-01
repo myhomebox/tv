@@ -6,7 +6,7 @@
 
 var rule = {
 	title: '荐片',
-	host: 'https://api.ubj83.com',
+	host: 'http://4icnx7.qyjzlh.com/',
 	//host: 'https://dns.alidns.com/resolve?name=jpmobile.jianpiandns.com&type=TXT',
 	homeUrl: '/api/tag/hand?code=unknownbe2a5c4162bb5528&channel=wandoujia',//网站的首页链接,用于分类获取和推荐获取
 	// url:'/api/crumb/list?area=0&category_id=fyclass&page=fypage&type=0&limit=24&fyfilter',
