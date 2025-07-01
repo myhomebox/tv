@@ -11,9 +11,9 @@ class Spider(Spider):
     def init(self, extend):
         self.home_url = 'https://api.ubj83.com'
         self.headers = {
-            "User-Agent": "jianpian-android/365",
+            "User-Agent": "jianpian-android/360",
             'Host': 'https://api.ubj83.com',
-            'JPAUTH': 'bhhxAK8WwQNOcZk9C4+mO4H+W3IdMN52/XBD3ND0yr4C',
+            'JPAUTH': 'y261ow7kF2dtzlxh1GS9EB8nbTxNmaK/QQIAjctlKiEv',
             'Connection': 'keep-alive',
             'Accept-Encoding': 'gzip',
         }
@@ -51,7 +51,7 @@ class Spider(Spider):
     def homeVideoContent(self):
         a = []
         try:
-            res = requests.get(url=self.home_url + '/api/crumb/list?area=0&code=unknownbe2a5c4162bb5528&category_id=0&year=0&limit=24&channel=wandoujia&page=1&sort=hot&type=0', headers=self.headers)
+            res = requests.get(url=self.home_url + '/api/crumb/list?code=unknownbe2a5c4162bb5528&category_id=0&area=0&year=0&limit=24&channel=wandoujia&page=1&sort=hot&type=0', headers=self.headers)
             if res.status_code != 200:
                 return {'list': [], 'parse': 0, 'jx': 0, 'msg': f'status_code: {res.status_code}'}
             data_list = res.json()['data']
@@ -72,7 +72,7 @@ class Spider(Spider):
     def categoryContent(self, cid, page, filter, ext):
         a = []
         try:
-            res = requests.get(url=self.home_url + f'/api/crumb/list?area=0&code=unknownbe2a5c4162bb5528&category_id={cid}&year=0&limit=24&channel=wandoujia&page={page}&sort=hot&type=0',
+            res = requests.get(url=self.home_url + f'/api/crumb/list?code=unknownbe2a5c4162bb5528&category_id={cid}&area=0&year=0&limit=24&channel=wandoujia&page={page}&sort=hot&type=0',
                                headers=self.headers)
             if res.status_code != 200:
                 return {'list': [], 'parse': 0, 'jx': 0, 'msg': f'status_code: {res.status_code}'}
@@ -141,7 +141,7 @@ class Spider(Spider):
 
     def playerContent(self, flag, pid, vipFlags):
         h = {
-            'User-Agent': 'jianpian-android/365',
+            'User-Agent': 'jianpian-android/360',
         }
         return {'url': pid, 'header': h, 'parse': 0, 'jx': 0}
 
