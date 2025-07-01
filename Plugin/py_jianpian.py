@@ -11,8 +11,8 @@ class Spider(Spider):
     def init(self, extend):
         self.home_url = 'https://api.ubj83.com'
         self.headers = {
-            "User-Agent": "jianpian-android/360",
-            'Host': 'https://api.ubj83.com',
+            'Referer': "https://api.ubj83.com",
+            "User-Agent": "Mozilla/5.0 (Linux; Android 9; V2196A Build/PQ3A.190705.08211809; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Mobile Safari/537.36",
             'JPAUTH': 'y261ow7kF2dtzlxh1GS9EB8nbTxNmaK/QQIAjctlKiEv',
             'Connection': 'keep-alive',
             'Accept-Encoding': 'gzip',
