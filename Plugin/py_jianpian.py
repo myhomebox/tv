@@ -96,7 +96,7 @@ class Spider(Spider):
     def homeVideoContent(self):
         pass
     def categoryContent(self, tid, pg, filter, extend):
-        params={**{'fcate_pid': tid}, **{'page': pg}, **extend}
+        params={**{'fcate_pid': tid, 'page': pg}, **extend}
         path= '/api/crumb/shortList' if tid=='67' else '/api/crumb/list'
         data=self.fetch(f"{self.host}{path}",params=params,headers=self.headers).json()
         result = {}
