@@ -75,7 +75,6 @@ var vod = [{
     "vod_area": res.area,
     "vod_remarks": res.mask,
     "vod_content": res.description,
-    "vod_actor": res.actors,
     "vod_play_from": play_from, 
     "vod_play_url": play_url
     }];  
