@@ -17,7 +17,7 @@ class Spider(Spider):
         self.stype = '3'
 
     def getName(self):
-        return "影视源"
+        return "JianPian"
 
     def imgsite(self):
         data = self.fetch(f"{self.host}/api/appAuthConfig", headers=self.headers).json()
@@ -66,7 +66,7 @@ class Spider(Spider):
                 # 综艺过滤条件 (结构同电影)
             ]
         }
-        # 简化代码：实际需补全2/3/4的过滤条件
+
         for tid in ["2", "3", "4"]:
             filterObj[tid] = filterObj["1"].copy()
         
@@ -166,7 +166,6 @@ class Spider(Spider):
             'limit': 20
         }
 
-    # 保留未实现方法的空实现
     def isVideoFormat(self, url): pass
     def manualVideoCheck(self): pass
     def destroy(self): pass
