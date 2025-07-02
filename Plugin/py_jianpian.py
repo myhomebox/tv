@@ -106,11 +106,21 @@ class Spider(Spider):
         # 准备基本参数
         params = {'fcate_pid': tid, 'page': pg}
         
-        # 添加扩展参数
+        # 添加扩展参数 - 使用JS版本中的参数名
         if extend:
-            for k, v in extend.items():
-                if v:
-                    params[k] = v
+            # 映射参数名到JS版本中的名称
+            param_mapping = {
+                'cateId': 'type',  # JS中分类参数名为type
+                'area': 'area',
+                'year': 'year',
+                'sort': 'sort'
+            }
+            
+            for key, value in extend.items():
+                # 使用映射后的参数名
+                mapped_key = param_mapping.get(key, key)
+                if value:
+                    params[mapped_key] = value
         
         # 根据分类选择API路径
         path = '/api/crumb/shortList' if tid == '67' else '/api/crumb/list'
