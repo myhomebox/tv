@@ -1,147 +1,427 @@
-# -*- coding: utf-8 -*-
-# by @嗷呜
-import concurrent.futures
 import json
-import sys
-sys.path.append('..')
-from base.spider import Spider
+import aiohttp
+import re
 
+class Drpy:
+    def __init__(self):
+        self.cfg = {"skey": "", "stype": "3"}
+        self.host = "https://api.ubj83.com"
+        self.UA = "Mozilla/5.0 (Linux; Android 9; V2196A Build/PQ3A.190705.08211809; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Mobile Safari/537.36;webank/h5face;webank/1.0;netType:NETWORK_WIFI;appVersion:416;packageName:com.jp3.xg3"
+        self.imghost = None
 
-class Spider(Spider):
+    async def init(self, cfg=None):
+        if cfg is not None:
+            self.cfg = cfg
+        self.cfg["skey"] = ""
+        self.cfg["stype"] = "3"
 
-    def init(self, extend=""):
-        self.ihost=self.imgsite()
-        pass
+    async def req(self, url, headers=None, method="GET"):
+        if headers is None:
+            headers = {"User-Agent": self.UA, "Referer": self.host}
+        
+        async with aiohttp.ClientSession() as session:
+            async with session.request(method, url, headers=headers) as response:
+                content = await response.text()
+                return {"content": content}
 
-    def getName(self):
-        pass
+    async def home(self, filter=None):
+        classes = [
+            {"type_id": "1", "type_name": "电影"},
+            {"type_id": "2", "type_name": "电视剧"},
+            {"type_id": "3", "type_name": "动漫"},
+            {"type_id": "4", "type_name": "综艺"},
+        ]
 
-    def isVideoFormat(self, url):
-        pass
-
-    def manualVideoCheck(self):
-        pass
-
-    def destroy(self):
-        pass
-
-    host='https://api.ubj83.com'
-
-    headers={
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2012K10C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36;webank/h5face;webank/1.0;netType:NETWORK_WIFI;appVersion:416;packageName:com.jp3.xg3',
-        'Accept': 'application/json, text/plain, */*',
-        'x-requested-with': 'com.jp3.xg3',
-        'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-    }
-
-    def imgsite(self):
-        data=self.fetch(f"{self.host}/api/appAuthConfig",headers=self.headers).json()
-        host=data['data']['imgDomain']
-        return host if host.startswith('http') else f"https://{host}"
-
-    def getfts(self,id):
-        data=self.fetch(f"{self.host}/api/crumb/filterOptions",params={'fcate_pid':id},headers=self.headers).json()
-        fts=[{
-            'key': i['key'],
-            'name':i['key'],
-            'value': [{
-                'n': j['name'],
-                'v': j['id']
-            } for j in i['data']]
-        } for i in data['data']]
-        return id,fts
-
-    def build_cl(self,data,tid=''):
-        videos=[]
-        for i in data:
-            text=json.dumps(i.get('res_categories',[]))
-            videos.append({
-                'vod_id': f"{i.get('id')}@{'67' if json.dumps('短剧') in text and '67' in text else tid}",
-                'vod_name': i.get('title'),
-                'vod_pic': f"{self.ihost}{i.get('path') or i.get('cover_image') or i.get('thumbnail')}",
-                'vod_remarks': i.get('mask'),
-                'vod_year': i.get('score'),
-            })
-        return videos
-
-    def homeContent(self, filter):
-        result = {}
-        cdata=self.fetch(f"{self.host}/api/term/home_fenlei",headers=self.headers).json()
-        hdata=self.fetch(f"{self.host}/api/dyTag/hand_data",params={'category_id':cdata['data'][0]['id']},headers=self.headers).json()
-        classes = []
-        filters = {}
-        for k in cdata['data']:
-            if 'abbr' in k:
-                classes.append({
-                    'type_name': k['name'],
-                    'type_id': k['id']
-                })
-        with concurrent.futures.ThreadPoolExecutor(max_workers=len(classes)) as executor:
-            future_to_aid = {
-                executor.submit(self.getfts, aid['type_id']): aid['type_id']
-                for aid in classes
-            }
-            for future in concurrent.futures.as_completed(future_to_aid):
-                aid = future_to_aid[future]
-                try:
-                    aid_id, fts = future.result()
-                    filters[aid_id] = fts
-                except Exception as e:
-                    print(f"Error processing aid {aid}: {e}")
-        result['class'] = classes
-        result['filters'] = filters
-        result['list'] = [item for i in hdata['data'].values() for item in self.build_cl(i)]
-        return result
-
-    def homeVideoContent(self):
-        pass
-    def categoryContent(self, tid, pg, filter, extend):
-        params={**{'fcate_pid': tid, 'page': pg}, **extend}
-        path= '/api/crumb/shortList' if tid=='67' else '/api/crumb/list'
-        data=self.fetch(f"{self.host}{path}",params=params,headers=self.headers).json()
-        result = {}
-        result['list'] = self.build_cl(data['data'],tid)
-        result['page'] = pg
-        result['pagecount'] = 9999
-        result['limit'] = 90
-        result['total'] = 999999
-        return result
-
-    def detailContent(self, ids):
-        ids=ids[0].split('@')
-        path, ikey = ('/api/detail', 'vid') if ids[-1] == '67' else ('/api/video/detailv2', 'id')
-        data=self.fetch(f"{self.host}{path}",params={ikey:ids[0]},headers=self.headers).json()
-        v=data['data']
-        if ids[-1]=='67':
-            pdata=v.get('playlist',[])
-            n,p=[pdata[0].get('source_config_name')],['#'.join([f"{i.get('title')}${i['url']}" for i in pdata])]
-        else:
-            n,p=[],[]
-            for i in v.get('source_list_source',[]):
-                n.append(i.get('name'))
-                p.append('#'.join([f"{j.get('source_name') or j.get('weight')}${j['url']}" for j in i.get('source_list',[])]))
-
-        vod = {
-            'type_name': '/'.join([i.get('name') for i in v.get('types',[])]),
-            'vod_year': v.get('year'),
-            'vod_area': v.get('area'),
-            'vod_remarks': v.get('update_cycle'),
-            'vod_actor': '/'.join([i.get('name') for i in v.get('actors',[])]),
-            'vod_content': v.get('description'),
-            'vod_play_from': '$$$'.join(n),
-            'vod_play_url': '$$$'.join(p)
+        filterObj = {
+            "1": [
+                {
+                    "key": "cateId",
+                    "name": "分类",
+                    "value": [
+                        {"v": "1", "n": "剧情"},
+                        {"v": "2", "n": "爱情"},
+                        {"v": "3", "n": "动画"},
+                        {"v": "4", "n": "喜剧"},
+                        {"v": "5", "n": "战争"},
+                        {"v": "6", "n": "歌舞"},
+                        {"v": "7", "n": "古装"},
+                        {"v": "8", "n": "奇幻"},
+                        {"v": "9", "n": "冒险"},
+                        {"v": "10", "n": "动作"},
+                        {"v": "11", "n": "科幻"},
+                        {"v": "12", "n": "悬疑"},
+                        {"v": "13", "n": "犯罪"},
+                        {"v": "14", "n": "家庭"},
+                        {"v": "15", "n": "传记"},
+                        {"v": "16", "n": "运动"},
+                        {"v": "18", "n": "惊悚"},
+                        {"v": "20", "n": "短片"},
+                        {"v": "21", "n": "历史"},
+                        {"v": "22", "n": "音乐"},
+                        {"v": "23", "n": "西部"},
+                        {"v": "24", "n": "武侠"},
+                        {"v": "25", "n": "恐怖"},
+                    ],
+                },
+                {
+                    "key": "area",
+                    "name": "地區",
+                    "value": [
+                        {"v": "1", "n": "国产"},
+                        {"v": "3", "n": "香港"},
+                        {"v": "6", "n": "台湾"},
+                        {"v": "5", "n": "美国"},
+                        {"v": "18", "n": "韩国"},
+                        {"v": "2", "n": "日本"},
+                    ],
+                },
+                {
+                    "key": "year",
+                    "name": "年代",
+                    "value": [
+                        {"v": "107", "n": "2025"},
+                        {"v": "119", "n": "2024"},
+                        {"v": "153", "n": "2023"},
+                        {"v": "101", "n": "2022"},
+                        {"v": "118", "n": "2021"},
+                        {"v": "16", "n": "2020"},
+                        {"v": "7", "n": "2019"},
+                        {"v": "2", "n": "2018"},
+                        {"v": "3", "n": "2017"},
+                        {"v": "22", "n": "2016"},
+                        {"v": "2015", "n": "2015以前"},
+                    ],
+                },
+                {
+                    "key": "sort",
+                    "name": "排序",
+                    "value": [
+                        {"v": "update", "n": "最新"},
+                        {"v": "hot", "n": "最热"},
+                        {"v": "rating", "n": "评分"},
+                    ],
+                },
+            ],
+            "2": [
+                {
+                    "key": "cateId",
+                    "name": "分类",
+                    "value": [
+                        {"v": "1", "n": "剧情"},
+                        {"v": "2", "n": "爱情"},
+                        {"v": "3", "n": "动画"},
+                        {"v": "4", "n": "喜剧"},
+                        {"v": "5", "n": "战争"},
+                        {"v": "6", "n": "歌舞"},
+                        {"v": "7", "n": "古装"},
+                        {"v": "8", "n": "奇幻"},
+                        {"v": "9", "n": "冒险"},
+                        {"v": "10", "n": "动作"},
+                        {"v": "11", "n": "科幻"},
+                        {"v": "12", "n": "悬疑"},
+                        {"v": "13", "n": "犯罪"},
+                        {"v": "14", "n": "家庭"},
+                        {"v": "15", "n": "传记"},
+                        {"v": "16", "n": "运动"},
+                        {"v": "18", "n": "惊悚"},
+                        {"v": "20", "n": "短片"},
+                        {"v": "21", "n": "历史"},
+                        {"v": "22", "n": "音乐"},
+                        {"v": "23", "n": "西部"},
+                        {"v": "24", "n": "武侠"},
+                        {"v": "25", "n": "恐怖"},
+                    ],
+                },
+                {
+                    "key": "area",
+                    "name": "地區",
+                    "value": [
+                        {"v": "1", "n": "国产"},
+                        {"v": "3", "n": "香港"},
+                        {"v": "6", "n": "台湾"},
+                        {"v": "5", "n": "美国"},
+                        {"v": "18", "n": "韩国"},
+                        {"v": "2", "n": "日本"},
+                    ],
+                },
+                {
+                    "key": "year",
+                    "name": "年代",
+                    "value": [
+                        {"v": "107", "n": "2025"},
+                        {"v": "119", "n": "2024"},
+                        {"v": "153", "n": "2023"},
+                        {"v": "101", "n": "2022"},
+                        {"v": "118", "n": "2021"},
+                        {"v": "16", "n": "2020"},
+                        {"v": "7", "n": "2019"},
+                        {"v": "2", "n": "2018"},
+                        {"v": "3", "n": "2017"},
+                        {"v": "22", "n": "2016"},
+                        {"v": "2015", "n": "2015以前"},
+                    ],
+                },
+                {
+                    "key": "sort",
+                    "name": "排序",
+                    "value": [
+                        {"v": "update", "n": "最新"},
+                        {"v": "hot", "n": "最热"},
+                        {"v": "rating", "n": "评分"},
+                    ],
+                },
+            ],
+            "3": [
+                {
+                    "key": "cateId",
+                    "name": "分类",
+                    "value": [
+                        {"v": "1", "n": "剧情"},
+                        {"v": "2", "n": "爱情"},
+                        {"v": "3", "n": "动画"},
+                        {"v": "4", "n": "喜剧"},
+                        {"v": "5", "n": "战争"},
+                        {"v": "6", "n": "歌舞"},
+                        {"v": "7", "n": "古装"},
+                        {"v": "8", "n": "奇幻"},
+                        {"v": "9", "n": "冒险"},
+                        {"v": "10", "n": "动作"},
+                        {"v": "11", "n": "科幻"},
+                        {"v": "12", "n": "悬疑"},
+                        {"v": "13", "n": "犯罪"},
+                        {"v": "14", "n": "家庭"},
+                        {"v": "15", "n": "传记"},
+                        {"v": "16", "n": "运动"},
+                        {"v": "18", "n": "惊悚"},
+                        {"v": "20", "n": "短片"},
+                        {"v": "21", "n": "历史"},
+                        {"v": "22", "n": "音乐"},
+                        {"v": "23", "n": "西部"},
+                        {"v": "24", "n": "武侠"},
+                        {"v": "25", "n": "恐怖"},
+                    ],
+                },
+                {
+                    "key": "area",
+                    "name": "地區",
+                    "value": [
+                        {"v": "1", "n": "国产"},
+                        {"v": "3", "n": "香港"},
+                        {"v": "6", "n": "台湾"},
+                        {"v": "5", "n": "美国"},
+                        {"v": "18", "n": "韩国"},
+                        {"v": "2", "n": "日本"},
+                    ],
+                },
+                {
+                    "key": "year",
+                    "name": "年代",
+                    "value": [
+                        {"v": "107", "n": "2025"},
+                        {"v": "119", "n": "2024"},
+                        {"v": "153", "n": "2023"},
+                        {"v": "101", "n": "2022"},
+                        {"v": "118", "n": "2021"},
+                        {"v": "16", "n": "2020"},
+                        {"v": "7", "n": "2019"},
+                        {"v": "2", "n": "2018"},
+                        {"v": "3", "n": "2017"},
+                        {"v": "22", "n": "2016"},
+                        {"v": "2015", "n": "2015以前"},
+                    ],
+                },
+                {
+                    "key": "sort",
+                    "name": "排序",
+                    "value": [
+                        {"v": "update", "n": "最新"},
+                        {"v": "hot", "n": "最热"},
+                        {"v": "rating", "n": "评分"},
+                    ],
+                },
+            ],
+            "4": [
+                {
+                    "key": "cateId",
+                    "name": "分类",
+                    "value": [
+                        {"v": "1", "n": "剧情"},
+                        {"v": "2", "n": "爱情"},
+                        {"v": "3", "n": "动画"},
+                        {"v": "4", "n": "喜剧"},
+                        {"v": "5", "n": "战争"},
+                        {"v": "6", "n": "歌舞"},
+                        {"v": "7", "n": "古装"},
+                        {"v": "8", "n": "奇幻"},
+                        {"v": "9", "n": "冒险"},
+                        {"v": "10", "n": "动作"},
+                        {"v": "11", "n": "科幻"},
+                        {"v": "12", "n": "悬疑"},
+                        {"v": "13", "n": "犯罪"},
+                        {"v": "14", "n": "家庭"},
+                        {"v": "15", "n": "传记"},
+                        {"v": "16", "n": "运动"},
+                        {"v": "18", "n": "惊悚"},
+                        {"v": "20", "n": "短片"},
+                        {"v": "21", "n": "历史"},
+                        {"v": "22", "n": "音乐"},
+                        {"v": "23", "n": "西部"},
+                        {"v": "24", "n": "武侠"},
+                        {"v": "25", "n": "恐怖"},
+                    ],
+                },
+                {
+                    "key": "area",
+                    "name": "地區",
+                    "value": [
+                        {"v": "1", "n": "国产"},
+                        {"v": "3", "n": "香港"},
+                        {"v": "6", "n": "台湾"},
+                        {"v": "5", "n": "美国"},
+                        {"v": "18", "n": "韩国"},
+                        {"v": "2", "n": "日本"},
+                    ],
+                },
+                {
+                    "key": "year",
+                    "name": "年代",
+                    "value": [
+                        {"v": "107", "n": "2025"},
+                        {"v": "119", "n": "2024"},
+                        {"v": "153", "n": "2023"},
+                        {"v": "101", "n": "2022"},
+                        {"v": "118", "n": "2021"},
+                        {"v": "16", "n": "2020"},
+                        {"v": "7", "n": "2019"},
+                        {"v": "2", "n": "2018"},
+                        {"v": "3", "n": "2017"},
+                        {"v": "22", "n": "2016"},
+                        {"v": "2015", "n": "2015以前"},
+                    ],
+                },
+                {
+                    "key": "sort",
+                    "name": "排序",
+                    "value": [
+                        {"v": "update", "n": "最新"},
+                        {"v": "hot", "n": "最热"},
+                        {"v": "rating", "n": "评分"},
+                    ],
+                },
+            ],
         }
-        return {'list':[vod]}
 
-    def searchContent(self, key, quick, pg="1"):
-        data=self.fetch(f"{self.host}/api/v2/search/videoV2",params={'key':key,'page':pg,'pageSize':20},headers=self.headers).json()
-        return {'list':self.build_cl(data['data']),'page':pg}
+        return json.dumps({"class": classes, "filters": filterObj})
 
-    def playerContent(self, flag, id, vipFlags):
-        return  {'parse': 0, 'url': id, 'header': {'User-Agent':self.headers['User-Agent']}}
+    async def homeVod(self):
+        if not self.imghost:
+            await self.get_img_host()
+            
+        url = f"{self.host}/api/slide/list?pos_id=88"
+        html = await self.req(url)
+        res = json.loads(html["content"])
+        
+        videos = []
+        for item in res["data"]:
+            videos.append({
+                "vod_id": item["jump_id"],
+                "vod_name": item["title"],
+                "vod_pic": f"{self.imghost}{item['thumbnail']}",
+                "vod_remarks": "",
+                "style": {"type": "rect", "ratio": 1.33}
+            })
+            
+        return json.dumps({"list": videos})
 
-    def localProxy(self, param):
-        pass
+    async def get_img_host(self):
+        url = f"{self.host}/api/appAuthConfig"
+        response = await self.req(url)
+        data = json.loads(response["content"])
+        self.imghost = f"https://{data['data']['imgDomain']}"
 
-    def liveContent(self, url):
-        pass
+    async def category(self, tid, pg, filter=None, extend=None):
+        if extend is None:
+            extend = {}
+            
+        params = {
+            "fcate_pid": tid,
+            "category_id": "",
+            "area": extend.get("area", ""),
+            "year": extend.get("year", ""),
+            "type": extend.get("cateId", ""),
+            "sort": extend.get("sort", ""),
+            "page": pg
+        }
+        
+        query = "&".join([f"{k}={v}" for k, v in params.items() if v])
+        url = f"{self.host}/api/crumb/list?{query}"
+        html = await self.req(url)
+        res = json.loads(html["content"])
+        
+        videos = []
+        for item in res["data"]:
+            videos.append({
+                "vod_id": item["id"],
+                "vod_name": item["title"],
+                "vod_pic": f"{self.imghost}{item['path']}",
+                "vod_remarks": item["mask"],
+                "vod_year": ""
+            })
+            
+        return json.dumps({
+            "page": pg,
+            "pagecount": 99999,
+            "limit": 15,
+            "total": 99999,
+            "list": videos
+        })
+
+    async def detail(self, id):
+        url = f"{self.host}/api/video/detailv2?id={id}"
+        html = await self.req(url)
+        res = json.loads(html["content"])["data"]
+        
+        play_from = []
+        play_url = []
+        
+        for source in res["source_list_source"]:
+            play_from.append(source["name"].replace("常规线路", "边下边播"))
+            parts = []
+            for ep in source["source_list"]:
+                parts.append(f"{ep['source_name']}${ep['url']}")
+            play_url.append("#".join(parts))
+            
+        vod = {
+            "type_name": "",
+            "vod_year": res["year"],
+            "vod_area": res["area"],
+            "vod_remarks": res["mask"],
+            "vod_content": res["description"],
+            "vod_play_from": "$$$".join(play_from),
+            "vod_play_url": "$$$".join(play_url)
+        }
+        
+        return json.dumps({"list": [vod]})
+
+    async def play(self, flag, id, flags=None):
+        if ".m3u8" in id:
+            return json.dumps({"parse": 0, "url": id})
+        else:
+            return json.dumps({"parse": 0, "url": f"tvbox-xg:{id}"})
+
+    async def search(self, wd, quick=None):
+        url = f"{self.host}/api/v2/search/videoV2?key={wd}&category_id=88&page=1&pageSize=20"
+        html = await self.req(url)
+        res = json.loads(html["content"])
+        
+        videos = []
+        for item in res["data"]:
+            videos.append({
+                "vod_id": item["id"],
+                "vod_name": item["title"],
+                "vod_pic": f"{self.imghost}{item['thumbnail']}",
+                "vod_remarks": item["mask"],
+                "vod_year": ""
+            })
+            
+        return json.dumps({"limit": 20, "list": videos})
