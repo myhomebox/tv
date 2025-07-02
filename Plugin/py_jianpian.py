@@ -95,16 +95,43 @@ class Spider(Spider):
 
     def homeVideoContent(self):
         pass
+        
     def categoryContent(self, tid, pg, filter, extend):
-        params={**{'fcate_pid': tid, 'page': pg}, **extend}
-        path= '/api/crumb/shortList' if tid=='67' else '/api/crumb/list'
-        data=self.fetch(f"{self.host}{path}",params=params,headers=self.headers).json()
-        result = {}
-        result['list'] = self.build_cl(data['data'],tid)
-        result['page'] = pg
-        result['pagecount'] = 9999
-        result['limit'] = 90
-        result['total'] = 999999
+        # 确保页码是整数
+        try:
+            pg = int(pg)
+        except:
+            pg = 1
+            
+        # 准备基本参数
+        params = {'fcate_pid': tid, 'page': pg}
+        
+        # 添加扩展参数
+        if extend:
+            for k, v in extend.items():
+                if v:
+                    params[k] = v
+        
+        # 根据分类选择API路径
+        path = '/api/crumb/shortList' if tid == '67' else '/api/crumb/list'
+        
+        # 发送请求
+        response = self.fetch(f"{self.host}{path}", params=params, headers=self.headers)
+        data = response.json()
+        
+        # 获取分页信息（如果API提供）
+        pagecount = data.get('last_page', 9999)
+        limit = data.get('per_page', 20)
+        total = data.get('total', 999999)
+        
+        # 构建结果
+        result = {
+            'list': self.build_cl(data['data'], tid),
+            'page': pg,
+            'pagecount': pagecount,
+            'limit': limit,
+            'total': total
+        }
         return result
 
     def detailContent(self, ids):
@@ -120,7 +147,7 @@ class Spider(Spider):
             for i in v.get('source_list_source',[]):
                 n.append(i.get('name'))
                 p.append('#'.join([f"{j.get('source_name') or j.get('weight')}${j['url']}" for j in i.get('source_list',[])]))
-
+        
         vod = {
             'type_name': '/'.join([i.get('name') for i in v.get('types',[])]),
             'vod_year': v.get('year'),
