@@ -1,6 +1,10 @@
 import json
 import aiohttp
 import re
+import concurrent.futures
+import sys
+sys.path.append('..')
+from base.spider import Spider
 
 class Drpy:
     def __init__(self):
