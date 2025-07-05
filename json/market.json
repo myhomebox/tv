@@ -15,6 +15,12 @@
                 "version": "3.4.0"
             },
             {
+                "name": "天光雲",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/mytv-android-tv-1.1.2.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "1.1.2"
+            },
+            {
                 "name": "想唱就唱",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/origioyktv.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
