@@ -2711,7 +2711,11 @@ function fm_get_size($file)
         $arg = escapeshellarg($file);
         $cmd = $iswin ? "for %F in (\"$file\") do @echo %~zF" : ($isdarwin ? "stat -f%z $arg" : "stat -c%s $arg");
         @exec($cmd, $output);
-
+        if (!function_exists('ctype_digit')) {
+            function ctype_digit($text) {
+                return is_string($text) && preg_match('/^\d+$/', $text);
+         }
+    }
         if (!empty($output) && ctype_digit($size = trim(implode("\n", $output)))) {
             return $size;
         }
