@@ -32,7 +32,9 @@ $auth_users = array(
 
 // Readonly users
 // e.g. array('users', 'guest', ...)
-$readonly_users = array();
+$readonly_users = array(
+    'user'
+);
 
 // Global readonly, including when auth is not being used
 $global_readonly = false;
@@ -241,6 +243,7 @@ if (defined('FM_EMBED')) {
     session_start();
     restore_error_handler();
 }
+
 //Generating CSRF Token
 if (empty($_SESSION['token'])) {
     if (function_exists('random_bytes')) {
