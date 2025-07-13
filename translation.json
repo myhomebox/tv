@@ -235,6 +235,7 @@
         "MemoryUsed": "使用內存",
         "PartitionSize": "可用空間",
         "FreeOf": "磁盤大小",
+        "Drop files here to uploadf": "將檔案拖曳到此處進行上傳",
         "Check Latest Version": "檢查更新",
         "Generate new password hash": "生成新的hash密碼",
         "Report Issue": "報告問題",
