@@ -1,10 +1,10 @@
-格式说明：
-#订阅名
-地址(支持m3u订阅、tvbox配置文件中live选项的直播地址订阅)
+格式說明：
+#訂閱名
+地址(支持m3u訂閱、tvbox配置文件中live選項的直播地址訂閱)
 
-相对路径说明
-以./开头，相对位置是本订阅文件
-以/开头，存储卡的根目录
+相對路徑說明
+以./開頭，相對位置是本訂閱文件
+以/開頭，存儲卡的根目錄
 
 #MV_1
 https://ghproxy.com/https://raw.githubusercontent.com/myhomebox/tv/main/MTV/MTV_1.txt
