@@ -47,6 +47,7 @@ TVBS 歡樂台(備份),Smart//:id=tvbshuanle_twn
 愛爾達影劇,Smart//:id=eltayingju_twn
 愛爾達影劇台,Smart//:id=eltayingju_twn
 愛爾達綜合台,Smart//:id=eltazonghe_twn
+愛爾達體育1台,Smart//:id=eltasport1_twn
 愛爾達體育2台,Smart//:id=eltasport2_twn
 愛爾達體育3台,Smart//:id=eltasport3_twn
 龍華電影,Smart//:id=xingwei_movie
