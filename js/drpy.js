@@ -3,7 +3,7 @@ cfg.skey = '';
 cfg.stype = '3';
 }
 
-let host = 'https://api.ubj83.com';
+let host = 'https://ij1men.slsw6.com';
 let UA = 'Mozilla/5.0 (Linux; Android 9; V2196A Build/PQ3A.190705.08211809; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Mobile Safari/537.36;webank/h5face;webank/1.0;netType:NETWORK_WIFI;appVersion:416;packageName:com.jp3.xg3';
 let imghost = `https://${JSON.parse((await req(`${host}/api/appAuthConfig`)).content).data.imgDomain}`;
 
@@ -129,3 +129,4 @@ export function __jsEvalReturn() {
       search: search
   };
 }
+
