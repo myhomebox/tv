@@ -54,19 +54,19 @@
                 "name": "手機 V7",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.0.7"
+                "version": "3.1.1"
             },
             {
                 "name": "手機 V8",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-arm64_v8a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.0.7"
+                "version": "3.1.1"
             },
             {
                 "name": "手機 Pro",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-python-Pro.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "3.4.7"
+                "version": "3.5.1"
             }
         ]
     }
