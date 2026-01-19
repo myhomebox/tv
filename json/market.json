@@ -51,6 +51,18 @@
                 "version": "2.15.0"
             },
             {
+                "name": "GEEKTV",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/GEEKTV.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "1.0.0"
+            },
+            {
+                "name": "SMRT",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/smartserver.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "1.0.0"
+            },
+            {
                 "name": "手機 V7",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-armeabi_v7a.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
