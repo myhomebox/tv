@@ -16,9 +16,9 @@
             },
             {
                 "name": "天光雲",
-                "url": "https://github.com/myhomebox/Release/releases/download/dev/mytv-android-tv-1.1.2.apk",
+                "url": "https://github.com/mytv-android/mytv-android/releases/download/V2.0.0.199/mytv-android-tv-2.0.0.199-all-sdk21-original.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
-                "version": "1.1.2"
+                "version": "2.0.0.199"
             },
             {
                 "name": "想唱就唱",
