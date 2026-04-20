@@ -63,7 +63,7 @@
                 "version": "1.0.0"
             },
             {
-                "name": "tramsT",
+                "name": "trams",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/trams-android-armv7.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.0.0"
