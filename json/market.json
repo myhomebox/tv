@@ -63,11 +63,17 @@
                 "version": "1.0.0"
             },
             {
-                "name": "trams",
+                "name": "trams V7",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/trams-android-armv7.apk",
                 "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
                 "version": "2.0.0"
-            },    
+            },
+            {
+                "name": "trams V8",
+                "url": "https://github.com/myhomebox/Release/releases/download/dev/trams-android-arm64.apk",
+                "icon": "https://github.com/myhomebox/Release/releases/download/dev/icon.png",
+                "version": "2.0.0"
+            },   
             {
                 "name": "手機 V7",
                 "url": "https://github.com/myhomebox/Release/releases/download/dev/mobile-armeabi_v7a.apk",
