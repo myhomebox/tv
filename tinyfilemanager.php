@@ -2539,10 +2539,19 @@ function fm_get_mime_type($file_path)
         return $mime;
     } elseif (function_exists('mime_content_type')) {
         return mime_content_type($file_path);
-    } elseif (!stristr(ini_get('disable_functions'), 'shell_exec')) {
-        $file = escapeshellarg($file_path);
-        $mime = shell_exec('file -bi ' . $file);
-        return $mime;
+    } elseif (function_exists('proc_open') && !stristr(ini_get('disable_functions'), 'proc_open')) {
+        // Use array form of proc_open so the command runs without a shell,
+        // eliminating shell metacharacter/command injection risks entirely.
+        $descriptors = array(1 => array('pipe', 'w'), 2 => array('pipe', 'w'));
+        $process = proc_open(array('file', '-bi', $file_path), $descriptors, $pipes);
+        if (is_resource($process)) {
+            $mime = stream_get_contents($pipes[1]);
+            fclose($pipes[1]);
+            fclose($pipes[2]);
+            proc_close($process);
+            return trim($mime);
+        }
+        return '--';
     } else {
         return '--';
     }
